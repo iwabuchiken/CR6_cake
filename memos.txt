@@ -55,3 +55,4 @@ pushd C:\WORKS\WORKSPACES_ANDROID\GIMP\Icons
 	
 [sqlite3]
 pushd C:\Users\IwabuchiKen\Desktop
+

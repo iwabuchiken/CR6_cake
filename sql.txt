@@ -1,0 +1,55 @@
+pushd C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot
+
+sqlite3 development.sqlite3
+.explain on
+
+pragma table_info(texts)
+
+.exit
+
+[sqlite3]======================================
+CREATE TABLE texts(
+   id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+   
+   text			TEXT,
+   title		VARCHAR(255),
+   url			TEXT,
+   
+   word_ids		TEXT,
+   genre_id		BIGINT,
+   subgenre_id	BIGINT,
+   lang_id		INT,
+   
+   memo			TEXT,
+   
+   dbId			INT,
+   
+   created_at	VARCHAR(30),
+   updated_at	VARCHAR(30)
+   
+);
+
+
+[mysql(lollipop)]======================================
+#REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
+
+CREATE TABLE texts (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	
+	text			TEXT,
+	title			VARCHAR(255),
+	url				TEXT,
+	
+	word_ids		TEXT,
+	genre_id		INT,
+	subgenre_id		INT,
+	lang_id			INT,
+   
+	memo			TEXT,
+   
+	dbId			INT,
+   
+	created_at		VARCHAR(30),
+	updated_at		VARCHAR(30)
+	
+);
