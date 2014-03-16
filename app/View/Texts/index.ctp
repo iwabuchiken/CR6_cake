@@ -11,17 +11,4 @@
 
 	<br>
 	
-	<?php echo "log_path=".$path_Log?>
-	<br>
-	
-	<?php echo "res=".(($res) ? "true" : "false") ?>
-	<br>
-	
-	<?php echo "path_Utils=".$path_Utils?>
-	<br>
-	
-	<?php echo "res2=".(($res2) ? "true" : "false") ?>
-	<br>
-	
-	
 </table>
