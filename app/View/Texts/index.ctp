@@ -1,6 +1,6 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Blog posts</h1>
+<h1>Texts</h1>
 <table>
 
 	<?php echo $this->element('texts/index_table_header')?>
@@ -9,6 +9,9 @@
 
 	<?php echo $this->element('texts/index_table_entries')?>
 
+	
+</table>
+
 	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/texts/index"
 		target="_blank">
 		PHP site
@@ -16,6 +19,8 @@
 	
 	<br>
 	
-</table>
-
+	<?php echo $this->Html->link(
+					'Add Text',
+					array('controller' => 'texts', 'action' => 'add'));
+	?>
 <?php //echo $this->element('texts/index_test_scripts')?>

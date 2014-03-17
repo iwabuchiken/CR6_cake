@@ -8,7 +8,11 @@
 							'action' => 'view',
 							$text['Text']['id'])); ?>
         </td>
-        <td><?php echo $text['Text']['created']; ?></td>
+        
+        <td><?php echo $text['Text']['text']; ?></td>
+        
+        <td><?php echo $text['Text']['created_at']; ?></td>
+        
     </tr>
     <?php endforeach; ?>
     <?php unset($text); ?>

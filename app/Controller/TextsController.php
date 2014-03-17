@@ -40,6 +40,54 @@ class TextsController extends AppController {
 // 		$this->_Setup_LogFile();
 		
 	}
+
+	public function add() {
+	
+		if ($this->request->is('post')) {
+			$this->Text->create();
+		  
+			//REF http://cakephp.jp/modules/newbb/viewtopic.php?topic_id=2624&forum=7
+			$this->request->data['Text']['created_at'] = get_CurrentTime();
+			$this->request->data['Text']['updated_at'] = get_CurrentTime();
+			
+			// Title
+			$title_Length = 15;
+			
+			if ($this->request->data['Text'] &&
+					$this->request->data['Text']['text']) {
+				
+				if (strlen($this->request->data['Text']['text'])
+							< $title_Length) {
+				
+					$this->request->data['Text']['title'] =
+								$this->request->data['Text']['text'];
+				
+				} else {
+					
+					$this->request->data['Text']['title'] =
+							substr($this->request->data['Text']['text'],
+									0,
+									$title_Length);
+				
+				}//if (strlen($this->request->data['Text']['text'])
+				
+			}
+		  
+			// Save text
+			if ($this->Text->save($this->request->data)) {
+				$this->Session->setFlash(__('Your post has been saved.'));
+				return $this->redirect(
+								array(
+									'controller' => 'texts',
+									'action' => 'index'));
+				//                return $this->redirect(array('action' => 'index'));
+				
+			}
+			
+			$this->Session->setFlash(__('Unable to add your post.'));
+		}
+	}
+	
 	
 	public function get_Log() {
 		
