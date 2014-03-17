@@ -66,7 +66,10 @@
 		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
 		$file = str_replace(ROOT.DS, "", $file);
 		
-		$full_Text = "[$file : $line] $text"."\n";
+		$time = get_CurrentTime();
+		
+// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
+		$full_Text = "[$time : $file : $line] $text"."\n";
 		
 		$res = fwrite($log_File, $full_Text);
 		
@@ -76,3 +79,11 @@
 		fclose($log_File);
 			
 	}//function write_Log($dpath, $text, $file, $line)
+
+	function get_CurrentTime() {
+		
+		date_default_timezone_set('Asia/Tokyo');
+		
+		return date('m/d/Y H:i:s', time());
+		
+	}

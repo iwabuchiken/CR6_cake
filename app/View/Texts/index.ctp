@@ -9,6 +9,13 @@
 
 	<?php echo $this->element('texts/index_table_entries')?>
 
+	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/texts/index"
+		target="_blank">
+		PHP site
+	</a>
+	
 	<br>
 	
 </table>
+
+<?php //echo $this->element('texts/index_test_scripts')?>
