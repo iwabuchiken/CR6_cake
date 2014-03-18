@@ -12,7 +12,11 @@ class TextsController extends AppController {
 	
 	public $path_Utils;
 	
+	public $path_BackupUrl_Text;
+	
 	public $fpath_Log;
+	
+	public $path_Docs;
 	
 	public $fname_Utils		= "utils.php";
 
@@ -25,6 +29,35 @@ class TextsController extends AppController {
 	}
 	
 	public function index() {
+		
+		//debug
+		$this->set('data', $this->request->data);
+		
+		debug($this->request->data);
+// 		$this->set('data', $this->request->data['Text']);
+// 		$this->set('params', $this->request->params);
+// 		if ($this->request->params) {
+// // 		if ($this->request->params['abc']) {
+		
+// 			write_Log(
+// 				$this->path_Log,
+// 				"params => ".implode(",", $this->request->params),
+// // 				"params => ".$this->request->params['abc'],
+// 				__FILE__,
+// 				__LINE__);
+			
+		
+// 		} else {
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				"params => no",
+// 				__FILE__,
+// 				__LINE__);
+			
+		
+// 		}
+		
 		$this->set('texts', $this->Text->find('all'));
 		
 // 		$this->_Setup_Paths();
@@ -105,14 +138,98 @@ class TextsController extends AppController {
 		
 	}
 	
-	private function _Setup_Paths() {
+
+	
+	public function build_texts() {
+
+		$fpath_Csv = join(DS, array($this->path_Docs, "Text_backup.csv"));
 		
+		$csv_File = fopen($fpath_Csv, "r");
+		
+		write_Log(
+			$this->path_Log,
+			"\$csv => opened($csv_File)",
+			__FILE__, __LINE__);
+		
+		$csv_Lines = null;
+		
+		if ($csv_File != false) {
+			
+			$csv_Lines = $this->_build_texts__GetCsvLines($csv_File);
+			
+		} else {
+			
+			write_Log(
+					$this->path_Log,
+					"\$csv => false",
+					
+					__FILE__, __LINE__);
+			
+			$csv_Lines = array();
+			
+		}
+		
+		$this->Session->setFlash(__('Redirected from build_texts()'));
+
+		write_Log(
+				$this->path_Log,
+				"\$csv_Lines => ".strval(count($csv_Lines)),
+				__FILE__, __LINE__);
+		
+		write_Log(
+				$this->path_Log,
+				"Flash => set",
+				__FILE__, __LINE__);
+
+		//debug
+		$backup_Url = $this->path_BackupUrl_Text;
+// 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/index";
+// 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/add";
+		
+		_postData_Text($backup_Url);
+		
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+		
+	}//public function build_texts()
+
+	public function _build_texts__GetCsvLines($csv_File) {
+		
+		$csv_Lines = array();
+		
+		for ($i = 0; $i < 3; $i++) {
+			
+			fgetcsv($csv_File);
+			
+		}
+		
+		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+		while ( ($data = fgetcsv($csv_File) ) !== FALSE ) {
+			
+			array_push($csv_Lines, $data);
+			
+		}
+		
+		return $csv_Lines;
+		
+	}//public function _build_texts__GetCsvLines($csv_File)
+	
+	private function _Setup_Paths() {
+		/****************************************
+		* Build: Paths
+		****************************************/
 		$this->path_Log = join(DS, array(ROOT, "lib", "log"));
 // 		$this->path_Log = join(DS, array(ROOT, APP_DIR, "Lib", "log"));
 
 		$this->fpath_Log = join(DS, array(ROOT, "lib", "log", "log.txt"));
 		
 		$this->path_Utils = join(DS, array(ROOT, APP_DIR, "Lib", "utils"));
+		
+		$this->path_Docs = join(DS, array(ROOT, APP_DIR, "Lib", "docs"));
+		
+		$this->path_BackupUrl_Text =
+						"http://localhost/PHP_server/CR6_cake/texts/index";
 		
 		/****************************************
 		 * Create dir: log
@@ -136,6 +253,15 @@ class TextsController extends AppController {
 		if (!file_exists($this->path_Utils)) {
 		
 			$res = @mkdir($this->path_Utils, $mode=0777, $recursive=true);
+		
+		}
+
+		/****************************************
+		 * Create dir: utils
+		 ****************************************/
+		if (!file_exists($this->path_Docs)) {
+		
+			$res = @mkdir($this->path_Docs, $mode=0777, $recursive=true);
 		
 		}
 
