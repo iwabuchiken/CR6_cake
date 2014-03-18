@@ -246,3 +246,100 @@ ABCDE
 [03/18/2014 15:21:03 : app\Controller\TextsController.php : 182] Flash => set
 [03/18/2014 15:21:04 : app\Controller\TextsController.php : 71] index() => starts
 [03/18/2014 15:21:04 : app\Controller\TextsController.php : 71] index() => starts
+[03/18/2014 15:41:23 : app\Controller\TextsController.php : 72] index() => starts
+[03/18/2014 15:43:01 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:43:35 : app\Controller\TextsController.php : 154] $csv => opened(Resource id #47)
+[03/18/2014 15:43:35 : app\Controller\TextsController.php : 179] $csv_Lines => 281
+[03/18/2014 15:43:35 : app\Controller\TextsController.php : 184] Flash => set
+[03/18/2014 15:43:35 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:43:35 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:47:21 : app\Controller\TextsController.php : 154] $csv => opened(Resource id #47)
+[03/18/2014 15:47:21 : app\Controller\TextsController.php : 179] $csv_Lines => 281
+[03/18/2014 15:47:21 : app\Controller\TextsController.php : 184] Flash => set
+[03/18/2014 15:47:21 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:48:33 : app\Controller\TextsController.php : 154] $csv => opened(Resource id #47)
+[03/18/2014 15:48:33 : app\Controller\TextsController.php : 179] $csv_Lines => 281
+[03/18/2014 15:48:33 : app\Controller\TextsController.php : 184] Flash => set
+[03/18/2014 15:48:33 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:48:44 : app\Controller\TextsController.php : 154] $csv => opened(Resource id #47)
+[03/18/2014 15:48:44 : app\Controller\TextsController.php : 179] $csv_Lines => 281
+[03/18/2014 15:48:44 : app\Controller\TextsController.php : 184] Flash => set
+[03/18/2014 15:48:44 : app\Controller\TextsController.php : 73] index() => starts
+[03/18/2014 15:49:59 : app\Controller\TextsController.php : 156] $csv => opened(Resource id #47)
+[03/18/2014 15:50:00 : app\Controller\TextsController.php : 181] $csv_Lines => 281
+[03/18/2014 15:50:00 : app\Controller\TextsController.php : 186] Flash => set
+[03/18/2014 15:50:00 : app\Controller\TextsController.php : 75] index() => starts
+[03/18/2014 15:50:00 : app\Controller\TextsController.php : 75] index() => starts
+[03/18/2014 15:50:21 : app\Controller\TextsController.php : 156] $csv => opened(Resource id #47)
+[03/18/2014 15:50:21 : app\Controller\TextsController.php : 181] $csv_Lines => 281
+[03/18/2014 15:50:21 : app\Controller\TextsController.php : 186] Flash => set
+[03/18/2014 15:50:21 : app\Controller\TextsController.php : 75] index() => starts
+[03/18/2014 15:50:21 : app\Controller\TextsController.php : 75] index() => starts
+[03/18/2014 15:51:10 : app\Controller\TextsController.php : 157] $csv => opened(Resource id #47)
+[03/18/2014 15:51:11 : app\Controller\TextsController.php : 182] $csv_Lines => 281
+[03/18/2014 15:51:11 : app\Controller\TextsController.php : 187] Flash => set
+[03/18/2014 15:51:11 : app\Controller\TextsController.php : 76] index() => starts
+[03/18/2014 15:51:11 : app\Controller\TextsController.php : 76] index() => starts
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 176] $csv => opened(Resource id #47)
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 201] $csv_Lines => 281
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 206] Flash => set
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 95] index() => starts
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 15:53:04 : app\Controller\TextsController.php : 95] index() => starts
+[03/18/2014 15:53:35 : app\Controller\TextsController.php : 176] $csv => opened(Resource id #47)
+[03/18/2014 15:53:35 : app\Controller\TextsController.php : 201] $csv_Lines => 281
+[03/18/2014 15:53:35 : app\Controller\TextsController.php : 206] Flash => set
+[03/18/2014 15:53:36 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 15:53:36 : app\Controller\TextsController.php : 95] index() => starts
+[03/18/2014 15:53:36 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 15:53:36 : app\Controller\TextsController.php : 95] index() => starts
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 183] $csv => opened(Resource id #47)
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 208] $csv_Lines => 281
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 213] Flash => set
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 61] Array
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 61] 
+[03/18/2014 15:58:00 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 183] $csv => opened(Resource id #47)
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 208] $csv_Lines => 281
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 213] Flash => set
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 61] Text
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 61] 
+[03/18/2014 15:58:59 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 15:59:50 : app\Controller\TextsController.php : 183] $csv => opened(Resource id #47)
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 208] $csv_Lines => 281
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 213] Flash => set
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 61] Text,ABC
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 61] 
+[03/18/2014 15:59:51 : app\Controller\TextsController.php : 102] index() => starts
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 189] $csv => opened(Resource id #47)
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 214] $csv_Lines => 281
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 219] Flash => set
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 61] xxx,Text,ABC
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 67] 
+[03/18/2014 16:01:01 : app\Controller\TextsController.php : 108] index() => starts
+[03/18/2014 16:01:02 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 16:01:02 : app\Controller\TextsController.php : 61] 
+[03/18/2014 16:01:02 : app\Controller\TextsController.php : 67] 
+[03/18/2014 16:01:02 : app\Controller\TextsController.php : 108] index() => starts
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 189] $csv => opened(Resource id #47)
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 214] $csv_Lines => 281
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 219] Flash => set
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 40] is post
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 61] xxx,Text,ABC
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 67] 
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 108] index() => starts
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 48] is not post
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 61] 
+[03/18/2014 16:02:13 : app\Controller\TextsController.php : 67] 
+[03/18/2014 16:02:14 : app\Controller\TextsController.php : 108] index() => starts

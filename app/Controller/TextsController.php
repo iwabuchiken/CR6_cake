@@ -29,11 +29,48 @@ class TextsController extends AppController {
 	}
 	
 	public function index() {
+
+		//debug
+		if ($this->request->is('post')) {
+			
+			write_Log(
+				$this->path_Log,
+				"is post",
+				__FILE__,
+				__LINE__);
+			
+		} else {
+			
+			write_Log(
+				$this->path_Log,
+				"is not post",
+				__FILE__,
+				__LINE__);
+			
+		}
 		
 		//debug
-		$this->set('data', $this->request->data);
+// 		$this->set('data', $this->params['url']['abc']);
+// 		$this->set('data', $this->request->data);
+		$this->set('data', $this->request->data['Text']);
+		
+		write_Log(
+			$this->path_Log,
+			implode(",", array_keys($this->request->data)),
+			__FILE__,
+			__LINE__);
+		
+		write_Log(
+			$this->path_Log,
+			implode(",", array_keys($this->request->xxx)),
+			__FILE__,
+			__LINE__);
+		
 		
 		debug($this->request->data);
+		
+// 		debug($this->request->data);
+// 		debug($this->params['url']['abc']);
 // 		$this->set('data', $this->request->data['Text']);
 // 		$this->set('params', $this->request->params);
 // 		if ($this->request->params) {
@@ -229,6 +266,7 @@ class TextsController extends AppController {
 		$this->path_Docs = join(DS, array(ROOT, APP_DIR, "Lib", "docs"));
 		
 		$this->path_BackupUrl_Text =
+// 						"http://localhost/PHP_server/CR6_cake/texts/add";
 						"http://localhost/PHP_server/CR6_cake/texts/index";
 		
 		/****************************************
