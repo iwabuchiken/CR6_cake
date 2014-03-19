@@ -1,7 +1,17 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Texts</h1>
-<table>
+<!-- REF bottom http://stackoverflow.com/questions/1384823/how-to-specify-the-bottom-border-of-a-tr -->
+<style type="text/css">
+    tr.bb, td.bb {
+/*     .bb td, .bb th { */
+     border-bottom: 3px solid blue !important;
+/*      border-bottom: 1px solid black !important; */
+    }
+</style>
+  
+<h1>Texts(total=<?php echo count($texts); ?>)</h1>
+<!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
+<table border="1">
 
 	<?php echo $this->element('texts/index_table_header')?>
 	
@@ -28,6 +38,18 @@
 	<?php echo $this->Html->link(
 					'Build texts from csv',
 					array('controller' => 'texts', 'action' => 'build_texts'));
+	?>	
+
+	<br>
+	
+	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
+	<?php echo $this->Html->link(
+					'Delete all texts',
+					array(
+						'controller' => 'texts',
+						'action' => 'delete_all'),
+					array(),
+					"Delete all?");
 	?>	
 
 	<br>

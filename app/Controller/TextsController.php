@@ -61,11 +61,11 @@ class TextsController extends AppController {
 // 		$this->set('data', $this->request->data);
 // 		$this->set('data', $this->request->data['Text']);
 		
-		write_Log(
-			$this->path_Log,
-			implode(",", array_keys($this->request->data)),
-			__FILE__,
-			__LINE__);
+// 		write_Log(
+// 			$this->path_Log,
+// 			implode(",", array_keys($this->request->data)),
+// 			__FILE__,
+// 			__LINE__);
 		
 // 		write_Log(
 // 			$this->path_Log,
@@ -143,7 +143,7 @@ class TextsController extends AppController {
 	}//public function index()
 
 	public function _index__Experiments() {
-		
+		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html
 // 		$this->Text->create();
 		
 // 		$this->Text->set('text', "AAAABBBB");
@@ -194,13 +194,23 @@ class TextsController extends AppController {
 				
 			}
 		  
+// 			//debug
+// // 			debug($this->request->data);
+// 			write_Log(
+// 				$this->path_Log,
+// 				"data => ".implode(",", $this->request->data),
+// 				__FILE__,
+// 				__LINE__);
+			
 			//debug
-// 			debug($this->request->data);
+			$msg = "url => ".$this->request->data['Text']['url'];
+			
 			write_Log(
 				$this->path_Log,
-				"data => ".implode(",", $this->request->data),
+				$msg,
 				__FILE__,
 				__LINE__);
+			
 			
 			
 			// Save text
@@ -244,7 +254,21 @@ class TextsController extends AppController {
 		
 	}
 	
-
+	public function delete_all() {
+	
+		//REF http://book.cakephp.org/2.0/ja/core-libraries/helpers/html.html
+		if ($this->Text->deleteAll(array('id >=' => 1))) {
+			$this->Session->setFlash(__('Texts all deleted'));
+			return $this->redirect(array('action' => 'index'));
+		} else {
+		  
+			$this->Session->setFlash(__('Texts not deleted'));
+			return $this->redirect(array('action' => 'index'));
+		  
+		}
+	
+	}
+	
 	
 	public function build_texts() {
 
@@ -275,12 +299,28 @@ class TextsController extends AppController {
 			
 		}
 		
+		// Save data
+		if ($csv_Lines == null) {
+		
+			write_Log(
+				$this->path_Log,
+				"\$csv_Lines => null",
+				__FILE__,
+				__LINE__);
+		
+		} else {
+		
+			$res = _build_texts__SaveData($csv_Lines);
+			
+		}
+		
+		
 		$this->Session->setFlash(__('Redirected from build_texts()'));
 
-		write_Log(
-				$this->path_Log,
-				"\$csv_Lines => ".strval(count($csv_Lines)),
-				__FILE__, __LINE__);
+// 		write_Log(
+// 				$this->path_Log,
+// 				"\$csv_Lines => ".strval(count($csv_Lines)),
+// 				__FILE__, __LINE__);
 		
 // 		write_Log(
 // 				$this->path_Log,
@@ -333,6 +373,24 @@ class TextsController extends AppController {
 		return $csv_Lines;
 		
 	}//public function _build_texts__GetCsvLines($csv_File)
+
+	public function _build_texts__SaveData($csv_Lines) {
+
+		foreach ($csv_Lines as $line) {
+			//cake	=> 03/19/2014 20:57:56
+			//rails	=> 2013-05-01 15:39:17 UTC
+			//0		1	2	3		4		5		6			7		8	9	10				11				12			13
+			//id,text,title,word_ids,url,genre_id,subgenre_id,lang_id,memo,dbId,created_at_mill,updated_at_mill,created_at,updated_at
+			$this->Text->create();
+			
+			$this->Text->set('text', $line[1]);
+			$this->Text->set('url', $line[4]);
+	
+			$this->Text->save();
+		
+		}
+		
+	}
 	
 	private function _Setup_Paths() {
 		/****************************************
