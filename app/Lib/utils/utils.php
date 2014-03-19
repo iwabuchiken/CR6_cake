@@ -88,7 +88,8 @@
 		
 	}
 	
-	function _postData_Text($backup_Url) {
+	function _postData_Text($backup_Url, $csv_Line) {
+// 	function _postData_Text($backup_Url) {
 // 	function _postData_Text($backup_Url, $model) {
 		
 		//REF C:\WORKS\WS\WS_Android\CR6(R)\lib\utils.rb
@@ -101,9 +102,12 @@
 // 		$data = "data[Text][text]=TEXT";
 // 		$data = array("data[Text][text]" => "TEXTTEXT");
 		$data = array(
-					"data[Text][text]" => "TEXTTEXT",
-					"data[ABC]" => "abc",
-					"xxx[XX]" => "XXX");
+					"data[Text][text]" => $csv_Line[1],
+					"data[Text][url]" => $csv_Line[1],
+		);
+// 					"data[Text][text]" => "TEXTTEXT",
+// 					"data[ABC]" => "abc",
+// 					"xxx[XX]" => "XXX");
 // 					"xxx" => "XXX");
 		
 		//REF http://book.cakephp.org/2.0/en/core-utility-libraries/httpsocket.html

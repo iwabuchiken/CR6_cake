@@ -45,8 +45,8 @@
 	<br>
 	
 	<?php
-		$keys = array_keys($data);
-		$keys_String = implode(",", $keys);
+// 		$keys = array_keys($data);
+// 		$keys_String = implode(",", $keys);
 		
-		echo "data => $keys_String"."(count=".count($keys).")"; ?>
+// 		echo "data => $keys_String"."(count=".count($keys).")"; ?>
 <?php //echo $this->element('texts/index_test_scripts')?>

@@ -2,10 +2,6 @@
 
 class TextsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
-// 	public $helpers = array('Html', 'Form', 'Javascript');
-// 	public $helpers = array('Html', 'Form', 'js');
-// 	public $helpers = array('Html', 'Form', 'Javascript');
-// 	public $helpers = array('Html', 'Form');
 
 	//REF global variable http://stackoverflow.com/questions/12638962/global-variable-in-controller-cakephp-2
 	public $path_Log;
@@ -19,6 +15,8 @@ class TextsController extends AppController {
 	public $path_Docs;
 	
 	public $fname_Utils		= "utils.php";
+	
+	public $title_Length	= 60;
 
 	public function beforeFilter() {
 		
@@ -26,33 +24,42 @@ class TextsController extends AppController {
 		
 		require $this->path_Utils.DS.$this->fname_Utils;
 		
+		require $this->path_Utils.DS."CONS.php";
+		
 	}
 	
 	public function index() {
 
-		//debug
-		if ($this->request->is('post')) {
+// 		write_Log(
+// 			$this->path_Log,
+// 			"\$abc => $abc",
+// 			__FILE__,
+// 			__LINE__);
+		
+		
+// 		//debug
+// 		if ($this->request->is('post')) {
 			
-			write_Log(
-				$this->path_Log,
-				"is post",
-				__FILE__,
-				__LINE__);
+// 			write_Log(
+// 				$this->path_Log,
+// 				"is post",
+// 				__FILE__,
+// 				__LINE__);
 			
-		} else {
+// 		} else {
 			
-			write_Log(
-				$this->path_Log,
-				"is not post",
-				__FILE__,
-				__LINE__);
+// 			write_Log(
+// 				$this->path_Log,
+// 				"is not post",
+// 				__FILE__,
+// 				__LINE__);
 			
-		}
+// 		}
 		
 		//debug
 // 		$this->set('data', $this->params['url']['abc']);
 // 		$this->set('data', $this->request->data);
-		$this->set('data', $this->request->data['Text']);
+// 		$this->set('data', $this->request->data['Text']);
 		
 		write_Log(
 			$this->path_Log,
@@ -60,14 +67,14 @@ class TextsController extends AppController {
 			__FILE__,
 			__LINE__);
 		
-		write_Log(
-			$this->path_Log,
-			implode(",", array_keys($this->request->xxx)),
-			__FILE__,
-			__LINE__);
+// 		write_Log(
+// 			$this->path_Log,
+// 			implode(",", array_keys($this->request->xxx)),
+// 			__FILE__,
+// 			__LINE__);
 		
 		
-		debug($this->request->data);
+// 		debug($this->request->data);
 		
 // 		debug($this->request->data);
 // 		debug($this->params['url']['abc']);
@@ -97,6 +104,30 @@ class TextsController extends AppController {
 		
 		$this->set('texts', $this->Text->find('all'));
 		
+// 		//debug
+// 		$texts = $this->Text->find('all');
+		
+// 		debug($texts[0]);
+		
+// 		write_Log(
+// 			$this->path_Log,
+// 			"class => ".$texts[0]['Text']['text'],
+// // 			"class => ".get_class($texts[0]),
+// // 			"class => ".get_class($texts),
+// // 			"class => ".get_class($this->Text->find('all')[0]),	// get_class() expects parameter 1 to be object, array given
+// // 			"class => ".get_class($this->Text->find('all')),	// get_class() expects parameter 1 to be object, array given
+// // 			"class => ".get_class($this->Text->find('all')),
+// // 			"class => ".get_class(($this->Text->find('all')[0])),
+// 			__FILE__,
+// 			__LINE__);
+		
+// 		$this->_index__Experiments();
+// 		$this->Text->create();
+		
+// 		$text = $this->Text->create();
+		
+// 		$text->set('text', "bbbbbbb");
+		
 // 		$this->_Setup_Paths();
 		
 // 		$text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".
@@ -109,22 +140,42 @@ class TextsController extends AppController {
 		
 // 		$this->_Setup_LogFile();
 		
-	}
+	}//public function index()
 
+	public function _index__Experiments() {
+		
+// 		$this->Text->create();
+		
+// 		$this->Text->set('text', "AAAABBBB");
+		
+// 		$this->Text->save();
+		
+	}
+	
 	public function add() {
 	
 		if ($this->request->is('post')) {
 			$this->Text->create();
 		  
+			//REF request http://book.cakephp.org/2.0/en/controllers/request-response.html#cakerequest
 			//REF http://cakephp.jp/modules/newbb/viewtopic.php?topic_id=2624&forum=7
 			$this->request->data['Text']['created_at'] = get_CurrentTime();
 			$this->request->data['Text']['updated_at'] = get_CurrentTime();
 			
 			// Title
-			$title_Length = 15;
+			$title_Length = $this->title_Length;
+// 			$title_Length = 15;
 			
 			if ($this->request->data['Text'] &&
 					$this->request->data['Text']['text']) {
+				
+				write_Log(
+					$this->path_Log,
+					"length => ".strval(
+							strlen($this->request->data['Text']['text'])),
+					__FILE__,
+					__LINE__);
+				
 				
 				if (strlen($this->request->data['Text']['text'])
 							< $title_Length) {
@@ -143,9 +194,27 @@ class TextsController extends AppController {
 				
 			}
 		  
+			//debug
+// 			debug($this->request->data);
+			write_Log(
+				$this->path_Log,
+				"data => ".implode(",", $this->request->data),
+				__FILE__,
+				__LINE__);
+			
+			
 			// Save text
 			if ($this->Text->save($this->request->data)) {
 				$this->Session->setFlash(__('Your post has been saved.'));
+				
+				//debug
+				write_Log(
+					$this->path_Log,
+					"text => ".$this->Text->text,
+					__FILE__,
+					__LINE__);
+				
+				
 				return $this->redirect(
 								array(
 									'controller' => 'texts',
@@ -183,10 +252,10 @@ class TextsController extends AppController {
 		
 		$csv_File = fopen($fpath_Csv, "r");
 		
-		write_Log(
-			$this->path_Log,
-			"\$csv => opened($csv_File)",
-			__FILE__, __LINE__);
+// 		write_Log(
+// 			$this->path_Log,
+// 			"\$csv => opened($csv_File)",
+// 			__FILE__, __LINE__);
 		
 		$csv_Lines = null;
 		
@@ -213,17 +282,30 @@ class TextsController extends AppController {
 				"\$csv_Lines => ".strval(count($csv_Lines)),
 				__FILE__, __LINE__);
 		
-		write_Log(
-				$this->path_Log,
-				"Flash => set",
-				__FILE__, __LINE__);
+// 		write_Log(
+// 				$this->path_Log,
+// 				"Flash => set",
+// 				__FILE__, __LINE__);
 
 		//debug
 		$backup_Url = $this->path_BackupUrl_Text;
 // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/index";
 // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/add";
 		
-		_postData_Text($backup_Url);
+		if ($csv_Lines != null) {
+		
+			_postData_Text($backup_Url, $csv_Lines);
+// 			_postData_Text($backup_Url, $csv_Lines[0]);
+		
+		} else {
+			
+			write_Log(
+				$this->path_Log,
+				"\$csv_Lines => null",
+				__FILE__,
+				__LINE__);
+		
+		}
 		
 		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
 		return $this->redirect(
@@ -266,8 +348,8 @@ class TextsController extends AppController {
 		$this->path_Docs = join(DS, array(ROOT, APP_DIR, "Lib", "docs"));
 		
 		$this->path_BackupUrl_Text =
-// 						"http://localhost/PHP_server/CR6_cake/texts/add";
-						"http://localhost/PHP_server/CR6_cake/texts/index";
+						"http://localhost/PHP_server/CR6_cake/texts/add";
+// 						"http://localhost/PHP_server/CR6_cake/texts/index";
 		
 		/****************************************
 		 * Create dir: log

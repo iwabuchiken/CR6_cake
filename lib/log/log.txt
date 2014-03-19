@@ -343,3 +343,120 @@ ABCDE
 [03/18/2014 16:02:13 : app\Controller\TextsController.php : 61] 
 [03/18/2014 16:02:13 : app\Controller\TextsController.php : 67] 
 [03/18/2014 16:02:14 : app\Controller\TextsController.php : 108] index() => starts
+[03/18/2014 21:14:33 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:14:33 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:15:20 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:15:25 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:15:26 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:17:32 : app\Controller\TextsController.php : 57] 
+[03/18/2014 21:17:32 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:17:36 : app\Controller\TextsController.php : 210] $csv_Lines => 281
+[03/18/2014 21:17:36 : app\Controller\TextsController.php : 57] Text
+[03/18/2014 21:17:36 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:17:36 : app\Controller\TextsController.php : 57] 
+[03/18/2014 21:17:36 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:18:12 : app\Controller\TextsController.php : 210] $csv_Lines => 281
+[03/18/2014 21:18:12 : app\Controller\TextsController.php : 57] 
+[03/18/2014 21:18:12 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:21:03 : app\Controller\TextsController.php : 218] $csv_Lines => 281
+[03/18/2014 21:21:03 : app\Controller\TextsController.php : 130] length => 758
+[03/18/2014 21:21:03 : app\Controller\TextsController.php : 57] 
+[03/18/2014 21:21:03 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:21:44 : app\Controller\TextsController.php : 219] $csv_Lines => 281
+[03/18/2014 21:21:45 : app\Controller\TextsController.php : 131] length => 758
+[03/18/2014 21:21:45 : app\Controller\TextsController.php : 57] 
+[03/18/2014 21:21:45 : app\Controller\TextsController.php : 104] index() => starts
+[03/18/2014 21:24:20 : app\Controller\TextsController.php : 59] 
+[03/18/2014 21:24:20 : app\Controller\TextsController.php : 106] index() => starts
+[03/18/2014 21:24:56 : app\Controller\TextsController.php : 35] $abc => 
+[03/18/2014 21:24:56 : app\Controller\TextsController.php : 66] 
+[03/18/2014 21:24:56 : app\Controller\TextsController.php : 113] index() => starts
+[03/18/2014 21:28:31 : app\Controller\TextsController.php : 35] $abc => 
+[03/18/2014 21:28:31 : app\Controller\TextsController.php : 66] 
+[03/18/2014 21:28:31 : app\Controller\TextsController.php : 113] index() => starts
+[03/18/2014 21:28:48 : app\Controller\TextsController.php : 35] $abc => 
+[03/18/2014 21:28:48 : app\Controller\TextsController.php : 66] 
+[03/18/2014 21:28:48 : app\Controller\TextsController.php : 113] index() => starts
+[03/18/2014 21:38:09 : app\Controller\TextsController.php : 230] $csv_Lines => 281
+[03/18/2014 21:38:09 : app\Controller\TextsController.php : 142] length => 758
+[03/18/2014 21:38:10 : app\Controller\TextsController.php : 37] $abc => 
+[03/18/2014 21:38:10 : app\Controller\TextsController.php : 68] 
+[03/18/2014 21:38:10 : app\Controller\TextsController.php : 115] index() => starts
+[03/19/2014 11:01:54 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:01:54 : app\Controller\TextsController.php : 115] index() => starts
+[03/19/2014 11:02:42 : app\Controller\TextsController.php : 143] length => 5
+[03/19/2014 11:02:42 : app\Controller\TextsController.php : 172] text => 
+[03/19/2014 11:02:42 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:02:42 : app\Controller\TextsController.php : 115] index() => starts
+[03/19/2014 11:11:12 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:11:12 : app\Controller\TextsController.php : 112] class => 
+[03/19/2014 11:11:12 : app\Controller\TextsController.php : 123] index() => starts
+[03/19/2014 11:12:02 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:12:02 : app\Controller\TextsController.php : 113] 015
+[03/19/2014 11:12:02 : app\Controller\TextsController.php : 124] index() => starts
+[03/19/2014 11:12:37 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:12:37 : app\Controller\TextsController.php : 112] class => 
+[03/19/2014 11:12:37 : app\Controller\TextsController.php : 123] index() => starts
+[03/19/2014 11:13:28 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:13:28 : app\Controller\TextsController.php : 112] class => 
+[03/19/2014 11:13:28 : app\Controller\TextsController.php : 123] index() => starts
+[03/19/2014 11:14:19 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:14:19 : app\Controller\TextsController.php : 113] class => Text
+[03/19/2014 11:14:19 : app\Controller\TextsController.php : 124] index() => starts
+[03/19/2014 11:14:41 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:14:41 : app\Controller\TextsController.php : 113] class => 
+[03/19/2014 11:14:41 : app\Controller\TextsController.php : 124] index() => starts
+[03/19/2014 11:15:14 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:15:14 : app\Controller\TextsController.php : 115] class => 
+[03/19/2014 11:15:14 : app\Controller\TextsController.php : 126] index() => starts
+[03/19/2014 11:16:15 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:16:15 : app\Controller\TextsController.php : 117] class => 
+[03/19/2014 11:16:15 : app\Controller\TextsController.php : 128] index() => starts
+[03/19/2014 11:16:41 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:16:41 : app\Controller\TextsController.php : 118] class => 
+[03/19/2014 11:16:41 : app\Controller\TextsController.php : 129] index() => starts
+[03/19/2014 11:17:01 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:17:01 : app\Controller\TextsController.php : 119] class => 
+[03/19/2014 11:17:01 : app\Controller\TextsController.php : 130] index() => starts
+[03/19/2014 11:17:33 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:17:33 : app\Controller\TextsController.php : 120] class => Array
+[03/19/2014 11:17:33 : app\Controller\TextsController.php : 131] index() => starts
+[03/19/2014 11:18:01 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:18:01 : app\Controller\TextsController.php : 120] class => abcfghj
+[03/19/2014 11:18:01 : app\Controller\TextsController.php : 131] index() => starts
+[03/19/2014 11:18:43 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:18:43 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:18:43 : app\Controller\TextsController.php : 133] index() => starts
+[03/19/2014 11:20:12 : app\Controller\TextsController.php : 161] length => 3
+[03/19/2014 11:20:12 : app\Controller\TextsController.php : 193] text => 
+[03/19/2014 11:20:12 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:20:12 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:20:12 : app\Controller\TextsController.php : 133] index() => starts
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 161] length => 13
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 187] 0
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 199] text => 
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:23:20 : app\Controller\TextsController.php : 133] index() => starts
+[03/19/2014 11:24:57 : app\Controller\TextsController.php : 161] length => 11
+[03/19/2014 11:24:57 : app\Controller\TextsController.php : 187] data => Array
+[03/19/2014 11:24:57 : app\Controller\TextsController.php : 199] text => 
+[03/19/2014 11:24:57 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:24:58 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:24:58 : app\Controller\TextsController.php : 133] index() => starts
+[03/19/2014 11:28:32 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:28:33 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:29:22 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:29:22 : app\Controller\TextsController.php : 122] class => abcfghj
+[03/19/2014 11:29:22 : app\Controller\TextsController.php : 138] index() => starts
+[03/19/2014 11:30:22 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:30:47 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:30:47 : app\Controller\TextsController.php : 139] index() => starts
+[03/19/2014 11:31:20 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:31:20 : app\Controller\TextsController.php : 139] index() => starts
+[03/19/2014 11:31:40 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:31:40 : app\Controller\TextsController.php : 139] index() => starts
+[03/19/2014 11:31:47 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:31:47 : app\Controller\TextsController.php : 139] index() => starts
+[03/19/2014 11:31:51 : app\Controller\TextsController.php : 68] 
+[03/19/2014 11:31:51 : app\Controller\TextsController.php : 139] index() => starts
