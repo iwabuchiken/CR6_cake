@@ -22,9 +22,12 @@ class TextsController extends AppController {
 		
 		$this->_Setup_Paths();
 		
-		require $this->path_Utils.DS.$this->fname_Utils;
+		require_once $this->path_Utils.DS.$this->fname_Utils;
+// 		require $this->path_Utils.DS.$this->fname_Utils;
 		
-		require $this->path_Utils.DS."CONS.php";
+		require_once $this->path_Utils.DS."CONS.php";
+		
+		require_once $this->path_Utils.DS."methods.php";
 		
 	}
 	
@@ -310,7 +313,8 @@ class TextsController extends AppController {
 		
 		} else {
 		
-			$res = _build_texts__SaveData($csv_Lines);
+			$res = $this->_build_texts__SaveData($csv_Lines);
+// 			$res = _build_texts__SaveData($csv_Lines);
 			
 		}
 		
@@ -376,19 +380,34 @@ class TextsController extends AppController {
 
 	public function _build_texts__SaveData($csv_Lines) {
 
-		foreach ($csv_Lines as $line) {
-			//cake	=> 03/19/2014 20:57:56
-			//rails	=> 2013-05-01 15:39:17 UTC
-			//0		1	2	3		4		5		6			7		8	9	10				11				12			13
-			//id,text,title,word_ids,url,genre_id,subgenre_id,lang_id,memo,dbId,created_at_mill,updated_at_mill,created_at,updated_at
-			$this->Text->create();
-			
-			$this->Text->set('text', $line[1]);
-			$this->Text->set('url', $line[4]);
-	
-			$this->Text->save();
+		$msg = "Start => _build_texts__SaveData";
 		
-		}
+		write_Log(
+			$this->path_Log,
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		
+		save_TextsFromCSVLines($csv_Lines);
+		
+// 		foreach ($csv_Lines as $line) {
+// 			//cake	=> 03/19/2014 20:57:56
+// 			//rails	=> 2013-05-01 15:39:17 UTC
+// 			//0		1	2	3		4		5		6			7		8	9	10				11				12			13
+// 			//id,text,title,word_ids,url,genre_id,subgenre_id,lang_id,memo,dbId,created_at_mill,updated_at_mill,created_at,updated_at
+// 			$this->Text->create();
+			
+// 			$this->Text->set('text', $line[1]);
+// 			$this->Text->set('url', $line[4]);
+// 			$this->Text->set('lang_id', $line[7]);
+// 			$this->Text->set('created_at', $line[12]);
+// 			$this->Text->set('updated_at', $line[13]);
+// 			$this->Text->set('title', $line[2]);
+	
+// 			$this->Text->save();
+		
+// 		}
 		
 	}
 	

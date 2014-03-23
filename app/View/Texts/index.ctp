@@ -10,6 +10,13 @@
 </style>
   
 <h1>Texts(total=<?php echo count($texts); ?>)</h1>
+
+<!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
+<a id="top"></a>
+<a href="#bottom">Bottom</a>
+<br>
+<br>
+
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
 
@@ -21,6 +28,10 @@
 
 	
 </table>
+
+<a id="bottom"></a>
+<a href="#top">Top</a>
+<br><br>
 
 	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/texts/index"
 		target="_blank">
