@@ -33,53 +33,5 @@
 <a href="#top">Top</a>
 <br><br>
 
-	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/texts/index"
-		target="_blank">
-		PHP site
-	</a>
+	<?php echo $this->element('texts/index_links')?>
 	
-	<br>
-	
-	<?php echo $this->Html->link(
-					'Add Text',
-					array('controller' => 'texts', 'action' => 'add'));
-	?>
-	<br>
-	
-	<?php echo $this->Html->link(
-					'Build texts from csv',
-					array('controller' => 'texts', 'action' => 'build_texts'));
-	?>	
-
-	<br>
-	
-	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
-	<?php echo $this->Html->link(
-					'Delete all texts',
-					array(
-						'controller' => 'texts',
-						'action' => 'delete_all'),
-					array(),
-					"Delete all?");
-	?>	
-
-	<br>
-	
-	<?php
-	
-// 		$keys = array_keys($params);
-		
-// 		$keys_String = implode(",", $keys);
-		
-// 		echo "params => ".$keys_String;
-// 		echo "params => ".$params
-	?>
-	
-	<br>
-	
-	<?php
-// 		$keys = array_keys($data);
-// 		$keys_String = implode(",", $keys);
-		
-// 		echo "data => $keys_String"."(count=".count($keys).")"; ?>
-<?php //echo $this->element('texts/index_test_scripts')?>

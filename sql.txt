@@ -53,3 +53,24 @@ CREATE TABLE texts (
 	updated_at		VARCHAR(30)
 	
 );
+
+CREATE TABLE words (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at VARCHAR(30),
+	updated_at VARCHAR(30),
+	
+	w1 TEXT,
+	w2 TEXT,
+	w3 TEXT,
+	
+	text_ids TEXT,
+	
+	text_id INT,
+	lang_id INT,
+	
+	r_id INT,
+	r_created_at TEXT,
+	r_updated_at TEXT
+);
+ 
+	

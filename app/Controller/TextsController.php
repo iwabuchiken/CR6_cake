@@ -475,4 +475,104 @@ class TextsController extends AppController {
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
 		
 	}
+
+	public function exec_Sql() {
+
+		$cons = new CONS();
+		
+		$sqls = new SQLs();
+		
+		$dbs = new DBS();
+		
+		$fPath_dbFile_Local = $cons->get_fPath_DB();
+		
+		$msg = "\$fPath_dbFile_Local => ".$fPath_dbFile_Local;
+		
+		write_Log(
+			$this->path_Log,
+			$msg,
+			__FILE__,
+			__LINE__);
+
+		$res = $dbs->tableExists($fPath_dbFile_Local, "abc");
+// 		$res = $dbs->tableExists($fPath_dbFile_Local, DBS::$tname_Words);
+
+		$msg = "";
+		
+		if ($res == true) {
+		
+			$msg = "\$res => true";
+		
+		} else {
+		
+			$msg = "\$res => false";
+		}
+		
+// 		$msg = "\$res => ".$res;
+// 		$msg = "\$res => ".strval($res);
+		
+		write_Log(
+			$this->path_Log,
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		/****************************************
+		* Get: Host name
+		****************************************/
+		$host_Name = $cons->get_HostName();
+		
+		$msg = "\$host_Name => ".$host_Name;
+		
+		write_Log(
+			$this->path_Log,
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+
+// 		/****************************************
+// 		* SQLite
+// 		****************************************/
+// 		//REF http://stackoverflow.com/questions/5041737/how-to-connect-to-a-sqlite3-db-with-php
+// 		$db = new SQLite3($fPath_dbFile_Local);
+		
+		
+		
+// 		// Build: sql
+// 		$sql = $sqls->getSql_CreateTable_Words();
+		
+// 		$msg = "sql => ".$sql;
+		
+// 		write_Log(
+// 			$this->path_Log,
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+		
+// 		if ($sql != null) {
+		
+// 			$db->exec($sql);
+		
+// 		} else {
+			
+// 			$msg = "\$sql => null";
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+		
+// 		}
+		
+// 		$db->close();
+		
+		$this->Session->setFlash(__('Back from exec_Sql()'));
+
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));		
+		
+	}
+
 }

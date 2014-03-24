@@ -609,3 +609,230 @@ ABCDE
 [03/20/2014 22:07:57 : app\Controller\TextsController.php : 142] index() => starts
 [03/20/2014 22:09:52 : app\Controller\TextsController.php : 142] index() => starts
 [03/23/2014 20:31:00 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:01:07 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:03:10 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:03:38 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:03:57 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:04:03 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:06:31 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:06:36 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:09:58 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:10:45 : app\Lib\utils\methods.php : 80] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/23/2014 21:10:45 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:23:54 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:24:05 : app\Lib\utils\methods.php : 84] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/23/2014 21:24:05 : app\Controller\TextsController.php : 491] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/23/2014 21:24:05 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:25:28 : app\Lib\utils\methods.php : 84] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/23/2014 21:25:28 : app\Controller\TextsController.php : 491] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/23/2014 21:25:29 : app\Controller\TextsController.php : 142] index() => starts
+[03/23/2014 21:26:34 : app\Lib\utils\methods.php : 84] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/23/2014 21:26:34 : app\Controller\TextsController.php : 491] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/23/2014 21:26:34 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 15:39:09 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 15:39:16 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 15:39:16 : app\Controller\TextsController.php : 491] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 15:39:16 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 15:47:47 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 15:47:47 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 15:47:47 : app\Controller\TextsController.php : 513] 0
+[03/24/2014 15:47:47 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:11:15 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:11:15 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:11:15 : app\Controller\TextsController.php : 513] sql => 0
+[03/24/2014 16:11:15 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:11:36 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:11:36 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:11:36 : app\Controller\TextsController.php : 513] sql => 0
+[03/24/2014 16:11:36 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:11:39 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:11:39 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:11:39 : app\Controller\TextsController.php : 513] sql => 0
+[03/24/2014 16:11:39 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:12:16 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:12:16 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:12:16 : app\Controller\TextsController.php : 513] sql =>  id, INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULLcreated_at, VARCHAR(30)updated_at, VARCHAR(30)w1, TEXTw2, TEXTw3, TEXTtext_ids, TEXTtext_id, INTlang_id, INTr_id, INTr_created_at, TEXTr_updated_at, TEXT 
+[03/24/2014 16:12:16 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:15:02 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:15:04 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:15:04 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:15:04 : app\Controller\TextsController.php : 513] sql => id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), w1 TEXT, w2 TEXT, w3 TEXT, text_ids TEXT, text_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT
+[03/24/2014 16:15:04 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:17:17 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:17:17 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:17:17 : app\Controller\TextsController.php : 513] sql => CREATE TABLE words (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), w1 TEXT, w2 TEXT, w3 TEXT, text_ids TEXT, text_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/24/2014 16:17:17 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:18:41 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:18:41 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:18:41 : app\Controller\TextsController.php : 513] sql => CREATE TABLE words (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), w1 TEXT, w2 TEXT, w3 TEXT, text_ids TEXT, text_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/24/2014 16:18:41 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:21:02 : app\Lib\utils\methods.php : 90] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:21:02 : app\Controller\TextsController.php : 493] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:21:02 : app\Controller\TextsController.php : 513] sql => CREATE TABLE words (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), w1 TEXT, w2 TEXT, w3 TEXT, text_ids TEXT, text_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/24/2014 16:21:03 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:31:05 : app\Lib\utils\methods.php : 113] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:31:05 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:31:05 : app\Lib\utils\methods.php : 113] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:31:05 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:31:05 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:31:57 : app\Lib\utils\methods.php : 123] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:31:57 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:31:57 : app\Lib\utils\methods.php : 123] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:31:57 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:31:57 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:32:52 : app\Lib\utils\methods.php : 123] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:32:52 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:32:52 : app\Lib\utils\methods.php : 123] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:32:52 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:32:52 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:34:07 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:34:09 : app\Lib\utils\methods.php : 132] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:34:09 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:34:09 : app\Lib\utils\methods.php : 132] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:34:09 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:35:30 : app\Lib\utils\methods.php : 134] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:35:30 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:35:30 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:35:30 : app\Lib\utils\methods.php : 134] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:35:30 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:35:30 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:36:33 : app\Lib\utils\methods.php : 144] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:36:33 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:36:33 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:36:33 : app\Lib\utils\methods.php : 144] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:36:33 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:36:33 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:36:33 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:37:22 : app\Lib\utils\methods.php : 153] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:37:22 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:37:22 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:37:22 : app\Lib\utils\methods.php : 153] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:37:22 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:37:22 : app\Lib\utils\methods.php : 105] $results => 
+[03/24/2014 16:37:22 : app\Controller\TextsController.php : 505] $res => 0
+[03/24/2014 16:37:22 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:45:09 : app\Lib\utils\methods.php : 155] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:45:09 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:45:09 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:45:09 : app\Lib\utils\methods.php : 155] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:45:09 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:45:09 : app\Lib\utils\methods.php : 107] $results => 
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 155] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:45:35 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 155] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 107] $results => 
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:45:35 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:45:35 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 164] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:46:48 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 164] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 120] $row => Array
+[03/24/2014 16:46:48 : app\Lib\utils\methods.php : 133] $tnames => 3
+[03/24/2014 16:46:48 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 165] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:32 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 165] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:32 : app\Lib\utils\methods.php : 134] $tnames => 3
+[03/24/2014 16:47:32 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 165] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:34 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 165] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 121] $row => 
+[03/24/2014 16:47:34 : app\Lib\utils\methods.php : 134] $tnames => 3
+[03/24/2014 16:47:34 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 166] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:54 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 166] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 122] $row => 2
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 122] $row => 2
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 122] $row => 2
+[03/24/2014 16:47:54 : app\Lib\utils\methods.php : 135] $tnames => 3
+[03/24/2014 16:47:54 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:47:54 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 168] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:49:30 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 168] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 16:49:30 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 16:49:30 : app\Controller\TextsController.php : 505] $res => 3
+[03/24/2014 16:49:31 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:52:53 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 16:52:53 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 16:52:53 : app\Controller\TextsController.php : 505] $res => 1
+[03/24/2014 16:52:53 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:53:16 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 16:53:16 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 16:53:16 : app\Controller\TextsController.php : 507] $res => 1
+[03/24/2014 16:53:16 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:54:24 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 16:54:24 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 16:54:24 : app\Controller\TextsController.php : 518] $res => true
+[03/24/2014 16:54:24 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:54:37 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 180] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 16:54:37 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 16:54:37 : app\Controller\TextsController.php : 518] $res => false
+[03/24/2014 16:54:37 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 199] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 17:01:31 : app\Controller\TextsController.php : 495] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 75] tableExists()
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 199] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 88] $fPath_dbFile_Local => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 124] $row => 2/texts, texts
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 124] $row => 2/sqlite_sequence, sqlite_sequence
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 124] $row => 2/words, words
+[03/24/2014 17:01:31 : app\Lib\utils\methods.php : 137] $tnames => 3
+[03/24/2014 17:01:31 : app\Controller\TextsController.php : 518] $res => false
+[03/24/2014 17:01:31 : app\Controller\TextsController.php : 531] $host_Name => localhost
+[03/24/2014 17:01:31 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 17:02:49 : app\Controller\TextsController.php : 142] index() => starts

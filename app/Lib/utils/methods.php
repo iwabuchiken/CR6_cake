@@ -58,12 +58,150 @@
 		
 	}//function con_RailsTime2CakeTime($time_Label)
 	
+	class DBS {
+		
+		static $tname_Words = "words";
+		
+		public function tableExists($fpath_DB, $tname) {
+			
+			$cons = new CONS();
+			
+			$msg = "tableExists()";
+			
+			write_Log(
+				$cons->get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			$cons = new CONS();
+			
+			$fPath_dbFile_Local = $cons->get_fPath_DB();
+			
+			$msg = "\$fPath_dbFile_Local => ".$fPath_dbFile_Local;
+			
+			write_Log(
+				$cons->get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			
+			$db = new SQLite3($fPath_dbFile_Local);
+			
+// 			$sql = ".tables";
+			$sql = "SELECT name FROM sqlite_master"
+					." WHERE type='table'";
+// 					." WHERE type='table' AND name='table_name'";
+			
+			$results = $db->query($sql);
+			
+// 			$msg = "\$results => ".$results;
+			
+// 			write_Log(
+// 				$cons->get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+			$tnames = array();
+			
+			while ($row = $results->fetchArray()) {
+				
+				$msg = "\$row => ".count($row)
+						."/"
+						.implode(", ", $row);
+// 				$msg = "\$row => ".get_class($row);
+// 				$msg = "\$row => ".$row;
+				
+				write_Log(
+					$cons->get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+				
+// 				var_dump($row);
+				array_push($tnames, $row);
+			}
+			
+			$msg = "\$tnames => ".strval(count($tnames));
+			
+			write_Log(
+				$cons->get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			/****************************************
+			* Table: exists?
+			****************************************/
+			foreach ($tnames as $item) {
+				
+				if ($item[0] == $tname) {
+					
+					return true;
+				}
+			
+			}
+			
+			return false;
+// 			return count($tnames);
+			
+		}
+	}
+	
 	class CONS {
+		
+// 		const dbName_Local = "development.sqlite3";
+// 		private final $dbName_Local = "development.sqlite3";
+		var $dbName_Local = "development.sqlite3";
+		
+		var $local_HostName = "localhost";
+		
+		public function get_HostName() {
+			
+			//REF http://stackoverflow.com/questions/18959320/cakephp-find-hostname-from-url-in-cakephp answered Sep 23 '13 at 12:39
+			$pieces = parse_url(Router::url('/', true));
+			
+			if ($pieces != null) {
+			
+				return $pieces['host'];
+			
+			} else {
+			
+				return null;
+				
+			}
+			
+// 			print $pieces['host'];
+			
+		}//public function get_HostName()
 		
 		public function get_dPath_Log() {
 			
 			return join(DS, array(ROOT, "lib", "log"));
 // 			return join(DS, array(ROOT, "lib", "log", "log.txt"));
+			
+		}
+		
+		public function get_fPath_DB() {
+			
+			$msg = "WEBROOT_DIR => ".WEBROOT_DIR
+					."/"
+					."WWW_ROOT => ".WWW_ROOT;
+			
+			write_Log(
+				$this->get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			return join(DS, array(ROOT, APP_DIR, WEBROOT_DIR, $this->dbName_Local)); 
 			
 		}
 		
@@ -73,4 +211,100 @@
 // 		public static $fpath_Log = join(DS, array(ROOT, "lib", "log", "log.txt"));
 		
 	}
+	
+	class SQLs {
+		
+// 		<langs>
+// 		t.string   "name"
+// 		t.integer  "created_at_mill", :limit => 8, :default => 0, :null => false
+// 		t.integer  "updated_at_mill", :limit => 8, :default => 0, :null => false
+// 		t.datetime "created_at",                                  :null => false
+// 		t.datetime "updated_at",                                  :null => false
+		
+// 		<words>
+// 		t.string   "w1"
+// 		t.string   "w2"
+// 		t.string   "w3"
+
+// 		t.string   "text_ids"
+// 		t.integer  "text_id",                      :default => 0, :null => false
+// 		t.integer  "lang_id",                      :default => 0, :null => false
+	
+// 		t.integer  "dbId",                         :default => 0, :null => false
+// 		t.integer  "created_at_mill", :limit => 8, :default => 0, :null => false
+// 		t.integer  "updated_at_mill", :limit => 8, :default => 0, :null => false
+// 		t.datetime "created_at",                                  :null => false
+// 		t.datetime "updated_at",                                  :null => false
+
+		
+		public function getSql_CreateTable_Words() {
+			
+			$cols_Names = array(
+					"id",
+					"created_at",
+					"updated_at",
+					
+					"w1",
+					"w2",
+					"w3",
+					
+					"text_ids",
+					"text_id",
+					"lang_id",
+					
+					"r_id",		// rails id
+					"r_created_at",
+					"r_updated_at",
+					
+			);
+			
+			$cols_Types = array(
+			
+					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
+					"VARCHAR(30)",
+					"VARCHAR(30)",
+					
+					"TEXT",
+					"TEXT",
+					"TEXT",
+					
+					"TEXT",
+					"INT",
+					"INT",
+					
+					"INT",
+					"TEXT",
+					"TEXT"
+					
+			);
+			
+			// Build: sql
+			$sql_Param = "CREATE TABLE ".DBS::$tname_Words." (";
+			
+			$sql_array = array();
+			
+			for ($i = 0; $i < count($cols_Names); $i++) {
+				
+				array_push($sql_array, $cols_Names[$i]." ".$cols_Types[$i]);
+				
+// 				$sql_Param .= $cols_Names[$i].", ".$cols_Types[$i];
+// 				$sql_Param += $cols_Names[$i].", ".$cols_Types[$i];
+				
+			}
+			
+			$sql_Param .= join(", ", $sql_array);
+// 			$sql_Param .= " ";
+// 			$sql_Param += " ";
+			
+			$sql_Param .= " )";
+			
+			return $sql_Param;
+			
+						
+		}//public function getSql_CreateTable_Words()
+		
+	}//class SQLs
+	
+	
+	
 	
