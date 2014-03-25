@@ -62,6 +62,8 @@
 		
 		static $tname_Words = "words";
 		
+		static $tname_Langs = "langs";
+		
 		public function tableExists($fpath_DB, $tname) {
 			
 			$cons = new CONS();
@@ -158,9 +160,9 @@
 		
 // 		const dbName_Local = "development.sqlite3";
 // 		private final $dbName_Local = "development.sqlite3";
-		var $dbName_Local = "development.sqlite3";
+		public static $dbName_Local = "development.sqlite3";
 		
-		var $local_HostName = "localhost";
+		public static $local_HostName = "localhost";
 		
 		public function get_HostName() {
 			
@@ -181,27 +183,30 @@
 			
 		}//public function get_HostName()
 		
-		public function get_dPath_Log() {
+		public static function get_dPath_Log() {
 			
 			return join(DS, array(ROOT, "lib", "log"));
 // 			return join(DS, array(ROOT, "lib", "log", "log.txt"));
 			
 		}
 		
-		public function get_fPath_DB() {
+		public static function get_fPath_DB_Sqlite() {
 			
 			$msg = "WEBROOT_DIR => ".WEBROOT_DIR
 					."/"
 					."WWW_ROOT => ".WWW_ROOT;
 			
 			write_Log(
-				$this->get_dPath_Log(),
+				CONS::get_dPath_Log(),
+// 				$this->get_dPath_Log(),
 				$msg,
 				__FILE__,
 				__LINE__);
 			
 			
-			return join(DS, array(ROOT, APP_DIR, WEBROOT_DIR, $this->dbName_Local)); 
+			return join(DS,
+					array(ROOT, APP_DIR, WEBROOT_DIR, CONS::$dbName_Local)); 
+// 					array(ROOT, APP_DIR, WEBROOT_DIR, $this->dbName_Local)); 
 			
 		}
 		

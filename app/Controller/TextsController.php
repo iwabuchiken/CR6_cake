@@ -29,6 +29,8 @@ class TextsController extends AppController {
 		
 		require_once $this->path_Utils.DS."methods.php";
 		
+		require_once $this->path_Utils.DS."db_util.php";
+		
 	}
 	
 	public function index() {
@@ -477,6 +479,188 @@ class TextsController extends AppController {
 	}
 
 	public function exec_Sql() {
+
+		$dbu = new DBUtil();
+		
+		$dbu->createTable_Langs();
+		
+		$dbu->get_TableList();
+		
+// 		$cons = new CONS();
+		
+// 		$sqls = new SQLs();
+		
+// 		$dbs = new DBS();
+		
+// 		$fPath_dbFile_Local = $cons->get_fPath_DB();
+		
+		
+// // 		$dbh = new PDO($dsn, $user, $password);
+
+// 		$sql = "CREATE TABLE test ("
+// 				."id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+// // 				."test id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+// 				."created_at VARCHAR(30),"
+// 				."updated_at VARCHAR(30)"
+// 				.")";
+// // 				."updated_at VARCHAR(30),";
+		
+// 		try{
+			
+// 			$dbh = new PDO($dsn, $user, $password);
+			
+// 			$msg = "PDO instance => created";
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+// 			//REF http://stackoverflow.com/questions/19577056/using-pdo-to-create-table
+// 			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			
+// 			$res = $dbh->exec($sql);
+			
+// 			$msg = "\$res => ".$res;
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+// 			$msg = "sql => done: ".$sql;
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+// 		}catch (PDOException $e){
+			
+// 			$msg = 'Connection failed:'.$e->getMessage();
+			
+// 			write_Log(
+// 				$this->path_Log,
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+// // 			print('Connection failed:'.$e->getMessage());
+// // 			die();
+			
+// 		}
+		
+// 		$dbh = null;
+		
+		/****************************************
+		* Refirection
+		****************************************/
+		$this->Session->setFlash(__('Back from exec_Sql()'));
+		
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+		
+	}//public function exec_Sql()
+	
+	public function exec_Sql_D_2_v_2_0_2() {
+
+		$cons = new CONS();
+		
+		$sqls = new SQLs();
+		
+		$dbs = new DBS();
+		
+		$fPath_dbFile_Local = $cons->get_fPath_DB();
+		
+		/****************************************
+		* PDO
+		****************************************/
+		//REF http://www.phpbook.jp/tutorial/pdo/index3.html
+		$dsn = 'mysql:dbname=LAA0278957-cr6cake; host=mysql012.phy.lolipop.lan';
+		$user = 'LAA0278957';
+		$password = '47yhl44j6u';
+		
+// 		$dbh = new PDO($dsn, $user, $password);
+
+		$sql = "CREATE TABLE test ("
+				."id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+// 				."test id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+				."created_at VARCHAR(30),"
+				."updated_at VARCHAR(30)"
+				.")";
+// 				."updated_at VARCHAR(30),";
+		
+		try{
+			
+			$dbh = new PDO($dsn, $user, $password);
+			
+			$msg = "PDO instance => created";
+			
+			write_Log(
+				$this->path_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			//REF http://stackoverflow.com/questions/19577056/using-pdo-to-create-table
+			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			
+			$res = $dbh->exec($sql);
+			
+			$msg = "\$res => ".$res;
+			
+			write_Log(
+				$this->path_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			$msg = "sql => done: ".$sql;
+			
+			write_Log(
+				$this->path_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+		}catch (PDOException $e){
+			
+			$msg = 'Connection failed:'.$e->getMessage();
+			
+			write_Log(
+				$this->path_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+// 			print('Connection failed:'.$e->getMessage());
+// 			die();
+			
+		}
+		
+		$dbh = null;
+		
+		/****************************************
+		* Refirection
+		****************************************/
+		$this->Session->setFlash(__('Back from exec_Sql()'));
+		
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+		
+	}//public function exec_Sql()
+	
+	
+	public function exec_Sql_v_2_0_1() {
 
 		$cons = new CONS();
 		

@@ -137,3 +137,16 @@
 		
 		
 	}//function _postdata_Text__BuildParams()
+	
+	class Utils {
+		
+		public static function get_HostName() {
+			
+			$pieces = parse_url(Router::url('/', true));
+			
+			return $pieces['host'];
+			
+		}//public function get_HostName()
+		
+	}//class Utils
+	

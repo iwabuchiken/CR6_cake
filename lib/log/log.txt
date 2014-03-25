@@ -836,3 +836,50 @@ ABCDE
 [03/24/2014 17:01:31 : app\Controller\TextsController.php : 531] $host_Name => localhost
 [03/24/2014 17:01:31 : app\Controller\TextsController.php : 142] index() => starts
 [03/24/2014 17:02:49 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 20:49:53 : app\Controller\TextsController.php : 142] index() => starts
+[03/24/2014 20:50:00 : app\Lib\utils\methods.php : 201] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/24/2014 21:33:24 : app\Lib\utils\db_util.php : 24] createTable_Langs()
+[03/24/2014 21:33:24 : app\Controller\TextsController.php : 144] index() => starts
+[03/25/2014 20:33:40 : app\Controller\TextsController.php : 144] index() => starts
+[03/25/2014 21:15:17 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:15:17 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:15:17 : app\Lib\utils\db_util.php : 169] tableExists_remote()
+[03/25/2014 21:15:50 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:15:50 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:16:19 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:16:19 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:16:19 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:18:23 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:18:23 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:18:23 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:20:14 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:20:14 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:20:14 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:20:14 : app\Controller\TextsController.php : 144] index() => starts
+[03/25/2014 21:27:35 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:27:35 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:27:35 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:28:11 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:28:11 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:28:11 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:30:58 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:30:58 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:30:58 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:30:58 : app\Controller\TextsController.php : 144] index() => starts
+[03/25/2014 21:31:43 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:31:43 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:31:43 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:31:43 : app\Lib\utils\db_util.php : 361] fetchAll => done
+[03/25/2014 21:31:43 : app\Controller\TextsController.php : 144] index() => starts
+[03/25/2014 21:32:38 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:32:38 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:32:38 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:32:38 : app\Lib\utils\db_util.php : 361] fetchAll => done
+[03/25/2014 21:35:27 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:35:27 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:35:27 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:36:06 : app\Lib\utils\db_util.php : 29] createTable_Langs()
+[03/25/2014 21:36:06 : app\Lib\utils\db_util.php : 151] localhost
+[03/25/2014 21:36:06 : app\Lib\utils\methods.php : 204] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/25/2014 21:36:06 : app\Lib\utils\db_util.php : 371] $tnames => texts,sqlite_sequence,words
+[03/25/2014 21:36:06 : app\Controller\TextsController.php : 144] index() => starts

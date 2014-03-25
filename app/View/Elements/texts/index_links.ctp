@@ -33,11 +33,11 @@
 	<br>
 	
 	<?php 
-		$cons = new CONS();
+// 		$cons = new CONS();
 		
-		$host_name = $cons->get_HostName();
+// 		$host_name = $cons->get_HostName();
 	
-		if ($host_name != null && $host_name == $cons->local_HostName) {
+// 		if ($host_name != null && $host_name == $cons->local_HostName) {
 		
 			echo $this->Html->link(
 					'Exec sql',
@@ -45,13 +45,13 @@
 						'controller' => 'texts',
 						'action' => 'exec_Sql')
 					);
-			;
+			
 		
-		} else {
+// 		} else {
 		
-			echo "NOT A LOCALHOST";
+// 			echo "NOT A LOCALHOST";
 
-		}
+// 		}
 	?>	
 
 	<br>
