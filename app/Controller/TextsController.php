@@ -484,7 +484,7 @@ class TextsController extends AppController {
 		
 		$dbu->createTable_Langs();
 		
-		$dbu->get_TableList();
+// 		$dbu->get_TableList();
 		
 // 		$cons = new CONS();
 		

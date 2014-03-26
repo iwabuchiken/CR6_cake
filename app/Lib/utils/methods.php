@@ -164,7 +164,7 @@
 		
 		public static $local_HostName = "localhost";
 		
-		public function get_HostName() {
+		public static function get_HostName() {
 			
 			//REF http://stackoverflow.com/questions/18959320/cakephp-find-hostname-from-url-in-cakephp answered Sep 23 '13 at 12:39
 			$pieces = parse_url(Router::url('/', true));
@@ -309,7 +309,19 @@
 		}//public function getSql_CreateTable_Words()
 		
 	}//class SQLs
-	
+
+	class RetVals {
+		
+		/****************************************
+		* Successes
+		****************************************/
+		
+		/****************************************
+		* Failed
+		****************************************/
+		static $tableExists		= -20;
+		
+	}
 	
 	
 	

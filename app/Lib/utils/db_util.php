@@ -16,7 +16,7 @@
 		public static $colName_Table_Remote = "Tables_in_LAA0278957-cr6cake";
 		
 		/****************************************
-		* @return
+		* @return Table exists => RetVals::$tableExists(-20)
 		* 
 		****************************************/
 		public function createTable_Langs() {
@@ -36,55 +36,118 @@
 			/****************************************
 			* Table => exists?
 			****************************************/
-			$res = $this->tableExists_remote(DBS::$tname_Langs);
+			$target_TableName = DBS::$tname_Langs;
+// 			$target_TableName = DBS::$tname_Words;
 			
-// 			if ($res == true) {
+			$res = $this->tableExists($target_TableName);
+// 			$res = $this->tableExists(DBS::$tname_Langs);
+			
+			$msg = "";
+			
+			if ($res == true) {
+			
+// 				$msg = "true";
+				$msg = "Table exists => ".$target_TableName;
+			
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
 				
-// 				$msg = "table => Exists: ".DBS::$tname_Langs;
+				return RetVals::$tableExists;
 				
-// 				write_Log(
-// 					$this->path_Log,
-// 					$msg,
-// 					__FILE__,
-// 					__LINE__);
+			} else {
+			
+				$msg = "Table doesn't exist => ".$target_TableName;
 				
-// 				return;
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
 				
-// 			}
-			
-// 			/****************************************
-// 			* Setup
-// 			****************************************/
-// 			$dbh = new PDO($this->dsn, $this->user, $this->password);
-			
-// 			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-			
-// 			/****************************************
-// 			* Sql
-// 			****************************************/
-// 			$sql = $this->getSql_CreateTable_Langs(DBS::$tname_Langs);
-			
-// 			$msg = "\$sql => ".$sql;
-			
-// 			write_Log(
-// 				$dpath_Log,
-// 				$msg,
-// 				__FILE__,
-// 				__LINE__);
-			
-			
-// 			$res = $dbh->exec($sql);
+// 				$msg = "false";
 				
-// 			$msg = "\$res => ".$res;
+			}
+
+			/****************************************
+			* Host name
+			****************************************/
+			$is_Local = false;
 			
-// 			/****************************************
-// 			* Close
-// 			****************************************/
-// 			$dbh = null;
+			if (CONS::get_HostName() == CONS::$local_HostName) {
+				
+				$is_Local = true;
+				
+			}
+			
+			/****************************************
+			* Setup
+			****************************************/
+			$dbh = null;
+			
+			if ($is_Local == true) {
+			
+				$pdo_Param = "sqlite:".CONS::get_fPath_DB_Sqlite();
+				
+				$dbh = new PDO($pdo_Param);
+			
+			} else {
+				
+				$dbh = new PDO($this->dsn, $this->user, $this->password);
+			
+			}
+			
+			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			
+			$msg = "\$dbh->setAttribute => done";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			/****************************************
+			* Sql
+			****************************************/
+			$sql = $this->getSql_CreateTable_Langs(DBS::$tname_Langs, $is_Local);
+			
+			$msg = "\$sql => ".$sql;
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			/****************************************
+			* Exec: Sql
+			****************************************/
+			$res = $dbh->exec($sql);
+				
+			$msg = "\$res => ".strval($res);
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			/****************************************
+			* Close
+			****************************************/
+			$dbh = null;
 			
 		}//public function createTable_Langs()
 
-		public function getSql_CreateTable_Langs($tname) {
+		public function
+		getSql_CreateTable_Langs($tname, $is_Local) {
+			
+			$sql_Param = "";
 			
 			$cols_Names = array(
 					// 0		1			2
@@ -97,18 +160,39 @@
 					
 			);
 			
-			$cols_Types = array(
-					// 0		1			2
-					"INT NOT NULL AUTO_INCREMENT PRIMARY KEY",
-// 					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
+			$cols_Types = null;
+			
+			if ($is_Local == true) {
+			
+				$cols_Types = array(
+			
+					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
 					"VARCHAR(30)", "VARCHAR(30)",
+					
 					// 3	4		5
 					"TEXT",
 					//9		10		11
 					"INT", "TEXT", "TEXT"
 					
-			);
+				);
 			
+			} else {
+			
+				$cols_Types = array(
+						// 0		1			2
+						"INT NOT NULL AUTO_INCREMENT PRIMARY KEY",
+	// 					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
+						"VARCHAR(30)", "VARCHAR(30)",
+						
+						// 3	4		5
+						"TEXT",
+						//9		10		11
+						"INT", "TEXT", "TEXT"
+						
+				);
+				
+			}//if ($is_Local == true)
+				
 			// Build: sql
 			$sql_Param = "CREATE TABLE ".$tname." (";
 // 			$sql_Param = "CREATE TABLE ".DBS::$tname_Words." (";
@@ -129,11 +213,11 @@
 // 			$sql_Param += " ";
 			
 			$sql_Param .= " )";
-			
+				
 			return $sql_Param;
 			
 						
-		}//public function getSql_CreateTable_Words()
+		}//getSql_CreateTable_Langs($tname, $is_Local)
 
 		public function
 		tableExists_remote($tname) {
@@ -307,6 +391,50 @@
 		
 		public function
 		tableExists($tname) {
+			
+			$msg = "Starts => tableExists()";
+				
+			write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__, __LINE__);
+			
+			/****************************************
+			* Host => Local?
+			****************************************/
+			$host_Name = Utils::get_HostName();
+
+			$is_Local = false;
+			
+			if ($host_Name == CONS::$local_HostName) {
+			
+				$msg = "localhost";
+				
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+				$is_Local = true;
+// 				return;
+				
+			}
+
+			/****************************************
+			* Get: tables list
+			****************************************/
+			$table_List = DBUtil::get_TableList();
+
+			/****************************************
+			* Table => exists?
+			****************************************/
+			return in_array($tname, $table_List);
+				
+		}//tableExists_remote($fpath_DB, $tname)
+		
+		public function
+		tableExists_Deprecated($tname) {
 			
 			/****************************************
 			* Host => Local?
