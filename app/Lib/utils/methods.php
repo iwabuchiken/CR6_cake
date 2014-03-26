@@ -64,6 +64,8 @@
 		
 		static $tname_Langs = "langs";
 		
+		static $tname_Texts = "texts";
+		
 		public function tableExists($fpath_DB, $tname) {
 			
 			$cons = new CONS();
@@ -319,7 +321,13 @@
 		/****************************************
 		* Failed
 		****************************************/
-		static $tableExists		= -20;
+
+		/****************************************
+		* Others
+		****************************************/
+		static $tableDoesntExists		= -200;
+		
+		static $tableExists		= -201;
 		
 	}
 	

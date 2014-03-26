@@ -24,12 +24,12 @@
     </tr>
     <tr>
     	<td>Lang id</td>
-    	<td>data</td>
+    	<td>Genre id</td>
         <td>Created at</td>
         
     </tr>
     <tr>
-    	<td class="bb">data</td>
-    	<td class="bb">data</td>
+    	<td class="bb">Rails id</td>
+    	<td class="bb">Subgenre id</td>
     	<td class="bb">Updated at</td>
     </tr>

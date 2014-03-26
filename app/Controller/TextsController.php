@@ -482,7 +482,21 @@ class TextsController extends AppController {
 
 		$dbu = new DBUtil();
 		
-		$dbu->createTable_Langs();
+		$dbu->dropTable(DBUtil::$tname_Texts);
+		
+		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		
+		$dbu->createTable_Texts();
+		
+		
+// 		$dbu->createTable_Langs();
 		
 // 		$dbu->get_TableList();
 		

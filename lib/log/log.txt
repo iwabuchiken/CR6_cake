@@ -953,3 +953,99 @@ ABCDE
 [03/26/2014 15:11:06 : app\Lib\utils\db_util.php : 672] $tnames => texts,sqlite_sequence,words,langs
 [03/26/2014 15:11:06 : app\Lib\utils\db_util.php : 56] Table exists => langs
 [03/26/2014 15:11:06 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 634] Starts => tableExists()
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 651] localhost
+[03/26/2014 15:39:12 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 912] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 989] Table exists => texts
+[03/26/2014 15:39:12 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 1042] $dbh->setAttribute => done
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 1055] $sql => DROP TABLE texts
+[03/26/2014 15:39:12 : app\Lib\utils\db_util.php : 1068] $res => 0
+[03/26/2014 15:42:03 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:43:00 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:43:00 : app\Lib\utils\db_util.php : 634] Starts => tableExists()
+[03/26/2014 15:43:00 : app\Lib\utils\db_util.php : 651] localhost
+[03/26/2014 15:43:00 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:43:00 : app\Lib\utils\db_util.php : 912] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:43:00 : app\Lib\utils\db_util.php : 194] Table exists => langs
+[03/26/2014 15:43:00 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:43:53 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:43:53 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:43:53 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:43:53 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:43:53 : app\Lib\utils\db_util.php : 911] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:43:53 : app\Lib\utils\db_util.php : 193] Table exists => texts
+[03/26/2014 15:43:53 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:44:23 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 911] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 193] Table exists => texts
+[03/26/2014 15:44:23 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 247] $dbh->setAttribute => done
+[03/26/2014 15:44:23 : app\Lib\utils\db_util.php : 261] $sql => CREATE TABLE texts (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), text TEXT, title TEXT, url TEXT, word_ids TEXT, memo TEXT, genre_id INT, subgenre_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/26/2014 15:44:24 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:46:53 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 911] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 988] Table exists => texts
+[03/26/2014 15:46:53 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 1041] $dbh->setAttribute => done
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 1054] $sql => DROP TABLE texts
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 1067] $res => 0
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:46:53 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 911] $tnames => sqlite_sequence,words,langs
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 205] Table doesn't exist => texts
+[03/26/2014 15:46:53 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 247] $dbh->setAttribute => done
+[03/26/2014 15:46:53 : app\Lib\utils\db_util.php : 261] $sql => CREATE TABLE texts (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), text TEXT, title TEXT, url TEXT, word_ids TEXT, memo TEXT, genre_id INT, subgenre_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/26/2014 15:47:52 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:47:58 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 911] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 988] Table exists => texts
+[03/26/2014 15:47:58 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 1041] $dbh->setAttribute => done
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 1054] $sql => DROP TABLE texts
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 1067] $res => 0
+[03/26/2014 15:47:58 : app\Controller\TextsController.php : 493] Table dropped => texts
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:47:58 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 911] $tnames => sqlite_sequence,words,langs
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 205] Table doesn't exist => texts
+[03/26/2014 15:47:58 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 247] $dbh->setAttribute => done
+[03/26/2014 15:47:58 : app\Lib\utils\db_util.php : 261] $sql => CREATE TABLE texts (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), text TEXT, title TEXT, url TEXT, word_ids TEXT, memo TEXT, genre_id INT, subgenre_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/26/2014 15:49:55 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:50:00 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 911] $tnames => texts,sqlite_sequence,words,langs
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 988] Table exists => texts
+[03/26/2014 15:50:00 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 1041] $dbh->setAttribute => done
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 1054] $sql => DROP TABLE texts
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 1067] $res => 0
+[03/26/2014 15:50:00 : app\Controller\TextsController.php : 493] Table dropped => texts
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 650] localhost
+[03/26/2014 15:50:00 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 911] $tnames => sqlite_sequence,words,langs
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 205] Table doesn't exist => texts
+[03/26/2014 15:50:00 : app\Lib\utils\methods.php : 206] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 247] $dbh->setAttribute => done
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 261] $sql => CREATE TABLE texts (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), text TEXT, title TEXT, url TEXT, word_ids TEXT, memo TEXT, genre_id INT, subgenre_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/26/2014 15:50:00 : app\Lib\utils\db_util.php : 275] $res => 0
+[03/26/2014 15:54:54 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:58:21 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 15:58:51 : app\Controller\TextsController.php : 144] index() => starts

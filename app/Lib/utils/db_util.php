@@ -14,6 +14,15 @@
 		* DB data
 		****************************************/
 		public static $colName_Table_Remote = "Tables_in_LAA0278957-cr6cake";
+
+		/****************************************
+		* Tables
+		****************************************/
+		static $tname_Words = "words";
+		
+		static $tname_Langs = "langs";
+		
+		static $tname_Texts = "texts";
 		
 		/****************************************
 		* @return Table exists => RetVals::$tableExists(-20)
@@ -143,6 +152,134 @@
 			$dbh = null;
 			
 		}//public function createTable_Langs()
+		
+		/****************************************
+		* @return Table exists => RetVals::$tableExists(-20)
+		* 
+		****************************************/
+		public function createTable_Texts() {
+			
+			$cons = new CONS();
+			
+			$dpath_Log = $cons->get_dPath_Log();
+			
+			$msg = "createTable_Texts()";
+			
+			write_Log(
+				$dpath_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			/****************************************
+			* Table => exists?
+			****************************************/
+			$target_TableName = DBS::$tname_Texts;
+			
+			$res = $this->tableExists($target_TableName);
+// 			$res = $this->tableExists(DBS::$tname_Langs);
+			
+			$msg = "";
+			
+			if ($res == true) {
+			
+// 				$msg = "true";
+				$msg = "Table exists => ".$target_TableName;
+			
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+				return RetVals::$tableExists;
+				
+			} else {
+			
+				$msg = "Table doesn't exist => ".$target_TableName;
+				
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+// 				$msg = "false";
+				
+			}
+
+			/****************************************
+			* Host name
+			****************************************/
+			$is_Local = false;
+			
+			if (CONS::get_HostName() == CONS::$local_HostName) {
+				
+				$is_Local = true;
+				
+			}
+			
+			/****************************************
+			* Setup
+			****************************************/
+			$dbh = null;
+			
+			if ($is_Local == true) {
+			
+				$pdo_Param = "sqlite:".CONS::get_fPath_DB_Sqlite();
+				
+				$dbh = new PDO($pdo_Param);
+			
+			} else {
+				
+				$dbh = new PDO($this->dsn, $this->user, $this->password);
+			
+			}
+			
+			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			
+			$msg = "\$dbh->setAttribute => done";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			/****************************************
+			* Sql
+			****************************************/
+			$sql = $this->getSql_CreateTable_Texts(DBS::$tname_Texts, $is_Local);
+			
+			$msg = "\$sql => ".$sql;
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			/****************************************
+			* Exec: Sql
+			****************************************/
+			$res = $dbh->exec($sql);
+				
+			$msg = "\$res => ".strval($res);
+			
+			write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+			
+			/****************************************
+			* Close
+			****************************************/
+			$dbh = null;
+			
+		}//public function createTable_Texts()
 
 		public function
 		getSql_CreateTable_Langs($tname, $is_Local) {
@@ -218,6 +355,102 @@
 			
 						
 		}//getSql_CreateTable_Langs($tname, $is_Local)
+		
+		public function
+		getSql_CreateTable_Texts($tname, $is_Local) {
+			
+			$sql_Param = "";
+			
+			$cols_Names = array(
+					// 0		1			2
+					"id", "created_at", "updated_at",
+					
+					// 3	4	5
+					"text", "title", "url",
+					
+					// 6		7
+					"word_ids", "memo",
+					
+					// 8			9			10
+					"genre_id", "subgenre_id", "lang_id",
+					
+					// 11
+					"r_id",		// rails id
+					// 12				13
+					"r_created_at", "r_updated_at",
+					
+			);
+			
+			$cols_Types = null;
+			
+			if ($is_Local == true) {
+			
+				$cols_Types = array(
+			
+					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
+					"VARCHAR(30)", "VARCHAR(30)",
+					
+					// 3	4		5
+					"TEXT", "TEXT", "TEXT",
+					// 6		7
+					"TEXT", "TEXT",
+					// 8	9		10
+					"INT", "INT", "INT",
+					// 11
+					"INT",
+					// 12		13
+					"TEXT", "TEXT"
+					
+				);
+			
+			} else {
+			
+				$cols_Types = array(
+					// 0		1			2
+					"INT NOT NULL AUTO_INCREMENT PRIMARY KEY",
+// 					"INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL",
+					"VARCHAR(30)", "VARCHAR(30)",
+					
+					// 3	4		5
+					"TEXT", "TEXT", "TEXT",
+					// 6		7
+					"TEXT", "TEXT",
+					// 8	9		10
+					"INT", "INT", "INT",
+					// 11
+					"INT",
+					// 12		13
+					"TEXT", "TEXT"
+						
+				);
+				
+			}//if ($is_Local == true)
+				
+			// Build: sql
+			$sql_Param = "CREATE TABLE ".$tname." (";
+// 			$sql_Param = "CREATE TABLE ".DBS::$tname_Words." (";
+			
+			$sql_array = array();
+			
+			for ($i = 0; $i < count($cols_Names); $i++) {
+				
+				array_push($sql_array, $cols_Names[$i]." ".$cols_Types[$i]);
+				
+// 				$sql_Param .= $cols_Names[$i].", ".$cols_Types[$i];
+// 				$sql_Param += $cols_Names[$i].", ".$cols_Types[$i];
+				
+			}
+			
+			$sql_Param .= join(", ", $sql_array);
+// 			$sql_Param .= " ";
+// 			$sql_Param += " ";
+			
+			$sql_Param .= " )";
+				
+			return $sql_Param;
+			
+						
+		}//getSql_CreateTable_Texts($tname, $is_Local)
 
 		public function
 		tableExists_remote($tname) {
@@ -729,5 +962,115 @@
 			return $tnames;
 			
 		}//get_TableList()
+
+		public function dropTable($tname) {
+			
+			/****************************************
+			 * Table => exists?
+			****************************************/
+			$target_TableName = $tname;
+			// 			$target_TableName = DBS::$tname_Words;
+				
+			$res = $this->tableExists($target_TableName);
+			// 			$res = $this->tableExists(DBS::$tname_Langs);
+				
+			$msg = "";
+				
+			if ($res == true) {
+					
+				// 				$msg = "true";
+				$msg = "Table exists => ".$target_TableName;
+					
+				write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			} else {
+					
+				$msg = "Table doesn't exist => ".$target_TableName;
+			
+				write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+				return RetVals::$tableDoesntExists;
+				
+			}
+				
+			/****************************************
+			 * Host name
+			****************************************/
+			$is_Local = false;
+				
+			if (CONS::get_HostName() == CONS::$local_HostName) {
+			
+				$is_Local = true;
+			
+			}
+				
+			/****************************************
+			 * Setup
+			****************************************/
+			$dbh = null;
+				
+			if ($is_Local == true) {
+					
+				$pdo_Param = "sqlite:".CONS::get_fPath_DB_Sqlite();
+			
+				$dbh = new PDO($pdo_Param);
+					
+			} else {
+			
+				$dbh = new PDO($this->dsn, $this->user, $this->password);
+					
+			}
+				
+			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+				
+			$msg = "\$dbh->setAttribute => done";
+				
+			write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+			
+			/****************************************
+			 * Sql
+			****************************************/
+			$sql = "DROP TABLE $tname";
+			
+			$msg = "\$sql => ".$sql;
+				
+			write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+			/****************************************
+			 * Exec: Sql
+			****************************************/
+			$res = $dbh->exec($sql);
+			
+			$msg = "\$res => ".strval($res);
+				
+			write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+			/****************************************
+			 * Close
+			****************************************/
+			$dbh = null;
+				
+		}//public function dropTable($tname)
 		
 	}//class DBUtil
