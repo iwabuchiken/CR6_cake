@@ -8,7 +8,7 @@
 	
 	<?php echo $this->Html->link(
 					'Build langs from csv',
-					array('controller' => 'langs', 'action' => 'build_langs'));
+					array('controller' => 'langs', 'action' => 'build_Langs'));
 	?>	
 
 	<br>

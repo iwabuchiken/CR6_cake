@@ -185,6 +185,14 @@
 				"serial" => "serialType"	// "yyyyMMdd_His"
 		);
 		
+		/****************************************
+		* csv files
+		****************************************/
+		public static $csv_Langs = "Lang_backup.csv";
+		
+		/****************************************
+		* functions *****************************
+		****************************************/
 		public static function get_HostName() {
 			
 			//REF http://stackoverflow.com/questions/18959320/cakephp-find-hostname-from-url-in-cakephp answered Sep 23 '13 at 12:39
@@ -231,12 +239,57 @@
 			
 		}
 		
-// 		public static $fpath_Log = "abc";
-// 		public static $fpath_Log = implode(",", array(1,2,3));
-// 		public static $fpath_Log = join("/", array("a", "b")); //syntax error, unexpected '(', expecting ',' or ';'
-// 		public static $fpath_Log = join(DS, array(ROOT, "lib", "log", "log.txt"));
+		public static function
+		save_LangsFromCSVLines($csv_Lines) {
 		
-	}
+			$msg = "Starting => save_LangsFromCSVLines";
+		
+// 			$m = new CONS();
+		
+			$log_Path = CONS::get_dPath_Log();
+// 			$log_Path = $m->get_dPath_Log();
+		
+			write_Log(
+					$log_Path,
+					// 			$this->path_Log,
+					$msg,
+					__FILE__,
+					__LINE__);
+		
+			//REF App::import http://stackoverflow.com/questions/980556/can-i-use-one-model-inside-of-a-different-model-in-cakephp answered Jun 11 '09 at 14:38
+			App::import('model','Lang');
+		
+			// 		$text = new Text();
+		
+			foreach ($csv_Lines as $line) {
+				//cake	=> 03/19/2014 20:57:56
+				//rails	=> 2013-05-01 15:39:17 UTC
+				//0		1	2				3				4			5
+				//id,name,created_at_mill,updated_at_mill,created_at,updated_at
+				//1,Chinese,1367208921280,1367208921280,2013-04-29 04:15:21 UTC,2013-04-29 04:15:21 UTC
+					
+				$lang = new Lang();
+					
+				$lang->set('name', $line[1]);
+					
+				$lang->set('r_created_at', $line[4]);
+				$lang->set('r_updated_at', $line[5]);
+				$lang->set('r_id', $line[0]);
+					
+				$lang->set(
+						'created_at',
+						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+					
+				$lang->set('updated_at',
+						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+					
+				$lang->save();
+		
+			}//foreach ($csv_Lines as $line)
+				
+		}//save_LangsFromCSVLines($csv_Lines)
+		
+	}//class CONS
 	
 	class SQLs {
 		

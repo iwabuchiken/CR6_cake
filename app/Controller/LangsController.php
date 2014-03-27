@@ -142,5 +142,130 @@ class LangsController extends AppController {
 	
 	
 	}//public function _Setup_Paths()
+
+	public function build_Langs() {
+	
+		/****************************************
+			* Setup
+		****************************************/
+		$fpath_Csv = join(DS, array($this->path_Docs, CONS::$csv_Langs));
+	
+		$csv_File = fopen($fpath_Csv, "r");
+	
+		/****************************************
+			* Get: csv lines
+		****************************************/
+		$csv_Lines = null;
+	
+		if ($csv_File != false) {
+				
+			$csv_Lines = $this->_build_Langs__GetCsvLines($csv_File);
+			
+			$msg = "csv lines => built("
+					.strval(count($csv_Lines));
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+				
+		} else {
+				
+			write_Log(
+					$this->path_Log,
+					"\$csv => false",
+					__FILE__, __LINE__);
+				
+// 			$csv_Lines = array();
+				
+		}
+	
+		/****************************************
+			* Save data
+		****************************************/
+		if ($csv_Lines == null) {
+	
+			write_Log(
+					$this->path_Log,
+					"\$csv_Lines => null",
+					__FILE__,
+					__LINE__);
+	
+		} else {
+	
+			$res = $this->_build_Langs__SaveData($csv_Lines);
+				
+		}
+	
+		$this->Session->setFlash(__('Redirected from build_Langs()'));
+	
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'langs', 'action' => 'index'));
+	
+	}//public function build_Langs()
+
+	public function _build_Langs__GetCsvLines($csv_File) {
+	
+		$csv_Lines = array();
+	
+		/****************************************
+		* Omit: Meta data lines
+		****************************************/
+		for ($i = 0; $i < 3; $i++) {
+				
+			fgetcsv($csv_File);
+				
+		}
+	
+		/****************************************
+		* Get: CSV data
+		****************************************/
+		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+		while ( ($data = fgetcsv($csv_File) ) !== FALSE ) {
+				
+			array_push($csv_Lines, $data);
+				
+		}
+	
+		return $csv_Lines;
+	
+	}//public function _build_texts__GetCsvLines($csv_File)
+	
+	public function _build_Langs__SaveData($csv_Lines) {
+	
+		$msg = "Start => _build_Langs__SaveData";
+	
+		write_Log(
+				$this->path_Log,
+				$msg,
+				__FILE__,
+				__LINE__);
+	
+	
+		CONS::save_LangsFromCSVLines($csv_Lines);
+// 		save_LangsFromCSVLines($csv_Lines);
+	
+		// 		foreach ($csv_Lines as $line) {
+		// 			//cake	=> 03/19/2014 20:57:56
+		// 			//rails	=> 2013-05-01 15:39:17 UTC
+		// 			//0		1	2	3		4		5		6			7		8	9	10				11				12			13
+		// 			//id,text,title,word_ids,url,genre_id,subgenre_id,lang_id,memo,dbId,created_at_mill,updated_at_mill,created_at,updated_at
+		// 			$this->Text->create();
+			
+		// 			$this->Text->set('text', $line[1]);
+		// 			$this->Text->set('url', $line[4]);
+		// 			$this->Text->set('lang_id', $line[7]);
+		// 			$this->Text->set('created_at', $line[12]);
+		// 			$this->Text->set('updated_at', $line[13]);
+		// 			$this->Text->set('title', $line[2]);
+	
+		// 			$this->Text->save();
+	
+		// 		}
+	
+	}
 	
 }
