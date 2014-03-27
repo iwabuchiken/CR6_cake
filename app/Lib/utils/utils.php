@@ -2,7 +2,8 @@
 
 	function write_Log($dpath, $text, $file, $line) {
 	
-		$max_LineNum = 40000;
+		$max_LineNum = 4000;
+// 		$max_LineNum = 40000;
 		
 // 		$dpath_LogFile = join(
 // 					DS,
@@ -147,6 +148,35 @@
 			return $pieces['host'];
 			
 		}//public function get_HostName()
+		
+		public static function
+		get_CurrentTime2($labelType) {
+			//REF http://stackoverflow.com/questions/470617/get-current-date-and-time-in-php
+			date_default_timezone_set('Asia/Tokyo');
+		
+			switch($labelType) {
+					
+				case CONS::$timeLabelTypes["rails"]:
+		
+					return date('Y-m-d H:i:s', time());
+		
+				case CONS::$timeLabelTypes["basic"]:
+		
+					return date('Y/m/d H:i:s', time());
+		
+				case CONS::$timeLabelTypes["serial"]:
+		
+					return date('Ymd_His', time());
+						
+				default:
+		
+					return date('Y/m/d H:i:s', time());
+		
+			}//switch($labelType)
+		
+			// 		return date('m/d/Y H:i:s', time());
+		
+		}//function get_CurrentTime2($labelType)
 		
 	}//class Utils
 	

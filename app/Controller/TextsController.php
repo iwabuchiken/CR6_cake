@@ -277,6 +277,9 @@ class TextsController extends AppController {
 	
 	public function build_texts() {
 
+		/****************************************
+		* Setup
+		****************************************/
 		$fpath_Csv = join(DS, array($this->path_Docs, "Text_backup.csv"));
 		
 		$csv_File = fopen($fpath_Csv, "r");
@@ -286,6 +289,9 @@ class TextsController extends AppController {
 // 			"\$csv => opened($csv_File)",
 // 			__FILE__, __LINE__);
 		
+		/****************************************
+		* Get: csv lines
+		****************************************/
 		$csv_Lines = null;
 		
 		if ($csv_File != false) {
@@ -304,7 +310,9 @@ class TextsController extends AppController {
 			
 		}
 		
-		// Save data
+		/****************************************
+		* Save data
+		****************************************/
 		if ($csv_Lines == null) {
 		
 			write_Log(
@@ -323,35 +331,25 @@ class TextsController extends AppController {
 		
 		$this->Session->setFlash(__('Redirected from build_texts()'));
 
-// 		write_Log(
-// 				$this->path_Log,
-// 				"\$csv_Lines => ".strval(count($csv_Lines)),
-// 				__FILE__, __LINE__);
+// 		//debug
+// 		$backup_Url = $this->path_BackupUrl_Text;
+// // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/index";
+// // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/add";
 		
-// 		write_Log(
-// 				$this->path_Log,
-// 				"Flash => set",
-// 				__FILE__, __LINE__);
-
-		//debug
-		$backup_Url = $this->path_BackupUrl_Text;
-// 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/index";
-// 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/add";
+// 		if ($csv_Lines != null) {
 		
-		if ($csv_Lines != null) {
+// 			_postData_Text($backup_Url, $csv_Lines);
+// // 			_postData_Text($backup_Url, $csv_Lines[0]);
 		
-			_postData_Text($backup_Url, $csv_Lines);
-// 			_postData_Text($backup_Url, $csv_Lines[0]);
-		
-		} else {
+// 		} else {
 			
-			write_Log(
-				$this->path_Log,
-				"\$csv_Lines => null",
-				__FILE__,
-				__LINE__);
+// 			write_Log(
+// 				$this->path_Log,
+// 				"\$csv_Lines => null",
+// 				__FILE__,
+// 				__LINE__);
 		
-		}
+// 		}
 		
 		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
 		return $this->redirect(

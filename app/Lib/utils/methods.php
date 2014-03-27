@@ -28,16 +28,28 @@
 			//rails	=> 2013-05-01 15:39:17 UTC
 			//0		1	2	3		4		5		6			7		8	9	10				11				12			13
 			//id,text,title,word_ids,url,genre_id,subgenre_id,lang_id,memo,dbId,created_at_mill,updated_at_mill,created_at,updated_at
+			//38,"發展性閱讀障礙是特殊學習困難的",發展性閱讀障礙是特殊學習困難的其中一種。意指兒童在閱讀能力上較,,http://hkssc.com.hk/service/target/t7,0,0,1,"是特殊學習困難DONE",0,1368459511974,1368459511974,2013-05-06 23:31:04 UTC,2013-05-13 15:38:31 UTC
 // 			$this->Text->create();
 			
 			$text = new Text();
 			
 			$text->set('text', $line[1]);
-			$text->set('url', $line[4]);
-			$text->set('lang_id', $line[7]);
-			$text->set('created_at', $line[12]);
-			$text->set('updated_at', $line[13]);
 			$text->set('title', $line[2]);
+			$text->set('url', $line[4]);
+			
+			$text->set('lang_id', $line[7]);
+			
+			$text->set('r_created_at', $line[12]);
+			$text->set('r_updated_at', $line[13]);
+			$text->set('r_id', $line[0]);
+			
+			$text->set(
+					'created_at',
+					Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+			
+			$text->set('updated_at',
+					Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+			
 // 			$this->Text->create();
 				
 // 			$this->Text->set('text', $line[1]);
@@ -165,6 +177,13 @@
 		public static $dbName_Local = "development.sqlite3";
 		
 		public static $local_HostName = "localhost";
+		
+		public static $timeLabelTypes = array(
+				
+				"rails" => "railsType",	// "yyyy-MM-dd H:i:s"
+				"basic" => "basicType",	// "yyyy/MM/dd H:i:s"
+				"serial" => "serialType"	// "yyyyMMdd_His"
+		);
 		
 		public static function get_HostName() {
 			

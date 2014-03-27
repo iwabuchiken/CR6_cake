@@ -1049,3 +1049,17 @@ ABCDE
 [03/26/2014 15:54:54 : app\Controller\TextsController.php : 144] index() => starts
 [03/26/2014 15:58:21 : app\Controller\TextsController.php : 144] index() => starts
 [03/26/2014 15:58:51 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 16:38:44 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 16:38:46 : app\Controller\TextsController.php : 144] index() => starts
+[03/26/2014 16:38:50 : app\Controller\TextsController.php : 389] Start => _build_texts__SaveData
+[03/26/2014 16:38:50 : app\Lib\utils\methods.php : 19] Starting => save_TextsFromCSVLines
+[03/26/2014 16:38:54 : app\Controller\TextsController.php : 144] index() => starts
+[03/27/2014 19:40:55 : app\Controller\TextsController.php : 144] index() => starts
+[03/27/2014 19:42:33 : app\Controller\TextsController.php : 144] index() => starts
+[03/27/2014 19:42:36 : app\Controller\TextsController.php : 389] Start => _build_texts__SaveData
+[03/27/2014 19:42:36 : app\Lib\utils\methods.php : 19] Starting => save_TextsFromCSVLines
+[03/27/2014 19:42:41 : app\Controller\TextsController.php : 144] index() => starts
+[03/27/2014 21:18:37 : app\Controller\TextsController.php : 144] index() => starts
+[03/27/2014 21:21:51 : app\Controller\LangsController.php : 41] index() => starts
+[03/27/2014 21:22:57 : app\Controller\LangsController.php : 41] index() => starts
+[03/27/2014 21:23:19 : app\Controller\LangsController.php : 41] index() => starts
