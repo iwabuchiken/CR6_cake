@@ -16,6 +16,14 @@ class LangsController extends AppController {
 	public $fname_Utils		= "utils.php";
 	
 	public $title_Length	= 60;
+
+	/****************************************
+	 * Associations
+	****************************************/
+	var $name = 'Langs';
+	// 	var $name = 'Text';
+	
+	var $scaffold;
 	
 	
 	public function beforeFilter() {

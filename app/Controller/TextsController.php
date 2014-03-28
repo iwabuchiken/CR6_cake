@@ -17,7 +17,15 @@ class TextsController extends AppController {
 	public $fname_Utils		= "utils.php";
 	
 	public $title_Length	= 60;
+	
+	/****************************************
+	* Associations
+	****************************************/
+	var $name = 'Texts';
+// 	var $name = 'Text';
 
+	var $scaffold;
+	
 	public function beforeFilter() {
 		
 		$this->_Setup_Paths();
@@ -35,6 +43,19 @@ class TextsController extends AppController {
 	
 	public function index() {
 
+		//REF http://www.packtpub.com/article/working-with-simple-associations-using-cakephp
+		$this->Text->recursive = 1;
+		$texts = $this->Text->find('all');
+		$this->set('texts', $texts);
+		
+		$this->_index__Experi();
+		
+// 		$this->set('texts', $this->Text->find('all'));
+		
+		
+		
+// 		$this->loadModel('Lang');
+		
 // 		write_Log(
 // 			$this->path_Log,
 // 			"\$abc => $abc",
@@ -107,8 +128,6 @@ class TextsController extends AppController {
 		
 // 		}
 		
-		$this->set('texts', $this->Text->find('all'));
-		
 // 		//debug
 // 		$texts = $this->Text->find('all');
 		
@@ -147,6 +166,54 @@ class TextsController extends AppController {
 		
 	}//public function index()
 
+	public function _index__Experi() {
+
+		$this->Text->recursive = 1;
+		$text = $this->Text->find('first');
+
+// 		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html#model-save-array-data-null-boolean-validate-true-array-fieldlist-array "If you want to update a value, "
+// 		$data = array('id' => 282, 'title' => 'My new title');
+// 		// This will update Recipe with id 10
+// 		$this->Text->save($data);
+		
+		//REF http://stackoverflow.com/questions/19672105/cakephp-model-update-issue answered Oct 30 '13 at 1:42
+		$text['Text']['title'] = "abc";
+// 		$this->Text->save($text['Text'], false);
+		
+// 		$msg = "save => done";
+		
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+		
+		
+// 		$text['Text']->saveField('title', "abc");
+// 		$text->saveField('title', "abc");
+
+// // 		debug($text);
+		
+// 		$msg = "text => ".mb_substr($text['Text']['text'], 0, 10);
+		
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+		
+		
+// 		App::import('model','Lang');
+		//REF http://stackoverflow.com/questions/3696701/cakephp-using-models-in-different-controllers answered Sep 12 '10 at 21:31
+		$this->loadModel('Lang');
+		
+		$langs = $this->Lang->find('all');
+		
+		
+		
+		
+	}
+	
 	public function _index__Experiments() {
 		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html
 // 		$this->Text->create();

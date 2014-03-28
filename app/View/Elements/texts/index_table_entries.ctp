@@ -96,7 +96,31 @@
     <tr>
     	<td width="70">
     			<!-- lang id -->
-    			<?php echo $text['Text']['lang_id']; ?>
+    			<?php
+//     				$lang = $this->Lang->find(
+// 							'first',
+// 							array(
+// 								'conditions' =>
+// 									array('Lang.r_id' =>
+// 											$text['Text']['lang_id'])
+// 							)
+//     				);
+
+// 					echo $langs;
+// 					echo $xyz;
+
+//     				echo $text->Lang->get_Msg();
+//     				echo $text->lang;
+//     				echo $text->Lang['name'];
+//     				echo $text->Lang->name;
+//     				echo $text['Text']['lang_id'];
+    				echo $text['Lang']['name']
+    					."(id="
+            			.strval($text['Text']['lang_id'])
+    					.")";
+    			
+    				
+    			?>
     	</td>
     	<td width="70">data</td>
         <td width="70"><?php echo $text['Text']['created_at']; ?></td>
