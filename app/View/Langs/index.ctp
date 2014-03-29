@@ -35,3 +35,8 @@
 
 	<?php echo $this->element('langs/index_links')?>
 	
+	<br>
+	<br>
+	
+	<?php echo $this->element('texts/index_links_to_models')?>
+	

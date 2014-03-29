@@ -1,5 +1,5 @@
 
-	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/texts/index"
+	<a href="http://benfranklin.chips.jp/cake_apps/CR6_cake/langs/index"
 		target="_blank">
 		PHP site
 	</a>
@@ -7,23 +7,17 @@
 	<br>
 	
 	<?php echo $this->Html->link(
-					'Add Text',
-					array('controller' => 'texts', 'action' => 'add'));
-	?>
-	<br>
-	
-	<?php echo $this->Html->link(
-					'Build texts from csv',
-					array('controller' => 'texts', 'action' => 'build_texts'));
+					'Build langs from csv',
+					array('controller' => 'words', 'action' => 'build_Langs'));
 	?>	
 
 	<br>
 	
 	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
 	<?php echo $this->Html->link(
-					'Delete all texts',
+					'Delete all langs',
 					array(
-						'controller' => 'texts',
+						'controller' => 'words',
 						'action' => 'delete_all'),
 					array(),
 					"Delete all?");
@@ -42,7 +36,7 @@
 			echo $this->Html->link(
 					'Exec sql',
 					array(
-						'controller' => 'texts',
+						'controller' => 'words',
 						'action' => 'exec_Sql')
 					);
 			
@@ -54,5 +48,4 @@
 // 		}
 	?>	
 
-	<br>
-	<br>
+	
