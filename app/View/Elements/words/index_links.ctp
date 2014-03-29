@@ -19,6 +19,19 @@
 	?>	
 
 	<br>
+	<?php echo $this->Html->link(
+					'Build words from csv (3)',
+					array('controller' => 'words', 'action' => 'build_Words_3'));
+	?>	
+	
+	<br>
+	<?php echo $this->Html->link(
+					'Build words from csv (4)',
+					array('controller' => 'words', 'action' => 'build_Words_4'));
+	?>	
+
+	<br>
+	<br>
 	
 	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
 	<?php echo $this->Html->link(

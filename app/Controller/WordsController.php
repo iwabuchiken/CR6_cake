@@ -17,6 +17,7 @@ class WordsController extends AppController {
 	public $fname_Utils		= "utils.php";
 	
 	public $title_Length	= 60;
+
 	
 	/****************************************
 	* Associations
@@ -27,6 +28,8 @@ class WordsController extends AppController {
 	var $scaffold;
 	
 	public function beforeFilter() {
+		
+		setlocale(LC_ALL, 'ja_JP.UTF-8');
 		
 		$this->_Setup_Paths();
 		
@@ -53,7 +56,92 @@ class WordsController extends AppController {
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
 		
 		
+		
+		//test
+// 		$this->_index_Experi_getEncoding();
+		
 	}//public function index()
+	
+	public function _index_Experi_getEncoding() {
+		
+		/****************************************
+		 * Setup
+		****************************************/
+		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_1.csv"));
+		// 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
+		
+		$csv_File = fopen($fpath_Csv, "r");
+		
+		// 		write_Log(
+		// 			$this->path_Log,
+		// 			"\$csv => opened($csv_File)",
+		// 			__FILE__, __LINE__);
+		
+		/****************************************
+		 * Get: csv lines
+		****************************************/
+		$csv_Lines = null;
+		
+		if ($csv_File != false) {
+				
+			$csv_Lines = $this->_build_Words__GetCsvLines($csv_File);
+				
+		} else {
+				
+			write_Log(
+			$this->path_Log,
+			"\$csv => false",
+				
+			__FILE__, __LINE__);
+				
+			$csv_Lines = array();
+				
+		}
+		
+		/****************************************
+		 * Save data
+		****************************************/
+		if ($csv_Lines == null) {
+		
+			write_Log(
+			$this->path_Log,
+			"\$csv_Lines => null",
+			__FILE__,
+			__LINE__);
+		
+		} else {
+		
+			debug(implode(",", $csv_Lines[0]));
+			
+// 			debug(mb_internal_encoding());
+			
+// 			$msg = "\$csv_Lines[0][1] => "
+// 					.$csv_Lines[0][1];
+				
+// 			write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+				
+// 			$msg = "encoding => "
+// 					.mb_detect_encoding($csv_Lines[0][1]);
+				
+// 			write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+				
+				
+			// 			$res = $this->_build_Words__SaveData($csv_Lines);
+			// // 			$res = _build_texts__SaveData($csv_Lines);
+				
+		}
+		
+		
+		
+	}
 	
 	public function add() {
 	
@@ -180,6 +268,20 @@ class WordsController extends AppController {
 	public function build_Words_1() {
 // 	public function build_Words() {
 
+		//test :: D-2,v-4.1_p1
+		$locale = 'ja_JP.UTF-8';
+		setlocale(LC_ALL, $locale);
+// 		setlocale(LC_ALL, 'ja_JP.UTF-8');
+		
+		$msg = "Locale => Set: ".$locale;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		
 		/****************************************
 		* Setup
 		****************************************/
@@ -236,9 +338,18 @@ class WordsController extends AppController {
 				__FILE__,
 				__LINE__);
 			
+			$msg = "encoding => "
+					.mb_detect_encoding($csv_Lines[0][1]);
 			
-// 			$res = $this->_build_Words__SaveData($csv_Lines);
-// // 			$res = _build_texts__SaveData($csv_Lines);
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+			$res = $this->_build_Words__SaveData($csv_Lines);
+// 			$res = _build_texts__SaveData($csv_Lines);
 			
 		}
 		
@@ -258,6 +369,134 @@ class WordsController extends AppController {
 		* Setup
 		****************************************/
 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_2.csv"));
+// 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
+		
+		$csv_File = fopen($fpath_Csv, "r");
+		
+// 		write_Log(
+// 			$this->path_Log,
+// 			"\$csv => opened($csv_File)",
+// 			__FILE__, __LINE__);
+		
+		/****************************************
+		* Get: csv lines
+		****************************************/
+		$csv_Lines = null;
+		
+		if ($csv_File != false) {
+			
+			$csv_Lines = $this->_build_Words__GetCsvLines($csv_File);
+			
+		} else {
+			
+			write_Log(
+					$this->path_Log,
+					"\$csv => false",
+					
+					__FILE__, __LINE__);
+			
+			$csv_Lines = array();
+			
+		}
+		
+		/****************************************
+		* Save data
+		****************************************/
+		if ($csv_Lines == null) {
+		
+			write_Log(
+				$this->path_Log,
+				"\$csv_Lines => null",
+				__FILE__,
+				__LINE__);
+		
+		} else {
+		
+			$res = $this->_build_Words__SaveData($csv_Lines);
+// 			$res = _build_texts__SaveData($csv_Lines);
+			
+		}
+		
+		
+		$this->Session->setFlash(__('Redirected from build_Words()'));
+
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'words', 'action' => 'index'));
+		
+	}//public function build_texts()
+	
+	public function build_Words_3() {
+// 	public function build_Words() {
+
+		/****************************************
+		* Setup
+		****************************************/
+		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_3.csv"));
+// 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
+		
+		$csv_File = fopen($fpath_Csv, "r");
+		
+// 		write_Log(
+// 			$this->path_Log,
+// 			"\$csv => opened($csv_File)",
+// 			__FILE__, __LINE__);
+		
+		/****************************************
+		* Get: csv lines
+		****************************************/
+		$csv_Lines = null;
+		
+		if ($csv_File != false) {
+			
+			$csv_Lines = $this->_build_Words__GetCsvLines($csv_File);
+			
+		} else {
+			
+			write_Log(
+					$this->path_Log,
+					"\$csv => false",
+					
+					__FILE__, __LINE__);
+			
+			$csv_Lines = array();
+			
+		}
+		
+		/****************************************
+		* Save data
+		****************************************/
+		if ($csv_Lines == null) {
+		
+			write_Log(
+				$this->path_Log,
+				"\$csv_Lines => null",
+				__FILE__,
+				__LINE__);
+		
+		} else {
+		
+			$res = $this->_build_Words__SaveData($csv_Lines);
+// 			$res = _build_texts__SaveData($csv_Lines);
+			
+		}
+		
+		
+		$this->Session->setFlash(__('Redirected from build_Words()'));
+
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'words', 'action' => 'index'));
+		
+	}//public function build_texts()
+	
+	public function build_Words_4() {
+// 	public function build_Words() {
+
+		/****************************************
+		* Setup
+		****************************************/
+		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_4.csv"));
 // 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
 		
 		$csv_File = fopen($fpath_Csv, "r");
@@ -414,6 +653,13 @@ class WordsController extends AppController {
 		
 	}//public function execute_Tasks()
 
+// 	function convert( $str ) {
+	public function convert( $str ) {
+		
+    	return iconv( "Windows-1252", "UTF-8", $str );
+    	
+	}
+	
 	public function _build_Words__GetCsvLines($csv_File) {
 		
 		$csv_Lines = array();
@@ -424,10 +670,41 @@ class WordsController extends AppController {
 			
 		}
 		
+		//test
+		$temp_Num = 3;
+		$count = 0;
+
+		//test
+		mb_internal_encoding("UTF-8");
+		
 		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
 		while ( ($data = fgetcsv($csv_File) ) !== FALSE ) {
 			
 			array_push($csv_Lines, $data);
+			
+			//test
+			if ($count < $temp_Num) {
+				$msg = "\$data => ".implode(",", $data);
+				
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+// 				$data = array_map("convert", $data);
+// 				$data = array_map(convert, $data);
+// 				$msg = "\$data(mapped) => ".implode(",", $data);
+				
+// 				write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+				
+				
+				$count ++;
+			}
 			
 		}
 		
