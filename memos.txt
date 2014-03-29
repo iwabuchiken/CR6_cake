@@ -59,5 +59,6 @@ pushd C:\Users\IwabuchiKen\Desktop
 sqlite3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
 .explain on
 .tables
+pragma table_info(words);
 pragma table_info(texts);
 pragma table_info(langs);

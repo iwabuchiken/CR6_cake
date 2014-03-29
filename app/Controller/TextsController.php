@@ -48,7 +48,19 @@ class TextsController extends AppController {
 		$texts = $this->Text->find('all');
 		$this->set('texts', $texts);
 		
-		$this->_index__Experi();
+		$text = "index() => starts";
+		
+		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+		
+// 		//test
+// 		$this->loadModel('Lang');
+		
+// 		$langs = $this->Lang->find('all');
+		
+// 		debug($langs[0]);
+		
+		
+// 		$this->_index__Experi();
 		
 // 		$this->set('texts', $this->Text->find('all'));
 		
@@ -158,10 +170,6 @@ class TextsController extends AppController {
 // 				"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".
 // 				"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 		
-		$text = "index() => starts";
-		
-		write_Log($this->path_Log, $text, __FILE__, __LINE__);
-		
 // 		$this->_Setup_LogFile();
 		
 	}//public function index()
@@ -208,9 +216,6 @@ class TextsController extends AppController {
 		$this->loadModel('Lang');
 		
 		$langs = $this->Lang->find('all');
-		
-		
-		
 		
 	}
 	
@@ -423,6 +428,105 @@ class TextsController extends AppController {
 				array('controller' => 'texts', 'action' => 'index'));
 		
 	}//public function build_texts()
+	
+	public function execute_Tasks() {
+		
+		$this->Text->recursive = 1;
+		$texts = $this->Text->find('all');
+		
+		$this->loadModel('Lang');
+		
+		$langs = $this->Lang->find('all');
+		
+// 		debug($langs[0]);
+
+		foreach ($texts as $text) {
+			
+			$lang_id = $text['Text']['lang_id'];
+			
+			foreach ($langs as $lang) {
+				
+				$r_id = $lang['Lang']['r_id'];
+				
+				if ($lang_id == $r_id) {
+					
+					$msg = "(\$lang_id == \$r_id) => "
+							."\$lang_id=".strval($lang_id)
+							."/"
+							."\$r_id=".strval($r_id)
+							;
+					
+					write_Log(
+						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__);
+					
+					
+					$text['Text']['lang_id'] = $lang['Lang']['id'];
+// 					$text['Text']['lang_id'] = $lang['id'];
+					
+					$this->Text->save($text['Text'], false);
+					
+					break;
+					
+				}
+				
+			}//foreach ($langs as $lang)
+			
+		}//foreach ($texts as $text)
+		
+		
+		
+		
+		$this->Session->setFlash(__('Redirected from execute_Tasks()'));
+		
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+		
+		
+		// 		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html#model-save-array-data-null-boolean-validate-true-array-fieldlist-array "If you want to update a value, "
+		// 		$data = array('id' => 282, 'title' => 'My new title');
+		// 		// This will update Recipe with id 10
+		// 		$this->Text->save($data);
+		
+		//REF http://stackoverflow.com/questions/19672105/cakephp-model-update-issue answered Oct 30 '13 at 1:42
+// 		$text['Text']['title'] = "abc";
+		
+		// 		App::import('model','Lang');
+		//REF http://stackoverflow.com/questions/3696701/cakephp-using-models-in-different-controllers answered Sep 12 '10 at 21:31
+		
+		// 		$this->Text->save($text['Text'], false);
+		
+		// 		$msg = "save => done";
+		
+		// 		write_Log(
+
+		// 			CONS::get_dPath_Log(),
+		// 			$msg,
+		// 			__FILE__,
+		// 			__LINE__);
+		
+		
+		// 		$text['Text']->saveField('title', "abc");
+		// 		$text->saveField('title', "abc");
+		
+		// // 		debug($text);
+		
+		// 		$msg = "text => ".mb_substr($text['Text']['text'], 0, 10);
+		
+		// 		write_Log(
+		// 			CONS::get_dPath_Log(),
+		// 			$msg,
+		// 			__FILE__,
+		// 			__LINE__);
+		
+		
+		
+		
+		
+	}//public function execute_Tasks()
 
 	public function _build_texts__GetCsvLines($csv_File) {
 		
