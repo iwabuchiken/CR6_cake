@@ -51,15 +51,4 @@
 	<br>
 	<br>
 	
-		<?php 
-		
-		echo $this->Html->link(
-				'Texts',
-				array(
-					'controller' => 'texts',
-					'action' => 'index')
-				);
-			
-	?>	
-	
 	

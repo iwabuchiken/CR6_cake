@@ -53,31 +53,8 @@
 
 // 		}
 	?>	
-	
-	<br>
-	<br>
-	<?php 
-		
-		echo $this->Html->link(
-				'Exec tasks',
-				array(
-					'controller' => 'texts',
-					'action' => 'execute_Tasks')
-				);
-			
-	?>	
 
 	<br>
 	<br>
 	
-	<?php 
-		
-		echo $this->Html->link(
-				'Langs',
-				array(
-					'controller' => 'langs',
-					'action' => 'index')
-				);
-			
-	?>	
 	
