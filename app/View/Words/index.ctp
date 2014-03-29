@@ -9,7 +9,7 @@
     }
 </style>
   
-<h1>Texts(total=<?php echo count($texts); ?>)</h1>
+<h1>Words(total=<?php echo count($words); ?>)</h1>
 
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
@@ -20,11 +20,11 @@
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
 
-	<?php echo $this->element('texts/index_table_header')?>
+	<?php echo $this->element('words/index_table_header')?>
 	
     <!-- Here is where we loop through our $posts array, printing out post info -->
 
-	<?php echo $this->element('texts/index_table_entries')?>
+	<?php echo $this->element('words/index_table_entries')?>
 
 	
 </table>
@@ -33,9 +33,10 @@
 <a href="#top">Top</a>
 <br><br>
 
-	<?php echo $this->element('texts/index_links')?>
+	<?php echo $this->element('words/index_links')?>
 	
-	<br>
-	<br>
+	<br><br>
 	
 	<?php echo $this->element('texts/index_links_to_models')?>
+	
+	
