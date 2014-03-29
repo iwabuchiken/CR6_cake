@@ -1428,3 +1428,45 @@ ABCDE
 [03/29/2014 16:39:05 : app\Controller\LangsController.php : 49] index() => starts
 [03/29/2014 16:39:08 : app\Controller\WordsController.php : 53] index() => starts
 [03/29/2014 16:39:23 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:31:30 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:31:57 : app\Controller\WordsController.php : 366] Start => _build_texts__SaveData
+[03/29/2014 17:31:57 : app\Lib\utils\methods.php : 307] Starting => save_WordsFromCSVLines
+[03/29/2014 17:32:39 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:33:48 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:35:28 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:35:37 : app\Controller\TextsController.php : 144] index() => starts
+[03/29/2014 17:35:41 : app\Controller\TextsController.php : 144] index() => starts
+[03/29/2014 17:40:10 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:40:12 : app\Controller\WordsController.php : 436] Start => _build_texts__SaveData
+[03/29/2014 17:40:12 : app\Lib\utils\methods.php : 307] Starting => save_WordsFromCSVLines
+[03/29/2014 17:40:33 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:40:40 : app\Controller\WordsController.php : 436] Start => _build_texts__SaveData
+[03/29/2014 17:40:40 : app\Lib\utils\methods.php : 307] Starting => save_WordsFromCSVLines
+[03/29/2014 17:41:06 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:48:25 : app\Controller\WordsController.php : 237] $csv_Lines[0][1] => 遗体
+[03/29/2014 17:48:25 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 650] localhost
+[03/29/2014 17:48:30 : app\Lib\utils\methods.php : 233] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 911] $tnames => sqlite_sequence,words,langs,texts
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 988] Table exists => texts
+[03/29/2014 17:48:30 : app\Lib\utils\methods.php : 233] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 1041] $dbh->setAttribute => done
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 1054] $sql => DROP TABLE texts
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 1067] $res => 0
+[03/29/2014 17:48:30 : app\Controller\WordsController.php : 548] Table dropped => texts
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 172] createTable_Texts()
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 633] Starts => tableExists()
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 650] localhost
+[03/29/2014 17:48:30 : app\Lib\utils\methods.php : 233] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 911] $tnames => sqlite_sequence,words,langs
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 205] Table doesn't exist => texts
+[03/29/2014 17:48:30 : app\Lib\utils\methods.php : 233] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 247] $dbh->setAttribute => done
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 261] $sql => CREATE TABLE texts (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), text TEXT, title TEXT, url TEXT, word_ids TEXT, memo TEXT, genre_id INT, subgenre_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[03/29/2014 17:48:30 : app\Lib\utils\db_util.php : 275] $res => 0
+[03/29/2014 17:48:30 : app\Controller\TextsController.php : 144] index() => starts
+[03/29/2014 17:48:38 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 17:48:53 : app\Controller\WordsController.php : 237] $csv_Lines[0][1] => 遗体
+[03/29/2014 17:48:53 : app\Controller\WordsController.php : 53] index() => starts
+[03/29/2014 18:59:05 : app\Controller\WordsController.php : 53] index() => starts

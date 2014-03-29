@@ -7,15 +7,22 @@
 	<br>
 	
 	<?php echo $this->Html->link(
-					'Build langs from csv',
-					array('controller' => 'words', 'action' => 'build_Langs'));
+					'Build words from csv (1)',
+					array('controller' => 'words', 'action' => 'build_Words_1'));
+	?>	
+
+	<br>
+	
+	<?php echo $this->Html->link(
+					'Build words from csv (2)',
+					array('controller' => 'words', 'action' => 'build_Words_2'));
 	?>	
 
 	<br>
 	
 	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
 	<?php echo $this->Html->link(
-					'Delete all langs',
+					'Delete all words',
 					array(
 						'controller' => 'words',
 						'action' => 'delete_all'),

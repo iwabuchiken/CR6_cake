@@ -289,6 +289,66 @@
 				
 		}//save_LangsFromCSVLines($csv_Lines)
 		
+		public static function
+		save_WordsFromCSVLines($csv_Lines) {
+		
+			$msg = "Starting => save_WordsFromCSVLines";
+		
+// 			$m = new CONS();
+		
+			$log_Path = CONS::get_dPath_Log();
+// 			$log_Path = $m->get_dPath_Log();
+		
+			write_Log(
+					$log_Path,
+					// 			$this->path_Log,
+					$msg,
+					__FILE__,
+					__LINE__);
+		
+			//REF App::import http://stackoverflow.com/questions/980556/can-i-use-one-model-inside-of-a-different-model-in-cakephp answered Jun 11 '09 at 14:38
+			App::import('model','Word');
+		
+			// 		$text = new Text();
+		
+			
+			foreach ($csv_Lines as $line) {
+				//cake	=> 03/19/2014 20:57:56
+				//rails	=> 2013-05-01 15:39:17 UTC
+				
+				//0	 1	2	3	4		5		6		7
+				//id,w1,w2,w3,text_ids,text_id,lang_id,dbId,
+				//8					9				10			11
+				//created_at_mill,updated_at_mill,created_at,updated_at
+				
+				//3831,遗体,yi2-,"",,268,1,0,
+				//1394102775684,1394102775684,2014-03-06 10:46:15 UTC,2014-03-06 10:46:15 UTC
+					
+				$word = new Word();
+					
+				$word->set('w1', $line[1]);
+				$word->set('w2', $line[2]);
+				$word->set('w3', $line[3]);
+				
+				$word->set('text_id', $line[5]);
+					
+				$word->set('r_created_at', $line[10]);
+				$word->set('r_updated_at', $line[11]);
+				$word->set('r_id', $line[0]);
+					
+				$word->set(
+						'created_at',
+						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+					
+				$word->set('updated_at',
+						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+					
+				$word->save();
+		
+			}//foreach ($csv_Lines as $line)
+				
+		}//save_LangsFromCSVLines($csv_Lines)
+		
 	}//class CONS
 	
 	class SQLs {

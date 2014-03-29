@@ -160,12 +160,16 @@ class WordsController extends AppController {
 	public function delete_all() {
 	
 		//REF http://book.cakephp.org/2.0/ja/core-libraries/helpers/html.html
-		if ($this->Text->deleteAll(array('id >=' => 1))) {
-			$this->Session->setFlash(__('Texts all deleted'));
+		if ($this->Word->deleteAll(array('Word.id >=' => 1))) {
+// 		if ($this->Word->deleteAll(array('id >=' => 1))) {
+			
+			$this->Session->setFlash(__('Words all deleted'));
+			
 			return $this->redirect(array('action' => 'index'));
+			
 		} else {
 		  
-			$this->Session->setFlash(__('Texts not deleted'));
+			$this->Session->setFlash(__('Words not deleted'));
 			return $this->redirect(array('action' => 'index'));
 		  
 		}
@@ -173,12 +177,14 @@ class WordsController extends AppController {
 	}
 	
 	
-	public function build_texts() {
+	public function build_Words_1() {
+// 	public function build_Words() {
 
 		/****************************************
 		* Setup
 		****************************************/
-		$fpath_Csv = join(DS, array($this->path_Docs, "Text_backup.csv"));
+		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_1.csv"));
+// 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
 		
 		$csv_File = fopen($fpath_Csv, "r");
 		
@@ -194,7 +200,7 @@ class WordsController extends AppController {
 		
 		if ($csv_File != false) {
 			
-			$csv_Lines = $this->_build_texts__GetCsvLines($csv_File);
+			$csv_Lines = $this->_build_Words__GetCsvLines($csv_File);
 			
 		} else {
 			
@@ -221,37 +227,91 @@ class WordsController extends AppController {
 		
 		} else {
 		
-			$res = $this->_build_texts__SaveData($csv_Lines);
+			$msg = "\$csv_Lines[0][1] => "
+					.$csv_Lines[0][1];
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
+// 			$res = $this->_build_Words__SaveData($csv_Lines);
+// // 			$res = _build_texts__SaveData($csv_Lines);
+			
+		}
+		
+		
+		$this->Session->setFlash(__('Redirected from build_Words()'));
+
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'words', 'action' => 'index'));
+		
+	}//public function build_texts()
+	
+	public function build_Words_2() {
+// 	public function build_Words() {
+
+		/****************************************
+		* Setup
+		****************************************/
+		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup_2.csv"));
+// 		$fpath_Csv = join(DS, array($this->path_Docs, "Word_backup.csv"));
+		
+		$csv_File = fopen($fpath_Csv, "r");
+		
+// 		write_Log(
+// 			$this->path_Log,
+// 			"\$csv => opened($csv_File)",
+// 			__FILE__, __LINE__);
+		
+		/****************************************
+		* Get: csv lines
+		****************************************/
+		$csv_Lines = null;
+		
+		if ($csv_File != false) {
+			
+			$csv_Lines = $this->_build_Words__GetCsvLines($csv_File);
+			
+		} else {
+			
+			write_Log(
+					$this->path_Log,
+					"\$csv => false",
+					
+					__FILE__, __LINE__);
+			
+			$csv_Lines = array();
+			
+		}
+		
+		/****************************************
+		* Save data
+		****************************************/
+		if ($csv_Lines == null) {
+		
+			write_Log(
+				$this->path_Log,
+				"\$csv_Lines => null",
+				__FILE__,
+				__LINE__);
+		
+		} else {
+		
+			$res = $this->_build_Words__SaveData($csv_Lines);
 // 			$res = _build_texts__SaveData($csv_Lines);
 			
 		}
 		
 		
-		$this->Session->setFlash(__('Redirected from build_texts()'));
+		$this->Session->setFlash(__('Redirected from build_Words()'));
 
-// 		//debug
-// 		$backup_Url = $this->path_BackupUrl_Text;
-// // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/index";
-// // 		$backup_Url = "http://localhost/PHP_server/CR6_cake/texts/add";
-		
-// 		if ($csv_Lines != null) {
-		
-// 			_postData_Text($backup_Url, $csv_Lines);
-// // 			_postData_Text($backup_Url, $csv_Lines[0]);
-		
-// 		} else {
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				"\$csv_Lines => null",
-// 				__FILE__,
-// 				__LINE__);
-		
-// 		}
-		
 		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
 		return $this->redirect(
-				array('controller' => 'texts', 'action' => 'index'));
+				array('controller' => 'words', 'action' => 'index'));
 		
 	}//public function build_texts()
 	
@@ -354,7 +414,7 @@ class WordsController extends AppController {
 		
 	}//public function execute_Tasks()
 
-	public function _build_texts__GetCsvLines($csv_File) {
+	public function _build_Words__GetCsvLines($csv_File) {
 		
 		$csv_Lines = array();
 		
@@ -375,7 +435,7 @@ class WordsController extends AppController {
 		
 	}//public function _build_texts__GetCsvLines($csv_File)
 
-	public function _build_texts__SaveData($csv_Lines) {
+	public function _build_Words__SaveData($csv_Lines) {
 
 		$msg = "Start => _build_texts__SaveData";
 		
@@ -386,7 +446,7 @@ class WordsController extends AppController {
 			__LINE__);
 		
 		
-		save_TextsFromCSVLines($csv_Lines);
+		CONS::save_WordsFromCSVLines($csv_Lines);
 		
 // 		foreach ($csv_Lines as $line) {
 // 			//cake	=> 03/19/2014 20:57:56
