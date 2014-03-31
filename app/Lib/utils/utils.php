@@ -2,7 +2,9 @@
 
 	function write_Log($dpath, $text, $file, $line) {
 	
-		$max_LineNum = 4000;
+		$max_LineNum = CONS::$logFile_maxLineNum;
+// 		$max_LineNum = 200;
+// 		$max_LineNum = 4000;
 // 		$max_LineNum = 40000;
 		
 // 		$dpath_LogFile = join(
@@ -47,12 +49,69 @@
 		
 		$file_Length = count($lines);
 		
+// 		try {
+			
+// 			$msg = "strval(\$file_Length) => ".strval($file_Length);
+// 	// 		$msg = "strval(count(\$lines)) => ".strval(count($lines));
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+// 		} catch (Exception $e) {
+			
+// 			$msg = "exception => ".$e;
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+// 		}
+
+		//test
+		
+		
 		$log_File = null;
 		
 		if ($file_Length > $max_LineNum) {
 
 			//REF copy http://stackoverflow.com/questions/5772769/how-to-copy-a-file-from-one-directory-to-another-using-php
-			$res = copy($path_LogFile, $path_LogFile.".copy");
+// 			$res = copy($path_LogFile, $path_LogFile.".copy");
+// 			$fname_Tokens = $path_LogFile.split(".");
+			
+			$dname = dirname($path_LogFile);
+			
+// 			$fname_Tokens = split(".", $path_LogFile);
+			
+// 			$new_name = $fname_Tokens[0]
+// 						."_"
+// 						.Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+// 						.$fname_Tokens[1]
+// 						;
+			$new_name = join(
+					DS,
+					array(
+							$dname,
+							"log"."_".Utils::get_CurrentTime2(
+									CONS::$timeLabelTypes['serial'])
+							.".txt")
+			);
+				
+			$res = rename($path_LogFile, $new_name);
+			
+		} else {
+			
+// 			$msg = "(\$file_Length > \$max_LineNum) => false";
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
 			
 		}
 

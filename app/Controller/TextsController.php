@@ -478,20 +478,22 @@ class TextsController extends AppController {
 
 	public function exec_Sql() {
 
-		$dbu = new DBUtil();
+		DBUtil::createTable_Words(true);
 		
-		$dbu->dropTable(DBUtil::$tname_Texts);
+// 		$dbu = new DBUtil();
 		
-		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+// 		$dbu->dropTable(DBUtil::$tname_Texts);
 		
-		write_Log(
-			CONS::get_dPath_Log(),
-			$msg,
-			__FILE__,
-			__LINE__);
+// 		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+		
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
 		
 		
-		$dbu->createTable_Texts();
+// 		$dbu->createTable_Texts();
 		
 		
 // 		$dbu->createTable_Langs();

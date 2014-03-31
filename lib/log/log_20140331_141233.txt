@@ -1,0 +1,2 @@
+[03/31/2014 14:12:33 : app\Controller\WordsController.php : 56] index() => starts
+[03/31/2014 14:12:33 : app\Controller\WordsController.php : 93] $lines=1/max num=2/(lines > max num) => no/dpath=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log/fpath=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log\log.txt
