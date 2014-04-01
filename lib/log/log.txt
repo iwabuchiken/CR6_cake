@@ -482,3 +482,17 @@
 [04/01/2014 10:55:39 : app\Controller\TextsController.php : 936] ($lang_id == $r_id) => $lang_id=1/$r_id=1(宫鸠彦)
 [04/01/2014 10:55:40 : app\Controller\TextsController.php : 146] index() => starts
 [04/01/2014 10:55:45 : app\Controller\WordsController.php : 56] index() => starts
+[04/01/2014 11:28:21 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:28:21 : app\Controller\WordsController.php : 82] $range => -1,0
+[04/01/2014 11:31:10 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:31:12 : app\Controller\WordsController.php : 93] $range => 22,30($total=$per_Page=10$page=3)
+[04/01/2014 11:31:22 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:31:22 : app\Controller\WordsController.php : 93] $range => 22,30($total=4036$per_Page=10$page=3)
+[04/01/2014 11:32:39 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:32:39 : app\Controller\WordsController.php : 93] $range => 21,30($total=4036$per_Page=10$page=3)
+[04/01/2014 11:35:06 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:35:06 : app\Controller\WordsController.php : 88] $range => 101,150($total=4036$per_Page=50$page=3)
+[04/01/2014 11:36:11 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:36:11 : app\Controller\WordsController.php : 88] $range => 101,150($total=4036$per_Page=50$page=3)
+[04/01/2014 11:36:55 : app\Controller\WordsController.php : 63] index() => starts
+[04/01/2014 11:36:55 : app\Controller\WordsController.php : 88] $range => 101,150($total=4036$per_Page=50$page=3)

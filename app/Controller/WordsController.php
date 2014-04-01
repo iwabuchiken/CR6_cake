@@ -18,6 +18,18 @@ class WordsController extends AppController {
 	
 	public $title_Length	= 60;
 
+	/****************************************
+	* Pagination
+	****************************************/
+	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
+	public $components = array('Paginator');
+	
+	public $paginate = array(
+			'limit' => 25,
+			'order' => array(
+					'Word.id' => 'asc'
+			)
+	);
 	
 	/****************************************
 	* Associations
@@ -46,14 +58,58 @@ class WordsController extends AppController {
 	
 	public function index() {
 
-		//REF http://www.packtpub.com/article/working-with-simple-associations-using-cakephp
-		$this->Word->recursive = 1;
-		$words = $this->Word->find('all');
-		$this->set('words', $words);
-		
 		$text = "index() => starts";
 		
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+		
+		/****************************************
+		* Paginate
+		****************************************/
+		$total = 4036;
+		$per_Page = 50;
+		
+		$page = 3;
+		
+		$range = $this->_index__GetPaginationRange(
+								$total, $per_Page, $page);
+		
+		$msg = "\$range => ".implode(",", $range)
+				."("
+				."\$total=".strval($total)
+				."\$per_Page=".strval($per_Page)
+				."\$page=".strval($page)
+				.")"
+				;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		//REF http://www.packtpub.com/article/working-with-simple-associations-using-cakephp
+		$this->Word->recursive = 1;
+		$words = $this->Word->find('all');
+		
+		// Paginate
+		$words = array_slice($words, $range[0] - 1, $per_Page);
+// 		$words = array_slice($words, $range[0], $per_Page);
+		
+		$this->set('words', $words);
+		
+		
+
+		
+// 		//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
+// 		$this->Paginator->settings = $this->paginate;
+		
+// 		// similar to findAll(), but fetches paged results
+// 		$data = $this->Paginator->paginate('Text');
+// 		$this->set('texts', $data);
+		
+// 		debug($data[0]);
+		
+		
 		
 		
 		
@@ -62,6 +118,18 @@ class WordsController extends AppController {
 // 		$this->_index_Experi_getEncoding();
 		
 	}//public function index()
+
+	public function
+	_index__GetPaginationRange($total, $per_Page, $page) {
+		
+		$start_Id = 1 + ($per_Page * ($page - 1));
+// 		$start_Id = ($page - 1) + ($per_Page * ($page - 1));
+		
+		$end_Id = $per_Page * $page;
+		
+		return array($start_Id, $end_Id);
+		
+	}//_index__GetPaginationRange($total, $page)
 	
 	public function _index_Experi_WriteLog() {
 		
