@@ -190,6 +190,9 @@
 		****************************************/
 		public static $csv_Langs = "Lang_backup.csv";
 		
+// 		public static $logFile_maxLineNum = 2;
+		public static $logFile_maxLineNum = 3000;
+		
 		/****************************************
 		* functions *****************************
 		****************************************/
@@ -326,24 +329,64 @@
 					
 				$word = new Word();
 					
-				$word->set('w1', $line[1]);
-				$word->set('w2', $line[2]);
-				$word->set('w3', $line[3]);
-				
-				$word->set('text_id', $line[5]);
+				try {
 					
-				$word->set('r_created_at', $line[10]);
-				$word->set('r_updated_at', $line[11]);
-				$word->set('r_id', $line[0]);
+					$msg = "w1=".$line[1]
+							."("
+							."\$line length=".strval(count($line))
+							.")"
+							."\$line="
+							.implode("@", $line)
+							;
 					
-				$word->set(
-						'created_at',
-						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+					write_Log(
+						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__);
 					
-				$word->set('updated_at',
-						Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
 					
-				$word->save();
+					$word->set('w1', $line[1]);
+					$word->set('w2', $line[2]);
+					$word->set('w3', $line[3]);
+					
+					$word->set('text_id', $line[5]);
+					$word->set('lang_id', $line[6]);
+						
+					$word->set('r_created_at', $line[10]);
+					$word->set('r_updated_at', $line[11]);
+					$word->set('r_id', $line[0]);
+						
+					$word->set(
+							'created_at',
+							Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+						
+					$word->set('updated_at',
+							Utils::get_CurrentTime2(CONS::$timeLabelTypes['rails']));
+						
+					$word->save();
+					
+					$msg = "saved => ".$line[1];
+					
+					write_Log(
+						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__);
+					
+					
+				} catch (Exception $e) {
+					
+					$msg = "exception => " + $e;
+					
+					write_Log(
+						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__);
+					
+					
+				}
 		
 			}//foreach ($csv_Lines as $line)
 				

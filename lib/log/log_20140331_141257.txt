@@ -1,0 +1,3 @@
+[03/31/2014 14:12:33 : app\Controller\WordsController.php : 123] dname=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log@new_name=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log\log_20140331_141233.txt@tokens=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log\log,txt
+[03/31/2014 14:12:57 : app\Controller\WordsController.php : 56] index() => starts
+[03/31/2014 14:12:57 : app\Controller\WordsController.php : 93] $lines=2/max num=2/(lines > max num) => no/dpath=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log/fpath=C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\log\log.txt

@@ -58,10 +58,74 @@ class WordsController extends AppController {
 		
 		
 		//test
+// 		$this->_index_Experi_WriteLog();
 // 		$this->_index_Experi_getEncoding();
 		
 	}//public function index()
 	
+	public function _index_Experi_WriteLog() {
+		
+		$path_LogFile = join(
+				DS,
+				array(CONS::get_dPath_Log(), "log.txt"));
+		
+		$lines = file($path_LogFile);
+		
+		debug(strval(count($lines)));
+		
+		$msg = "strval(count(\$lines)) => ".strval(count($lines));
+		
+		$msg = "\$lines=".strval(count($lines))
+				."/"
+				."max num=".strval(CONS::$logFile_maxLineNum)
+				."/(lines > max num) => "
+				.((count($lines) > CONS::$logFile_maxLineNum) ? "yes" : "no")
+				."/"
+				."dpath=".dirname($path_LogFile)
+				."/"
+				."fpath=".$path_LogFile
+				;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		//
+		$dname = dirname($path_LogFile);
+		$fname_Tokens = split("\.", $path_LogFile);
+		
+// 		$new_name = $fname_Tokens[0]
+		$new_name = join(
+				DS,
+				array(
+					$dname,
+					"log"."_".Utils::get_CurrentTime2(
+							CONS::$timeLabelTypes['serial'])
+						.".txt")
+				);
+				
+		$res = rename($path_LogFile, $new_name);
+		
+		
+		$msg = "dname=".$dname
+				."@"
+				."new_name=".$new_name
+				."@"
+				."tokens=".implode(",", $fname_Tokens)
+				;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		
+// 		debug($lines);
+		
+	}
 	public function _index_Experi_getEncoding() {
 		
 		/****************************************
@@ -812,97 +876,24 @@ class WordsController extends AppController {
 
 	public function exec_Sql() {
 
-		$dbu = new DBUtil();
+		DBUtil::createTable_Words(true);
+// 		DBUtil::createTable_Words(false);
 		
-		$dbu->dropTable(DBUtil::$tname_Texts);
+// 		$dbu = new DBUtil();
 		
-		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+// 		$dbu->dropTable(DBUtil::$tname_Texts);
 		
-		write_Log(
-			CONS::get_dPath_Log(),
-			$msg,
-			__FILE__,
-			__LINE__);
+// 		$msg = "Table dropped => ".DBUtil::$tname_Texts;
 		
-		
-		$dbu->createTable_Texts();
-		
-		
-// 		$dbu->createTable_Langs();
-		
-// 		$dbu->get_TableList();
-		
-// 		$cons = new CONS();
-		
-// 		$sqls = new SQLs();
-		
-// 		$dbs = new DBS();
-		
-// 		$fPath_dbFile_Local = $cons->get_fPath_DB();
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
 		
 		
-// // 		$dbh = new PDO($dsn, $user, $password);
-
-// 		$sql = "CREATE TABLE test ("
-// 				."id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
-// // 				."test id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
-// 				."created_at VARCHAR(30),"
-// 				."updated_at VARCHAR(30)"
-// 				.")";
-// // 				."updated_at VARCHAR(30),";
+// 		$dbu->createTable_Texts();
 		
-// 		try{
-			
-// 			$dbh = new PDO($dsn, $user, $password);
-			
-// 			$msg = "PDO instance => created";
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				$msg,
-// 				__FILE__,
-// 				__LINE__);
-			
-			
-// 			//REF http://stackoverflow.com/questions/19577056/using-pdo-to-create-table
-// 			$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-			
-// 			$res = $dbh->exec($sql);
-			
-// 			$msg = "\$res => ".$res;
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				$msg,
-// 				__FILE__,
-// 				__LINE__);
-			
-			
-// 			$msg = "sql => done: ".$sql;
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				$msg,
-// 				__FILE__,
-// 				__LINE__);
-			
-			
-// 		}catch (PDOException $e){
-			
-// 			$msg = 'Connection failed:'.$e->getMessage();
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				$msg,
-// 				__FILE__,
-// 				__LINE__);
-			
-// // 			print('Connection failed:'.$e->getMessage());
-// // 			die();
-			
-// 		}
-		
-// 		$dbh = null;
 		
 		/****************************************
 		* Refirection
@@ -910,7 +901,7 @@ class WordsController extends AppController {
 		$this->Session->setFlash(__('Back from exec_Sql()'));
 		
 		return $this->redirect(
-				array('controller' => 'texts', 'action' => 'index'));
+				array('controller' => 'words', 'action' => 'index'));
 		
 	}//public function exec_Sql()
 	
