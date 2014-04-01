@@ -109,6 +109,9 @@ class TextsController extends AppController {
 		
 		$this->set('texts', $this->Text->find('all'));
 		
+		$this->_index__Experiments();
+
+		
 // 		//debug
 // 		$texts = $this->Text->find('all');
 		
@@ -126,7 +129,6 @@ class TextsController extends AppController {
 // 			__FILE__,
 // 			__LINE__);
 		
-// 		$this->_index__Experiments();
 // 		$this->Text->create();
 		
 // 		$text = $this->Text->create();
@@ -148,12 +150,29 @@ class TextsController extends AppController {
 	}//public function index()
 
 	public function _index__Experiments() {
+		
+// 		$this->_index__Experiments__D_5_v_4_2();
+		
 		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html
 // 		$this->Text->create();
 		
 // 		$this->Text->set('text', "AAAABBBB");
 		
 // 		$this->Text->save();
+		
+	}
+	
+	public function
+	_index__Experiments__D_5_v_4_2() {
+		
+		$this->loadModel('Lang');
+		$this->loadModel('Word');
+		
+		$langs = $this->Lang->find('all');
+		$words = $this->Word->find('all');
+		
+		debug($words[0]);
+		debug($langs[0]);
 		
 	}
 	
@@ -773,4 +792,167 @@ class TextsController extends AppController {
 		
 	}
 
+	public function exec_Tasks() {
+	
+		$this->_exec_Tasks__Update_LangId();
+		
+// 		$this->loadModel('Lang');
+// 		$this->loadModel('Word');
+	
+// 		$langs = $this->Lang->find('all');
+// 		$words = $this->Word->find('all');
+	
+// 		// 		debug($langs[0]);
+	
+// 		foreach ($words as $word) {
+				
+// 			$lang_id = $word['Word']['lang_id'];
+				
+// 			foreach ($langs as $lang) {
+	
+// 				$r_id = $lang['Lang']['r_id'];
+	
+// 				if ($lang_id == $r_id) {
+						
+// 					$msg = "(\$lang_id == \$r_id) => "
+// 							."\$lang_id=".strval($lang_id)
+// 							."/"
+// 									."\$r_id=".strval($r_id)
+// 									;
+						
+// 					write_Log(
+// 					CONS::get_dPath_Log(),
+// 					$msg,
+// 					__FILE__,
+// 					__LINE__);
+						
+						
+// 					$word['Text']['lang_id'] = $lang['Lang']['id'];
+// 					// 					$text['Text']['lang_id'] = $lang['id'];
+						
+// 					$this->Word->save($word['Text'], false);
+						
+// 					break;
+						
+// 				}//if ($lang_id == $r_id)
+	
+// 			}//foreach ($langs as $lang)
+				
+// 		}//foreach ($texts as $text)
+	
+	
+	
+	
+		$this->Session->setFlash(__('Redirected from execute_Tasks()'));
+	
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+	
+	
+		// 		//REF http://book.cakephp.org/2.0/en/models/saving-your-data.html#model-save-array-data-null-boolean-validate-true-array-fieldlist-array "If you want to update a value, "
+		// 		$data = array('id' => 282, 'title' => 'My new title');
+		// 		// This will update Recipe with id 10
+		// 		$this->Text->save($data);
+	
+		//REF http://stackoverflow.com/questions/19672105/cakephp-model-update-issue answered Oct 30 '13 at 1:42
+		// 		$text['Text']['title'] = "abc";
+	
+		// 		App::import('model','Lang');
+		//REF http://stackoverflow.com/questions/3696701/cakephp-using-models-in-different-controllers answered Sep 12 '10 at 21:31
+	
+		// 		$this->Text->save($text['Text'], false);
+	
+		// 		$msg = "save => done";
+	
+		// 		write_Log(
+	
+		// 			CONS::get_dPath_Log(),
+		// 			$msg,
+		// 			__FILE__,
+		// 			__LINE__);
+	
+	
+		// 		$text['Text']->saveField('title', "abc");
+		// 		$text->saveField('title', "abc");
+	
+		// // 		debug($text);
+	
+		// 		$msg = "text => ".mb_substr($text['Text']['text'], 0, 10);
+	
+		// 		write_Log(
+		// 			CONS::get_dPath_Log(),
+		// 			$msg,
+		// 			__FILE__,
+		// 			__LINE__);
+	
+	
+	
+	
+	
+	}//public function execute_Tasks()
+	
+	public function _exec_Tasks__Update_LangId() {
+
+		$this->loadModel('Lang');
+		$this->loadModel('Word');
+		
+		$langs = $this->Lang->find('all');
+		$words = $this->Word->find('all');
+		
+		$counter = 0;
+		$max = 100;
+		
+		// 		debug($langs[0]);
+		
+		foreach ($words as $word) {
+			
+// 			if ($counter > $max) {
+// 				break;
+// 			}
+			
+			$lang_id = $word['Word']['lang_id'];
+		
+			foreach ($langs as $lang) {
+		
+				$r_id = $lang['Lang']['r_id'];
+		
+				if ($lang_id == $r_id) {
+		
+					$msg = "(\$lang_id == \$r_id) => "
+							."\$lang_id=".strval($lang_id)
+							."/"
+							."\$r_id=".strval($r_id)
+							."("
+							.$word['Word']['w1']
+// 							.$lang['Word']['w1']
+							.")"
+					;
+		
+					write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+		
+		
+					$word['Word']['lang_id'] = $lang['Lang']['id'];
+// 					$word['Text']['lang_id'] = $lang['Lang']['id'];
+					// 					$text['Text']['lang_id'] = $lang['id'];
+		
+					$this->Word->save($word['Word'], false);
+// 					$this->Word->save($word['Text'], false);
+		
+					break;
+		
+				}//if ($lang_id == $r_id)
+		
+				$counter += 1;
+				
+			}//foreach ($langs as $lang)
+		
+		}//foreach ($texts as $text)
+		
+	}//public function _execute_Tasks__Update_LangId()
+	
 }

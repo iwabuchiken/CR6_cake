@@ -46,6 +46,13 @@
 						'action' => 'exec_Sql')
 					);
 			
+			echo " | ";
+			
+			echo $this->Html->link(
+					'Exec tasks',
+					array(
+							'controller' => 'texts',
+							'action' => 'exec_Tasks'));
 		
 // 		} else {
 		
