@@ -61,40 +61,57 @@ class WordsController extends AppController {
 		$text = "index() => starts";
 		
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
-		
+
 		/****************************************
-		* Paginate
+		* Get: words
 		****************************************/
-		$total = 4036;
-		$per_Page = 50;
-		
-		$page = 3;
-		
-		$range = $this->_index__GetPaginationRange(
-								$total, $per_Page, $page);
-		
-		$msg = "\$range => ".implode(",", $range)
-				."("
-				."\$total=".strval($total)
-				."\$per_Page=".strval($per_Page)
-				."\$page=".strval($page)
-				.")"
-				;
-		
-		write_Log(
-			CONS::get_dPath_Log(),
-			$msg,
-			__FILE__,
-			__LINE__);
-		
 		//REF http://www.packtpub.com/article/working-with-simple-associations-using-cakephp
 		$this->Word->recursive = 1;
 		$words = $this->Word->find('all');
 		
-		// Paginate
-		$words = array_slice($words, $range[0] - 1, $per_Page);
-// 		$words = array_slice($words, $range[0], $per_Page);
+		/****************************************
+		* Get: pagination data
+		****************************************/
+		$pagination_Data = $this->_index__Get_PaginationData();
 		
+		/****************************************
+		* Paginate
+		****************************************/
+		if ($pagination_Data != null) {
+			
+			$total = 4036;
+			$per_Page = $pagination_Data['per_page'];
+			$page = $pagination_Data['page'];
+// 			$per_Page = 50;
+			
+// 			$page = 3;
+			
+			$range = $this->_index__GetPaginationRange(
+									$total, $per_Page, $page);
+			
+			$msg = "\$range => ".implode(",", $range)
+					."("
+					."\$total=".strval($total)
+					."\$per_Page=".strval($per_Page)
+					."\$page=".strval($page)
+					.")"
+					;
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			// Paginate
+			$words = array_slice($words, $range[0] - 1, $per_Page);
+	// 		$words = array_slice($words, $range[0], $per_Page);
+
+		}//if ($pagination_Data != null)
+		
+		/****************************************
+		* Set: View data
+		****************************************/
 		$this->set('words', $words);
 		
 		
@@ -119,6 +136,85 @@ class WordsController extends AppController {
 		
 	}//public function index()
 
+	/****************************************
+	* @return null => page and/or per page values not obtained
+	****************************************/
+	public function
+	_index__Get_PaginationData() {
+		
+		//REF http://book.cakephp.org/2.0/en/controllers/request-response.html
+		$page = $this->request->query['page'];
+		@$per_Page = $this->request->query['per_Page'];
+		
+		if ($page != null && $page != ""
+				&& $per_Page != null && $per_Page != "") {
+		
+			return array(
+					"page" => $page,
+					"per_page" => $per_Page
+			);
+		
+		} else {
+		
+			return null;
+			
+		}
+		
+		// 		$params = $this->params['page'];
+		// 		$params = $this->request['page'];
+		// 		$params = $this->request['pass'];
+		// 		$params = $this->request;
+		// 		object(CakeRequest) {
+		// 			params => array(
+		// 			'plugin' => null,
+		// 			'controller' => 'words',
+		// 			'action' => 'index',
+		// 			'named' => array(),
+		// 			'pass' => array()
+		// 			)
+		// 		$params = $this->params;
+		// 		object(CakeRequest) {
+		// 			params => array(
+		// 			'plugin' => null,
+		// 			'controller' => 'words',
+		// 			'action' => 'index',
+		// 			'named' => array(),
+		// 			'pass' => array()
+		// 			)
+		// 		$params = $this->params['query'];	//=> null
+		// 		$params = $this->query;	//=> null
+		// 		$params = $this->request->query;	//=> null
+		// 		$params = $this->request['query'];	//=> null
+		// 		$params = $this->request['page'];	//=> null
+		
+// 		debug($params);
+		
+// 		// 		debug(get_class($params));
+		
+// 		$msg = "";
+		
+// 		if ($params == "") {
+		
+// 			$msg = "params => \"\"";
+		
+// 		} else if ($params == null) {
+		
+// 			$msg = "params => null";
+				
+// 		} else {
+				
+// 			$msg = "params => ".$params;
+				
+// 		}
+		
+// 		write_Log(
+// 		CONS::get_dPath_Log(),
+// 		$msg,
+// 		__FILE__,
+// 		__LINE__);
+
+	}//_index__Get_PaginationData()
+	
 	public function
 	_index__GetPaginationRange($total, $per_Page, $page) {
 		
