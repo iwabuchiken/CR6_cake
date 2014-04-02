@@ -17,6 +17,8 @@
 <br>
 <br>
 
+<?php echo $this->element('words/index_pagination')?>
+
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
 

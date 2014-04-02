@@ -143,7 +143,7 @@ class WordsController extends AppController {
 	_index__Get_PaginationData() {
 		
 		//REF http://book.cakephp.org/2.0/en/controllers/request-response.html
-		$page = $this->request->query['page'];
+		@$page = $this->request->query['page'];
 		@$per_Page = $this->request->query['per_Page'];
 		
 		if ($page != null && $page != ""
