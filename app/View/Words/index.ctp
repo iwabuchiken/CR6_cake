@@ -17,8 +17,6 @@
 <br>
 <br>
 
-<?php echo $this->element('words/index_pagination')?>
-
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
 
@@ -30,6 +28,8 @@
 
 	
 </table>
+
+<?php echo $this->element('words/index_pagination')?>
 
 <a id="bottom"></a>
 <a href="#top">Top</a>

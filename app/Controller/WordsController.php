@@ -79,9 +79,17 @@ class WordsController extends AppController {
 		****************************************/
 		if ($pagination_Data != null) {
 			
-			$total = 4036;
+			$total = 6000;
+// 			$total = 4036;
 			$per_Page = $pagination_Data['per_page'];
 			$page = $pagination_Data['page'];
+			
+			/****************************************
+			* Set: data for view
+			****************************************/
+			$this->set('per_page', $per_Page);
+			$this->set('total', $total);
+			
 // 			$per_Page = 50;
 			
 // 			$page = 3;
