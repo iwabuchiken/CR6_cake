@@ -785,3 +785,8 @@
 [04/03/2014 11:53:21 : app\Lib\utils\methods.php : 346] w1=申報($line length=12)$line=984@申報@declare@shen1bao4@@91@1@0@1377474660734@1377474660734@2013-08-25 23:51:00 UTC@2013-08-25 23:51:00 UTC
 [04/03/2014 11:53:21 : app\Lib\utils\methods.php : 375] saved => 申報
 [04/03/2014 11:53:21 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 15:09:56 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 15:15:44 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 15:16:17 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 15:17:08 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 15:17:18 : app\Controller\WordsController.php : 63] index() => starts

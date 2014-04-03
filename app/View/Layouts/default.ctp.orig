@@ -37,9 +37,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 // 		echo $this->Html->link('jquery');
 // 		echo $this->js->link('jquery');
 // 		echo $js->link('jquery');
-
-		echo $this->Html->script('swfobject');
-		
 		
 		echo $this->Html->css('cake.generic');
 

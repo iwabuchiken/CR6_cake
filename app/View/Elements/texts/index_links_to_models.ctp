@@ -38,3 +38,16 @@
 			
 	?>	
 	
+	<?php echo " | "; ?>
+	
+	<?php 
+		
+		echo $this->Html->link(
+				'Youtube',
+				array(
+					'controller' => 'words',
+					'action' => 'youTube')
+				);
+			
+	?>	
+	

@@ -1120,4 +1120,9 @@ class WordsController extends AppController {
 		
 	}//public function exec_Sql()
 	
+	public function youTube() {
+		
+		
+		
+	}
 }
