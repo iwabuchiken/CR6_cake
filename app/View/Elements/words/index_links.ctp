@@ -54,10 +54,10 @@
 // 		if ($host_name != null && $host_name == $cons->local_HostName) {
 		
 			echo $this->Html->link(
-					'Exec sql',
+					'Recreate table',
 					array(
 						'controller' => 'words',
-						'action' => 'exec_Sql')
+						'action' => 'recreate_Table')
 					);
 			
 		

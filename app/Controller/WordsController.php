@@ -234,6 +234,11 @@ class WordsController extends AppController {
 	
 	public function
 	_index__GetPaginationRange($total, $per_Page, $page) {
+
+		$iterate = $total / $per_Page;
+		$residue = $total % $per_Page;
+		
+		
 		
 		$start_Id = 1 + ($per_Page * ($page - 1));
 // 		$start_Id = ($page - 1) + ($per_Page * ($page - 1));
@@ -1088,29 +1093,27 @@ class WordsController extends AppController {
 	
 	public function recreate_Table() {
 
-		DBUtil::createTable_Words(true);
-// 		DBUtil::createTable_Words(false);
+		$res = DBUtil::createTable_Words(true);
 		
-// 		$dbu = new DBUtil();
+		$msg = "";
 		
-// 		$dbu->dropTable(DBUtil::$tname_Texts);
+		if ($res == RetVals::$sqlDone) {
 		
-// 		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+			$msg = "Sql => Done";
 		
-// 		write_Log(
-// 			CONS::get_dPath_Log(),
-// 			$msg,
-// 			__FILE__,
-// 			__LINE__);
+		} else {
 		
-		
-// 		$dbu->createTable_Texts();
-		
+			$msg = "Table already exists";
+			
+		}
 		
 		/****************************************
 		* Refirection
 		****************************************/
-		$this->Session->setFlash(__('Back from exec_Sql()'));
+		$flash = "Back from exec_Sql()"." ($msg)";
+		
+		$this->Session->setFlash(__($flash));
+// 		$this->Session->setFlash(__('Back from exec_Sql()'));
 		
 		return $this->redirect(
 				array('controller' => 'words', 'action' => 'index'));

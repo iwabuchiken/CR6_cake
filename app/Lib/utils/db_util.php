@@ -435,6 +435,11 @@
 			****************************************/
 			$dbh = null;
 			
+			/****************************************
+			* Return
+			****************************************/
+			return RetVals::$sqlDone;
+			
 		}//public function createTable_Words($force)
 
 		public static function
