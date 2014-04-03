@@ -1625,3 +1625,41 @@
 [04/02/2014 13:38:47 : app\Controller\WordsController.php : 112] $range => 6041,6050($total=6000$per_Page=10$page=605)
 [04/02/2014 13:38:55 : app\Controller\WordsController.php : 63] index() => starts
 [04/02/2014 13:38:55 : app\Controller\WordsController.php : 112] $range => 5991,6000($total=6000$per_Page=10$page=600)
+[04/02/2014 18:05:10 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:05:10 : app\Controller\WordsController.php : 112] $range => 4141,4150($total=6000$per_Page=10$page=415)
+[04/02/2014 18:05:41 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:07:12 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:07:12 : app\Controller\WordsController.php : 112] $range => 4141,4150($total=6000$per_Page=10$page=415)
+[04/02/2014 18:07:23 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:12:47 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:14:44 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:25:35 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:25:57 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:25:57 : app\Controller\WordsController.php : 113] $range => 6021,6030($total=6028$per_Page=10$page=603)
+[04/02/2014 18:26:54 : app\Controller\WordsController.php : 63] index() => starts
+[04/02/2014 18:26:54 : app\Controller\WordsController.php : 113] $range => 6021,6030($total=6028$per_Page=10$page=603)
+[04/03/2014 11:32:31 : app\Controller\TextsController.php : 146] index() => starts
+[04/03/2014 11:32:40 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 11:32:55 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 11:32:55 : app\Controller\WordsController.php : 113] $range => 6021,6030($total=6028$per_Page=10$page=603)
+[04/03/2014 11:33:29 : app\Controller\WordsController.php : 63] index() => starts
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 315] createTable_Words()
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 869] Starts => tableExists()
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 886] localhost
+[04/03/2014 11:36:56 : app\Lib\utils\methods.php : 236] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1150] $tnames => sqlite_sequence,langs,texts,words
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 338] Table exists => words
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 869] Starts => tableExists()
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 886] localhost
+[04/03/2014 11:36:56 : app\Lib\utils\methods.php : 236] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1150] $tnames => sqlite_sequence,langs,texts,words
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1231] Table exists => words
+[04/03/2014 11:36:56 : app\Lib\utils\methods.php : 236] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1285] $dbh->setAttribute => done
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1298] $sql => DROP TABLE words
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 1311] $res => 0
+[04/03/2014 11:36:56 : app\Lib\utils\methods.php : 236] WEBROOT_DIR => webroot/WWW_ROOT => C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 400] $dbh->setAttribute => done
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 417] $sql => CREATE TABLE words (id INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL, created_at VARCHAR(30), updated_at VARCHAR(30), w1 TEXT, w2 TEXT, w3 TEXT, text_ids TEXT, text_id INT, lang_id INT, r_id INT, r_created_at TEXT, r_updated_at TEXT )
+[04/03/2014 11:36:56 : app\Lib\utils\db_util.php : 431] $res => 0
+[04/03/2014 11:36:56 : app\Controller\WordsController.php : 63] index() => starts

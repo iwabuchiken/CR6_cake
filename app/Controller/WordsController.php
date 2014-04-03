@@ -79,7 +79,8 @@ class WordsController extends AppController {
 		****************************************/
 		if ($pagination_Data != null) {
 			
-			$total = 6000;
+			$total = count($words);
+// 			$total = 6000;
 // 			$total = 4036;
 			$per_Page = $pagination_Data['per_page'];
 			$page = $pagination_Data['page'];
@@ -115,7 +116,15 @@ class WordsController extends AppController {
 			$words = array_slice($words, $range[0] - 1, $per_Page);
 	// 		$words = array_slice($words, $range[0], $per_Page);
 
-		}//if ($pagination_Data != null)
+		} else {//if ($pagination_Data != null)
+
+			$this->set('per_page', 10);
+			
+			$total = count($words);
+			$this->set('total', $total);
+// 			$this->set('total', 6000);
+			
+		}
 		
 		/****************************************
 		* Set: View data
@@ -1047,6 +1056,37 @@ class WordsController extends AppController {
 	}
 
 	public function exec_Sql() {
+
+		DBUtil::createTable_Words(true);
+// 		DBUtil::createTable_Words(false);
+		
+// 		$dbu = new DBUtil();
+		
+// 		$dbu->dropTable(DBUtil::$tname_Texts);
+		
+// 		$msg = "Table dropped => ".DBUtil::$tname_Texts;
+		
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+		
+		
+// 		$dbu->createTable_Texts();
+		
+		
+		/****************************************
+		* Refirection
+		****************************************/
+		$this->Session->setFlash(__('Back from exec_Sql()'));
+		
+		return $this->redirect(
+				array('controller' => 'words', 'action' => 'index'));
+		
+	}//public function exec_Sql()
+	
+	public function recreate_Table() {
 
 		DBUtil::createTable_Words(true);
 // 		DBUtil::createTable_Words(false);
