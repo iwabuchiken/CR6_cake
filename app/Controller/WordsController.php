@@ -113,7 +113,15 @@ class WordsController extends AppController {
 				__LINE__);
 			
 			// Paginate
-			$words = array_slice($words, $range[0] - 1, $per_Page);
+			$words = array_slice(
+							$words,
+							// Array index starts with 0,
+							//	=> decrement the start value by 1
+							$range["start"] - 1,	
+							$range["length"]);
+			
+// 			$words = array_slice($words, $range[0], $range[1]);
+// 			$words = array_slice($words, $range[0] - 1, $per_Page);
 	// 		$words = array_slice($words, $range[0], $per_Page);
 
 		} else {//if ($pagination_Data != null)
@@ -235,17 +243,95 @@ class WordsController extends AppController {
 	public function
 	_index__GetPaginationRange($total, $per_Page, $page) {
 
-		$iterate = $total / $per_Page;
+		$iterate = floor($total / $per_Page);
 		$residue = $total % $per_Page;
 		
+		$msg = "\$total=".strval($total)
+				."/"
+				."\$per_Page=".strval($per_Page)
+				."/"
+				."\$page=".strval($page)
+				."/"
+				."\$iterate=".strval($iterate)
+				."/"
+				."\$residue=".strval($residue)
+				;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
 		
 		
-		$start_Id = 1 + ($per_Page * ($page - 1));
-// 		$start_Id = ($page - 1) + ($per_Page * ($page - 1));
+		/****************************************
+		* Validate: Target page => within limit?
+		****************************************/
+		if($residue == 0 && $page > $iterate) {
+			
+			$this->Session->write(CONS::$sKeys_CurrentPage, 1);
+			
+			return array(
+						"start" => 0,
+						"length" => $per_Page);
+// 			return array(0, 5);
+			
+		} else if($residue > 0 && $page > $iterate + 1) {
+// 		} else if($residue > 0 && $page > $iterate + 1) {
+			
+			$msg = "\$residue > 0 && \$page > \$iterate";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+
+			$this->Session->write(CONS::$sKeys_CurrentPage, 1);
+			
+			return array(
+					"start" => 0,
+					"length" => $per_Page);
+// 			return array(0, $per_Page);
+			
+		}//if($residue == 0 && $page > $iterate)
 		
-		$end_Id = $per_Page * $page;
+		/****************************************
+		* Get: current page
+		****************************************/
+		$current_Page = $this->Session->read(CONS::$sKeys_CurrentPage);
 		
-		return array($start_Id, $end_Id);
+		if ($current_Page == null) {
+			
+			$current_Page = 1;
+			
+		}
+		
+		/****************************************
+		* Build: numbers
+		****************************************/
+		if ($page == $iterate + 1) {
+		
+			return array(
+						"start"		=> 1 + $per_Page * ($page - 1),
+						"length"	=> $residue
+					);
+		
+		} else {
+		
+			return array(
+					"start"		=> 1 + $per_Page * ($page - 1),
+					"length"	=> $per_Page
+			);
+			
+		}
+		
+// 		$start_Id = 1 + ($per_Page * ($page - 1));
+// // 		$start_Id = ($page - 1) + ($per_Page * ($page - 1));
+		
+// 		$end_Id = $per_Page * $page;
+		
+// 		return array($start_Id, $end_Id);
 		
 	}//_index__GetPaginationRange($total, $page)
 	

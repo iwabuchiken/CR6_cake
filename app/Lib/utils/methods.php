@@ -194,6 +194,11 @@
 		public static $logFile_maxLineNum = 3000;
 		
 		/****************************************
+		* Session keys
+		****************************************/
+		public static $sKeys_CurrentPage = "current_page";
+		
+		/****************************************
 		* functions *****************************
 		****************************************/
 		public static function get_HostName() {

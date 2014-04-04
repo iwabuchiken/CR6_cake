@@ -790,3 +790,78 @@
 [04/03/2014 15:16:17 : app\Controller\WordsController.php : 63] index() => starts
 [04/03/2014 15:17:08 : app\Controller\WordsController.php : 63] index() => starts
 [04/03/2014 15:17:18 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:29:49 : app\Controller\TextsController.php : 146] index() => starts
+[04/04/2014 10:44:08 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:44:14 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:44:14 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=100)
+[04/04/2014 10:44:22 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:44:22 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=101)
+[04/04/2014 10:44:28 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:44:28 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:45:28 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:45:28 : app\Controller\WordsController.php : 250] $iterate=99.6/$residue=6
+[04/04/2014 10:45:28 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:46:40 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:46:40 : app\Controller\WordsController.php : 254] 996=996/$page=103/$iterate=99.6/$residue=6
+[04/04/2014 10:46:40 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:49:06 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:49:06 : app\Controller\WordsController.php : 254] $total=996/$page=103/$iterate=99/$residue=6
+[04/04/2014 10:49:06 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:49:51 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:49:51 : app\Controller\WordsController.php : 254] $total=996/$page=103/$iterate=99/$residue=6
+[04/04/2014 10:49:51 : app\Controller\WordsController.php : 272] $residue > 0 && $page > $iterate
+[04/04/2014 10:49:51 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:50:47 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:50:47 : app\Controller\WordsController.php : 255] $total=996/$page=103/$iterate=99/$residue=6
+[04/04/2014 10:50:47 : app\Controller\WordsController.php : 273] $residue > 0 && $page > $iterate
+[04/04/2014 10:50:47 : app\Controller\WordsController.php : 113] $range => 0,9($total=996$per_Page=10$page=103)
+[04/04/2014 10:51:29 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:51:29 : app\Controller\WordsController.php : 255] $total=996/$page=103/$iterate=99/$residue=6
+[04/04/2014 10:51:29 : app\Controller\WordsController.php : 273] $residue > 0 && $page > $iterate
+[04/04/2014 10:51:29 : app\Controller\WordsController.php : 113] $range => 0,10($total=996$per_Page=10$page=103)
+[04/04/2014 10:52:52 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:52:52 : app\Controller\WordsController.php : 255] $total=996/$page=100/$iterate=99/$residue=6
+[04/04/2014 10:52:52 : app\Controller\WordsController.php : 273] $residue > 0 && $page > $iterate
+[04/04/2014 10:52:52 : app\Controller\WordsController.php : 113] $range => 0,10($total=996$per_Page=10$page=100)
+[04/04/2014 10:53:16 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:53:16 : app\Controller\WordsController.php : 255] $total=996/$page=100/$iterate=99/$residue=6
+[04/04/2014 10:53:16 : app\Controller\WordsController.php : 113] $range => 991,1000($total=996$per_Page=10$page=100)
+[04/04/2014 10:54:34 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 10:54:34 : app\Controller\WordsController.php : 255] $total=996/$page=100/$iterate=99/$residue=6
+[04/04/2014 10:54:34 : app\Controller\WordsController.php : 113] $range => 991,1000($total=996$per_Page=10$page=100)
+[04/04/2014 11:02:48 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:02:48 : app\Controller\WordsController.php : 255] $total=996/$page=100/$iterate=99/$residue=6
+[04/04/2014 11:02:48 : app\Controller\WordsController.php : 113] $range => 991,1000($total=996$per_Page=10$page=100)
+[04/04/2014 11:02:56 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:02:56 : app\Controller\WordsController.php : 255] $total=996/$page=101/$iterate=99/$residue=6
+[04/04/2014 11:02:56 : app\Controller\WordsController.php : 113] $range => 1001,1010($total=996$per_Page=10$page=101)
+[04/04/2014 11:14:00 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:14:00 : app\Controller\WordsController.php : 256] $total=996/$page=99/$iterate=99/$residue=6
+[04/04/2014 11:14:00 : app\Controller\WordsController.php : 113] $range => 981,10($total=996$per_Page=10$page=99)
+[04/04/2014 11:14:10 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:14:10 : app\Controller\WordsController.php : 256] $total=996/$page=100/$iterate=99/$residue=6
+[04/04/2014 11:14:10 : app\Controller\WordsController.php : 113] $range => 991,6($total=996$per_Page=10$page=100)
+[04/04/2014 11:14:46 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:14:46 : app\Controller\WordsController.php : 258] $total=996/$per_Page=10/$page=100/$iterate=99/$residue=6
+[04/04/2014 11:14:46 : app\Controller\WordsController.php : 113] $range => 991,6($total=996$per_Page=10$page=100)
+[04/04/2014 11:19:09 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:19:09 : app\Controller\WordsController.php : 258] $total=996/$per_Page=10/$page=2/$iterate=99/$residue=6
+[04/04/2014 11:19:09 : app\Controller\WordsController.php : 113] $range => 11,10($total=996$per_Page=10$page=2)
+[04/04/2014 11:19:15 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:19:15 : app\Controller\WordsController.php : 258] $total=996/$per_Page=10/$page=1/$iterate=99/$residue=6
+[04/04/2014 11:19:15 : app\Controller\WordsController.php : 113] $range => 1,10($total=996$per_Page=10$page=1)
+[04/04/2014 11:20:04 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:20:04 : app\Controller\WordsController.php : 258] $total=996/$per_Page=10/$page=100/$iterate=99/$residue=6
+[04/04/2014 11:20:04 : app\Controller\WordsController.php : 113] $range => 991,6($total=996$per_Page=10$page=100)
+[04/04/2014 11:20:11 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:20:11 : app\Controller\WordsController.php : 258] $total=996/$per_Page=10/$page=99/$iterate=99/$residue=6
+[04/04/2014 11:20:11 : app\Controller\WordsController.php : 113] $range => 981,10($total=996$per_Page=10$page=99)
+[04/04/2014 11:20:48 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:20:48 : app\Controller\WordsController.php : 262] $total=996/$per_Page=10/$page=1/$iterate=99/$residue=6
+[04/04/2014 11:20:48 : app\Controller\WordsController.php : 113] $range => 1,10($total=996$per_Page=10$page=1)
+[04/04/2014 11:20:51 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:20:51 : app\Controller\WordsController.php : 262] $total=996/$per_Page=10/$page=100/$iterate=99/$residue=6
+[04/04/2014 11:20:51 : app\Controller\WordsController.php : 113] $range => 991,6($total=996$per_Page=10$page=100)
+[04/04/2014 11:20:56 : app\Controller\WordsController.php : 63] index() => starts
+[04/04/2014 11:20:56 : app\Controller\WordsController.php : 262] $total=996/$per_Page=10/$page=99/$iterate=99/$residue=6
+[04/04/2014 11:20:56 : app\Controller\WordsController.php : 113] $range => 981,10($total=996$per_Page=10$page=99)
