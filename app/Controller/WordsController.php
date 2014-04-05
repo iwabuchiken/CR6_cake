@@ -106,7 +106,8 @@ class WordsController extends AppController {
 		/****************************************
 		* Paginate: Session data
 		****************************************/
-		$current_Lot = $this->Session->read(CONS::$sKeys_CurrentLot);
+// 		$current_Lot = $this->Session->read(CONS::$sKeys_CurrentLot);
+		$current_Lot = $this->get_CurrentLot($page, $per_Page);
 		
 		$msg = "\$current_Lot => $current_Lot";
 		
@@ -150,8 +151,22 @@ class WordsController extends AppController {
 				__FILE__,
 				__LINE__);
 			
-			$current_Lot += 1;
+// 			$current_Lot += 1;
 			
+			$this->Session->write(CONS::$sKeys_CurrentLot, $current_Lot);
+			
+		} else if ($move_Lot == "prev") {
+			
+			$msg = "\$move_Lot => prev";
+				
+			write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+				
+// 			$current_Lot -= 1;
+				
 			$this->Session->write(CONS::$sKeys_CurrentLot, $current_Lot);
 			
 		} else {
@@ -176,7 +191,7 @@ class WordsController extends AppController {
 		
 		$range = $this->conv_CurrentLot_to_Range($current_Lot, $per_Page);
 		
-		debug($range);
+// 		debug($range);
 		
 		$this->set("range", $range);
 		
@@ -1359,6 +1374,25 @@ class WordsController extends AppController {
 		$end	= $cur_Lot * $per_Page;
 	
 		return array($start, $end);
+	
+	}
+
+	public function get_CurrentLot($cur_Page, $per_Page) {
+	
+		$floor	= $cur_Page / $per_Page;
+		// 	$ceil	= $cur_Page / $per_Page;
+		$residue	= $cur_Page % $per_Page;
+	
+		if ($residue == 0) {
+				
+			$floor -= 1;
+				
+// 			echo "\n\t\$residue => 0\n\n";
+				
+		}
+	
+		// 	return floor($floor);
+		return floor($floor + 1);
 	
 	}
 	

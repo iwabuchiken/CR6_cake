@@ -15,6 +15,21 @@ Pagination 2
 		__LINE__);
 	
 
+	// Arrows
+	echo $this->Html->link(
+			" << | ",
+			array(
+					'controller' => 'words',
+					'action'	=> 'index',
+					//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+					'?' => array(
+							'page'		=> strval($range[0] - 1),
+// 							'page'		=> strval($range[0] - $per_page),
+							'per_Page'	=> strval($per_page),
+							'move_lot'	=> "prev"
+					)
+			));
+	
 	// Page numbers
 	for ($i = $range[0]; $i <= $range[1]; $i++) {
 		
