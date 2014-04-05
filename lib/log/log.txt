@@ -27,3 +27,107 @@
 [04/05/2014 10:30:16 : app\Controller\WordsController.php : 457] \current iter=17
 [04/05/2014 10:30:16 : app\Controller\WordsController.php : 218] $range => 161,10($total=1992$per_Page=10$page=17)
 [04/05/2014 10:30:16 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=11/range[1]=20
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 116] $current_Lot => 2
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 140] $move_Lot => ""
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 174] $current_Lot => 2
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=17/$iterate=199/$residue=2/\current iter=17
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 458] \current iter=17
+[04/05/2014 10:42:17 : app\Controller\WordsController.php : 219] $range => 161,10($total=1992$per_Page=10$page=17)
+[04/05/2014 10:42:17 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=11/range[1]=20
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 116] $current_Lot => 2
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 140] $move_Lot => ""
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 174] $current_Lot => 2
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=17/$iterate=199/$residue=2/\current iter=17
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 458] \current iter=17
+[04/05/2014 10:42:40 : app\Controller\WordsController.php : 219] $range => 161,10($total=1992$per_Page=10$page=17)
+[04/05/2014 10:42:40 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=11/range[1]=20
+[04/05/2014 10:42:47 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 116] $current_Lot => 2
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 174] $current_Lot => 3
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=21/$iterate=199/$residue=2/\current iter=17
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 458] \current iter=21
+[04/05/2014 10:42:48 : app\Controller\WordsController.php : 219] $range => 201,10($total=1992$per_Page=10$page=21)
+[04/05/2014 10:42:48 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=21/range[1]=30
+[04/05/2014 10:42:53 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 116] $current_Lot => 3
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 174] $current_Lot => 4
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=31/$iterate=199/$residue=2/\current iter=21
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 458] \current iter=31
+[04/05/2014 10:42:54 : app\Controller\WordsController.php : 219] $range => 301,10($total=1992$per_Page=10$page=31)
+[04/05/2014 10:42:54 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=31/range[1]=40
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 116] $current_Lot => 4
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 174] $current_Lot => 5
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=41/$iterate=199/$residue=2/\current iter=31
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 458] \current iter=41
+[04/05/2014 10:43:08 : app\Controller\WordsController.php : 219] $range => 401,10($total=1992$per_Page=10$page=41)
+[04/05/2014 10:43:08 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=41/range[1]=50
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 116] $current_Lot => 5
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 174] $current_Lot => 6
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=41/$iterate=199/$residue=2/\current iter=41
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 458] \current iter=41
+[04/05/2014 10:45:17 : app\Controller\WordsController.php : 219] $range => 401,10($total=1992$per_Page=10$page=41)
+[04/05/2014 10:45:17 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=51/range[1]=60
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 116] $current_Lot => 6
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 174] $current_Lot => 7
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=41/$iterate=199/$residue=2/\current iter=41
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 458] \current iter=41
+[04/05/2014 10:45:33 : app\Controller\WordsController.php : 219] $range => 401,10($total=1992$per_Page=10$page=41)
+[04/05/2014 10:45:33 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=61/range[1]=70
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 116] $current_Lot => 7
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 174] $current_Lot => 8
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=71/$iterate=199/$residue=2/\current iter=41
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 458] \current iter=71
+[04/05/2014 10:45:41 : app\Controller\WordsController.php : 219] $range => 701,10($total=1992$per_Page=10$page=71)
+[04/05/2014 10:45:41 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=71/range[1]=80
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 116] $current_Lot => 8
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 174] $current_Lot => 9
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=71/$iterate=199/$residue=2/\current iter=71
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 458] \current iter=71
+[04/05/2014 10:45:56 : app\Controller\WordsController.php : 219] $range => 701,10($total=1992$per_Page=10$page=71)
+[04/05/2014 10:45:56 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=81/range[1]=90
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 116] $current_Lot => 9
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 150] $move_Lot => next
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 174] $current_Lot => 10
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=91/$iterate=199/$residue=2/\current iter=71
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 458] \current iter=91
+[04/05/2014 10:46:01 : app\Controller\WordsController.php : 219] $range => 901,10($total=1992$per_Page=10$page=91)
+[04/05/2014 10:46:01 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=91/range[1]=100
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 116] $current_Lot => 10
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 140] $move_Lot => ""
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 174] $current_Lot => 10
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=93/$iterate=199/$residue=2/\current iter=91
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 458] \current iter=93
+[04/05/2014 10:46:08 : app\Controller\WordsController.php : 219] $range => 921,10($total=1992$per_Page=10$page=93)
+[04/05/2014 10:46:08 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=91/range[1]=100
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 116] $current_Lot => 10
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 140] $move_Lot => ""
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 174] $current_Lot => 10
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=95/$iterate=199/$residue=2/\current iter=93
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 458] \current iter=95
+[04/05/2014 10:46:11 : app\Controller\WordsController.php : 219] $range => 941,10($total=1992$per_Page=10$page=95)
+[04/05/2014 10:46:11 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=91/range[1]=100
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 63] index() => starts
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 116] $current_Lot => 10
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 140] $move_Lot => ""
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 174] $current_Lot => 10
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 377] $total=1992/$per_Page=10/$page=97/$iterate=199/$residue=2/\current iter=95
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 458] \current iter=97
+[04/05/2014 10:46:15 : app\Controller\WordsController.php : 219] $range => 961,10($total=1992$per_Page=10$page=97)
+[04/05/2014 10:46:15 : app\View\Elements\words\index_pagination_2.ctp : 15] range[0]=91/range[1]=100

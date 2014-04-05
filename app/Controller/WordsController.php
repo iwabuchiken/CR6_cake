@@ -94,7 +94,8 @@ class WordsController extends AppController {
 			
 			$total = count($words);
 			
-			$page = $total;
+			$page = 1;
+// 			$page = $total;
 			
 // 			$this->set('total', $total);
 // 			$this->set('total', 6000);
@@ -195,6 +196,7 @@ class WordsController extends AppController {
 			****************************************/
 			$this->set('per_page', $per_Page);
 			$this->set('total', $total);
+			$this->set('page', $page);
 			
 // 			$per_Page = 50;
 			
