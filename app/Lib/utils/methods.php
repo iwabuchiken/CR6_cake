@@ -198,6 +198,10 @@
 		****************************************/
 		public static $sKeys_CurrentPage = "current_page";
 		
+		public static $sKeys_CurrentIter = "current_iteration";
+		
+		public static $sKeys_CurrentLot = "current_lot";
+		
 		/****************************************
 		* functions *****************************
 		****************************************/

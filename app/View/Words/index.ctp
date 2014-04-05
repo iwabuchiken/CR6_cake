@@ -31,6 +31,10 @@
 
 <?php echo $this->element('words/index_pagination')?>
 
+<br>
+<br>
+<?php echo $this->element('words/index_pagination_2')?>
+
 <a id="bottom"></a>
 <a href="#top">Top</a>
 <br><br>

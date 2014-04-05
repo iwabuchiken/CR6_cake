@@ -73,6 +73,111 @@ class WordsController extends AppController {
 		* Get: pagination data
 		****************************************/
 		$pagination_Data = $this->_index__Get_PaginationData();
+
+		$per_Page = null;
+		$page = null;
+		$total = null;
+		
+		if ($pagination_Data != null) {
+				
+			$total = count($words);
+			// 			$total = 6000;
+			// 			$total = 4036;
+			$per_Page = $pagination_Data['per_page'];
+			$page = $pagination_Data['page'];
+			
+		} else {//if ($pagination_Data != null)
+
+			$per_Page = 10;
+			
+// 			$this->set('per_page', 10);
+			
+			$total = count($words);
+			
+			$page = $total;
+			
+// 			$this->set('total', $total);
+// 			$this->set('total', 6000);
+			
+		}
+		
+		
+		/****************************************
+		* Paginate: Session data
+		****************************************/
+		$current_Lot = $this->Session->read(CONS::$sKeys_CurrentLot);
+		
+		$msg = "\$current_Lot => $current_Lot";
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		
+		if ($current_Lot == null) {
+			
+			$this->Session->write(CONS::$sKeys_CurrentLot, 1);
+			
+			$current_Lot = 1;
+			
+		} 
+		
+		// 
+		@$move_Lot = $this->request->query['move_lot'];
+		
+		if ($move_Lot == "") {
+		
+			
+			
+			$msg = "\$move_Lot => \"\"";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+		
+		} else if ($move_Lot == "next") {
+		
+			$msg = "\$move_Lot => next";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			$current_Lot += 1;
+			
+			$this->Session->write(CONS::$sKeys_CurrentLot, $current_Lot);
+			
+		} else {
+			
+			$msg = "\$move_Lot => other";
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+		}
+		
+		$msg = "\$current_Lot => $current_Lot";
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		$range = $this->conv_CurrentLot_to_Range($current_Lot, $per_Page);
+		
+		debug($range);
+		
+		$this->set("range", $range);
 		
 		/****************************************
 		* Paginate
@@ -162,7 +267,8 @@ class WordsController extends AppController {
 	}//public function index()
 
 	/****************************************
-	* @return null => page and/or per page values not obtained
+	* @return null => page and/or per page values not obtained<br>
+	* 		returs => array(page, per_page)
 	****************************************/
 	public function
 	_index__Get_PaginationData() {
@@ -240,6 +346,9 @@ class WordsController extends AppController {
 
 	}//_index__Get_PaginationData()
 	
+	/****************************************
+	* @return Start of the lot and the length<br>
+	****************************************/
 	public function
 	_index__GetPaginationRange($total, $per_Page, $page) {
 
@@ -255,6 +364,9 @@ class WordsController extends AppController {
 				."\$iterate=".strval($iterate)
 				."/"
 				."\$residue=".strval($residue)
+				."/"
+				."\current iter=".strval(
+							$this->Session->read(CONS::$sKeys_CurrentIter))
 				;
 		
 		write_Log(
@@ -270,6 +382,7 @@ class WordsController extends AppController {
 		if($residue == 0 && $page > $iterate) {
 			
 			$this->Session->write(CONS::$sKeys_CurrentPage, 1);
+			$this->Session->write(CONS::$sKeys_CurrentIter, 1);
 			
 			return array(
 						"start" => 0,
@@ -288,6 +401,7 @@ class WordsController extends AppController {
 				__LINE__);
 
 			$this->Session->write(CONS::$sKeys_CurrentPage, 1);
+			$this->Session->write(CONS::$sKeys_CurrentIter, 1);
 			
 			return array(
 					"start" => 0,
@@ -311,7 +425,19 @@ class WordsController extends AppController {
 		* Build: numbers
 		****************************************/
 		if ($page == $iterate + 1) {
+			
+			$this->Session->write(CONS::$sKeys_CurrentIter, $iterate);
 		
+			$msg = "\current iter=".strval(
+							$this->Session->read(CONS::$sKeys_CurrentIter));
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+			
 			return array(
 						"start"		=> 1 + $per_Page * ($page - 1),
 						"length"	=> $residue
@@ -319,6 +445,17 @@ class WordsController extends AppController {
 		
 		} else {
 		
+			$this->Session->write(CONS::$sKeys_CurrentIter, ceil($page));
+			
+			$msg = "\current iter=".strval(
+					$this->Session->read(CONS::$sKeys_CurrentIter));
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
 			return array(
 					"start"		=> 1 + $per_Page * ($page - 1),
 					"length"	=> $per_Page
@@ -1211,4 +1348,16 @@ class WordsController extends AppController {
 		
 		
 	}
+	
+	public function
+	conv_CurrentLot_to_Range($cur_Lot, $per_Page) {
+	
+		$start	= (($cur_Lot - 1) * $per_Page) + 1;
+	
+		$end	= $cur_Lot * $per_Page;
+	
+		return array($start, $end);
+	
+	}
+	
 }
