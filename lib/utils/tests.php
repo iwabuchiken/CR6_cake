@@ -65,10 +65,26 @@ class D_3_v_1_4 {
 	// 	}
 		
 	}
+
+	static function task_2() {
+		
+		$a = 1992;
+		$b = 10;
+		$c = floor($a / $b);
+		
+		echo "\$a=".$a
+			."/"
+			."\$b=".$b
+			."/"
+			."\$c=".$c
+			;
+		
+	}
 	
 }//class D_3_v_1_4
 
-D_3_v_1_4::do_task();
+// D_3_v_1_4::do_task();
+D_3_v_1_4::task_2();
 
 // $test = new D_3_v_1_4();
 

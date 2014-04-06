@@ -197,6 +197,11 @@ class WordsController extends AppController {
 		
 		/****************************************
 		* Paginate
+		* 	view page variables
+		* 		$total
+		* 		$per_Page
+		* 		$page
+		* 		$current_Lot
 		****************************************/
 		if ($pagination_Data != null) {
 			
@@ -212,6 +217,7 @@ class WordsController extends AppController {
 			$this->set('per_page', $per_Page);
 			$this->set('total', $total);
 			$this->set('page', $page);
+			$this->set('current_Lot', $current_Lot);
 			
 // 			$per_Page = 50;
 			
@@ -252,9 +258,12 @@ class WordsController extends AppController {
 			
 			$total = count($words);
 			$this->set('total', $total);
+			$this->set('page', $page);
 // 			$this->set('total', 6000);
 			
-		}
+			$this->set('current_Lot', $current_Lot);
+			
+		}//if ($pagination_Data != null)
 		
 		/****************************************
 		* Set: View data
