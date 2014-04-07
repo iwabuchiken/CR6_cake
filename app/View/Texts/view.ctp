@@ -8,15 +8,7 @@
 /*      border-bottom: 1px solid black !important; */
     }
 </style>
-  
-<h1>Thanks</h1>
 
-<?php debug($text);?>
-
-id => <?php echo $text['Text']['id']; ?>
-
-<br>
-<br>
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
 <a href="#bottom">Bottom</a>
@@ -24,8 +16,16 @@ id => <?php echo $text['Text']['id']; ?>
 <br>
 
 
+<?php echo $this->element('texts/view/_view_title_text')?>
+
+<br>
+<br>
+
+<?php echo $this->element('texts/view/_view_text_data')?>
+
 <a id="bottom"></a>
 <a href="#top">Top</a>
+
 <br><br>
 
 	<?php echo $this->element('texts/index_links')?>

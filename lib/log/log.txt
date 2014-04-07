@@ -1523,3 +1523,4 @@ Zarathustra's V)
 [04/07/2014 13:58:20 : app\Controller\TextsController.php : 959] ($lang_id == $r_id) => $lang_id=1/$r_id=1(秩序的恢复与遇难者遗体的处理[编辑]收尸记录[编辑])
 [04/07/2014 13:58:20 : app\Controller\TextsController.php : 156] index() => starts
 [04/07/2014 13:59:11 : app\Controller\TextsController.php : 156] index() => starts
+[04/07/2014 14:48:04 : app\Controller\TextsController.php : 156] index() => starts

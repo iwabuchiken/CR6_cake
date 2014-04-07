@@ -42,6 +42,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		
 		
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('main');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
