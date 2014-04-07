@@ -96,7 +96,8 @@
     <tr>
     	<td width="70">
     			<!-- lang id -->
-    			<?php echo $text['Text']['lang_id']; ?>
+    			<?php echo $text['Lang']['name']; ?>
+    			<?php //echo $text['Text']['lang_id']; ?>
     	</td>
     	<td width="70">data</td>
         <td width="70"><?php echo $text['Text']['created_at']; ?></td>

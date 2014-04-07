@@ -917,23 +917,24 @@ class TextsController extends AppController {
 	public function _exec_Tasks__Update_LangId() {
 
 		$this->loadModel('Lang');
-		$this->loadModel('Word');
+		$this->loadModel('Text');
+// 		$this->loadModel('Word');
 		
 		$langs = $this->Lang->find('all');
-		$words = $this->Word->find('all');
+		$texts = $this->Text->find('all');
 		
 		$counter = 0;
 		$max = 100;
 		
 		// 		debug($langs[0]);
 		
-		foreach ($words as $word) {
+		foreach ($texts as $text) {
 			
 // 			if ($counter > $max) {
 // 				break;
 // 			}
 			
-			$lang_id = $word['Word']['lang_id'];
+			$lang_id = $text['Text']['lang_id'];
 		
 			foreach ($langs as $lang) {
 		
@@ -946,23 +947,23 @@ class TextsController extends AppController {
 							."/"
 							."\$r_id=".strval($r_id)
 							."("
-							.$word['Word']['w1']
+							.$text['Text']['title']
 // 							.$lang['Word']['w1']
 							.")"
 					;
 		
 					write_Log(
-					CONS::get_dPath_Log(),
-					$msg,
-					__FILE__,
-					__LINE__);
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
 		
 		
-					$word['Word']['lang_id'] = $lang['Lang']['id'];
+					$text['Text']['lang_id'] = $lang['Lang']['id'];
 // 					$word['Text']['lang_id'] = $lang['Lang']['id'];
 					// 					$text['Text']['lang_id'] = $lang['id'];
 		
-					$this->Word->save($word['Word'], false);
+					$this->Text->save($text['Text'], false);
 // 					$this->Word->save($word['Text'], false);
 		
 					break;
@@ -976,5 +977,26 @@ class TextsController extends AppController {
 		}//foreach ($texts as $text)
 		
 	}//public function _execute_Tasks__Update_LangId()
+
+	public function update_RailsID() {
+
+		$msg = "Start => update_RailsID()";
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
+		$this->_exec_Tasks__Update_LangId();
+		
+		
+		$this->Session->setFlash(__('Redirected from update_RailsID()'));
+		
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array('controller' => 'texts', 'action' => 'index'));
+		
+	}//public function update_RailsID()
 	
-}
+}//class TextsController extends AppController

@@ -54,6 +54,14 @@
 							'controller' => 'texts',
 							'action' => 'exec_Tasks'));
 		
+			echo " | ";
+			
+			echo $this->Html->link(
+					'Update lang_id values',
+					array(
+							'controller' => 'texts',
+							'action' => 'update_RailsID'));
+		
 // 		} else {
 		
 // 			echo "NOT A LOCALHOST";
