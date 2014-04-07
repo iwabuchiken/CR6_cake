@@ -15,5 +15,9 @@
         	Updated at
         </td>
         
+        <td>
+        	Rails ID
+        </td>
+        
     </tr>
     

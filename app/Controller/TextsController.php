@@ -18,6 +18,16 @@ class TextsController extends AppController {
 	
 	public $title_Length	= 60;
 
+	/****************************************
+	 * Associations
+	****************************************/
+// 	var $name = 'Words';
+	var $name = 'Texts';
+	// 	var $name = 'Text';
+	
+	var $scaffold;
+	
+	
 	public function beforeFilter() {
 		
 		$this->_Setup_Paths();
@@ -175,6 +185,18 @@ class TextsController extends AppController {
 		debug($langs[0]);
 		
 	}
+
+	public function view($id) {
+        if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+
+        $text = $this->Text->findById($id);
+        if (!$text) {
+            throw new NotFoundException(__('Invalid text'));
+        }
+        $this->set('text', $text);
+    }
 	
 	public function add() {
 	

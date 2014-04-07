@@ -28,6 +28,12 @@
         	?>
         </td>
         
+        <td>
+        	<?php 
+        		echo $lang['Lang']['r_id']
+        	?>
+        </td>
+        
     </tr>
     
     <?php endforeach; ?>
