@@ -1264,6 +1264,18 @@ class WordsController extends AppController {
 							count($words),
 							$iter);
 
+		$msg = "\$id=" . $id
+				. "range[0]=" . $range[0]
+				. "/"
+				. "range[1]=" . $range[1]
+				;
+		
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
+		
 		$words = array_slice($words, $range[0], $range[1]);
 		
 		$counter = 0;
@@ -1328,7 +1340,8 @@ class WordsController extends AppController {
 		
 		if ($id != $iter) {
 		
-			$start = ($id - 1) * 5 + 1 - 1;
+			$start = ($id - 1) * $chunk + 1 - 1;
+// 			$start = ($id - 1) * 5 + 1 - 1;
 // 			$start = ($id - 1) * 5 + 1;
 			
 			$length = $chunk;
@@ -1337,7 +1350,8 @@ class WordsController extends AppController {
 		
 		} else {
 		
-			$start = ($id - 1) * 5 + 1 - 1;
+			$start = ($id - 1) * $chunk + 1 - 1;
+// 			$start = ($id - 1) * 5 + 1 - 1;
 			
 			$length = $chunk + $resi;
 			
