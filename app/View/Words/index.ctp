@@ -9,7 +9,7 @@
     }
 </style>
   
-<h1>Words(total=<?php echo count($words); ?>)</h1>
+<h1>Words(total=<?php echo $total_Words?>/current=<?php echo count($words); ?>)</h1>
 
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>

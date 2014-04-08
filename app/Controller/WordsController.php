@@ -69,6 +69,9 @@ class WordsController extends AppController {
 		$this->Word->recursive = 1;
 		$words = $this->Word->find('all');
 		
+		$total_Words = count($words);
+		$this->set("total_Words", $total_Words);
+		
 		/****************************************
 		* Get: pagination data
 		****************************************/
@@ -1152,6 +1155,198 @@ class WordsController extends AppController {
 		
 	}//public function execute_Tasks()
 
+	public function update_RailsID($id) {
+// 	public function update_RailsID() {
+	
+		$msg = "Start => update_RailsID()";
+	
+		write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+	
+		$this->_exec_Tasks__Update_LangId($id);
+	
+		$msg_Flash = "Redirected from update_RailsID() => Lot=$id";
+		
+		$this->Session->setFlash(__($msg_Flash));
+// 		$this->Session->setFlash(__('Redirected from update_RailsID()'));
+	
+		//REF redirect http://book.cakephp.org/2.0/en/controllers.html
+		return $this->redirect(
+				array(
+						'controller' => 'words',
+// 						'action' => 'index'
+						'action' => 'index',
+						'?' => 'page=3&per_Page=10'
+					)
+				);
+	
+	}//public function update_RailsID()
+	
+	public function _exec_Tasks__Update_LangId_v_1() {
+	
+		$this->loadModel('Lang');
+		$this->loadModel('Word');
+		// 		$this->loadModel('Word');
+	
+		$langs = $this->Lang->find('all');
+		$words = $this->Word->find('all');
+	
+		$counter = 0;
+		$max = 100;
+	
+		// 		debug($langs[0]);
+	
+		foreach ($words as $word) {
+				
+			// 			if ($counter > $max) {
+			// 				break;
+			// 			}
+				
+			$lang_id = $word['Word']['lang_id'];
+	
+			foreach ($langs as $lang) {
+	
+				$r_id = $lang['Lang']['r_id'];
+	
+				if ($lang_id == $r_id) {
+	
+					$msg = "(\$lang_id == \$r_id) => "
+							."\$lang_id=".strval($lang_id)
+							."/"
+							."\$r_id=".strval($r_id)
+							."("
+									.$word['Word']['w1']
+									// 							.$lang['Word']['w1']
+							.")"
+							;
+	
+							write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+	
+							$word['Word']['lang_id'] = $lang['Lang']['id'];
+							// 					$word['Text']['lang_id'] = $lang['Lang']['id'];
+							// 					$text['Text']['lang_id'] = $lang['id'];
+	
+							$this->Word->save($word['Word'], false);
+							// 					$this->Word->save($word['Text'], false);
+	
+							break;
+	
+				}//if ($lang_id == $r_id)
+	
+				$counter += 1;
+	
+			}//foreach ($langs as $lang)
+	
+		}//foreach ($texts as $text)
+	
+	}//public function _execute_Tasks__Update_LangId()
+	
+	public function _exec_Tasks__Update_LangId($id) {
+	
+		$this->loadModel('Lang');
+		$this->loadModel('Word');
+		// 		$this->loadModel('Word');
+	
+		$langs = $this->Lang->find('all');
+		$words = $this->Word->find('all');
+	
+		$iter = 4;
+		
+		$range = $this->_exec_Tasks__GetRange(
+							$id,
+							count($words),
+							$iter);
+
+		$words = array_slice($words, $range[0], $range[1]);
+		
+		$counter = 0;
+		$max = 100;
+	
+		// 		debug($langs[0]);
+	
+		foreach ($words as $word) {
+				
+			// 			if ($counter > $max) {
+			// 				break;
+			// 			}
+				
+			$lang_id = $word['Word']['lang_id'];
+	
+			foreach ($langs as $lang) {
+	
+				$r_id = $lang['Lang']['r_id'];
+	
+				if ($lang_id == $r_id) {
+	
+					$msg = "(\$lang_id == \$r_id) => "
+							."\$lang_id=".strval($lang_id)
+							."/"
+							."\$r_id=".strval($r_id)
+							."("
+									.$word['Word']['w1']
+									// 							.$lang['Word']['w1']
+							.")"
+							;
+	
+							write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+	
+							$word['Word']['lang_id'] = $lang['Lang']['id'];
+							// 					$word['Text']['lang_id'] = $lang['Lang']['id'];
+							// 					$text['Text']['lang_id'] = $lang['id'];
+	
+							$this->Word->save($word['Word'], false);
+							// 					$this->Word->save($word['Text'], false);
+	
+							break;
+	
+				}//if ($lang_id == $r_id)
+	
+				$counter += 1;
+	
+			}//foreach ($langs as $lang)
+	
+		}//foreach ($texts as $text)
+	
+	}//public function _execute_Tasks__Update_LangId()
+
+	public function
+	_exec_Tasks__GetRange($id, $total, $iter) {
+		
+		$chunk	= floor($total / $iter);
+		$resi	= $total % $iter;
+		
+		if ($id != $iter) {
+		
+			$start = ($id - 1) * 5 + 1 - 1;
+// 			$start = ($id - 1) * 5 + 1;
+			
+			$length = $chunk;
+			
+			return array($start, $length);
+		
+		} else {
+		
+			$start = ($id - 1) * 5 + 1 - 1;
+			
+			$length = $chunk + $resi;
+			
+			return array($start, $length);
+			
+		}
+		
+	}//_exec_Tasks__GetRange($id, $total, $iter)
+	
 // 	function convert( $str ) {
 	public function convert( $str ) {
 		
@@ -1403,6 +1598,40 @@ class WordsController extends AppController {
 		// 	return floor($floor);
 		return floor($floor + 1);
 	
+	}
+
+	public function view($id) {
+		if (!$id) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+	
+		$word = $this->Word->findById($id);
+		if (!$word) {
+			throw new NotFoundException(__('Invalid word'));
+		}
+	
+// 		$word = $this->_view_ModifyText($word);
+	
+		//         $temp = $text['Text']['text'];
+	
+		//         $pattern = '/(。)/';
+	
+		//         $replace = '$1<br> -- ';
+		// //         $replace = '。<br> -- ';
+		// //         $replace = '。<br> == ';
+		// //         $replace = '。<br> === ';
+		// //         $replace = "。<br> === ";
+	
+		//         $temp = preg_replace($pattern, $replace, $temp);
+	
+		//         //REF http://www.php.net/manual/en/function.mb-convert-encoding.php
+		// //         $temp = mb_convert_encoding($temp, "UTF-8", "SJIS");
+	
+		// //         debug($temp);
+	
+		//         $text['Text']['text'] = $temp;
+	
+		$this->set('word', $word);
 	}
 	
 }

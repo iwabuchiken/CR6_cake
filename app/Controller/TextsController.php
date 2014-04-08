@@ -224,10 +224,26 @@ class TextsController extends AppController {
     _view_ModifyText($text) {
 
     	$temp = $text['Text']['text'];
+
+    	$lang_Name = $text['Lang']['name'];
     	
-    	$pattern = '/(。)/';
+    	$pattern = "";
     	
-    	$replace = '$1<br> -- ';
+//     	$pattern = '/(。)/';
+    	
+    	if ($lang_Name == 'Chinese') {
+    	
+    		$pattern = '/(。)/';
+    	
+    	} else {
+    		
+    		$pattern = '/(\.)/';
+    	
+    	}
+    	
+    	
+    	$replace = '$1<br><br> -- ';
+//     	$replace = '$1<br> -- ';
     	//         $replace = '。<br> -- ';
     	//         $replace = '。<br> == ';
     	//         $replace = '。<br> === ';

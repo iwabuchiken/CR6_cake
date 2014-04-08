@@ -100,9 +100,52 @@ class D_3_v_1_4 {
 		
 	}
 	
+	static function
+	_exec_Tasks__GetRange($id, $total, $iter) {
+	
+		$chunk	= floor($total / $iter);
+		$resi	= $total % $iter;
+	
+		if ($id != $iter) {
+	
+			$start = ($id - 1) * 5 + 1 - 1;
+			// 			$start = ($id - 1) * 5 + 1;
+				
+			$length = $chunk;
+				
+			return array($start, $length);
+	
+		} else {
+	
+			$start = ($id - 1) * 5 + 1 - 1;
+				
+			$length = $chunk + $resi;
+				
+			return array($start, $length);
+				
+		}
+	
+	}//_exec_Tasks__GetRange($id, $total, $iter)
+	
+	
 }//class D_3_v_1_4
 
 function do_job($argv) {
+	
+	if (count($argv) < 2) {
+		
+		$msg = <<<MSG
+<Option>
+		abc		Regex-related task
+		h		Show help
+		r		_exec_Tasks__GetRange
+		
+MSG;
+		echo $msg;
+		
+		return;
+		
+	}
 	
 // 	print_r($argv);
 	$choice = $argv[1];
@@ -111,6 +154,20 @@ function do_job($argv) {
 	
 		D_3_v_1_4::task_3_Replace_Regex();
 	
+	} else if ($choice == "r") {
+		
+		$id = 4; $total = 23; $iter = 4;
+		
+		$msg = "\$id=$id, \$total=$total, \$iter=$iter";
+// 		$msg = "id=2, total=23, iter=4";
+		
+		echo $msg;
+		
+		$res = D_3_v_1_4::_exec_Tasks__GetRange($id, $total, $iter);
+// 		$res = D_3_v_1_4::_exec_Tasks__GetRange(2, 23, 4);
+		
+		print_r($res);
+		
 	} else {
 	
 		echo "Unknown choice => $choice";

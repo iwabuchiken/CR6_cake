@@ -67,5 +67,26 @@
 
 // 		}
 	?>	
+	
+	<?php 
+	
+		echo " | ";
+	
+		echo "Update lang_id values: ";
+		
+		for($i = 1; $i <= 4; $i++) {
+
+			echo $this->Html->link(
+						"Lot $i / ",
+// 						'Lot 1',
+						array(
+								'controller' => 'words',
+								'action' => 'update_RailsID',
+								$i)
+			);
+
+		}//for($i = 1; $i <= 4; $i++)
+	
+	?>
 
 	

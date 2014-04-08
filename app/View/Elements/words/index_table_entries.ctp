@@ -11,9 +11,11 @@
             	
             	echo $this->Html->link($word['Word']['w1'],
 						array(
-							'controller' => 'langs',
+							'controller' => 'words',
+// 							'controller' => 'langs',
 							'action' => 'view',
-							$word['Lang']['id'])); ?>
+							$word['Word']['id'])); ?>
+<!-- 							$word['Lang']['id'])); ?> -->
         </td>
         
         <td>
