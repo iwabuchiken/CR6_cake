@@ -220,7 +220,9 @@ class TextsController extends AppController {
 
     public function
     _view_GetWords($text) {
-    	
+    	/****************************************
+    	* Words: All words of the same lang id
+    	****************************************/
     	$this->loadModel('Word');
     	
     	$lang_id = $text['Text']['lang_id'];
@@ -231,6 +233,46 @@ class TextsController extends AppController {
     					=> array('Word.lang_id' => $lang_id)
     					)
     	);
+    	
+    	/****************************************
+    	* Words: Those in the text
+    	****************************************/
+    	$words_Filtered = array();
+    	
+    	$word = $words[0];
+    	
+    	foreach ($words as $word) {
+    		
+    		$pos = strpos($text['Text']['text'], $word['Word']['w1']);
+    		
+    		if ($pos != false) {
+    			
+    			$tok = new Token();
+    			
+    			$tok->pos = $pos;
+    			$tok->token = $word['Word']['w1'];
+    			
+    			array_push($words_Filtered, $tok);
+    			
+    		}
+    	
+    	}
+    	
+    	debug($words_Filtered);
+    	
+//     	debug($word);
+    	
+//     	$msg = "$word=" . ($word['Word']['w1']);
+//     	$msg = "\$word=" . $word['Word']['w1'];
+// 		debug($word['Word']['w1']);
+    	
+//     	write_Log(
+//     		CONS::get_dPath_Log(),
+//     		$msg,
+//     		__FILE__,
+//     		__LINE__);
+    	
+    	
     	
     	return $words;
     	
@@ -1078,5 +1120,14 @@ class TextsController extends AppController {
 				array('controller' => 'texts', 'action' => 'index'));
 		
 	}//public function update_RailsID()
+
 	
 }//class TextsController extends AppController
+
+class Token {
+	
+	public $token;
+	
+	public $pos;
+	
+}

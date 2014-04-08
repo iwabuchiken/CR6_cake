@@ -130,18 +130,351 @@ class D_3_v_1_4 {
 	
 }//class D_3_v_1_4
 
+function do_job__Strpos($argv) {
+// 	$text = 'We can search for the character/We can search for the character';
+	$text = 'abcdefghdef';
+	
+	// 		$target = 'can';
+	$target = 'de';
+// 	$target = 'this';
+	
+	$pos = strpos($text, $target);
+	
+	echo "\$text=$text\n"
+	. "\$target=$target\n"
+	. "\$pos=$pos";
+	
+}
+
+function do_job__PregMatch($argv) {
+	
+	$text = "abcdefghdef";
+// 	$text = "abcdefghdef";
+// 	$text = 'abcdefghdef';
+	
+	// 		$target = 'can';
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$target = '/de/';
+// 	$target = 'de';
+	
+	//REF http://www.php.net/manual/en/function.preg-match.php
+// 	preg_match($target, $text, $matches, PREG_OFFSET_CAPTURE);
+	
+// 	preg_match_all($target, $text, $matches);
+	preg_match_all($target, $text, $matches, PREG_SET_ORDER);
+// 	preg_match($target, $text, $matches, PREG_OFFSET_CAPTURE, 0);
+// 	preg_match($target, $text, $matches, PREG_OFFSET_CAPTURE);
+	
+	echo "\$text=$text\n"
+		. "\$target=$target\n";
+	
+	print_r($matches);
+	
+	
+}
+
+function do_job__ShowHelp($argv) {
+
+	$msg = <<<MSG
+<Option>
+		abc		Regex-related task
+		array	Array test
+		h		Show help
+		r		_exec_Tasks__GetRange
+		strpos	Example of 'strpos()' function
+		preg	Example of 'preg_match()' function
+		pregall	Example of 'preg_match_all_WithPos()' function
+		pregall2	Example of 'preg_match_all_WithPos_2()' function
+		wh		Example of 'while((a = func()) > x)'
+MSG;
+	echo $msg;
+	
+}
+
+function
+do_job__PregMatchAll_WithPos($argv) {
+	
+// 	$text = "abcdefghdefabcdefghdef";
+// 	$text = "abcdefghdef";
+	$text = "abcdefgh";
+	
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$chars = "de";
+	
+	$target = "/$chars/";
+// 	$target = '/de/';
+	
+	$offset = 0;
+	
+	echo "\$offset => $offset\n\n";
+	
+// 	$pos = preg_match($target, $text, $matches);
+	$pos = preg_match(
+					$target, $text, $matches,
+					PREG_OFFSET_CAPTURE, $offset);
+	
+	if ($pos != 1) {
+		
+		echo "\$pos => not 1(pos=$pos)\n\n";
+		
+		print_r($matches);
+		
+		return;
+		
+	}
+	
+	$offset += $matches[0][1];
+	
+	echo "\$offset => $offset\n\n";
+	
+	print_r($matches);
+	
+	echo "\$pos => $pos\n\n";
+	
+	echo "      01234567890\n";
+	echo "\$text=$text\n"
+	. "\$target=$target\n";
+	
+	echo "\n";
+	
+	/****************************************
+	* second time
+	****************************************/
+	$offset += strlen($chars);
+// 	$offset += strlen($target);
+	
+	echo "\$offset => $offset\n\n";
+	
+	$pos = preg_match(
+			$target, $text, $matches,
+			PREG_OFFSET_CAPTURE, $offset);
+	
+	if ($pos != 1) {
+	
+// 		echo "\$pos => not 1\n\n";
+		echo "\$pos => not 1(pos=$pos)\n\n";
+	
+		print_r($matches);
+	
+		return;
+	
+	}
+	
+	print_r($matches);
+	
+	$offset += $matches[0][1];
+	
+	echo "\$offset => $offset\n\n";
+	
+	echo "\$pos => $pos\n\n";
+	
+	if ($offset > (strlen($text) - 1)) {
+		
+		echo "Offset => reached the limit\n\n";
+		
+		return;
+		
+	} else {
+		
+		echo "match => can be done more\n\n";
+		
+	}
+	
+// 	echo "matches => \n";
+	
+// 	print_r($matches);
+	
+// 	echo "\$pos => $pos";
+	
+}
+
+function
+do_job__PregMatchAll_WithPos_2($argv) {
+	
+	/****************************************
+	* Variables
+	****************************************/
+// 	$text = "abcdefghdefabcdefghdef";
+// 	$text = "abcdefghdef";
+
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+	
+		$text = "abcdefgh";
+		
+	}
+	
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$chars = mb_convert_encoding("目前", "SJIS", "UTF-8");
+// 	$chars = mb_convert_encoding("あ", "SJIS", "UTF-8");
+// 	$chars = "de";
+	
+	$target = "/$chars/";
+// 	$target = '/de/';
+	
+	$tokens = array();
+	
+	$offset = 0;
+
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	show_Message("\$chars => $chars", __LINE__);
+	
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+	
+	show_Message("\$pos => $pos", __LINE__);
+	
+// 	if ($pos == 1) {
+		
+// 		$offset += $m[0][1];;
+		
+// 		show_Message("Offset set => $pos", __LINE__);
+		
+// 	}
+	
+	while(($pos == 1)) {
+		
+// 		show_Message("\$m => ", __LINE__);
+		
+// 		print_r($m);
+		
+		show_Message("while loop => starts(\$pos => 1!)", __LINE__);
+		
+		show_Message("Target found at => " . $m[0][1], __LINE__);
+		
+// 		show_Message("\$offset => $offset", __LINE__);
+
+// 		show_Message("\$offset => add \$m[0][1]($m[0][1])", __LINE__);
+
+// 		show_Message("\$m[0] => ", __LINE__);
+		
+// 		print_r($m[0]);
+		
+// 		show_Message("\$m[0][1] => ", __LINE__);
+		
+// 		print_r($m[0][1]);
+		
+// 		echo "\n";
+		
+// 		$offset += $m[0][1];
+		
+// 		show_Message("\$offset => $offset", __LINE__);
+		
+		// Push token into $tokens
+		$offset = $m[0][1];
+// 		$offset += $m[0][1];
+		
+		show_Message("Pushed into array: \$offset => $offset", __LINE__);
+		
+		array_push($tokens, array($chars, $m[0][1]));
+// 		array_push($tokens, array($chars, $offset));
+		
+		show_Message("\$m is => ", __LINE__);
+		print_r($m);
+		
+		
+		// Increment $offset
+// 		$offset += $m[0][1];
+		
+		$offset += strlen($chars);
+		
+		show_Message("\$offset is now => $offset", __LINE__);
+		
+		// $offset => Off the limit?
+		if ($offset > (strlen($text) - 1)) {
+			
+			show_Message("offset => off the limit: $offset", __LINE__);
+			
+// 			return $tokens;
+			break;
+			
+		}
+		
+		$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+		show_Message("preg_match => done", __LINE__);
+		
+		print_r($m);
+		
+		
+	}//while(($pos == 1))
+	
+	show_Message("while loop => done", __LINE__);
+	
+	print_r($tokens);
+	
+}//do_job__PregMatchAll_WithPos_2($argv)
+
+function
+do_job__While() {
+	
+	$a = 3;
+	$str = "abcde";
+	
+	$count = 0;
+	
+	while(($i = strlen($str)) > 1) {
+		
+		echo "\$i => larger than 1 \n\n";
+		
+		$count += 1;
+		
+		if ($count > 3) {
+			
+			echo "\$count => larger than 3";
+			show_Message("\$count => larger than 3", __LINE__);
+			
+			break;
+			
+		}
+		
+	}
+}
+
+function do_job__ArrayTest() {
+	
+	$a = array(
+	    0 => array
+	        (
+	            0 => "de",
+	            1 => 3
+	        )
+	);
+	
+	print_r($a);
+	
+	show_Message("\$a[0] => ", __LINE__);
+	
+	print_r($a[0]);
+
+	// 2
+	show_Message("\$a[0] => imploded", __LINE__);
+	
+	print_r(implode(",", $a[0]));
+	
+	// 3
+	show_Message("\$a[0][1] => ", __LINE__);
+	
+	print_r($a[0][1]);
+	
+	show_Message($a[0][1], __LINE__);
+	
+}//do_job__ArrayTest()
+
 function do_job($argv) {
 	
 	if (count($argv) < 2) {
 		
-		$msg = <<<MSG
-<Option>
-		abc		Regex-related task
-		h		Show help
-		r		_exec_Tasks__GetRange
-		
-MSG;
-		echo $msg;
+		do_job__ShowHelp($argv);
 		
 		return;
 		
@@ -154,6 +487,41 @@ MSG;
 	
 		D_3_v_1_4::task_3_Replace_Regex();
 	
+	} else if ($choice == "pregall") {
+		
+		do_job__PregMatchAll_WithPos($argv);
+		
+	} else if ($choice == "pregall2") {
+		
+		do_job__PregMatchAll_WithPos_2($argv);
+		
+	} else if ($choice == "preg") {
+		
+		do_job__PregMatch($argv);
+		
+	} else if ($choice == "wh") {
+		
+		do_job__While();
+		
+	} else if ($choice == "array") {
+		
+		do_job__ArrayTest();
+		
+	} else if ($choice == "strpos") {
+
+		do_job__Strpos($argv);
+		
+// 		$text = 'We can search for the character/We can search for the character';
+		
+// // 		$target = 'can';
+// 		$target = 'this';
+		
+// 		$pos = strpos($text, $target);
+		
+// 		echo "\$text=$text\n"
+// 				. "\$target=$target\n"
+// 				. "\$pos=$pos";
+		
 	} else if ($choice == "r") {
 		
 		$id = 4; $total = 23; $iter = 4;
@@ -175,6 +543,12 @@ MSG;
 	}
 	
 // 	echo "\$choice=$choice";
+	
+}
+
+function show_Message($text, $line) {
+	
+	echo "[$line] $text\n\n";
 	
 }
 

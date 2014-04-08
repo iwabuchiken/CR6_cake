@@ -516,5 +516,55 @@
 		
 	}
 	
-	
+	class Methods {
+		
+		/****************************************
+		* @return array([0] => array([0] => chars, [1] => position))
+		****************************************/
+		static function
+		preg_MatchAll_WithPos($text, $chars) {
+		
+			/****************************************
+			 * Variables
+			****************************************/
+			$tokens = array();
+		
+			$offset = 0;
+			
+			/****************************************
+			 * Processes
+			****************************************/
+			$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+			while(($pos == 1)) {
+		
+				// Push token into $tokens
+				$offset = $m[0][1];
+				// 		$offset += $m[0][1];
+		
+				array_push($tokens, array($chars, $m[0][1]));
+				// 		array_push($tokens, array($chars, $offset));
+				
+				// Increment $offset
+				$offset += strlen($chars);
+		
+				// $offset => Off the limit?
+				if ($offset > (strlen($text) - 1)) {
+						
+					show_Message("offset => off the limit: $offset", __LINE__);
+						
+					return $tokens;
+// 					break;
+						
+				}
+		
+				$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+			}//while(($pos == 1))
+
+			return $tokens;
+		
+		}//preg_MatchAll_WithPos($argv)
+		
+	}
 	
