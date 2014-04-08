@@ -1524,3 +1524,4 @@ Zarathustra's V)
 [04/07/2014 13:58:20 : app\Controller\TextsController.php : 156] index() => starts
 [04/07/2014 13:59:11 : app\Controller\TextsController.php : 156] index() => starts
 [04/07/2014 14:48:04 : app\Controller\TextsController.php : 156] index() => starts
+[04/08/2014 11:13:10 : app\Controller\TextsController.php : 156] index() => starts

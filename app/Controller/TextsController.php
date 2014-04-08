@@ -195,9 +195,57 @@ class TextsController extends AppController {
         if (!$text) {
             throw new NotFoundException(__('Invalid text'));
         }
+        
+        $text = $this->_view_ModifyText($text);
+        
+//         $temp = $text['Text']['text'];
+        
+//         $pattern = '/(。)/';
+        
+//         $replace = '$1<br> -- ';
+// //         $replace = '。<br> -- ';
+// //         $replace = '。<br> == ';
+// //         $replace = '。<br> === ';
+// //         $replace = "。<br> === ";
+        
+//         $temp = preg_replace($pattern, $replace, $temp);
+        
+//         //REF http://www.php.net/manual/en/function.mb-convert-encoding.php
+// //         $temp = mb_convert_encoding($temp, "UTF-8", "SJIS");
+        
+// //         debug($temp);
+        
+//         $text['Text']['text'] = $temp;
+        
         $this->set('text', $text);
     }
-	
+
+    public function
+    _view_ModifyText($text) {
+
+    	$temp = $text['Text']['text'];
+    	
+    	$pattern = '/(。)/';
+    	
+    	$replace = '$1<br> -- ';
+    	//         $replace = '。<br> -- ';
+    	//         $replace = '。<br> == ';
+    	//         $replace = '。<br> === ';
+    	//         $replace = "。<br> === ";
+    	
+    	$temp = preg_replace($pattern, $replace, $temp);
+    	
+    	$text['Text']['text'] = $temp;
+    	
+    	return $text;
+    	
+    	//REF http://www.php.net/manual/en/function.mb-convert-encoding.php
+    	//         $temp = mb_convert_encoding($temp, "UTF-8", "SJIS");
+    	
+    	//         debug($temp);
+    	   
+    }
+    
 	public function add() {
 	
 		if ($this->request->is('post')) {
