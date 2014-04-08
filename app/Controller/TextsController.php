@@ -192,34 +192,50 @@ class TextsController extends AppController {
         }
 
         $text = $this->Text->findById($id);
+        
         if (!$text) {
             throw new NotFoundException(__('Invalid text'));
         }
         
+        /****************************************
+        * Get: Words list
+        ****************************************/
+        $words = $this->_view_GetWords($text);
+        
+        $msg = "\$words => " . count($words);
+        
+        write_Log(
+        	CONS::get_dPath_Log(),
+        	$msg,
+        	__FILE__,
+        	__LINE__);
+        
+        /****************************************
+        * Modify: Text
+        ****************************************/
         $text = $this->_view_ModifyText($text);
-        
-//         $temp = $text['Text']['text'];
-        
-//         $pattern = '/(。)/';
-        
-//         $replace = '$1<br> -- ';
-// //         $replace = '。<br> -- ';
-// //         $replace = '。<br> == ';
-// //         $replace = '。<br> === ';
-// //         $replace = "。<br> === ";
-        
-//         $temp = preg_replace($pattern, $replace, $temp);
-        
-//         //REF http://www.php.net/manual/en/function.mb-convert-encoding.php
-// //         $temp = mb_convert_encoding($temp, "UTF-8", "SJIS");
-        
-// //         debug($temp);
-        
-//         $text['Text']['text'] = $temp;
         
         $this->set('text', $text);
     }
 
+    public function
+    _view_GetWords($text) {
+    	
+    	$this->loadModel('Word');
+    	
+    	$lang_id = $text['Text']['lang_id'];
+    	
+    	$words = $this->Word->find(
+    			'all',
+    			array('conditions'
+    					=> array('Word.lang_id' => $lang_id)
+    					)
+    	);
+    	
+    	return $words;
+    	
+    }//_view_GetWords($text)
+    
     public function
     _view_ModifyText($text) {
 
