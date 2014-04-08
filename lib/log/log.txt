@@ -1945,3 +1945,16 @@
 [04/08/2014 16:05:36 : app\Controller\TextsController.php : 211] $words => 2673
 [04/08/2014 16:09:57 : app\Controller\TextsController.php : 211] $words => 2673
 [04/08/2014 21:31:16 : app\Controller\TextsController.php : 156] index() => starts
+[04/08/2014 23:31:50 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:32:52 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:33:22 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:34:37 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:35:21 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:37:29 : app\Lib\utils\methods.php : 545] $chars=遗体/
+[04/08/2014 23:37:29 : app\Lib\utils\methods.php : 558] $m => a:0:{}
+[04/08/2014 23:37:29 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:39:58 : app\Controller\TextsController.php : 211] $words => 2673
+[04/08/2014 23:41:04 : app\Controller\TextsController.php : 211] $words => 2673
+[04/09/2014 00:29:53 : app\Controller\TextsController.php : 211] $words => 2673
+[04/09/2014 06:22:50 : app\Controller\TextsController.php : 156] index() => starts
+[04/09/2014 06:22:59 : app\Controller\TextsController.php : 211] $words => 2673

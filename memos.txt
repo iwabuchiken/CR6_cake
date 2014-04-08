@@ -38,10 +38,6 @@ g c -a
 
 gitk
 
-
-[Git for mm]
-pushd C:\WORKS\WORKSPACES_ANDROID\FM
-
 [svn]
 pushd C:\WORKS\WORKSPACES_ANDROID\Sample\05_Techbooster
 svn co https://techbooster.googlecode.com/svn/trunk/ContextMenu/ ContextMenu
@@ -61,3 +57,6 @@ sqlite3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\development.sqlite3
 .tables
 pragma table_info(texts);
 pragma table_info(langs);
+
+[tests.php]
+lib\utils\tests.php

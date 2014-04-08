@@ -237,28 +237,56 @@ class TextsController extends AppController {
     	/****************************************
     	* Words: Those in the text
     	****************************************/
+    	
+    	
     	$words_Filtered = array();
     	
     	$word = $words[0];
     	
+//     	debug($word['Word.w1']);
+//     	debug($word['Word']['w1']);
+    	
     	foreach ($words as $word) {
     		
-    		$pos = strpos($text['Text']['text'], $word['Word']['w1']);
+    		$w1 = $word['Word']['w1'];
     		
-    		if ($pos != false) {
+    		$res = Methods::preg_MatchAll_WithPos($text['Text']['text'], $w1);
+    		
+    		if (count($res) > 0) {
     			
-    			$tok = new Token();
-    			
-    			$tok->pos = $pos;
-    			$tok->token = $word['Word']['w1'];
-    			
-    			array_push($words_Filtered, $tok);
+    			array_push($words_Filtered, $res);
     			
     		}
-    	
+    		
+//     		debug($res);
+//     		debug(count($res));
+    		
     	}
     	
-    	debug($words_Filtered);
+//     	debug($words_Filtered);
+    	
+//     	$words_Filtered = array();
+    	
+//     	$word = $words[0];
+    	
+//     	foreach ($words as $word) {
+    		
+//     		$pos = strpos($text['Text']['text'], $word['Word']['w1']);
+    		
+//     		if ($pos != false) {
+    			
+//     			$tok = new Token();
+    			
+//     			$tok->pos = $pos;
+//     			$tok->token = $word['Word']['w1'];
+    			
+//     			array_push($words_Filtered, $tok);
+    			
+//     		}
+    	
+//     	}
+    	
+//     	debug($words_Filtered);
     	
 //     	debug($word);
     	

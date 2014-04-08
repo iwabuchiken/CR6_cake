@@ -528,14 +528,36 @@
 			 * Variables
 			****************************************/
 			$tokens = array();
+			
+			$target = "/$chars/";
 		
 			$offset = 0;
+			
+// 			$msg = "\$chars=$chars"
+// 					. "/"
+					
+// 					;
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
 			
 			/****************************************
 			 * Processes
 			****************************************/
 			$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
 		
+// 			$msg = "\$m => " . serialize($m);
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
 			while(($pos == 1)) {
 		
 				// Push token into $tokens

@@ -1,4 +1,699 @@
+<?php 
+
+/*
+Steps
+1. do_job__ShowHelp	=> Add parameter
+2. do_job($argv)	=> Add else-if block
+3. Code the new function
+ 
+ */
+
+?>
+
+
 <?php
+
+function do_job__ShowHelp($argv) {
+
+	$msg = <<<MSG
+<Option>
+		abc		Regex-related task
+		addlink	do_job__AddLink(\$argv)
+		array	Array test
+		h		Show help
+		r		_exec_Tasks__GetRange
+		strpos	Example of 'strpos()' function
+		preg	Example of 'preg_match()' function
+		pregall	Example of 'preg_match_all_WithPos()' function
+		pregall2	Example of 'preg_match_all_WithPos_2()' function
+		pregall3	preg_match_all_WithPos_3()
+		pregreplace	do_job__PregReplace(\$argv)
+		wh		Example of 'while((a = func()) > x)'
+MSG;
+	echo $msg;
+
+}
+
+function do_job($argv) {
+
+	if (count($argv) < 2) {
+
+		do_job__ShowHelp($argv);
+
+		return;
+
+	}
+
+	// 	print_r($argv);
+	$choice = $argv[1];
+
+	if ($choice == "abc") {
+
+		D_3_v_1_4::task_3_Replace_Regex();
+
+	} else if ($choice == "addlink") {
+
+// 		do_job__AddLink($argv);
+// 		do_job__AddLink_2($argv);
+		do_job__AddLink_3($argv);
+
+	} else if ($choice == "pregall") {
+
+		do_job__PregMatchAll_WithPos($argv);
+
+	} else if ($choice == "pregall2") {
+
+		do_job__PregMatchAll_WithPos_2($argv);
+
+	} else if ($choice == "pregall3") {
+
+		do_job__PregMatchAll_WithPos_3($argv);
+
+	} else if ($choice == "preg") {
+
+		do_job__PregMatch($argv);
+
+	} else if ($choice == "wh") {
+
+		do_job__While();
+
+	} else if ($choice == "array") {
+
+		do_job__ArrayTest();
+
+	} else if ($choice == "pregreplace") {
+
+		do_job__PregReplace($argv);
+
+	} else if ($choice == "strpos") {
+
+		do_job__Strpos($argv);
+
+		// 		$text = 'We can search for the character/We can search for the character';
+
+		// // 		$target = 'can';
+		// 		$target = 'this';
+
+		// 		$pos = strpos($text, $target);
+
+		// 		echo "\$text=$text\n"
+		// 				. "\$target=$target\n"
+		// 				. "\$pos=$pos";
+
+	} else if ($choice == "r") {
+
+		$id = 4; $total = 23; $iter = 4;
+
+		$msg = "\$id=$id, \$total=$total, \$iter=$iter";
+		// 		$msg = "id=2, total=23, iter=4";
+
+		echo $msg;
+
+		$res = D_3_v_1_4::_exec_Tasks__GetRange($id, $total, $iter);
+		// 		$res = D_3_v_1_4::_exec_Tasks__GetRange(2, 23, 4);
+
+		print_r($res);
+
+	} else {
+
+		echo "Unknown choice => $choice";
+
+	}
+
+	// 	echo "\$choice=$choice";
+
+}//function do_job($argv)
+
+function do_job__AddLink($argv) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+		$text = "abcdefxxdeaaffz";
+	
+	}
+	
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$token = array("de", 3);
+	
+	$chars = array(
+				array(
+					"de", 3),
+				array(
+					"de", 8),
+				array(
+					"cdef", 2),
+				array(
+					"ff", 12),
+			
+			);
+	
+	$target = "/$token[0]/";
+	// 	$target = '/de/';
+	
+	$rep = "AAA";
+	
+	$tokens = array();
+	
+	$offset = 0;
+	
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+// 	show_Message("\$token => ", __LINE__);
+	show_Message("\$chars => ", __LINE__);
+	
+	print_r($chars);
+	
+// 	show_Message("\$rep => $rep", __LINE__);
+	
+// 	show_Message("\$target => $target($token[0], $token[1])", __LINE__);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	/****************************************
+	* Replace: 1st
+	****************************************/
+	$prefix = "<a>"; $suffix = "</a>";
+	
+	$rep = $prefix . $chars[0][0] . $suffix;
+// 	$rep = '<a>' . $chars[0][0] . '</a>';
+// 	$rep = "<a>$chars[0][0]</a>";
+	
+	$len = strlen($chars[0][0]);
+	
+	$res = substr_replace($text, $rep, $chars[0][1], strlen($token[0]));
+	
+	show_Message("<1>", __LINE__);
+	show_Message("            01234567890123456789", __LINE__);
+	show_Message('Replaced => '.$res, __LINE__);
+	
+	// Position => update
+	$add = strlen($prefix) + strlen($suffix);
+// 	$add = strlen($rep);
+	
+	show_Message('Add position by => '.$add, __LINE__);
+	
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		if ($chars[$i][1] > $chars[0][1]) {
+			
+			$chars[$i][1] += $add;
+			
+		}
+		
+	}//for ($i = 0; $i < count($chars); $i++)
+	
+	$text = $res;
+	
+	/****************************************
+	* Replace: 2nd
+	****************************************/
+	$prefix = "<a>"; $suffix = "</a>";
+	
+	$rep = $prefix . $chars[1][0] . $suffix;
+// 	$rep = '<a>' . $chars[0][0] . '</a>';
+// 	$rep = "<a>$chars[0][0]</a>";
+	
+	$len = strlen($chars[1][0]);
+	
+	$res = substr_replace($text, $rep, $chars[1][1], strlen($chars[1][0]));
+	
+	show_Message("<2>", __LINE__);
+	show_Message("            012345678901234567890123456789", __LINE__);
+	show_Message('Replaced => '.$res, __LINE__);
+	
+	// Position => update
+	$add = strlen($prefix) + strlen($suffix);
+// 	$add = strlen($rep);
+	
+	show_Message('Add position by => '.$add, __LINE__);
+	
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		if ($chars[$i][1] > $chars[1][1]) {
+			
+			$chars[$i][1] += $add;
+			
+		}
+	}
+	show_Message('\$chars now => ', __LINE__);
+	
+	print_r($chars);
+	
+	// Update text
+	$text = $res;
+	
+	//********************************************
+// 	foreach ($chars as $char) {
+		
+// 		if ($char[1] >= $chars[0][1]) {
+			
+// 			$char[1] += $add;
+			
+// 		}
+	
+// 	}
+	
+	
+// 	// Replace: 1
+// 	$res = substr_replace($text, "AAA", $token[1]);
+	
+// 	show_Message("<1>", __LINE__);
+// 	show_Message('Replaced: ($text, "AAA", $token[1]) => '.$res, __LINE__);
+// 			//RES => abcAAA
+			
+// 	// Replace: 2
+// 	$res = substr_replace($text, "AAA", $token[1], strlen($token[0]));
+	
+// 	show_Message("<2>", __LINE__);
+// 	show_Message(
+// 			'Replaced: ($text, "AAA", $token[1], strlen($token[0])) => '.$res,
+// 			__LINE__);
+// 			//RES => abcAAAfxxdeaaffz
+				
+// 	// Replace: 3
+// 	$res = substr_replace($text, $rep, $token[1], strlen($rep));
+	
+// 	show_Message("<3>", __LINE__);
+// 	show_Message(
+// 			'Replaced: ($text, $rep, $token[1], strlen($rep)) => '.$res,
+// 			__LINE__);
+// 			//RES => abcAAAxxdeaaffz
+	
+	
+	
+}//do_job__AddLink($argv)
+
+function do_job__AddLink_2($argv) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+		$text = "abcdefxxdeaaffzdes";
+	
+	}
+	
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$token = array("de", 3);
+	
+	$chars = array(
+				array(
+					"de", 8),
+				array(
+					"cdef", 2),
+				array(
+					"ff", 12),
+				array(
+					"de", 15)
+			);
+	
+	$target = "/$token[0]/";
+	// 	$target = '/de/';
+	
+	$rep = "AAA";
+	
+	$tokens = array();
+	
+	$offset = 0;
+	
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+// 	show_Message("\$token => ", __LINE__);
+	show_Message("\$chars => ", __LINE__);
+	
+	print_r($chars);
+	
+// 	show_Message("\$rep => $rep", __LINE__);
+	
+// 	show_Message("\$target => $target($token[0], $token[1])", __LINE__);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	/****************************************
+	* Replace: 1st
+	****************************************/
+	$prefix = "<a>"; $suffix = "</a>";
+	
+	$rep = $prefix . $chars[0][0] . $suffix;
+// 	$rep = '<a>' . $chars[0][0] . '</a>';
+// 	$rep = "<a>$chars[0][0]</a>";
+	
+	$len = strlen($chars[0][0]);
+	
+	$res = substr_replace($text, $rep, $chars[0][1], strlen($token[0]));
+	
+	show_Message("<1>", __LINE__);
+	show_Message("            012345678901234567890123456789", __LINE__);
+	show_Message('Replaced => '.$res, __LINE__);
+	
+	// Position => update
+	$add = strlen($prefix) + strlen($suffix);
+// 	$add = strlen($rep);
+	
+	show_Message('Add position by => '.$add, __LINE__);
+	
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		if ($chars[$i][1] > $chars[0][1]) {
+			
+			$chars[$i][1] += $add;
+			
+		}
+		
+	}//for ($i = 0; $i < count($chars); $i++)
+	
+	// Update
+	$chars[0][1] += strlen($prefix);
+	
+	show_Message('\$chars now => ', __LINE__);
+	
+	print_r($chars);
+	
+	$text = $res;
+	
+	/****************************************
+	* Replace: 2nd
+	****************************************/
+	$prefix = "<a>"; $suffix = "</a>";
+	
+	$rep = $prefix . $chars[1][0] . $suffix;
+// 	$rep = '<a>' . $chars[0][0] . '</a>';
+// 	$rep = "<a>$chars[0][0]</a>";
+	
+	$len = strlen($chars[1][0]);
+	
+	$res = substr_replace($text, $rep, $chars[1][1], strlen($chars[1][0]));
+	
+	show_Message("<2>", __LINE__);
+	show_Message("            0123456789012345678901234567890123456789", __LINE__);
+	show_Message('Replaced => '.$res, __LINE__);
+	
+	// Position => update
+	$add = strlen($prefix) + strlen($suffix);
+// 	$add = strlen($rep);
+	
+	show_Message('Add position by => '.$add, __LINE__);
+	
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		if ($chars[$i][1] > $chars[1][1]) {
+			
+			$chars[$i][1] += $add;
+			
+		}
+	}
+	
+	// Update
+	$chars[1][1] += strlen($prefix);
+	
+	show_Message('\$chars now => ', __LINE__);
+	
+	print_r($chars);
+	
+	// Update text
+	$text = $res;
+	
+	/****************************************
+	* Replace: 3rd
+	****************************************/
+	$prefix = "<a>"; $suffix = "</a>";
+	
+	$rep = $prefix . $chars[2][0] . $suffix;
+// 	$rep = '<a>' . $chars[0][0] . '</a>';
+// 	$rep = "<a>$chars[0][0]</a>";
+	
+	$len = strlen($chars[2][0]);
+	
+	$res = substr_replace($text, $rep, $chars[2][1], strlen($chars[2][0]));
+	
+	show_Message("<3>", __LINE__);
+	show_Message("            0123456789012345678901234567890123456789", __LINE__);
+	show_Message('Replaced => '.$res, __LINE__);
+	
+	// Position => update
+	$add = strlen($prefix) + strlen($suffix);
+// 	$add = strlen($rep);
+	
+	show_Message('Add position by => '.$add, __LINE__);
+	
+	$position = $chars[2][1];
+	
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		if ($chars[$i][1] > $position) {
+// 		if ($chars[$i][1] > $chars[2][1]) {
+			
+			$chars[$i][1] += $add;
+			
+		}
+	}
+	
+	// Update
+	$chars[2][1] += strlen($prefix);
+	
+	show_Message('\$chars now => ', __LINE__);
+	
+	print_r($chars);
+	
+	// Update text
+	$text = $res;
+	
+	//********************************************
+// 	foreach ($chars as $char) {
+		
+// 		if ($char[1] >= $chars[0][1]) {
+			
+// 			$char[1] += $add;
+			
+// 		}
+	
+// 	}
+	
+	
+// 	// Replace: 1
+// 	$res = substr_replace($text, "AAA", $token[1]);
+	
+// 	show_Message("<1>", __LINE__);
+// 	show_Message('Replaced: ($text, "AAA", $token[1]) => '.$res, __LINE__);
+// 			//RES => abcAAA
+			
+// 	// Replace: 2
+// 	$res = substr_replace($text, "AAA", $token[1], strlen($token[0]));
+	
+// 	show_Message("<2>", __LINE__);
+// 	show_Message(
+// 			'Replaced: ($text, "AAA", $token[1], strlen($token[0])) => '.$res,
+// 			__LINE__);
+// 			//RES => abcAAAfxxdeaaffz
+				
+// 	// Replace: 3
+// 	$res = substr_replace($text, $rep, $token[1], strlen($rep));
+	
+// 	show_Message("<3>", __LINE__);
+// 	show_Message(
+// 			'Replaced: ($text, $rep, $token[1], strlen($rep)) => '.$res,
+// 			__LINE__);
+// 			//RES => abcAAAxxdeaaffz
+	
+	
+	
+}//do_job__AddLink_2($argv)
+
+function do_job__AddLink_3($argv) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+		$text = "abcdefxxdeaaffzdes";
+	
+	}
+	
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	$W4 = new Word();
+	
+	$W1->w1 = "de"; $W2->w1 = "de";
+	$W3->w1 = "cdef"; $W4->w1 = "ff";
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc"; $W4->w2 = "dd";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC"; $W4->w3 = "DD";
+	
+	$chars = array(
+				array($W1, 8),	// de
+				array($W2, 15),	// de
+				array($W3, 2),	// cdef
+				array($W4, 12)	// ff
+			);
+	
+// 	$chars = array(
+// 				array(
+// 					"de", 8),
+// 				array(
+// 					"cdef", 2),
+// 				array(
+// 					"ff", 12),
+// 				array(
+// 					"de", 15)
+// 			);
+	
+// 	$target = "/$token[0]/";
+// 	// 	$target = '/de/';
+	
+	$index = "            0123456789012345678901234567890123456789";
+	
+// 	show_Message($index, __LINE__);
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	show_Message("\$chars => ", __LINE__);
+	
+	print_r($chars);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	/****************************************
+	* Replace:
+	****************************************/
+	for ($i = 0; $i < count($chars); $i++) {
+		
+		$prefix = "<a href='onclick(alert(\""
+				. $chars[$i][0]->w1
+				. "/"
+				. $chars[$i][0]->w2
+				. "/"
+				. ($chars[$i][0]->w3 == "AA" ? "**" : $chars[$i][0]->w3)
+// 				. $chars[$i][0]->w3
+				. "/"
+				
+				. "\"))'>";
+		
+		$suffix = "</a>";
+
+		$rep = $prefix . $chars[$i][0]->w1 . $suffix;
+
+		$len = strlen($chars[$i][0]->w1);
+		
+		show_Message("\$prefix => $prefix", __LINE__);
+		show_Message("\$rep => $rep", __LINE__);
+
+		// Replace
+		$res = substr_replace(
+						$text,
+						$rep,
+						$chars[$i][1],
+						strlen($chars[$i][0]->w1));
+
+		show_Message("<$i>", __LINE__);
+		show_Message($index, __LINE__);
+		show_Message('Replaced => '.$res, __LINE__);
+
+		// Position => update
+		$add = strlen($prefix) + strlen($suffix);
+
+		show_Message('Add position by => '.$add, __LINE__);
+
+		for ($j = 0; $j < count($chars); $j++) {
+
+			if ($chars[$j][1] > $chars[$i][1]) {
+	
+				$chars[$j][1] += $add;
+	
+			}
+
+		}//for ($i = 0; $i < count($chars); $i++)
+
+		$chars[$i][1] += strlen($prefix);
+
+		// Update
+		show_Message('\$chars now => ', __LINE__);
+
+		print_r($chars);
+
+		$text = $res;
+
+		//*******************************************
+		
+// 		$prefix = "<a href='onclick(alert(\"" . $chars[$i][0] . "\"))'>";
+// 		$suffix = "</a>";
+		
+// 		$rep = $prefix . $chars[$i][0] . $suffix;
+		
+// 		$len = strlen($chars[$i][0]);
+		
+// 		$res = substr_replace(
+// 						$text,
+// 						$rep,
+// 						$chars[$i][1],
+// 						strlen($chars[$i][0]));
+		
+// 		show_Message("<$i>", __LINE__);
+// 		show_Message($index, __LINE__);
+// // 		show_Message("            012345678901234567890123456789", __LINE__);
+// 		show_Message('Replaced => '.$res, __LINE__);
+
+// 		// Position => update
+// 		$add = strlen($prefix) + strlen($suffix);
+		
+// 		show_Message('Add position by => '.$add, __LINE__);
+		
+// 		for ($j = 0; $j < count($chars); $j++) {
+		
+// 			if ($chars[$j][1] > $chars[$i][1]) {
+					
+// 				$chars[$j][1] += $add;
+					
+// 			}
+		
+// 		}//for ($i = 0; $i < count($chars); $i++)
+
+// 		// Update
+// 		$chars[$i][1] += strlen($prefix);
+		
+// 		show_Message('\$chars now => ', __LINE__);
+		
+// 		print_r($chars);
+		
+// 		$text = $res;
+		
+		
+	}//for ($i = 0; $i < count($chars); $i++)
+	
+	
+}//do_job__AddLink_3($argv)
+
 class D_3_v_1_4 {
 	
 	static function get_CurrentLot($cur_Page, $per_Page) {
@@ -173,23 +868,6 @@ function do_job__PregMatch($argv) {
 	
 }
 
-function do_job__ShowHelp($argv) {
-
-	$msg = <<<MSG
-<Option>
-		abc		Regex-related task
-		array	Array test
-		h		Show help
-		r		_exec_Tasks__GetRange
-		strpos	Example of 'strpos()' function
-		preg	Example of 'preg_match()' function
-		pregall	Example of 'preg_match_all_WithPos()' function
-		pregall2	Example of 'preg_match_all_WithPos_2()' function
-		wh		Example of 'while((a = func()) > x)'
-MSG;
-	echo $msg;
-	
-}
 
 function
 do_job__PregMatchAll_WithPos($argv) {
@@ -285,6 +963,50 @@ do_job__PregMatchAll_WithPos($argv) {
 // 	print_r($matches);
 	
 // 	echo "\$pos => $pos";
+	
+}
+
+function
+do_job__PregReplace($argv) {
+
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+	
+		$text = "abcdefghdefabcdefghdef";
+	
+	}
+	
+	$chars = "de";
+	
+// 	$pattern = "/(.+)($chars){1}/";
+// 	$pattern = "/(.)($chars)/";
+	$pattern = "/(.+)($chars)/";
+	
+	$rep = '$1<a>$2</a>';
+// 	$rep = '<a>$1</a>';
+// 	$rep = 'AAA<a>$2</a>';
+	
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	show_Message("\$chars => $chars", __LINE__);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$res = preg_replace($pattern, $rep, $text);
+	
+	show_Message("\$res =>", __LINE__);
+	
+	print_r($res);
+	
+	
+	
+	
 	
 }
 
@@ -415,6 +1137,129 @@ do_job__PregMatchAll_WithPos_2($argv) {
 }//do_job__PregMatchAll_WithPos_2($argv)
 
 function
+do_job__PregMatchAll_WithPos_3($argv) {
+	
+	/****************************************
+	* Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+		$text = "abcdefxxdeaaffzdes";
+	
+	}
+		
+	//REF delimiter http://stackoverflow.com/questions/8159628/troubleshooting-delimiter-must-not-be-alphanumeric-or-backslash-error-when-cha answered Nov 16 '11 at 22:29
+	$chars = mb_convert_encoding("目前", "SJIS", "UTF-8");
+// 	$chars = mb_convert_encoding("あ", "SJIS", "UTF-8");
+// 	$chars = "de";
+	
+	$target = "/$chars/";
+// 	$target = '/de/';
+	
+	$tokens = array();
+	
+	$offset = 0;
+
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	show_Message("\$chars => $chars", __LINE__);
+	
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+	
+	show_Message("\$pos => $pos", __LINE__);
+	
+// 	if ($pos == 1) {
+		
+// 		$offset += $m[0][1];;
+		
+// 		show_Message("Offset set => $pos", __LINE__);
+		
+// 	}
+	
+	while(($pos == 1)) {
+		
+// 		show_Message("\$m => ", __LINE__);
+		
+// 		print_r($m);
+		
+		show_Message("while loop => starts(\$pos => 1!)", __LINE__);
+		
+		show_Message("Target found at => " . $m[0][1], __LINE__);
+		
+// 		show_Message("\$offset => $offset", __LINE__);
+
+// 		show_Message("\$offset => add \$m[0][1]($m[0][1])", __LINE__);
+
+// 		show_Message("\$m[0] => ", __LINE__);
+		
+// 		print_r($m[0]);
+		
+// 		show_Message("\$m[0][1] => ", __LINE__);
+		
+// 		print_r($m[0][1]);
+		
+// 		echo "\n";
+		
+// 		$offset += $m[0][1];
+		
+// 		show_Message("\$offset => $offset", __LINE__);
+		
+		// Push token into $tokens
+		$offset = $m[0][1];
+// 		$offset += $m[0][1];
+		
+		show_Message("Pushed into array: \$offset => $offset", __LINE__);
+		
+		array_push($tokens, array($chars, $m[0][1]));
+// 		array_push($tokens, array($chars, $offset));
+		
+		show_Message("\$m is => ", __LINE__);
+		print_r($m);
+		
+		
+		// Increment $offset
+// 		$offset += $m[0][1];
+		
+		$offset += strlen($chars);
+		
+		show_Message("\$offset is now => $offset", __LINE__);
+		
+		// $offset => Off the limit?
+		if ($offset > (strlen($text) - 1)) {
+			
+			show_Message("offset => off the limit: $offset", __LINE__);
+			
+// 			return $tokens;
+			break;
+			
+		}
+		
+		$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+		show_Message("preg_match => done", __LINE__);
+		
+		print_r($m);
+		
+		
+	}//while(($pos == 1))
+	
+	show_Message("while loop => done", __LINE__);
+	
+	print_r($tokens);
+	
+}//do_job__PregMatchAll_WithPos_3($argv)
+
+function
 do_job__While() {
 	
 	$a = 3;
@@ -470,85 +1315,17 @@ function do_job__ArrayTest() {
 	
 }//do_job__ArrayTest()
 
-function do_job($argv) {
-	
-	if (count($argv) < 2) {
-		
-		do_job__ShowHelp($argv);
-		
-		return;
-		
-	}
-	
-// 	print_r($argv);
-	$choice = $argv[1];
-	
-	if ($choice == "abc") {
-	
-		D_3_v_1_4::task_3_Replace_Regex();
-	
-	} else if ($choice == "pregall") {
-		
-		do_job__PregMatchAll_WithPos($argv);
-		
-	} else if ($choice == "pregall2") {
-		
-		do_job__PregMatchAll_WithPos_2($argv);
-		
-	} else if ($choice == "preg") {
-		
-		do_job__PregMatch($argv);
-		
-	} else if ($choice == "wh") {
-		
-		do_job__While();
-		
-	} else if ($choice == "array") {
-		
-		do_job__ArrayTest();
-		
-	} else if ($choice == "strpos") {
-
-		do_job__Strpos($argv);
-		
-// 		$text = 'We can search for the character/We can search for the character';
-		
-// // 		$target = 'can';
-// 		$target = 'this';
-		
-// 		$pos = strpos($text, $target);
-		
-// 		echo "\$text=$text\n"
-// 				. "\$target=$target\n"
-// 				. "\$pos=$pos";
-		
-	} else if ($choice == "r") {
-		
-		$id = 4; $total = 23; $iter = 4;
-		
-		$msg = "\$id=$id, \$total=$total, \$iter=$iter";
-// 		$msg = "id=2, total=23, iter=4";
-		
-		echo $msg;
-		
-		$res = D_3_v_1_4::_exec_Tasks__GetRange($id, $total, $iter);
-// 		$res = D_3_v_1_4::_exec_Tasks__GetRange(2, 23, 4);
-		
-		print_r($res);
-		
-	} else {
-	
-		echo "Unknown choice => $choice";
-		
-	}
-	
-// 	echo "\$choice=$choice";
-	
-}
-
 function show_Message($text, $line) {
 	
 	echo "[$line] $text\n\n";
+	
+}
+
+class Word {
+	
+	public $w1;
+	public $w2;
+	public $w3;
 	
 }
 
