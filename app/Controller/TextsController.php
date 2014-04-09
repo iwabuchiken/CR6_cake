@@ -259,10 +259,20 @@ class TextsController extends AppController {
 //     		$res = Methods::preg_MatchAll_WithPos($text['Text']['text'], $w1);
     		
     		if (count($res) > 0) {
+
+    			foreach ($res as $item) {
+    				
+	    			array_push($words_Filtered, $item);
     			
-    			array_push($words_Filtered, $res);
+    			}
     			
     		}
+    		
+//     		if (count($res) > 0) {
+    			
+//     			array_push($words_Filtered, $res);
+    			
+//     		}
     		
 //     		debug($res);
 //     		debug(count($res));

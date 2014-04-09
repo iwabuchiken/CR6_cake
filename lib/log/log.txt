@@ -1971,3 +1971,7 @@
 [04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
 [04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 161] $total=4032/$per_page=10/$target_Lot=403/$residue=2
 [04/09/2014 15:14:04 : app\Controller\TextsController.php : 211] $words => 65
+[04/09/2014 15:20:51 : app\Controller\TextsController.php : 211] $words => 134
+[04/09/2014 15:21:02 : app\Controller\TextsController.php : 211] $words => 134
+[04/09/2014 15:21:38 : app\Controller\TextsController.php : 211] $words => 134
+[04/09/2014 15:21:57 : app\Controller\TextsController.php : 211] $words => 134
