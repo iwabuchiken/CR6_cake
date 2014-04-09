@@ -28,6 +28,7 @@ function do_job__ShowHelp($argv) {
 		pregall	Example of 'preg_match_all_WithPos()' function
 		pregall2	Example of 'preg_match_all_WithPos_2()' function
 		pregall3	preg_match_all_WithPos_3()
+		pregall4	preg_match_all_WithPos_4()
 		pregreplace	do_job__PregReplace(\$argv)
 		wh		Example of 'while((a = func()) > x)'
 MSG;
@@ -73,6 +74,10 @@ function do_job($argv) {
 	} else if ($choice == "pregall3") {
 
 		do_job__PregMatchAll_WithPos_3($argv);
+
+	} else if ($choice == "pregall4") {
+
+		do_job__PregMatchAll_WithPos_4($argv);
 
 	} else if ($choice == "preg") {
 
@@ -592,6 +597,7 @@ function do_job__AddLink_3($argv) {
 	/****************************************
 	* Replace:
 	****************************************/
+	
 	for ($i = 0; $i < count($chars); $i++) {
 		
 		$prefix = "<a href='onclick(alert(\""
@@ -630,6 +636,7 @@ function do_job__AddLink_3($argv) {
 
 		show_Message('Add position by => '.$add, __LINE__);
 
+		// REF using for statement => http://stackoverflow.com/questions/5179606/php-replace-array-value answered Mar 3 '11 at 11:12
 		for ($j = 0; $j < count($chars); $j++) {
 
 			if ($chars[$j][1] > $chars[$i][1]) {
@@ -1493,6 +1500,222 @@ do_job__PregMatchAll_WithPos_3($argv) {
 	print_r($tokens);
 	
 }//do_job__PregMatchAll_WithPos_3($argv)
+
+/****************************************
+* param => $text::String, $words::Array(Word)
+****************************************/
+function
+do_job__PregMatchAll_WithPos_4($argv) {
+	
+	/****************************************
+	* Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+					"该堂在法庭战后提交给军事法庭的统计显示，"
+					. "在1937年12月至1938年5月1日，法庭该堂在"
+// 					. "在1937年12月至1938年5月1日，该堂在"
+					. "城区收埋7548具，在城外收埋104718具",
+// 					"该堂在战后提交给军事法庭的统计显示，在1937年12月至1938年5月1日，该堂在城区收埋7548具，在城外收埋104718具",
+					"SJIS", "UTF-8");
+		
+	}
+		
+	/****************************************
+	* Words list
+	****************************************/
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	
+	$W1->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("城区", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("城外", "SJIS", "UTF-8");;
+	
+	// 	$W1->w1 = "de";
+	// 	$W2->w1 = "de";
+	// 	$W3->w1 = "cdef";
+	// 	$W4->w1 = "ff";
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC";
+	
+	$Ws = array($W1, $W2, $W3, $W4);
+	
+	show_Message(
+				"         0123456789012345678901234567890123456789",
+				__LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $Ws[0]);
+	
+}//do_job__PregMatchAll_WithPos_4($argv)
+
+function
+_do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
+
+	/****************************************
+	* Variables
+	****************************************/
+// 	$W = $Ws[0];
+	
+	show_Message("\$W =>", __LINE__);
+	print_r($W);
+
+	$offset = 0;
+	
+	// Set: Target
+	$target = "/$W->w1/";
+	
+	show_Message("\$target => $target", __LINE__);
+	
+	$words_list = array();
+	
+	/****************************************
+	* Processes 
+	****************************************/
+	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+	
+	show_Message("\$pos => $pos", __LINE__);
+	
+	show_Message("\$m =>", __LINE__);
+	print_r($m);
+	
+	
+	while(($pos == 1)) {
+	
+		// 		show_Message("\$m => ", __LINE__);
+	
+		// 		print_r($m);
+	
+		show_Message(
+					"while loop => starts(\$pos => 1!) -----------------------",
+					__LINE__);
+	
+		show_Message("Target found at => " . $m[0][1], __LINE__);
+
+		$offset = $m[0][1];
+		// 		$offset += $m[0][1];
+		
+		show_Message("Pushed into array: \$offset => $offset", __LINE__);
+		
+		array_push($words_list, array($W, $m[0][1]));
+
+		$offset += strlen($W->w1);
+		
+		show_Message("\$offset is now => $offset", __LINE__);
+		
+		// $offset => Off the limit?
+		if ($offset > (strlen($text) - 1)) {
+				
+			show_Message("offset => off the limit: $offset", __LINE__);
+				
+			// 			return $tokens;
+			break;
+				
+		}
+		
+		$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+		show_Message("preg_match => done", __LINE__);
+		
+		print_r($m);
+		
+	}//while(($pos == 1))
+	
+	show_Message("\$words_list =>", __LINE__);
+	print_r($words_list);
+	
+// 	/****************************************
+// 	* Match: 1st
+// 	****************************************/
+// 	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+	
+// 	show_Message("\$pos => $pos", __LINE__);
+
+// 	show_Message("\$m =>", __LINE__);
+// 	print_r($m);
+	
+// 	$token = $m[0][0];
+// 	show_Message(
+// 				"\$m[0][0] => $token (len=" . strlen($token) . ")",
+// 				__LINE__);
+	
+// 	array_push($words_list, array($Ws[0], $m[0][1]));
+	
+// 	show_Message(
+// 			"\$words_list => ",
+// 			__LINE__);
+// 	print_r($words_list);
+	
+// 	// Update: offset
+// 	$offset += $m[0][1] + strlen($W->w1);
+	
+// 	show_Message(
+// 				"\$offset now => $offset",
+// 				__LINE__);
+	
+// 	/****************************************
+// 	****************************************
+// 	* Match: 2nd
+// 	****************************************
+// 	****************************************/
+// 	/****************************************
+// 	* Variables
+// 	****************************************/
+// // 	$W = $Ws[1];
+	
+// 	show_Message("<2> ===================================", __LINE__);
+// 	show_Message("\$W =>", __LINE__);
+// 	print_r($W);
+	
+// // 	$offset = 0;
+	
+// 	// Set: Target
+// // 	$target = "/$W->w1/";
+	
+// 	show_Message("\$target => $target", __LINE__);
+	
+// 	/****************************************
+// 	* Processes
+// 	****************************************/
+// 	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+	
+// 	show_Message("\$pos => $pos", __LINE__);
+
+// 	show_Message("\$m =>", __LINE__);
+// 	print_r($m);
+	
+// 	$token = $m[0][0];
+// 	show_Message(
+// 				"\$m[0][0] => $token (len=" . strlen($token) . ")",
+// 				__LINE__);
+	
+// 	array_push($words_list, array($Ws[0], $m[0][1]));
+// // 	array_push($words_list, array($Ws[1], $m[0][1]));
+	
+// 	show_Message(
+// 			"\$words_list => ",
+// 			__LINE__);
+// 	print_r($words_list);
+	
+}//_do_job__PregMatchAll_WithPos_4__Execute($text, $Ws)
 
 function
 do_job__While() {
