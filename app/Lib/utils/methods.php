@@ -587,6 +587,54 @@
 			return $tokens;
 		
 		}//preg_MatchAll_WithPos($argv)
+
+		static function
+// 		_do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
+		preg_MatchAll_WithPos_4($text, $W) {
 		
-	}
+			/****************************************
+			 * Variables
+			****************************************/
+			$offset = 0;
+		
+			// Set: Target
+			$chars = $W['w1'];
+			
+			$target = "/$chars/";
+// 			$target = "/$W->w1/";
+		
+			$words_list = array();
+		
+			/****************************************
+			 * Processes
+			****************************************/
+			$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+			while(($pos == 1)) {
+		
+				$offset = $m[0][1];
+		
+				array_push($words_list, array($W, $m[0][1]));
+		
+				$offset += strlen($chars);
+// 				$offset += strlen($W->w1);
+		
+				// $offset => Off the limit?
+				if ($offset > (strlen($text) - 1)) {
+		
+		
+					return $words_list;
+		
+				}
+		
+				$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
+		
+			}//while(($pos == 1))
+		
+			return $words_list;
+		
+		}//preg_MatchAll_WithPos_4($text, $W)
+// 		}//_do_job__PregMatchAll_WithPos_4__Execute($text, $Ws)
+		
+	}//class Methods
 	

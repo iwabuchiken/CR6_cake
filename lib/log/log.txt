@@ -1958,3 +1958,16 @@
 [04/09/2014 00:29:53 : app\Controller\TextsController.php : 211] $words => 2673
 [04/09/2014 06:22:50 : app\Controller\TextsController.php : 156] index() => starts
 [04/09/2014 06:22:59 : app\Controller\TextsController.php : 211] $words => 2673
+[04/09/2014 14:55:44 : app\Controller\TextsController.php : 211] $words => 2673
+[04/09/2014 15:00:53 : app\Controller\TextsController.php : 211] $words => 65
+[04/09/2014 15:02:45 : app\Controller\WordsController.php : 63] index() => starts
+[04/09/2014 15:02:46 : app\Controller\WordsController.php : 121] $current_Lot => 1
+[04/09/2014 15:02:46 : app\Controller\WordsController.php : 145] $move_Lot => ""
+[04/09/2014 15:02:46 : app\Controller\WordsController.php : 193] $current_Lot => 1
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=41/$cur_Lot=1
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 161] $total=4032/$per_page=10/$target_Lot=403/$residue=2
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=41/$cur_Lot=1
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/09/2014 15:02:46 : app\View\Elements\words\index_pagination_2.ctp : 161] $total=4032/$per_page=10/$target_Lot=403/$residue=2
+[04/09/2014 15:14:04 : app\Controller\TextsController.php : 211] $words => 65

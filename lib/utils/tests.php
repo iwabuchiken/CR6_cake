@@ -1518,9 +1518,12 @@ do_job__PregMatchAll_WithPos_4($argv) {
 			   //0123456789012345
 // 		$text = "abcdefxxdeaaffzdes";
 		$text = mb_convert_encoding(
+				   //012345678901234567890123456789012
 					"该堂在法庭战后提交给军事法庭的统计显示，"
-					. "在1937年12月至1938年5月1日，法庭该堂在"
+				     //3456789012345678901234567890123456789
+					. "在1937年12月城外至1938年5月1日，法庭该堂在"
 // 					. "在1937年12月至1938年5月1日，该堂在"
+					 //012345678901234567890123456789
 					. "城区收埋7548具，在城外收埋104718具",
 // 					"该堂在战后提交给军事法庭的统计显示，在1937年12月至1938年5月1日，该堂在城区收埋7548具，在城外收埋104718具",
 					"SJIS", "UTF-8");
@@ -1552,7 +1555,8 @@ do_job__PregMatchAll_WithPos_4($argv) {
 	$W1->w3 = "AA"; $W2->w3 = "BB";
 	$W3->w3 = "CC";
 	
-	$Ws = array($W1, $W2, $W3, $W4);
+	$Ws = array($W1, $W2, $W3);
+// 	$Ws = array($W1, $W2, $W3, $W4);
 	
 	show_Message(
 				"         0123456789012345678901234567890123456789",
@@ -1563,7 +1567,33 @@ do_job__PregMatchAll_WithPos_4($argv) {
 	/****************************************
 	* Processes
 	****************************************/
-	$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $Ws[0]);
+	$words_WithPos = array();
+	
+	foreach ($Ws as $W) {
+		
+		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $W);
+	
+		foreach ($res as $item) {
+			
+			array_push($words_WithPos, $item);
+		
+		}
+		
+	}
+// 		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $Ws[2]);
+		
+// 		foreach ($res as $item) {
+			
+// 			array_push($words_WithPos, $item);
+		
+// 		}
+	
+	show_Message("\$words_WithPos => ", __LINE__);
+	print_r($words_WithPos);
+	
+// 	show_Message("\$text => ".substr($text, 92, 4), __LINE__);
+	
+// 	$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $Ws[0]);
 	
 }//do_job__PregMatchAll_WithPos_4($argv)
 
@@ -1641,6 +1671,8 @@ _do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
 	
 	show_Message("\$words_list =>", __LINE__);
 	print_r($words_list);
+	
+	return $words_list;
 	
 // 	/****************************************
 // 	* Match: 1st

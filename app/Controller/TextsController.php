@@ -205,10 +205,12 @@ class TextsController extends AppController {
         $msg = "\$words => " . count($words);
         
         write_Log(
-        	CONS::get_dPath_Log(),
-        	$msg,
-        	__FILE__,
-        	__LINE__);
+	        	CONS::get_dPath_Log(),
+	        	$msg,
+	        	__FILE__,
+	        	__LINE__);
+        
+        debug($words);
         
         /****************************************
         * Modify: Text
@@ -250,7 +252,11 @@ class TextsController extends AppController {
     		
     		$w1 = $word['Word']['w1'];
     		
-    		$res = Methods::preg_MatchAll_WithPos($text['Text']['text'], $w1);
+    		$res = Methods::preg_MatchAll_WithPos_4(
+    							$text['Text']['text'],
+    							$word['Word']);
+    		
+//     		$res = Methods::preg_MatchAll_WithPos($text['Text']['text'], $w1);
     		
     		if (count($res) > 0) {
     			
@@ -302,7 +308,8 @@ class TextsController extends AppController {
     	
     	
     	
-    	return $words;
+    	return $words_Filtered;
+//     	return $words;
     	
     }//_view_GetWords($text)
     
