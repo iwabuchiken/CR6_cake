@@ -18,7 +18,8 @@ function do_job__ShowHelp($argv) {
 	$msg = <<<MSG
 <Option>
 		abc		Regex-related task
-		addlink	do_job__AddLink(\$argv)
+		addlink		do_job__AddLink(\$argv)
+		addlink4	do_job__AddLink_4(\$argv)
 		array	Array test
 		h		Show help
 		r		_exec_Tasks__GetRange
@@ -56,6 +57,10 @@ function do_job($argv) {
 // 		do_job__AddLink($argv);
 // 		do_job__AddLink_2($argv);
 		do_job__AddLink_3($argv);
+
+	} else if ($choice == "addlink4") {
+
+		do_job__AddLink_4($argv);
 
 	} else if ($choice == "pregall") {
 
@@ -693,6 +698,236 @@ function do_job__AddLink_3($argv) {
 	
 	
 }//do_job__AddLink_3($argv)
+
+function do_job__AddLink_4($argv) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+			   //0123456789012345
+// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+				"该堂在战后提交给军事法庭的统计显示，在1937年12月至1938年5月1日，该堂在城区收埋7548具，在城外收埋104718具",
+				"SJIS",
+				"UTF-8"
+				);
+	
+	}
+	
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	$W4 = new Word();
+	
+	$W1->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("城区", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("城外", "SJIS", "UTF-8");;
+	$W4->w1 = mb_convert_encoding("城区", "SJIS", "UTF-8");;
+	
+// 	$W1->w1 = "de";
+// 	$W2->w1 = "de";
+// 	$W3->w1 = "cdef";
+// 	$W4->w1 = "ff";
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc"; $W4->w2 = "dd";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC"; $W4->w3 = "DD";
+	
+	$Ws = array($W1, $W2, $W3, $W4);
+	
+	$chars = array(
+				array($W1, 8),	// de
+				array($W2, 15),	// de
+				array($W3, 2),	// cdef
+				array($W4, 12)	// ff
+			);
+	
+	$res = _do_job__AddLink_4__Execute($text, $chars);
+	
+// 	$chars = array(
+// 				array(
+// 					"de", 8),
+// 				array(
+// 					"cdef", 2),
+// 				array(
+// 					"ff", 12),
+// 				array(
+// 					"de", 15)
+// 			);
+	
+// 	$target = "/$token[0]/";
+// 	// 	$target = '/de/';
+	
+// 	$index = "            0123456789012345678901234567890123456789";
+	
+// // 	show_Message($index, __LINE__);
+// 	show_Message("         01234567890123456789", __LINE__);
+	
+// 	show_Message("\$text => $text", __LINE__);
+	
+// 	show_Message("\$chars => ", __LINE__);
+	
+// 	print_r($chars);
+	
+// 	/****************************************
+// 	* Processes
+// 	****************************************/
+// 	/****************************************
+// 	* Replace:
+// 	****************************************/
+// 	for ($i = 0; $i < count($chars); $i++) {
+		
+// 		$prefix = "<a href='onclick(alert(\""
+// 				. $chars[$i][0]->w1
+// 				. "/"
+// 				. $chars[$i][0]->w2
+// 				. "/"
+// // 				. ($chars[$i][0]->w3 == "AA" ? "**" : $chars[$i][0]->w3)
+// 				. $chars[$i][0]->w3
+// 				. "/"
+				
+// 				. "\"))'>";
+		
+// 		$suffix = "</a>";
+
+// 		$rep = $prefix . $chars[$i][0]->w1 . $suffix;
+
+// 		$len = strlen($chars[$i][0]->w1);
+		
+// 		show_Message("\$prefix => $prefix", __LINE__);
+// 		show_Message("\$rep => $rep", __LINE__);
+
+// 		// Replace
+// 		$res = substr_replace(
+// 						$text,
+// 						$rep,
+// 						$chars[$i][1],
+// 						strlen($chars[$i][0]->w1));
+
+// 		show_Message("<$i>", __LINE__);
+// 		show_Message($index, __LINE__);
+// 		show_Message('Replaced => '.$res, __LINE__);
+
+// 		// Position => update
+// 		$add = strlen($prefix) + strlen($suffix);
+
+// 		show_Message('Add position by => '.$add, __LINE__);
+
+// 		for ($j = 0; $j < count($chars); $j++) {
+
+// 			if ($chars[$j][1] > $chars[$i][1]) {
+	
+// 				$chars[$j][1] += $add;
+	
+// 			}
+
+// 		}//for ($i = 0; $i < count($chars); $i++)
+
+// 		$chars[$i][1] += strlen($prefix);
+
+// 		// Update
+// 		show_Message('\$chars now => ', __LINE__);
+
+// 		print_r($chars);
+
+// 		$text = $res;
+
+// 	}//for ($i = 0; $i < count($chars); $i++)
+	
+	
+}//do_job__AddLink_3($argv)
+
+function
+_do_job__AddLink_4__Execute($text, $chars) {
+	
+	$index = "            0123456789012345678901234567890123456789";
+	
+	// 	show_Message($index, __LINE__);
+	show_Message("         01234567890123456789", __LINE__);
+	
+	show_Message("\$text => $text", __LINE__);
+	
+	show_Message("\$chars => ", __LINE__);
+	
+	print_r($chars);
+	
+	/****************************************
+	 * Processes
+	****************************************/
+	/****************************************
+	 * Replace:
+	****************************************/
+	for ($i = 0; $i < count($chars); $i++) {
+	
+		$prefix = "<a href='onclick(alert(\""
+				. $chars[$i][0]->w1
+				. "/"
+						. $chars[$i][0]->w2
+						. "/"
+						// 				. ($chars[$i][0]->w3 == "AA" ? "**" : $chars[$i][0]->w3)
+				. $chars[$i][0]->w3
+				. "/"
+	
+				. "\"))'>";
+	
+		$suffix = "</a>";
+	
+		$rep = $prefix . $chars[$i][0]->w1 . $suffix;
+	
+		$len = strlen($chars[$i][0]->w1);
+	
+		show_Message("\$prefix => $prefix", __LINE__);
+		show_Message("\$rep => $rep", __LINE__);
+	
+		// Replace
+		$res = substr_replace(
+				$text,
+				$rep,
+				$chars[$i][1],
+				strlen($chars[$i][0]->w1));
+	
+		show_Message("<$i>", __LINE__);
+		show_Message($index, __LINE__);
+		show_Message('Replaced => '.$res, __LINE__);
+	
+		// Position => update
+		$add = strlen($prefix) + strlen($suffix);
+	
+		show_Message('Add position by => '.$add, __LINE__);
+	
+		for ($j = 0; $j < count($chars); $j++) {
+	
+			if ($chars[$j][1] > $chars[$i][1]) {
+	
+				$chars[$j][1] += $add;
+	
+			}
+	
+		}//for ($i = 0; $i < count($chars); $i++)
+	
+		$chars[$i][1] += strlen($prefix);
+	
+		// Update
+		show_Message('\$chars now => ', __LINE__);
+	
+		print_r($chars);
+	
+		$text = $res;
+	
+	}//for ($i = 0; $i < count($chars); $i++)
+	
+	
+}//_do_job__AddLink_4__Execute($text, $Ws)
 
 class D_3_v_1_4 {
 	
