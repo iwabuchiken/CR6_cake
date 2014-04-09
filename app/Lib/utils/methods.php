@@ -635,6 +635,69 @@
 		
 		}//preg_MatchAll_WithPos_4($text, $W)
 // 		}//_do_job__PregMatchAll_WithPos_4__Execute($text, $Ws)
+
+		static function
+		addLink_4($text, $words_Filtered) {
+// 		_do_job__AddLink_4__Execute($text, $chars) {
+		
+			/****************************************
+			 * Replace:
+			****************************************/
+			for ($i = 0; $i < count($words_Filtered); $i++) {
+		
+// 				$prefix = "<a href='onclick(alert(\""
+				$prefix = "<span style='color:blue;' onClick='alert(\""
+						. $words_Filtered[$i][0]['w1']
+// 						. $words_Filtered[$i][0]->w1
+						. "/"
+						. $words_Filtered[$i][0]['w2']
+// 						. $words_Filtered[$i][0]->w2
+						. "/"
+						. $words_Filtered[$i][0]['w3']
+// 						. $words_Filtered[$i][0]->w3
+						. "/"
+// 						. "\"))'>";
+						. "\")'>";
+		
+				$suffix = "</span>";
+// 				$suffix = "</a>";
+		
+				$rep = $prefix . $words_Filtered[$i][0]['w1'] . $suffix;
+// 				$rep = $prefix . $words_Filtered[$i][0]->w1 . $suffix;
+		
+				$len = strlen($words_Filtered[$i][0]['w1']);
+		
+				// Replace
+				$res = substr_replace(
+						$text,
+						$rep,
+						$words_Filtered[$i][1],
+						strlen($words_Filtered[$i][0]['w1']));
+		
+				// Positions => update
+				$add = strlen($prefix) + strlen($suffix);
+		
+				for ($j = 0; $j < count($words_Filtered); $j++) {
+		
+					if ($words_Filtered[$j][1] > $words_Filtered[$i][1]) {
+		
+						$words_Filtered[$j][1] += $add;
+		
+					}
+		
+				}//for ($i = 0; $i < count($chars); $i++)
+		
+				$words_Filtered[$i][1] += strlen($prefix);
+		
+				// Update
+				$text = $res;
+		
+			}//for ($i = 0; $i < count($chars); $i++)
+		
+			return $text;
+		
+		}//_do_job__AddLink_4__Execute($text, $Ws)
+		
 		
 	}//class Methods
 	

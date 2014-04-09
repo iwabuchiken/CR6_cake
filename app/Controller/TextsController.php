@@ -191,18 +191,18 @@ class TextsController extends AppController {
             throw new NotFoundException(__('Invalid post'));
         }
 
-        $text = $this->Text->findById($id);
+        $model_Text = $this->Text->findById($id);
         
-        if (!$text) {
+        if (!$model_Text) {
             throw new NotFoundException(__('Invalid text'));
         }
         
         /****************************************
         * Get: Words list
         ****************************************/
-        $words = $this->_view_GetWords($text);
+        $words_Filtered = $this->_view_GetWords($model_Text);
         
-        $msg = "\$words => " . count($words);
+        $msg = "\$words_Filtered => " . count($words_Filtered);
         
         write_Log(
 	        	CONS::get_dPath_Log(),
@@ -210,16 +210,45 @@ class TextsController extends AppController {
 	        	__FILE__,
 	        	__LINE__);
         
-        debug($words);
+//         debug($words_Filtered);
         
+        /****************************************/
         /****************************************
         * Modify: Text
         ****************************************/
-        $text = $this->_view_ModifyText($text);
+        /****************************************/
         
-        $this->set('text', $text);
-    }
+        /****************************************
+        * Modify: Add links
+        ****************************************/
+        $text = $model_Text['Text']['text'];
+        
+        $text = Methods::addLink_4($text, $words_Filtered);
+        
+//         debug($text);
+		
+        $model_Text['Text']['text'] = $text;
+        
+        /****************************************
+        * Modify: Puncs
+        ****************************************/
+        $model_Text = $this->_view_ModifyText_Puncs($model_Text);
+        
+        $this->set('text', $model_Text);
+        
+    }//public function view($id)
 
+    /****************************************
+    * @return <prev>array(
+    * 				0 => array(
+    * 						0 => Word object,
+    * 						1 => Position),
+    * 				1 => array(
+    * 						0 => Word object,
+    * 						1 => Position),
+    * 			)
+    * 			</prev>
+    ****************************************/
     public function
     _view_GetWords($text) {
     	/****************************************
@@ -324,7 +353,8 @@ class TextsController extends AppController {
     }//_view_GetWords($text)
     
     public function
-    _view_ModifyText($text) {
+    _view_ModifyText_Puncs($text) {
+//     _view_ModifyText($text) {
 
     	$temp = $text['Text']['text'];
 
@@ -363,7 +393,7 @@ class TextsController extends AppController {
     	
     	//         debug($temp);
     	   
-    }
+    }//_view_ModifyText_Puncs($text)
     
 	public function add() {
 	

@@ -1,4 +1,4 @@
-<?php debug($text); ?>
+<?php //debug($text); ?>
 
 <table>
 <!-- <table border="1"> -->
