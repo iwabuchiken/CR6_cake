@@ -1995,3 +1995,6 @@
 [04/09/2014 20:45:29 : app\Controller\TextsController.php : 211] $words_Filtered => 7
 [04/09/2014 20:45:37 : app\Controller\TextsController.php : 156] index() => starts
 [04/09/2014 20:45:42 : app\Controller\TextsController.php : 211] $words_Filtered => 127
+[04/09/2014 23:02:34 : app\Controller\TextsController.php : 156] index() => starts
+[04/09/2014 23:02:39 : app\Controller\TextsController.php : 211] $words_Filtered => 10
+[04/10/2014 07:54:18 : app\Controller\TextsController.php : 156] index() => starts

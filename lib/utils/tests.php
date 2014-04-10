@@ -17,20 +17,24 @@ function do_job__ShowHelp($argv) {
 
 	$msg = <<<MSG
 <Option>
-		abc		Regex-related task
-		addlink		do_job__AddLink(\$argv)
-		addlink4	do_job__AddLink_4(\$argv)
-		array	Array test
-		h		Show help
-		r		_exec_Tasks__GetRange
-		strpos	Example of 'strpos()' function
-		preg	Example of 'preg_match()' function
-		pregall	Example of 'preg_match_all_WithPos()' function
-		pregall2	Example of 'preg_match_all_WithPos_2()' function
-		pregall3	preg_match_all_WithPos_3()
-		pregall4	preg_match_all_WithPos_4()
-		pregreplace	do_job__PregReplace(\$argv)
-		wh		Example of 'while((a = func()) > x)'
+	abc		Regex-related task
+	addlink		do_job__AddLink(\$argv)
+	addlink4	do_job__AddLink_4(\$argv)
+	array	Array test
+	h		Show help
+		
+	r		_exec_Tasks__GetRange
+	strpos	Example of 'strpos()' function
+	preg	Example of 'preg_match()' function
+	pregall	Example of 'preg_match_all_WithPos()' function
+	pregall2	Example of 'preg_match_all_WithPos_2()' function
+		
+	pregall3	preg_match_all_WithPos_3()
+	pregall4	preg_match_all_WithPos_4()
+	pregreplace	do_job__PregReplace(\$argv)
+	skim		Skim filtered words list
+	wh		Example of 'while((a = func()) > x)'
+	
 MSG;
 	echo $msg;
 
@@ -52,6 +56,10 @@ function do_job($argv) {
 	if ($choice == "abc") {
 
 		D_3_v_1_4::task_3_Replace_Regex();
+
+	} else if ($choice == "skim") {
+
+		do_job__Skim_WordsFiltered($argv);
 
 	} else if ($choice == "addlink") {
 
@@ -133,6 +141,353 @@ function do_job($argv) {
 	// 	echo "\$choice=$choice";
 
 }//function do_job($argv)
+
+function
+do_job__Skim_WordsFiltered($argv) {
+	
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+		//0123456789012345
+		// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+				//012345678901234567890123456789012
+				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+				"SJIS", "UTF-8");
+	
+	}
+	
+	/****************************************
+	 * Words list
+	****************************************/
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	
+	$W1->w1 = mb_convert_encoding("在法庭堂", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("提提", "SJIS", "UTF-8");;
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC";
+	
+	$Ws = array($W1, $W2, $W3);
+	// 	$Ws = array($W1, $W2, $W3, $W4);
+	
+	show_Message(
+				"         0123456789012345678901234567890123456789",
+				__LINE__);
+
+	show_Message($text, __LINE__);
+	
+	// Words list with positions
+	$words_WithPos = array();
+	
+	foreach ($Ws as $W) {
+	
+		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $W);
+	
+		foreach ($res as $item) {
+				
+			array_push($words_WithPos, $item);
+	
+		}
+	
+	}//foreach ($Ws as $W)
+		
+	show_Message("\$words_WithPos =>", __LINE__);
+	
+	print_r($words_WithPos);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$words_WithPos_2 = $words_WithPos;
+	
+	$skimmed_WordsList = array();
+	
+	for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
+		
+		// Get: All the same word objects
+		$W1 = $words_WithPos[$i];
+		
+		$words_Same = _get_SameWords($words_WithPos, $W1[0]->w1);
+		
+// 		Array(
+// 				[0] => Array(
+// 						[0] => Word Object
+// 						(
+// 								[w1] => 在法庭堂
+// 								[w2] => aa
+// 								[w3] => AA
+// 						)
+		
+// 						[1] => 2
+// 				)
+		
+// 				[1] => Array(
+// 						[0] => Word Object
+// 						(
+// 								[w1] => 在法庭堂
+// 								[w2] => aa
+// 								[w3] => AA
+// 						)
+		
+// 						[1] => 22
+// 				)
+// 		)
+		
+		for ($k = 0; $k < count($words_WithPos_2); $k++) {	// f2
+
+			// Flag => Not contained in any
+			$flag_IsIn = false;
+			
+			for ($j = 0; $j < count($words_Same); $j++) {	// f3
+				
+				// Contains?		=> j1
+				$res = _contains_String(
+								$words_Same[$j][0]->w1,
+								$words_WithPos_2[$k][0]->w1);
+				
+				$msg = "\$words_Same[\$j][0]->w1"
+							." => "
+							.$words_Same[$j][0]->w1
+							."\n"
+							
+							."\$words_WithPos_2[\$k][0]->w1"
+							." => "
+							.$words_WithPos_2[$k][0]->w1
+							."\n"
+							;
+					
+				show_Message($msg, __LINE__);
+				
+				
+				if ($res == true) {	// j1
+				
+					show_Message("\t\t => Contains", __LINE__);
+					
+					// Yes
+					$res = _isSame_WordObj(
+									$words_Same[$j],
+									$words_WithPos_2[$k]);
+					
+					if ($res == true) {	// j2
+					
+						show_Message("Same Word object", __LINE__);
+						
+						$res = _isIn_SkimmedList(
+										$skimmed_WordsList,
+										$words_WithPos_2[$k]);
+						
+						if ($res == true) {	// j2.1
+							// Yes
+							$msg = "Already in the list => "
+									.$words_WithPos_2[$k][0]->w1
+									."("
+									.$words_WithPos_2[$k][1]
+									.")";
+							
+							show_Message($msg, __LINE__);;
+							
+							$flag_IsIn = true;
+						
+						} else {	// j2.1
+							// No
+							$msg = "Not in the list => "
+									.$words_WithPos_2[$k][0]->w1
+									."("
+									.$words_WithPos_2[$k][1]
+									.")";
+							
+							show_Message($msg, __LINE__);;
+							
+							$flag_IsIn = false;
+							
+// 							array_push($skimmed_WordsList, $words_WithPos_2[$k]);
+							
+						}	// j2.1
+						
+// 						array_push($skimmed_WordsList, $words_WithPos_2[$k]);
+					
+					} else {	// j2
+					
+						// temporary
+						$flag_IsIn = false;
+						
+					}	// j2
+				
+				} else {	// j1
+					// No
+					show_Message("\t\t => Doesn't contain", __LINE__);
+					
+					
+					
+				}	// j1
+				
+// 				// log
+// 				if ($res == true) {
+				
+// 					// log
+// 					$msg = "\$words_Same[\$j][0]->w1"
+// 							." => "
+// 							.$words_Same[$j][0]->w1
+// 							."\n"
+							
+// 							."\$words_WithPos_2[\$k][0]->w1"
+// 							." => "
+// 							.$words_WithPos_2[$k][0]->w1
+// 							."\n"
+// 					;
+					
+// 					show_Message($msg, __LINE__);
+				
+// 				} else {
+				
+// 				}
+				
+			}//for ($j = 0; $j < count($words_Same); $j++)
+			
+			// Not contained?
+			if ($flag_IsIn == false) {	// j3
+			
+				$res = _isIn_SkimmedList(
+								$skimmed_WordsList,
+								$words_WithPos_2[$k]);
+				
+				if ($res == false) {
+					
+					array_push($skimmed_WordsList, $words_WithPos_2[$k]);
+				
+				
+					$msg = "Put into skimmed list => "
+						.$words_WithPos_2[$k][0]->w1
+						."("
+						.$words_WithPos_2[$k][1]
+						.")";
+					
+					show_Message($msg, __LINE__);
+				
+				}
+			
+			} else {	// j3
+			
+				$msg = "Not put into skimmed list => "
+						.$words_WithPos_2[$k][0]->w1
+						."("
+								.$words_WithPos_2[$k][1]
+								.")";
+				
+				show_Message($msg, __LINE__);
+				
+			}	// j3
+			
+		}//for ($k = 0; $k < count($words_WithPos_2); $k++)
+		
+		// log
+		show_Message("\n\n", __LINE__);
+		show_Message("Processing => done", __LINE__);
+		
+		$msg = "";
+		
+		foreach ($skimmed_WordsList as $item) {
+			
+			$msg .= $item[0]->w1
+					."("
+					.$item[1]
+					.")"
+					." / ";
+		
+		}
+		
+		show_Message("\$skimmed_WordsList => $msg", __LINE__);
+		
+		
+// 		print_r($skimmed_WordsList);
+		
+// 		// log
+// 		show_Message("\$words_Same =>", __LINE__);
+// 		print_r($words_Same);
+		
+// 		$words_Same = _get_SameWords($words_WithPos, $W1[0]['w1']);
+// 		$words_Same = _get_SameWords($words_WithPos, $W1->w1);
+		
+	}//for ($i = 0; $i < count($words_WithPos); $i++)
+	
+}//do_job__Skim_WordsFiltered($argv)
+
+function
+_isIn_SkimmedList($skimmed_WordsList, $Wset) {
+	
+	foreach ($skimmed_WordsList as $item) {
+		
+		$res = ($item[0]->w1 == $Wset[0]->w1
+			&& $item[1] == $Wset[1]
+			);
+	
+		if ($res == true) return true;
+		
+	}
+	
+	return false;
+	
+}//_isIn_SkimmedList($skimmed_WordsList, $Wset)
+
+function
+_isSame_WordObj($Wset1, $Wset2) {
+	
+	$res = ($Wset1[0]->w1 == $Wset2[0]->w1
+			&& $Wset1[1] == $Wset2[1]
+			);
+	
+	return ($res == true) ? true : false;
+	
+}//_isSame_WordObj($W1, $W2)
+
+function
+_contains_String($text, $keyword) {
+	
+	$res = (strpos($text, $keyword));
+	
+	return ($res !== false) ? true : false;
+	
+}//_contains_String($text, $keyword)
+
+function
+_get_SameWords($words_WithPos, $w1) {
+	
+	show_Message("\$w1 => $w1", __LINE__);
+	
+	$same_Words = array();
+	
+	foreach ($words_WithPos as $item) {
+		// $item
+		// Array(0 => Word Object, 1 => 4)
+		$w = $item[0]->w1;
+
+		if ($w == $w1) {
+			
+			array_push($same_Words, $item);
+			
+		}
+		
+	}
+	
+	return $same_Words;
+	
+}//_get_SameWords($words_WithPos, $w1)
+
 
 function do_job__AddLink($argv) {
 

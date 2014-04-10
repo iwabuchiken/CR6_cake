@@ -59,4 +59,4 @@ pragma table_info(texts);
 pragma table_info(langs);
 
 [tests.php]
-lib\utils\tests.php
+php lib\utils\tests.php
