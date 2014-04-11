@@ -123,8 +123,8 @@
 		/****************************************
 		* Write
 		****************************************/
-		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
-		$file = str_replace(ROOT.DS, "", $file);
+// 		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
+// 		$file = str_replace(ROOT.DS, "", $file);
 		
 		$time = get_CurrentTime();
 		

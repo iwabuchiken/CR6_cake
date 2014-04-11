@@ -20,19 +20,23 @@ function do_job__ShowHelp($argv) {
 	abc		Regex-related task
 	addlink		do_job__AddLink(\$argv)
 	addlink4	do_job__AddLink_4(\$argv)
+		
+	arrayu	'array_unique()'
 	array	Array test
 	h		Show help
 		
 	r		_exec_Tasks__GetRange
 	strpos	Example of 'strpos()' function
 	preg	Example of 'preg_match()' function
+		
 	pregall	Example of 'preg_match_all_WithPos()' function
 	pregall2	Example of 'preg_match_all_WithPos_2()' function
-		
 	pregall3	preg_match_all_WithPos_3()
+		
 	pregall4	preg_match_all_WithPos_4()
 	pregreplace	do_job__PregReplace(\$argv)
 	skim		Skim filtered words list
+		
 	wh		Example of 'while((a = func()) > x)'
 	
 MSG;
@@ -57,9 +61,15 @@ function do_job($argv) {
 
 		D_3_v_1_4::task_3_Replace_Regex();
 
+	} else if ($choice == "arrayu") {
+
+		do_job__Test_ArrayUnique($argv);
+
 	} else if ($choice == "skim") {
 
-		do_job__Skim_WordsFiltered($argv);
+// 		do_job__Skim_WordsFiltered($argv);
+// 		do_job__Skim_WordsFiltered_2($argv);
+		do_job__Skim_WordsFiltered_3($argv);
 
 	} else if ($choice == "addlink") {
 
@@ -141,6 +151,283 @@ function do_job($argv) {
 	// 	echo "\$choice=$choice";
 
 }//function do_job($argv)
+
+function
+do_job__Test_ArrayUnique_IsIn($array, $element) {
+	
+	$s2 = serialize($element);
+	
+	foreach ($array as $item) {
+		
+		$s1 = serialize($item);
+		
+		if ($s1 == $s2) {
+			
+			return true;
+			
+		}
+	
+	}
+	
+	return false;
+	
+}//do_job__Test_ArrayUnique_IsIn($array, $element)
+
+function
+do_job__Test_ArrayUnique($argv) {
+
+// 	$a1 = array(1,2,3,4,1,2,6);
+	$a1 = array(
+			array(1,2),
+			array(3,4),
+			array(5,6),
+			array(1,2),
+			array(2,3)
+			);
+	
+	// log
+	$msg = "\$a1 => ";
+	show_Message($msg, __LINE__);
+	
+	print_r($a1);
+	
+// 	// log
+// 	$msg = "serialize(\$a1) => ".serialize($a1);
+// 	show_Message($msg, __LINE__);
+
+	$skimmed_array = array();
+	
+	// log
+	$msg = "\$a1[0] =>";
+	show_Message($msg, __LINE__);
+	print_r($a1[0]);
+	
+	
+	for ($i = 0; $i < count($a1); $i++) {
+		
+// 		if (!do_job__Test_ArrayUnique_IsIn($a1, $a1[$i])) {
+		if (!do_job__Test_ArrayUnique_IsIn($skimmed_array, $a1[$i])) {
+			
+			array_push($skimmed_array, $a1[$i]);
+			
+		}
+		
+// 		for ($j = 0; $j < count($a1); $j++) {
+			
+			
+			
+			
+// 		}//for ($j = 0; $j < count($a1); $j++)
+		
+		
+// 		$a1_0_serialize = serialize($a1[0]);
+// 		$a1_i_serialize = serialize($a1[$i]);
+		
+// 		if (!($a1_0_serialize == $a1_i_serialize)) {
+			
+// 			array_push($skimmed_array, $a1[$i]);
+// 		}
+		
+	}//for ($i = 0; $i < count($a1); $i++)
+
+	// log
+	$msg = "\$skimmed_array =>";
+	show_Message($msg, __LINE__);
+	print_r($skimmed_array);
+	
+// // 	$a2 = array_unique($a1);
+// // 	$a2 = array_walk($a1, '_arrayWalk_Serialize');
+// 	array_walk($a1, '_arrayWalk_Serialize');
+	
+// 	// log
+// 	$msg = "\$a2 => ";
+// 	show_Message($msg, __LINE__);
+	
+// 	print_r($a2);
+	
+// 	// log
+// 	$msg = "\$a1 => ";
+// 	show_Message($msg, __LINE__);
+	
+// 	print_r($a1);
+	
+// 	// log
+// 	$msg = "\$a1[0] => $a1[0]";
+// 	show_Message($msg, __LINE__);
+	
+	
+	
+}//do_job__Test_ArrayUnique($argv)
+
+function
+do_job__Skim_WordsFiltered_3($argv) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+
+		$text = $argv[2];
+
+	} else {
+		//0123456789012345
+		// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+				//012345678901234567890123456789012
+				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+				"SJIS", "UTF-8");
+
+	}
+
+	/****************************************
+	 * Words list
+	****************************************/
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+
+	$W1->w1 = mb_convert_encoding("在法庭堂", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("提提", "SJIS", "UTF-8");;
+
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc";
+
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC";
+
+	$Ws = array($W1, $W2, $W3);
+	// 	$Ws = array($W1, $W2, $W3, $W4);
+
+	show_Message(
+	"         0123456789012345678901234567890123456789",
+	__LINE__);
+
+	show_Message($text, __LINE__);
+
+	// Words list with positions
+	$words_WithPos = array();
+
+	foreach ($Ws as $W) {
+
+		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $W);
+
+		foreach ($res as $item) {
+
+			array_push($words_WithPos, $item);
+
+		}
+
+	}//foreach ($Ws as $W)
+
+	show_Message("\$words_WithPos =>", __LINE__);
+
+	print_r($words_WithPos);
+
+	/****************************************
+	 * Processes
+	****************************************/
+	$words_WithPos_2 = $words_WithPos;
+
+	$skimmed_WordsList = array();
+
+	/****************************************
+	 * For: 1
+	****************************************/
+	for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
+
+		//log
+		$msg = "For: 1 <$i>========================";
+		show_Message($msg, __LINE__);
+		write_Log($msg, __LINE__);
+
+		// Get: All the same word objects
+		$Wi = $words_WithPos[$i][0];
+		$Wi_pos = $words_WithPos[$i][1];
+
+		// Flag: $Wi is contained in $Wj ?
+		$flag_IsIn = true;
+		
+		/****************************************
+		 * For: 2
+		****************************************/
+		for ($j = 0; $j < count($words_WithPos_2); $j++) {
+			
+			//log
+			$msg = "For: 2 <$j>========================";
+			show_Message($msg, __LINE__);
+			write_Log($msg, __LINE__);
+			
+			// Prep
+			$Wj = $words_WithPos_2[$j][0];
+			$Wj_pos = $words_WithPos_2[$j][1];
+				
+			// Same word set?
+			$res = _isSame_WordObj_2($Wi, $Wj);
+// 			$res = _isSame_WordObj($Wi, $Wj);
+			
+			if ($res == true) {
+				
+				// log
+				$msg = "Same -----------------";
+				show_Message($msg, __LINE__);
+				print_r($Wi);
+				print_r($Wj);
+				
+				$flag_IsIn = false;
+				
+				break;
+				
+			} else {
+				
+				// log
+				$msg = "Not same ---------------";
+				show_Message($msg, __LINE__);
+				
+				
+			}
+		
+		}//for ($j = 0; $j < count($words_WithPos_2); $j++)
+			
+		/****************************************
+		* Flag => true/false
+		****************************************/
+		if ($flag_IsIn == false) {
+			
+			$res = _isIn_SkimmedList_2($skimmed_WordsList, $Wi);
+// 			$res = _isIn_SkimmedList($skimmed_WordsList, $Wi);
+			
+			if ($res == false) {
+				
+				array_push($skimmed_WordsList, $words_WithPos[$i]);
+// 				array_push($skimmed_WordsList, $Wi);;
+				
+			}
+			
+		}//if ($flag_IsIn == false)
+
+	}//for ($i = 0; $i < count($words_WithPos); $i++)
+		
+	/****************************************
+	* Show: Result
+	****************************************/
+	// log
+	$msg = "Skimming => done";
+	show_Message($msg, __LINE__);
+	write_Log($msg, __LINE__);
+	
+	// log
+	$msg = "\$skimmed_WordsList => ";
+	show_Message($msg, __LINE__);
+	print_r($skimmed_WordsList);
+	
+	write_Log($msg.serialize($skimmed_WordsList), __LINE__);
+
+}//do_job__Skim_WordsFiltered_3($argv)
+
 
 function
 do_job__Skim_WordsFiltered($argv) {
@@ -265,7 +552,7 @@ do_job__Skim_WordsFiltered($argv) {
 							.$words_Same[$j][0]->w1
 							."\n"
 							
-							."\$words_WithPos_2[\$k][0]->w1"
+							."\$words_WithPos_2[$j][0]->w1"
 							." => "
 							.$words_WithPos_2[$k][0]->w1
 							."\n"
@@ -427,6 +714,228 @@ do_job__Skim_WordsFiltered($argv) {
 	
 }//do_job__Skim_WordsFiltered($argv)
 
+
+function
+do_job__Skim_WordsFiltered_2($argv) {
+	
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+	
+		$text = $argv[2];
+	
+	} else {
+		//0123456789012345
+		// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+				//012345678901234567890123456789012
+				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+				"SJIS", "UTF-8");
+	
+	}
+	
+	/****************************************
+	 * Words list
+	****************************************/
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	
+	$W1->w1 = mb_convert_encoding("在法庭堂", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("提提", "SJIS", "UTF-8");;
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC";
+	
+	$Ws = array($W1, $W2, $W3);
+	// 	$Ws = array($W1, $W2, $W3, $W4);
+	
+	show_Message(
+				"         0123456789012345678901234567890123456789",
+				__LINE__);
+
+	show_Message($text, __LINE__);
+	
+	// Words list with positions
+	$words_WithPos = array();
+	
+	foreach ($Ws as $W) {
+	
+		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $W);
+	
+		foreach ($res as $item) {
+				
+			array_push($words_WithPos, $item);
+	
+		}
+	
+	}//foreach ($Ws as $W)
+		
+	show_Message("\$words_WithPos =>", __LINE__);
+	
+	print_r($words_WithPos);
+	
+	/****************************************
+	* Processes
+	****************************************/
+	$words_WithPos_2 = $words_WithPos;
+	
+	$skimmed_WordsList = array();
+
+	//
+	$list_Words_Same = array();
+	
+	/****************************************
+	* For: 1
+	****************************************/
+	for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
+
+		//log
+		$msg = "For: 1 <$i>========================";
+		show_Message($msg, __LINE__);
+		write_Log($msg, __LINE__);
+		
+		// Get: All the same word objects
+		$Wi = $words_WithPos[$i][0];
+		$Wi_pos = $words_WithPos[$i][1];
+// 		$Wi = $words_WithPos[$i];
+		
+// 		$msg = "\$wi => ";
+// 		show_Message($msg, __LINE__);
+// 		print_r($Wi);
+		
+		
+		$words_Same = _get_SameWords($words_WithPos, $Wi->w1);
+// 		$words_Same = _get_SameWords($words_WithPos, $Wi[0]->w1);
+		-
+// 		// log
+// 		$msg = "\$words_Same =>";
+// 		show_Message($msg, __LINE__);
+// 		print_r($words_Same);
+		
+		/****************************************
+		* Same words set?
+		****************************************/
+		$res = _isIn_SameWordList($list_Words_Same, $words_Same);
+		
+		if ($res == true) {
+		
+			// log
+			$msg = "Existing word set => ";			
+			show_Message($msg, __LINE__);
+			print_r($words_Same);
+			
+			write_Log($msg.serialize($words_Same), __LINE__);
+			
+			continue;
+		
+		} else {
+		
+			// log
+			$msg = "New word set => ";			
+			show_Message($msg, __LINE__);
+			print_r($words_Same);
+			
+			write_Log($msg.serialize($words_Same), __LINE__);
+			
+			array_push($list_Words_Same, $words_Same);
+			
+		}
+		
+		//log
+		$msg = "\$Wi => ";
+		show_Message($msg, __LINE__);
+		write_Log($msg, __LINE__);
+		
+		print_r($Wi);
+		write_Log(serialize($Wi), __LINE__);
+		
+		$msg = "\$words_Same => ";
+		show_Message($msg, __LINE__);
+		write_Log($msg, __LINE__);
+		
+		print_r($words_Same);
+		write_Log(serialize($words_Same), __LINE__);
+
+		/****************************************
+		* For: 2
+		****************************************/
+		for ($k = 0; $k < count($words_WithPos_2); $k++) {
+			
+			$flag_IsIn = true;
+			
+			$Wk = $words_WithPos_2[$k][0];
+			$Wk_pos = $words_WithPos_2[$k][1];
+			
+			/****************************************
+			* For: 3
+			****************************************/
+			for ($j = 0; $j < count($words_Same); $j++) {
+				
+				$Wj = $words_Same[$j][0];
+				$Wj_pos = $words_Same[$j][1]; 
+				
+				$w1j = $Wj->w1;
+				$w1k = $Wk->w1;
+				
+				$res = _contains_String($w1j, $w1k);
+				
+				if ($res == true) {	// Contains
+				
+// 					show_Message($text, $line);
+					$msg = "$w1j(".$Wj_pos.") contains => $w1k(".$Wk_pos.")";
+// 					$msg = "$w1j($Wj_pos) contains => $w1k($Wk_pos)";
+					show_Message($msg, __LINE__);
+					write_Log($msg, __LINE__);
+				
+				} else {	// Contains not
+				
+					$msg = "$w1j(".$Wj_pos.") contains not => $w1k(".$Wk_pos.")";
+// 					$msg = "$w1j($Wj_pos) contains not => $w1k($Wk_pos)";;
+// 					$msg = "$w1j contains not => $w1k";
+					show_Message($msg, __LINE__);
+					write_Log($msg, __LINE__);
+					
+				}
+				
+			}//for ($j = 0; $j < count($words_Same); $j++)
+			
+			
+		}//for ($k = 0; $k < count($words_WithPos_2); $k++)
+		
+	}//for ($i = 0; $i < count($words_WithPos); $i++)
+	
+}//do_job__Skim_WordsFiltered_2($argv)
+
+function
+_isIn_SameWordList($list_Words_Same, $words_Same) {
+	
+	$key = serialize($words_Same);
+	
+	foreach ($list_Words_Same as $item) {
+		
+		$target = serialize($item);
+		
+		if ($target == $key) {
+			
+			return true;
+			
+		}
+	
+	}
+	
+	return false;
+	
+}//_isIn_SameWordList($list_Words_Same, $words_Same)
+
 function
 _isIn_SkimmedList($skimmed_WordsList, $Wset) {
 	
@@ -445,6 +954,26 @@ _isIn_SkimmedList($skimmed_WordsList, $Wset) {
 }//_isIn_SkimmedList($skimmed_WordsList, $Wset)
 
 function
+_isIn_SkimmedList_2($skimmed_WordsList, $wordObject) {
+
+	$wordObject_s = serialize($wordObject);
+	
+	foreach ($skimmed_WordsList as $item) {
+		
+		$item_s = serialize($item);
+		
+		$res = ($item_s == $wordObject_s);
+	
+		if ($res == true) return true;
+		
+	}
+	
+	return false;
+	
+}//_isIn_SkimmedList_2($skimmed_WordsList, $Wset)
+
+
+function
 _isSame_WordObj($Wset1, $Wset2) {
 	
 	$res = ($Wset1[0]->w1 == $Wset2[0]->w1
@@ -455,9 +984,23 @@ _isSame_WordObj($Wset1, $Wset2) {
 	
 }//_isSame_WordObj($W1, $W2)
 
+/****************************************
+* Use serialize() to judge the 2 objects
+****************************************/
+function
+_isSame_WordObj_2($wordObject1, $wordObject2) {
+	
+	$s1 = serialize($wordObject1);
+	$s2 = serialize($wordObject2);
+	
+	return ($s1 == $s2) ? true : false;
+		
+}//_isSame_WordObj($W1, $W2)
+
+
 function
 _contains_String($text, $keyword) {
-	
+	//REF http://stackoverflow.com/questions/4366730/how-to-check-if-a-string-contains-specific-words
 	$res = (strpos($text, $keyword));
 	
 	return ($res !== false) ? true : false;
@@ -467,7 +1010,7 @@ _contains_String($text, $keyword) {
 function
 _get_SameWords($words_WithPos, $w1) {
 	
-	show_Message("\$w1 => $w1", __LINE__);
+// 	show_Message("\$w1 => $w1", __LINE__);
 	
 	$same_Words = array();
 	
@@ -2086,6 +2629,12 @@ do_job__PregMatchAll_WithPos_3($argv) {
 	
 }//do_job__PregMatchAll_WithPos_3($argv)
 
+function _arrayWalk_Serialize($item) {
+
+	$item = serialize($item);
+	
+}
+
 /****************************************
 * param => $text::String, $words::Array(Word)
 ****************************************/
@@ -2190,15 +2739,15 @@ _do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
 	****************************************/
 // 	$W = $Ws[0];
 	
-	show_Message("\$W =>", __LINE__);
-	print_r($W);
+// 	show_Message("\$W =>", __LINE__);
+// 	print_r($W);
 
 	$offset = 0;
 	
 	// Set: Target
 	$target = "/$W->w1/";
 	
-	show_Message("\$target => $target", __LINE__);
+// 	show_Message("\$target => $target", __LINE__);
 	
 	$words_list = array();
 	
@@ -2207,10 +2756,10 @@ _do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
 	****************************************/
 	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
 	
-	show_Message("\$pos => $pos", __LINE__);
+// 	show_Message("\$pos => $pos", __LINE__);
 	
-	show_Message("\$m =>", __LINE__);
-	print_r($m);
+// 	show_Message("\$m =>", __LINE__);
+// 	print_r($m);
 	
 	
 	while(($pos == 1)) {
@@ -2219,22 +2768,22 @@ _do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
 	
 		// 		print_r($m);
 	
-		show_Message(
-					"while loop => starts(\$pos => 1!) -----------------------",
-					__LINE__);
+// 		show_Message(
+// 					"while loop => starts(\$pos => 1!) -----------------------",
+// 					__LINE__);
 	
-		show_Message("Target found at => " . $m[0][1], __LINE__);
+// 		show_Message("Target found at => " . $m[0][1], __LINE__);
 
 		$offset = $m[0][1];
 		// 		$offset += $m[0][1];
 		
-		show_Message("Pushed into array: \$offset => $offset", __LINE__);
+// 		show_Message("Pushed into array: \$offset => $offset", __LINE__);
 		
 		array_push($words_list, array($W, $m[0][1]));
 
 		$offset += strlen($W->w1);
 		
-		show_Message("\$offset is now => $offset", __LINE__);
+// 		show_Message("\$offset is now => $offset", __LINE__);
 		
 		// $offset => Off the limit?
 		if ($offset > (strlen($text) - 1)) {
@@ -2248,89 +2797,16 @@ _do_job__PregMatchAll_WithPos_4__Execute($text, $W) {
 		
 		$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
 		
-		show_Message("preg_match => done", __LINE__);
+// 		show_Message("preg_match => done", __LINE__);
 		
-		print_r($m);
+// 		print_r($m);
 		
 	}//while(($pos == 1))
 	
-	show_Message("\$words_list =>", __LINE__);
-	print_r($words_list);
+// 	show_Message("\$words_list =>", __LINE__);
+// 	print_r($words_list);
 	
 	return $words_list;
-	
-// 	/****************************************
-// 	* Match: 1st
-// 	****************************************/
-// 	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
-	
-// 	show_Message("\$pos => $pos", __LINE__);
-
-// 	show_Message("\$m =>", __LINE__);
-// 	print_r($m);
-	
-// 	$token = $m[0][0];
-// 	show_Message(
-// 				"\$m[0][0] => $token (len=" . strlen($token) . ")",
-// 				__LINE__);
-	
-// 	array_push($words_list, array($Ws[0], $m[0][1]));
-	
-// 	show_Message(
-// 			"\$words_list => ",
-// 			__LINE__);
-// 	print_r($words_list);
-	
-// 	// Update: offset
-// 	$offset += $m[0][1] + strlen($W->w1);
-	
-// 	show_Message(
-// 				"\$offset now => $offset",
-// 				__LINE__);
-	
-// 	/****************************************
-// 	****************************************
-// 	* Match: 2nd
-// 	****************************************
-// 	****************************************/
-// 	/****************************************
-// 	* Variables
-// 	****************************************/
-// // 	$W = $Ws[1];
-	
-// 	show_Message("<2> ===================================", __LINE__);
-// 	show_Message("\$W =>", __LINE__);
-// 	print_r($W);
-	
-// // 	$offset = 0;
-	
-// 	// Set: Target
-// // 	$target = "/$W->w1/";
-	
-// 	show_Message("\$target => $target", __LINE__);
-	
-// 	/****************************************
-// 	* Processes
-// 	****************************************/
-// 	$pos = preg_match($target, $text, $m, PREG_OFFSET_CAPTURE, $offset);
-	
-// 	show_Message("\$pos => $pos", __LINE__);
-
-// 	show_Message("\$m =>", __LINE__);
-// 	print_r($m);
-	
-// 	$token = $m[0][0];
-// 	show_Message(
-// 				"\$m[0][0] => $token (len=" . strlen($token) . ")",
-// 				__LINE__);
-	
-// 	array_push($words_list, array($Ws[0], $m[0][1]));
-// // 	array_push($words_list, array($Ws[1], $m[0][1]));
-	
-// 	show_Message(
-// 			"\$words_list => ",
-// 			__LINE__);
-// 	print_r($words_list);
 	
 }//_do_job__PregMatchAll_WithPos_4__Execute($text, $Ws)
 
@@ -2396,6 +2872,152 @@ function show_Message($text, $line) {
 	
 }
 
+function write_Log($text, $line) {
+
+	$max_LineNum = 2000;
+
+	$path_LogFile = join(
+				DIRECTORY_SEPARATOR,
+				array(dirname(__FILE__), "log.txt")
+			);
+
+	/****************************************
+		* Dir exists?
+	****************************************/
+	$dpath = dirname(__FILE__);
+	
+	if (!file_exists($dpath)) {
+			
+		mkdir($dpath, $mode=0777, $recursive=true);
+			
+	}
+
+	/****************************************
+		* File exists?
+	****************************************/
+	if (!file_exists($path_LogFile)) {
+			
+		// 			mkdir($path_LogFile, $mode=0777);
+		//REF touch http://php.net/touch
+		$res = touch($path_LogFile);
+			
+		if ($res == false) {
+
+			return;
+
+		}
+			
+	}
+
+	/****************************************
+		* File => longer than the max num?
+	****************************************/
+	//REF read content http://www.php.net/manual/en/function.file.php
+	$lines = file($path_LogFile);
+
+	$file_Length = count($lines);
+
+	$log_File = null;
+
+	if ($file_Length > $max_LineNum) {
+
+		//REF copy http://stackoverflow.com/questions/5772769/how-to-copy-a-file-from-one-directory-to-another-using-php
+		// 			$res = copy($path_LogFile, $path_LogFile.".copy");
+		// 			$fname_Tokens = $path_LogFile.split(".");
+			
+		$dname = dirname($path_LogFile);
+			
+		// 			$fname_Tokens = split(".", $path_LogFile);
+			
+		// 			$new_name = $fname_Tokens[0]
+		// 						."_"
+		// 						.Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+		// 						.$fname_Tokens[1]
+		// 						;
+		$new_name = join(
+				DIRECTORY_SEPARATOR,
+				array(
+						$dname,
+						"log"."_".get_CurrentTime2('serial')
+						.".txt")
+		);
+
+		$res = rename($path_LogFile, $new_name);
+			
+	} else {
+			
+		// 			$msg = "(\$file_Length > \$max_LineNum) => false";
+			
+		// 			write_Log(
+		// 				CONS::get_dPath_Log(),
+		// 				$msg,
+		// 				__FILE__,
+		// 				__LINE__);
+			
+	}
+
+	/****************************************
+		* File: open
+	****************************************/
+// 	$log_File = fopen($path_LogFile, "ab");
+	$log_File = fopen($path_LogFile, "a");
+
+	/****************************************
+		* Write
+	****************************************/
+	// 		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
+	// 		$file = str_replace(ROOT.DS, "", $file);
+
+	$time = get_CurrentTime2('basic');
+
+	// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
+	$full_Text = "[$time : ".basename(__FILE__)." : $line] $text"."\n";
+
+	$res = fwrite($log_File, $full_Text);
+
+	/****************************************
+		* File: Close
+	****************************************/
+	fclose($log_File);
+		
+}//function write_Log($dpath, $text, $file, $line)
+
+/****************************************
+* @param $labelType => <br>
+* rails	=> 'Y-m-d H:i:s'<br>
+* basic	=> 'Y/m/d H:i:s'<br>
+* serial	=> 'Ymd_His'<br>
+* default	=> 'Y/m/d H:i:s'<br>
+****************************************/
+function
+get_CurrentTime2($labelType) {
+	//REF http://stackoverflow.com/questions/470617/get-current-date-and-time-in-php
+	date_default_timezone_set('Asia/Tokyo');
+
+	switch($labelType) {
+			
+		case "rails":
+
+			return date('Y-m-d H:i:s', time());
+
+		case "basic":
+
+			return date('Y/m/d H:i:s', time());
+
+		case "serial":
+
+			return date('Ymd_His', time());
+
+		default:
+
+			return date('Y/m/d H:i:s', time());
+
+	}//switch($labelType)
+
+	// 		return date('m/d/Y H:i:s', time());
+
+}//function get_CurrentTime2($labelType)
+
 class Word {
 	
 	public $w1;
@@ -2405,6 +3027,9 @@ class Word {
 }
 
 do_job($argv);
+
+// write_Log(dirname(__FILE__), "test", __FILE__, __LINE__);
+// echo get_CurrentTime2('rails');
 
 // D_3_v_1_4::do_task();
 

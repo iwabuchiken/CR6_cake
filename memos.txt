@@ -60,3 +60,4 @@ pragma table_info(langs);
 
 [tests.php]
 php lib\utils\tests.php
+sakura C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\utils\log.txt
