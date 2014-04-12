@@ -223,9 +223,16 @@ class TextsController extends AppController {
         ****************************************/
         $text = $model_Text['Text']['text'];
         
+        //test
+        $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
+// //         $this->_view_Test_Skimming($text, $words_Filtered);
+        
+        
+        
         $text = Methods::addLink_4($text, $words_Filtered);
         
-//         debug($text);
+// //         debug($text);
+// 		debug($words_Filtered[0]);
 		
         $model_Text['Text']['text'] = $text;
         
@@ -238,6 +245,13 @@ class TextsController extends AppController {
         
     }//public function view($id)
 
+    public function
+    _view_Test_Skimming($text, $words_Filtered) {
+    	
+    	Methods::do_job__Skim_WordsFiltered_4($text, $words_Filtered);
+    	
+    }
+    
     /****************************************
     * @return <prev>array(
     * 				0 => array(

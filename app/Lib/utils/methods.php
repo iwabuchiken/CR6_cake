@@ -697,6 +697,518 @@
 			return $text;
 		
 		}//_do_job__AddLink_4__Execute($text, $Ws)
+
+		/****************************************
+		 * Judge: $wordSet_1 is in the range of $wordSet_2
+		****************************************/
+		static function
+		_is_InRange($wordSet_1, $wordSet_2) {
+		
+			// log
+			$msg = "\$wordSet_1 => ";
+// 			show_Message($msg, __LINE__);
+// 			print_r($wordSet_1);
+		
+// 			write_Log($msg.serialize($wordSet_1), __LINE__);
+		
+			$msg = "\$wordSet_2 => ";
+// 			show_Message($msg, __LINE__);
+// 			print_r($wordSet_2);
+		
+// 			write_Log($msg.serialize($wordSet_2), __LINE__);
+		
+		
+			$W1_Pos_Start = $wordSet_1[1];
+			$W2_Pos_Start = $wordSet_2[1];
+		
+			$W1_Pos_End = $W1_Pos_Start + strlen($wordSet_1[0]['w1']);
+			$W2_Pos_End = $W2_Pos_Start + strlen($wordSet_2[0]['w1']);
+// 			$W1_Pos_End = $W1_Pos_Start + strlen($wordSet_1[0]->w1);
+// 			$W2_Pos_End = $W2_Pos_Start + strlen($wordSet_2[0]->w1);
+		
+// 			// log
+// 			$msg = "\$W1_Pos_Start => $W1_Pos_Start"
+// 			."//"
+// 					."\$W2_Pos_Start => $W2_Pos_Start"
+// 					;
+// 					show_Message($msg, __LINE__);
+// 					write_Log($msg, __LINE__);
+		
+// 					$msg = "\$W1_Pos_End => $W1_Pos_End"
+// 					."//"
+// 							."\$W2_Pos_End => $W2_Pos_End"
+// 							;
+// 							show_Message($msg, __LINE__);
+// 							write_Log($msg, __LINE__);
+		
+		
+			return ($W2_Pos_Start <= $W1_Pos_Start
+					&& $W2_Pos_End >= $W1_Pos_End);
+		
+		}//_is_InRange($wordSet_1, $wordSet_2)
+		
+		/****************************************
+		 * @return true => 'w1' of $wordObj_2 is<br>
+		* 				contained in that of $wordObj_1
+		****************************************/
+		static function _isContained_W1($wordObj_1, $wordObj_2) {
+		
+			return strpos($wordObj_2['w1'], $wordObj_1['w1']);
+			// 	return strpos($wordObj_1->w1, $wordObj_2->w1);
+		
+		}//_isContained_W1($wordObj_1, $wordObj_2)
+		
+		/****************************************
+		 * Use serialize() to judge the 2 objects
+		****************************************/
+		static function
+		_isSame_WordSet($wordSet1, $wordSet2) {
+		
+			$s1 = serialize($wordSet1);
+			$s2 = serialize($wordSet2);
+		
+			return ($s1 == $s2) ? true : false;
+		
+		}//_isSame_WordObj($W1, $W2)
+
+		static function
+		do_job__Skim_WordsFiltered_4($text, $words_WithPos) {
+		
+			/****************************************
+			 * Processes
+			****************************************/
+			$words_WithPos_2 = $words_WithPos;
+		
+			$skimmed_WordsList = array();
+		
+			/****************************************
+			 * For: 1
+			****************************************/
+			for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
+		
+				//log
+				$msg = "For: 1 <$i>========================";
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
+		
+				// Get: All the same word objects
+				$Wset_i = $words_WithPos[$i];
+				$Wi = $words_WithPos[$i][0];
+				$Wi_pos = $words_WithPos[$i][1];
+		
+				// Flag: $Wi is contained in $Wj ?
+				$flag_IsIn = true;
+		
+				/****************************************
+				 * For: 2
+				****************************************/
+				for ($j = 0; $j < count($words_WithPos_2); $j++) {
+						
+					//log
+					$msg = "For: 2 <$j>========================";
+					write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+					
+					// Prep
+					$Wset_j = $words_WithPos_2[$j];
+					$Wj = $words_WithPos_2[$j][0];
+					$Wj_pos = $words_WithPos_2[$j][1];
+		
+					/****************************************
+					 * Judge: 1 => Contained?
+					****************************************/
+					$res = Methods::_isContained_W1($Wi, $Wj);
+					// 			$res = _isContained_W1($Wi->w1, $Wj->w1);
+						
+					if ($res === false) {
+						// 				if ($res == false) {
+							
+						// log
+						$msg = "Not contained";
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+						$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+						$msg = "\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+// 						print_r($words_WithPos[$i]);
+// 						print_r($words_WithPos_2[$j]);
+							
+						$flag_IsIn = false;
+							
+					} else {
+							
+						// log
+						$msg = "Contained";
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+						$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+						$msg = "\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+													
+						/****************************************
+						 * Judge: 2
+						****************************************/
+						$res = Methods::_is_InRange(
+						// 						$words_WithPos_2[$j],
+						// 						$words_WithPos[$i]
+								$words_WithPos[$i],
+								$words_WithPos_2[$j]
+						);
+		
+						if ($res == true) {
+								
+							// log
+							$msg = "Is in range";
+							
+							write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+							
+						$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+						$msg = "\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j]);
+						
+						write_Log(
+							CONS::get_dPath_Log(),
+							$msg,
+							__FILE__,
+							__LINE__);
+						
+															
+							/****************************************
+							 * Judge: 3 => Same object?
+							****************************************/
+							// Same word set?
+							$res = Methods::_isSame_WordSet(
+									$words_WithPos[$i],
+									$words_WithPos_2[$j]);
+		
+							// 			$res = _isSame_WordObj_2($Wi, $Wj);
+							// 			$res = _isSame_WordObj($Wi, $Wj);
+		
+							if ($res == true) {
+									
+								// log
+								$msg = "Same -----------------";
+								
+								write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+
+								$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+								
+								$msg = "\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j]);
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+								
+								
+// 								print_r($words_WithPos[$i]);
+// 								print_r($words_WithPos_2[$j]);
+									
+// 								write_Log($msg, __LINE__);
+		
+								// 				print_r($Wi);
+								// 				print_r($Wj);
+									
+// 								$msg = "\$words_WithPos[$i] =>";
+// 								write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+		
+// 								$msg = "\$words_WithPos_2[$j] =>";
+// 								write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+		
+								// Next j
+								continue;
+		
+								// 						$flag_IsIn = false;
+									
+								// 						break;
+									
+							} else {// _isSame_WordSet
+									
+								// log
+								$msg = "Not same ---------------";
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+								
+								$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+								
+								$msg = "\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j]);
+								
+								write_Log(
+										CONS::get_dPath_Log(),
+										$msg,
+										__FILE__,
+										__LINE__);
+								
+								
+// 								show_Message($msg, __LINE__);
+// 								write_Log($msg, __LINE__);
+		
+// 								$msg = "\$words_WithPos[$i] =>";
+// 								write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+		
+// 								$msg = "\$words_WithPos_2[$j] =>";
+// 								write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+		
+								// flag
+								$flag_IsIn = true;
+		
+								// End for-loop with j
+								break;
+		
+							}//_isSame_WordSet
+								
+							// 					// Flag
+							// 					$flag_IsIn = true;
+								
+						} else {// _is_InRange
+								
+							// log
+							$msg = "Not in range";
+// 							show_Message($msg, __LINE__);
+// 							write_Log($msg, __LINE__);
+
+							write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+							
+							$msg = "\$words_WithPos[$i] => "
+							.serialize($words_WithPos[$i]);
+							
+							write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+							
+							$msg = "\$words_WithPos_2[$j] => "
+							.serialize($words_WithPos_2[$j]);
+							
+							write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+							
+								
+		
+							// flag
+							$flag_IsIn = false;
+								
+						}//_is_InRange
+							
+					}//_isContained_W1
+					// 			if ($res == true) {
+		
+				}//for ($j = 0; $j < count($words_WithPos_2); $j++)
+								
+							/****************************************
+							* Flag => true/false
+							****************************************/
+							if ($flag_IsIn == false) {
+								
+								// log
+								$msg = "\$flag_IsIn => false";
+								// 							show_Message($msg, __LINE__);
+								// 							write_Log($msg, __LINE__);
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+									
+								$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+									
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+									
+								
+								$res = Methods::_isIn_SkimmedList_2(
+											$skimmed_WordsList, $Wi);
+								// 			$res = _isIn_SkimmedList($skimmed_WordsList, $Wi);
+								
+								if ($res == false) {
+				
+									// log
+									$msg = "_isIn_SkimmedList_2 => false";
+									// 							show_Message($msg, __LINE__);
+									// 							write_Log($msg, __LINE__);
+									
+									write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+										
+									$msg = "\$words_WithPos[$i] => "
+									.serialize($words_WithPos[$i]);
+										
+									write_Log(
+									CONS::get_dPath_Log(),
+									$msg,
+									__FILE__,
+									__LINE__);
+										
+									
+									array_push(
+											$skimmed_WordsList,
+											$words_WithPos[$i]);
+								// 				array_push($skimmed_WordsList, $Wi);;
+				
+								}
+								
+							} else {//if ($flag_IsIn == false)
+								
+								// log
+								$msg = "\$flag_IsIn => true";
+								// 							show_Message($msg, __LINE__);
+								// 							write_Log($msg, __LINE__);
+								
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+									
+								$msg = "\$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i]);
+									
+								write_Log(
+								CONS::get_dPath_Log(),
+								$msg,
+								__FILE__,
+								__LINE__);
+									
+								
+							}//if ($flag_IsIn == false)
+		
+			}//for ($i = 0; $i < count($words_WithPos); $i++)
+		
+			/****************************************
+					* Show: Result
+					****************************************/
+			// log
+			$msg = "Skimming => done";
+					show_Message($msg, __LINE__);
+					write_Log($msg, __LINE__);
+				
+					// log
+					$msg = "\$skimmed_WordsList => ";
+					show_Message($msg, __LINE__);
+					print_r($skimmed_WordsList);
+				
+					write_Log($msg.serialize($skimmed_WordsList), __LINE__);
+		
+		}//do_job__Skim_WordsFiltered_4($argv)
+
+		static function
+		_isIn_SkimmedList_2($skimmed_WordsList, $wordObject) {
+		
+			$wordObject_s = serialize($wordObject);
+		
+			foreach ($skimmed_WordsList as $item) {
+		
+				$item_s = serialize($item);
+		
+				$res = ($item_s == $wordObject_s);
+		
+				if ($res == true) return true;
+		
+			}
+		
+			return false;
+		
+		}//_isIn_SkimmedList_2($skimmed_WordsList, $Wset)
 		
 		
 	}//class Methods
