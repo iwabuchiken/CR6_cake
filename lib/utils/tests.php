@@ -366,7 +366,11 @@ do_job__Skim_WordsFiltered_3($argv) {
 			$Wj_pos = $words_WithPos_2[$j][1];
 				
 			// Same word set?
-			$res = _isSame_WordObj_2($Wi, $Wj);
+			$res = _isSame_WordObj_2(
+							$words_WithPos[$i],
+							$words_WithPos_2[$j]);
+			
+// 			$res = _isSame_WordObj_2($Wi, $Wj);
 // 			$res = _isSame_WordObj($Wi, $Wj);
 			
 			if ($res == true) {
@@ -374,8 +378,10 @@ do_job__Skim_WordsFiltered_3($argv) {
 				// log
 				$msg = "Same -----------------";
 				show_Message($msg, __LINE__);
-				print_r($Wi);
-				print_r($Wj);
+				print_r($words_WithPos[$i]);
+				print_r($words_WithPos_2[$j]);
+// 				print_r($Wi);
+// 				print_r($Wj);
 				
 				$flag_IsIn = false;
 				
@@ -387,6 +393,35 @@ do_job__Skim_WordsFiltered_3($argv) {
 				$msg = "Not same ---------------";
 				show_Message($msg, __LINE__);
 				
+				/****************************************
+				* Judge: 2
+				****************************************/
+				$res = _isContained_W1($Wj, $Wi);
+				
+				if ($res === false) {
+// 				if ($res == false) {
+				
+					// log
+					$msg = "Not contained";
+					show_Message($msg, __LINE__);
+					
+					print_r($words_WithPos[$i]);
+					print_r($words_WithPos_2[$j]);
+					
+					$flag_IsIn = false;
+				
+				} else {
+				
+					// log
+					$msg = "Contained";
+					show_Message($msg, __LINE__);
+					
+					/****************************************
+					* Judge: 3
+					****************************************/
+// 					$res = is_InRange()
+					
+				}
 				
 			}
 		
@@ -427,6 +462,17 @@ do_job__Skim_WordsFiltered_3($argv) {
 	write_Log($msg.serialize($skimmed_WordsList), __LINE__);
 
 }//do_job__Skim_WordsFiltered_3($argv)
+
+/****************************************
+* @return true => 'w1' of $wordObj_1 is<br>
+* 				contained in that of $wordObj_2
+****************************************/
+function _isContained_W1($wordObj_1, $wordObj_2) {
+
+	return strpos($wordObj_2->w1, $wordObj_1->w1);
+// 	return strpos($wordObj_1->w1, $wordObj_2->w1);
+	
+}
 
 
 function
