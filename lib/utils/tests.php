@@ -25,8 +25,6 @@ function do_job__ShowHelp($argv) {
 	array	Array test
 	h		Show help
 		
-	r		_exec_Tasks__GetRange
-	strpos	Example of 'strpos()' function
 	preg	Example of 'preg_match()' function
 		
 	pregall	Example of 'preg_match_all_WithPos()' function
@@ -35,8 +33,13 @@ function do_job__ShowHelp($argv) {
 		
 	pregall4	preg_match_all_WithPos_4()
 	pregreplace	do_job__PregReplace(\$argv)
-	skim		Skim filtered words list
+	r		_exec_Tasks__GetRange
 		
+	skim		Skim filtered words list
+	strpos	Example of 'strpos()' function
+		
+	test1	Time the time of serialize()	
+	
 	wh		Example of 'while((a = func()) > x)'
 	
 MSG;
@@ -60,6 +63,10 @@ function do_job($argv) {
 	if ($choice == "abc") {
 
 		D_3_v_1_4::task_3_Replace_Regex();
+
+	} else if ($choice == "test1") {
+
+		do_job__Test_1_TimeSerialize($argv);
 
 	} else if ($choice == "arrayu") {
 
@@ -152,6 +159,92 @@ function do_job($argv) {
 	// 	echo "\$choice=$choice";
 
 }//function do_job($argv)
+
+function
+do_job__Test_1_TimeSerialize($argv) {
+
+	$text = mb_convert_encoding(
+			//012345678901234567890123456789012
+	// 				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+			"堂在法庭堂后提交交提事在法庭堂的提提示堂法庭的提，",
+			"SJIS", "UTF-8");
+	
+	$Ws = _Setup_Skim_WordsFiltered_4($text);
+	
+	$iter = 10000;
+	
+	// log
+	$msg = "<1>--------------------- Searialize";
+	show_Message($msg, __LINE__);
+	
+	$start = microtime(true);
+// 	$start = microtime();
+// 	$start = time();
+	
+	// log
+	$msg = "\$start => $start";
+	show_Message($msg, __LINE__);
+	
+	
+// 	$iter = 10000000;
+	
+	for ($i = 0; $i < $iter; $i++) {
+		
+		$s = serialize($Ws[0]);
+		
+	}
+	
+	$end = microtime(true);
+// 	$end = microtime();
+// 	$end = time();
+
+	// log
+	$msg = "\$end => $end";
+	show_Message($msg, __LINE__);
+	
+	$dur = $end - $start;
+	
+	$msg = "\$dur => $dur";
+	show_Message($msg, __LINE__);
+
+	
+	
+	// log
+	$msg = "<2>--------------------- Non-searialize";
+	show_Message($msg, __LINE__);
+	
+	$start = microtime(true);
+// 	$start = microtime();
+	
+	// log
+	$msg = "\$start => $start";
+	show_Message($msg, __LINE__);
+	
+	
+// 	$iter = 1000000;	// 1 million
+// 	$iter = 10000000;
+	
+	for ($i = 0; $i < $iter; $i++) {
+	
+		$w1 = $Ws[0]->w1;
+		$w2 = $Ws[0]->w2;
+		$w3 = $Ws[0]->w3;
+	
+	}
+	
+	$end = microtime(true);
+// 	$end = microtime();
+	
+	// log
+	$msg = "\$end => $end";
+	show_Message($msg, __LINE__);
+
+	$dur = $end - $start;
+	
+	$msg = "\$dur => $dur";
+	show_Message($msg, __LINE__);
+	
+}//do_job__Test_1_TimeSerialize($argv)
 
 function
 do_job__Test_ArrayUnique_IsIn($array, $element) {

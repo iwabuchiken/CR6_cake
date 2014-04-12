@@ -207,7 +207,7 @@ class TextsController extends AppController {
         write_Log(
 	        	CONS::get_dPath_Log(),
 	        	$msg,
-	        	__FILE__,
+	        	basename(__FILE__),
 	        	__LINE__);
         
 //         debug($words_Filtered);
@@ -224,12 +224,18 @@ class TextsController extends AppController {
         $text = $model_Text['Text']['text'];
         
         //test
-        $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
-// //         $this->_view_Test_Skimming($text, $words_Filtered);
+//         $skimmed_WordsList = $this->_view_Test_Skimming(
+//         		$text, array_slice($words_Filtered, 0, 40));
+//         		$text, array_slice($words_Filtered, 0, 20));
+//         $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
+        $skimmed_WordsList = $this->_view_Test_Skimming(
+        								$text, $words_Filtered);
+        
+//         debug($skimmed_WordsList);
         
         
-        
-        $text = Methods::addLink_4($text, $words_Filtered);
+        $text = Methods::addLink_4($text, $skimmed_WordsList);
+//         $text = Methods::addLink_4($text, $words_Filtered);
         
 // //         debug($text);
 // 		debug($words_Filtered[0]);
@@ -248,7 +254,7 @@ class TextsController extends AppController {
     public function
     _view_Test_Skimming($text, $words_Filtered) {
     	
-    	Methods::do_job__Skim_WordsFiltered_4($text, $words_Filtered);
+    	return Methods::do_job__Skim_WordsFiltered_4($text, $words_Filtered);
     	
     }
     

@@ -1,0 +1,3001 @@
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <3>========================
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 885] Is in range
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <4>========================
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 885] Is in range
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <5>========================
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:44 : methods.php : 851] Not contained
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 885] Is in range
+[04/12/2014 16:11:44 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:44 : methods.php : 864] Contained
+[04/12/2014 16:11:44 : methods.php : 947] Not in range
+[04/12/2014 16:11:44 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <6>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <7>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <8>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <9>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <10>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <11>========================
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:45 : methods.php : 851] Not contained
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 885] Is in range
+[04/12/2014 16:11:45 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:45 : methods.php : 947] Not in range
+[04/12/2014 16:11:45 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:45 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <12>========================
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 885] Is in range
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <13>========================
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 885] Is in range
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <14>========================
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 885] Is in range
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <15>========================
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:46 : methods.php : 851] Not contained
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 885] Is in range
+[04/12/2014 16:11:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:46 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:46 : methods.php : 864] Contained
+[04/12/2014 16:11:46 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <16>========================
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 885] Is in range
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <17>========================
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 885] Is in range
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <18>========================
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:47 : methods.php : 851] Not contained
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:47 : methods.php : 864] Contained
+[04/12/2014 16:11:47 : methods.php : 947] Not in range
+[04/12/2014 16:11:47 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 885] Is in range
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <19>========================
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 885] Is in range
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <20>========================
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 885] Is in range
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <21>========================
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:48 : methods.php : 851] Not contained
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 885] Is in range
+[04/12/2014 16:11:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:48 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:48 : methods.php : 864] Contained
+[04/12/2014 16:11:48 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <22>========================
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 885] Is in range
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <23>========================
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 885] Is in range
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <24>========================
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:49 : methods.php : 851] Not contained
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 885] Is in range
+[04/12/2014 16:11:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:49 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:49 : methods.php : 864] Contained
+[04/12/2014 16:11:49 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <25>========================
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 885] Is in range
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <26>========================
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 885] Is in range
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <27>========================
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:50 : methods.php : 851] Not contained
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:50 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:50 : methods.php : 864] Contained
+[04/12/2014 16:11:50 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 885] Is in range
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <28>========================
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <3>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <4>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <5>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <6>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <7>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <8>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <9>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <10>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <11>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <12>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <13>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <14>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <15>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <16>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <17>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <18>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <19>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <20>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <21>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <22>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <23>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <24>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <25>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <26>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <27>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <28>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 885] Is in range
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 907] Same -----------------
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <29>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <30>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <31>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <32>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <33>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <34>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <35>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <36>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <37>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <38>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <39>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 973] $flag_IsIn => false
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 988] _isIn_SkimmedList_2 => false
+[04/12/2014 16:11:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 806] For: 1 <29>========================
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <0>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <1>========================
+[04/12/2014 16:11:51 : methods.php : 851] Not contained
+[04/12/2014 16:11:51 : methods.php : 828] For: 2 <2>========================
+[04/12/2014 16:11:51 : methods.php : 864] Contained
+[04/12/2014 16:11:51 : methods.php : 947] Not in range

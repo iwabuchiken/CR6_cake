@@ -764,10 +764,21 @@
 		static function
 		_isSame_WordSet($wordSet1, $wordSet2) {
 		
-			$s1 = serialize($wordSet1);
-			$s2 = serialize($wordSet2);
+// 			$s1 = serialize($wordSet1);
+// 			$s2 = serialize($wordSet2);
+
+			$W1_w1 = $wordSet1[0]['w1'];
+			$W2_w1 = $wordSet2[0]['w1'];
+			
+			$W1_pos = $wordSet1[1];
+			$W2_pos = $wordSet2[1];
+			
+			$res = ($W1_w1 == $W2_w1)
+					&& ($W1_pos == $W2_pos);
+			
+			return $res;
 		
-			return ($s1 == $s2) ? true : false;
+// 			return ($s1 == $s2) ? true : false;
 		
 		}//_isSame_WordObj($W1, $W2)
 
@@ -786,13 +797,13 @@
 			****************************************/
 			for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
 		
-				//log
-				$msg = "For: 1 <$i>========================";
-				write_Log(
-					CONS::get_dPath_Log(),
-					$msg,
-					__FILE__,
-					__LINE__);
+// 				//log
+// 				$msg = "For: 1 <$i>========================";
+// 				write_Log(
+// 					CONS::get_dPath_Log(),
+// 					$msg,
+// 					__FILE__,
+// 					__LINE__);
 				
 		
 				// Get: All the same word objects
@@ -808,13 +819,13 @@
 				****************************************/
 				for ($j = 0; $j < count($words_WithPos_2); $j++) {
 						
-					//log
-					$msg = "For: 2 <$j>========================";
-					write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
+// 					//log
+// 					$msg = "For: 2 <$j>========================";
+// 					write_Log(
+// 							CONS::get_dPath_Log(),
+// 							$msg,
+// 							basename(__FILE__),
+// 							__LINE__);
 					
 					// Prep
 					$Wset_j = $words_WithPos_2[$j];
@@ -830,70 +841,30 @@
 					if ($res === false) {
 						// 				if ($res == false) {
 							
-						// log
-						$msg = "Not contained";
+// 						// log
+// 						$msg = "Not contained";
 						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
+// 						write_Log(
+// 							CONS::get_dPath_Log(),
+// 							$msg,
+// 							basename(__FILE__),
+// 							__LINE__);
 						
-						$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-						$msg = "\$words_WithPos_2[$j] => "
-								.serialize($words_WithPos_2[$j]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-// 						print_r($words_WithPos[$i]);
-// 						print_r($words_WithPos_2[$j]);
-							
 						$flag_IsIn = false;
 							
 					} else {
 							
-						// log
-						$msg = "Contained";
+// 						// log
+// 						$msg = "Contained";
 						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
+// 						write_Log(
+// 							CONS::get_dPath_Log(),
+// 							$msg,
+// 							basename(__FILE__),
+// 							__LINE__);
 						
-						$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-						$msg = "\$words_WithPos_2[$j] => "
-								.serialize($words_WithPos_2[$j]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-													
 						/****************************************
-						 * Judge: 2
+						 * Judge: 2 => In range?
 						****************************************/
 						$res = Methods::_is_InRange(
 						// 						$words_WithPos_2[$j],
@@ -904,34 +875,15 @@
 		
 						if ($res == true) {
 								
-							// log
-							$msg = "Is in range";
+// 							// log
+// 							$msg = "Is in range";
 							
-							write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
+// 							write_Log(
+// 								CONS::get_dPath_Log(),
+// 								$msg,
+// 								basename(__FILE__),
+// 								__LINE__);
 							
-						$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-						$msg = "\$words_WithPos_2[$j] => "
-								.serialize($words_WithPos_2[$j]);
-						
-						write_Log(
-							CONS::get_dPath_Log(),
-							$msg,
-							__FILE__,
-							__LINE__);
-						
-															
 							/****************************************
 							 * Judge: 3 => Same object?
 							****************************************/
@@ -939,54 +891,21 @@
 							$res = Methods::_isSame_WordSet(
 									$words_WithPos[$i],
 									$words_WithPos_2[$j]);
-		
+
 							// 			$res = _isSame_WordObj_2($Wi, $Wj);
 							// 			$res = _isSame_WordObj($Wi, $Wj);
 		
 							if ($res == true) {
 									
-								// log
-								$msg = "Same -----------------";
+// 								// log
+// 								$msg = "Same -----------------";
 								
-								write_Log(
-									CONS::get_dPath_Log(),
-									$msg,
-									__FILE__,
-									__LINE__);
+// 								write_Log(
+// 									CONS::get_dPath_Log(),
+// 									$msg,
+// 									__FILE__,
+// 									__LINE__);
 
-								$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
-								
-								$msg = "\$words_WithPos_2[$j] => "
-								.serialize($words_WithPos_2[$j]);
-								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
-								
-								
-// 								print_r($words_WithPos[$i]);
-// 								print_r($words_WithPos_2[$j]);
-									
-// 								write_Log($msg, __LINE__);
-		
-								// 				print_r($Wi);
-								// 				print_r($Wj);
-									
-// 								$msg = "\$words_WithPos[$i] =>";
-// 								write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
-		
-// 								$msg = "\$words_WithPos_2[$j] =>";
-// 								write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
-		
 								// Next j
 								continue;
 		
@@ -996,43 +915,15 @@
 									
 							} else {// _isSame_WordSet
 									
-								// log
-								$msg = "Not same ---------------";
+// 								// log
+// 								$msg = "Not same ---------------";
 								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
+// 								write_Log(
+// 								CONS::get_dPath_Log(),
+// 								$msg,
+// 								__FILE__,
+// 								__LINE__);
 								
-								$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
-								
-								$msg = "\$words_WithPos_2[$j] => "
-								.serialize($words_WithPos_2[$j]);
-								
-								write_Log(
-										CONS::get_dPath_Log(),
-										$msg,
-										__FILE__,
-										__LINE__);
-								
-								
-// 								show_Message($msg, __LINE__);
-// 								write_Log($msg, __LINE__);
-		
-// 								$msg = "\$words_WithPos[$i] =>";
-// 								write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
-		
-// 								$msg = "\$words_WithPos_2[$j] =>";
-// 								write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
-		
 								// flag
 								$flag_IsIn = true;
 		
@@ -1046,37 +937,15 @@
 								
 						} else {// _is_InRange
 								
-							// log
-							$msg = "Not in range";
-// 							show_Message($msg, __LINE__);
-// 							write_Log($msg, __LINE__);
+// 							// log
+// 							$msg = "Not in range";
 
-							write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
+// 							write_Log(
+// 								CONS::get_dPath_Log(),
+// 								$msg,
+// 								basename(__FILE__),
+// 								__LINE__);
 							
-							$msg = "\$words_WithPos[$i] => "
-							.serialize($words_WithPos[$i]);
-							
-							write_Log(
-									CONS::get_dPath_Log(),
-									$msg,
-									__FILE__,
-									__LINE__);
-							
-							$msg = "\$words_WithPos_2[$j] => "
-							.serialize($words_WithPos_2[$j]);
-							
-							write_Log(
-									CONS::get_dPath_Log(),
-									$msg,
-									__FILE__,
-									__LINE__);
-							
-								
-		
 							// flag
 							$flag_IsIn = false;
 								
@@ -1087,90 +956,58 @@
 		
 				}//for ($j = 0; $j < count($words_WithPos_2); $j++)
 								
-							/****************************************
-							* Flag => true/false
-							****************************************/
-							if ($flag_IsIn == false) {
-								
-								// log
-								$msg = "\$flag_IsIn => false";
-								// 							show_Message($msg, __LINE__);
-								// 							write_Log($msg, __LINE__);
-								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
+				/****************************************
+				* Flag => true/false
+				****************************************/
+				if ($flag_IsIn == false) {
+					
+// 					// log
+// 					$msg = "\$flag_IsIn => false";
+// 					// 							show_Message($msg, __LINE__);
+// 					// 							write_Log($msg, __LINE__);
+					
+// 					write_Log(
+// 					CONS::get_dPath_Log(),
+// 					$msg,
+// 					__FILE__,
+// 					__LINE__);
 									
-								$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-									
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
-									
-								
-								$res = Methods::_isIn_SkimmedList_2(
-											$skimmed_WordsList, $Wi);
-								// 			$res = _isIn_SkimmedList($skimmed_WordsList, $Wi);
-								
-								if ($res == false) {
+					$res = Methods::_isIn_SkimmedList_2(
+								$skimmed_WordsList, $Wi);
+					// 			$res = _isIn_SkimmedList($skimmed_WordsList, $Wi);
+					
+					if ($res == false) {
 				
-									// log
-									$msg = "_isIn_SkimmedList_2 => false";
-									// 							show_Message($msg, __LINE__);
-									// 							write_Log($msg, __LINE__);
-									
-									write_Log(
-									CONS::get_dPath_Log(),
-									$msg,
-									__FILE__,
-									__LINE__);
-										
-									$msg = "\$words_WithPos[$i] => "
-									.serialize($words_WithPos[$i]);
-										
-									write_Log(
-									CONS::get_dPath_Log(),
-									$msg,
-									__FILE__,
-									__LINE__);
-										
-									
-									array_push(
-											$skimmed_WordsList,
-											$words_WithPos[$i]);
-								// 				array_push($skimmed_WordsList, $Wi);;
-				
-								}
+// 						// log
+// 						$msg = "_isIn_SkimmedList_2 => false";
+						
+// 						write_Log(
+// 						CONS::get_dPath_Log(),
+// 						$msg,
+// 						__FILE__,
+// 						__LINE__);
+							
+						array_push(
+								$skimmed_WordsList,
+								$words_WithPos[$i]);
+					// 				array_push($skimmed_WordsList, $Wi);;
+	
+					}
 								
-							} else {//if ($flag_IsIn == false)
-								
-								// log
-								$msg = "\$flag_IsIn => true";
-								// 							show_Message($msg, __LINE__);
-								// 							write_Log($msg, __LINE__);
-								
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
+				} else {//if ($flag_IsIn == false)
+					
+// 					// log
+// 					$msg = "\$flag_IsIn => true";
+// 					// 							show_Message($msg, __LINE__);
+// 					// 							write_Log($msg, __LINE__);
+					
+// 					write_Log(
+// 					CONS::get_dPath_Log(),
+// 					$msg,
+// 					__FILE__,
+// 					__LINE__);
 									
-								$msg = "\$words_WithPos[$i] => "
-								.serialize($words_WithPos[$i]);
-									
-								write_Log(
-								CONS::get_dPath_Log(),
-								$msg,
-								__FILE__,
-								__LINE__);
-									
-								
-							}//if ($flag_IsIn == false)
+				}//if ($flag_IsIn == false)
 		
 			}//for ($i = 0; $i < count($words_WithPos); $i++)
 		
@@ -1179,16 +1016,24 @@
 					****************************************/
 			// log
 			$msg = "Skimming => done";
-					show_Message($msg, __LINE__);
-					write_Log($msg, __LINE__);
+// 					show_Message($msg, __LINE__);
+// 					write_Log($msg, __LINE__);
+			
+			write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+			
+// 					// log
+// 					$msg = "\$skimmed_WordsList => ";
+// 					show_Message($msg, __LINE__);
+// 					print_r($skimmed_WordsList);
 				
-					// log
-					$msg = "\$skimmed_WordsList => ";
-					show_Message($msg, __LINE__);
-					print_r($skimmed_WordsList);
-				
-					write_Log($msg.serialize($skimmed_WordsList), __LINE__);
+// 					write_Log($msg.serialize($skimmed_WordsList), __LINE__);
 		
+			return $skimmed_WordsList;
+			
 		}//do_job__Skim_WordsFiltered_4($argv)
 
 		static function
