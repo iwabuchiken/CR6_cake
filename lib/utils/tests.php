@@ -69,7 +69,8 @@ function do_job($argv) {
 
 // 		do_job__Skim_WordsFiltered($argv);
 // 		do_job__Skim_WordsFiltered_2($argv);
-		do_job__Skim_WordsFiltered_3($argv);
+// 		do_job__Skim_WordsFiltered_3($argv);
+		do_job__Skim_WordsFiltered_4($argv);
 
 	} else if ($choice == "addlink") {
 
@@ -260,6 +261,414 @@ do_job__Test_ArrayUnique($argv) {
 }//do_job__Test_ArrayUnique($argv)
 
 function
+do_job__Skim_WordsFiltered_4($argv) {
+
+	_Setup_Skim_WordsFiltered_4($argv);
+	
+	/****************************************
+	 * Variables
+	****************************************/
+	if (count($argv) > 2) {
+
+		$text = $argv[2];
+
+	} else {
+		//0123456789012345
+		// 		$text = "abcdefxxdeaaffzdes";
+		$text = mb_convert_encoding(
+				//012345678901234567890123456789012
+// 				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+				"堂在法庭堂后提交交提事在法庭堂的提提示堂法庭的提，",
+				"SJIS", "UTF-8");
+
+	}
+
+	$Ws = _Setup_Skim_WordsFiltered_4($text);
+
+	// Words list with positions
+	$words_WithPos = array();
+
+	foreach ($Ws as $W) {
+
+		$res = _do_job__PregMatchAll_WithPos_4__Execute($text, $W);
+
+		foreach ($res as $item) {
+
+			array_push($words_WithPos, $item);
+
+		}
+
+	}//foreach ($Ws as $W)
+
+	show_Message("\$words_WithPos =>", __LINE__);
+
+	print_r($words_WithPos);
+
+	/****************************************
+	 * Processes
+	****************************************/
+	$words_WithPos_2 = $words_WithPos;
+
+	$skimmed_WordsList = array();
+
+	/****************************************
+	 * For: 1
+	****************************************/
+	for ($i = 0; $i < count($words_WithPos); $i++) {	// f1
+
+		//log
+		$msg = "For: 1 <$i>========================";
+		show_Message($msg, __LINE__);
+		write_Log($msg, __LINE__);
+
+		// Get: All the same word objects
+		$Wset_i = $words_WithPos[$i];
+		$Wi = $words_WithPos[$i][0];
+		$Wi_pos = $words_WithPos[$i][1];
+
+		// Flag: $Wi is contained in $Wj ?
+		$flag_IsIn = true;
+		
+		/****************************************
+		 * For: 2
+		****************************************/
+		for ($j = 0; $j < count($words_WithPos_2); $j++) {
+			
+			//log
+			$msg = "For: 2 <$j>========================";
+			show_Message($msg, __LINE__);
+			write_Log($msg, __LINE__);
+			
+			// Prep
+			$Wset_j = $words_WithPos_2[$j];
+			$Wj = $words_WithPos_2[$j][0];
+			$Wj_pos = $words_WithPos_2[$j][1];
+
+			/****************************************
+			* Judge: 1 => Contained?
+			****************************************/
+			$res = _isContained_W1($Wi, $Wj);
+// 			$res = _isContained_W1($Wi->w1, $Wj->w1);
+			
+			if ($res === false) {
+				// 				if ($res == false) {
+			
+				// log
+				$msg = "Not contained";
+				show_Message($msg, __LINE__);
+					
+				print_r($words_WithPos[$i]);
+				print_r($words_WithPos_2[$j]);
+					
+				$flag_IsIn = false;
+			
+			} else {
+			
+				// log
+				$msg = "Contained";
+				show_Message($msg, __LINE__);
+				write_Log(
+				$msg.": \$words_WithPos[$i] => "
+				.serialize($words_WithPos[$i])
+				."/"
+						."\$words_WithPos_2[$j] => "
+						.serialize($words_WithPos_2[$j])
+						,
+				__LINE__);
+					
+				/****************************************
+				* Judge: 2
+				****************************************/
+				$res = _is_InRange(
+// 						$words_WithPos_2[$j],
+// 						$words_WithPos[$i]
+						$words_WithPos[$i],
+						$words_WithPos_2[$j]
+				);
+				
+				if ($res == true) {
+					
+					// log
+					$msg = "Is in range";
+					show_Message($msg, __LINE__);
+						write_Log($msg, __LINE__);
+				
+						// log
+						$msg = "\$words_WithPos[$i] =>";
+						show_Message($msg, __LINE__);
+						print_r($words_WithPos[$i]);
+				
+						write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+				
+						$msg = "\$words_WithPos_2[$j] =>";
+						show_Message($msg, __LINE__);
+						print_r($words_WithPos_2[$j]);
+				
+					write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+					
+					/****************************************
+					* Judge: 3 => Same object?
+					****************************************/
+					// Same word set?
+					$res = _isSame_WordSet(
+							$words_WithPos[$i],
+							$words_WithPos_2[$j]);
+						
+					// 			$res = _isSame_WordObj_2($Wi, $Wj);
+					// 			$res = _isSame_WordObj($Wi, $Wj);
+						
+					if ($res == true) {
+					
+						// log
+						$msg = "Same -----------------";
+						show_Message($msg, __LINE__);
+						print_r($words_WithPos[$i]);
+						print_r($words_WithPos_2[$j]);
+					
+						write_Log($msg, __LINE__);
+						
+						// 				print_r($Wi);
+						// 				print_r($Wj);
+					
+						$msg = "\$words_WithPos[$i] =>";
+						write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+				
+						$msg = "\$words_WithPos_2[$j] =>";
+						write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+						
+						// Next j
+						continue;
+						
+// 						$flag_IsIn = false;
+					
+// 						break;
+					
+					} else {
+					
+						// log
+						$msg = "Not same ---------------";
+						show_Message($msg, __LINE__);
+						write_Log($msg, __LINE__);
+						
+						$msg = "\$words_WithPos[$i] =>";
+						write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+						
+						$msg = "\$words_WithPos_2[$j] =>";
+						write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+						
+						// flag
+						$flag_IsIn = true;
+						
+						// End for-loop with j
+						break;
+						
+					}
+					
+// 					// Flag
+// 					$flag_IsIn = true;
+					
+				} else {
+			
+					// log
+					$msg = "Not in range";
+					show_Message($msg, __LINE__);
+					write_Log($msg, __LINE__);
+				
+					// flag
+					$flag_IsIn = false;
+					
+				}//_is_InRange
+					
+			}//_isContained_W1
+// 			if ($res == true) {
+				
+// 				// log
+// 				$msg = "Same -----------------";
+// 				show_Message($msg, __LINE__);
+// 				print_r($words_WithPos[$i]);
+// 				print_r($words_WithPos_2[$j]);
+				
+// 				write_Log($msg, __LINE__);
+				
+// // 				print_r($Wi);
+// // 				print_r($Wj);
+				
+// 				$flag_IsIn = false;
+				
+// 				break;
+				
+// 			} else {
+				
+// 				// log
+// 				$msg = "Not same ---------------";
+// 				show_Message($msg, __LINE__);
+// 				write_Log($msg, __LINE__);
+				
+// 				/****************************************
+// 				* Judge: 2
+// 				****************************************/
+// 				$res = _isContained_W1($Wj, $Wi);
+				
+// 				if ($res === false) {
+// // 				if ($res == false) {
+				
+// 					// log
+// 					$msg = "Not contained";
+// 					show_Message($msg, __LINE__);
+					
+// 					print_r($words_WithPos[$i]);
+// 					print_r($words_WithPos_2[$j]);
+					
+// 					$flag_IsIn = false;
+				
+// 				} else {
+				
+// 					// log
+// 					$msg = "Contained";
+// 					show_Message($msg, __LINE__);
+// 					write_Log(
+// 							$msg.": \$words_WithPos[$i] => "
+// 								.serialize($words_WithPos[$i])
+// 								."/"
+// 								."\$words_WithPos_2[$j] => "
+// 								.serialize($words_WithPos_2[$j])
+// 								,
+// 							__LINE__);
+					
+// 					/****************************************
+// 					* Judge: 3
+// 					****************************************/
+// 					$res = _is_InRange(
+// 							$words_WithPos_2[$j],
+// 							$words_WithPos[$i]
+// // 							$words_WithPos[$i],
+// // 							$words_WithPos_2[$j]
+// 							);
+					
+// 					if ($res == true) {
+					
+// 						// log
+// 						$msg = "Is in range";
+// 						show_Message($msg, __LINE__);
+// 						write_Log($msg, __LINE__);
+						
+// 						// log
+// 						$msg = "\$words_WithPos[$i] =>";
+// 						show_Message($msg, __LINE__);
+// 						print_r($words_WithPos[$i]);
+						
+// 						write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+						
+// 						$msg = "\$words_WithPos_2[$j] =>";
+// 						show_Message($msg, __LINE__);
+// 						print_r($words_WithPos_2[$j]);
+						
+// 						write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+					
+// 					} else {
+						
+// 						// log
+// 						$msg = "Not in range";
+// 						show_Message($msg, __LINE__);
+// 						write_Log($msg, __LINE__);
+						
+// 					}//_is_InRange
+					
+// 				}//_isContained_W1
+				
+// 			}//_isSame_WordObj_2
+		
+		}//for ($j = 0; $j < count($words_WithPos_2); $j++)
+			
+		/****************************************
+		* Flag => true/false
+		****************************************/
+		if ($flag_IsIn == false) {
+			
+			$res = _isIn_SkimmedList_2($skimmed_WordsList, $Wi);
+// 			$res = _isIn_SkimmedList($skimmed_WordsList, $Wi);
+			
+			if ($res == false) {
+				
+				array_push($skimmed_WordsList, $words_WithPos[$i]);
+// 				array_push($skimmed_WordsList, $Wi);;
+				
+			}
+			
+		}//if ($flag_IsIn == false)
+
+	}//for ($i = 0; $i < count($words_WithPos); $i++)
+		
+	/****************************************
+	* Show: Result
+	****************************************/
+	// log
+	$msg = "Skimming => done";
+	show_Message($msg, __LINE__);
+	write_Log($msg, __LINE__);
+	
+	// log
+	$msg = "\$skimmed_WordsList => ";
+	show_Message($msg, __LINE__);
+	print_r($skimmed_WordsList);
+	
+	write_Log($msg.serialize($skimmed_WordsList), __LINE__);
+
+}//do_job__Skim_WordsFiltered_4($argv)
+
+function
+// _Setup_Skim_WordsFiltered_4($argv) {
+_Setup_Skim_WordsFiltered_4($text) {
+
+	/****************************************
+	 * Variables
+	****************************************/
+// 	if (count($argv) > 2) {
+	
+// 		$text = $argv[2];
+	
+// 	} else {
+// 		//0123456789012345
+// 		// 		$text = "abcdefxxdeaaffzdes";
+// 		$text = mb_convert_encoding(
+// 				//012345678901234567890123456789012
+// 				"堂在法庭堂后提交交提事在法庭堂的提提示，",
+// 				"SJIS", "UTF-8");
+	
+// 	}
+
+	show_Message(
+	"         0123456789012345678901234567890123456789",
+	__LINE__);
+	
+	show_Message($text, __LINE__);
+	write_Log($text, __LINE__);
+	
+	/****************************************
+	 * Words list
+	****************************************/
+	/****************************************
+	 * Setup: Words
+	****************************************/
+	$W1 = new Word();
+	$W2 = new Word();
+	$W3 = new Word();
+	
+	$W1->w1 = mb_convert_encoding("在法庭堂", "SJIS", "UTF-8");
+	$W2->w1 = mb_convert_encoding("法庭", "SJIS", "UTF-8");
+	$W3->w1 = mb_convert_encoding("提提", "SJIS", "UTF-8");;
+	
+	$W1->w2 = "aa"; $W2->w2 = "bb";
+	$W3->w2 = "cc";
+	
+	$W1->w3 = "AA"; $W2->w3 = "BB";
+	$W3->w3 = "CC";
+
+	return array($W1, $W2, $W3);
+	
+}//_Setup_Skim_WordsFiltered_4($argv)
+
+function
 do_job__Skim_WordsFiltered_3($argv) {
 
 	/****************************************
@@ -380,6 +789,9 @@ do_job__Skim_WordsFiltered_3($argv) {
 				show_Message($msg, __LINE__);
 				print_r($words_WithPos[$i]);
 				print_r($words_WithPos_2[$j]);
+				
+				write_Log($msg, __LINE__);
+				
 // 				print_r($Wi);
 // 				print_r($Wj);
 				
@@ -392,6 +804,7 @@ do_job__Skim_WordsFiltered_3($argv) {
 				// log
 				$msg = "Not same ---------------";
 				show_Message($msg, __LINE__);
+				write_Log($msg, __LINE__);
 				
 				/****************************************
 				* Judge: 2
@@ -415,15 +828,57 @@ do_job__Skim_WordsFiltered_3($argv) {
 					// log
 					$msg = "Contained";
 					show_Message($msg, __LINE__);
+					write_Log(
+							$msg.": \$words_WithPos[$i] => "
+								.serialize($words_WithPos[$i])
+								."/"
+								."\$words_WithPos_2[$j] => "
+								.serialize($words_WithPos_2[$j])
+								,
+							__LINE__);
 					
 					/****************************************
 					* Judge: 3
 					****************************************/
-// 					$res = is_InRange()
+					$res = _is_InRange(
+// 							$words_WithPos_2[$j],
+// 							$words_WithPos[$i]
+							$words_WithPos[$i],
+							$words_WithPos_2[$j]
+							);
 					
-				}
+					if ($res == true) {
+					
+						// log
+						$msg = "Is in range";
+						show_Message($msg, __LINE__);
+						write_Log($msg, __LINE__);
+						
+						// log
+						$msg = "\$words_WithPos[$i] =>";
+						show_Message($msg, __LINE__);
+						print_r($words_WithPos[$i]);
+						
+						write_Log($msg.serialize($words_WithPos[$i]), __LINE__);
+						
+						$msg = "\$words_WithPos_2[$j] =>";
+						show_Message($msg, __LINE__);
+						print_r($words_WithPos_2[$j]);
+						
+						write_Log($msg.serialize($words_WithPos_2[$j]), __LINE__);
+					
+					} else {
+						
+						// log
+						$msg = "Not in range";
+						show_Message($msg, __LINE__);
+						write_Log($msg, __LINE__);
+						
+					}//_is_InRange
+					
+				}//_isContained_W1
 				
-			}
+			}//_isSame_WordObj_2
 		
 		}//for ($j = 0; $j < count($words_WithPos_2); $j++)
 			
@@ -464,8 +919,55 @@ do_job__Skim_WordsFiltered_3($argv) {
 }//do_job__Skim_WordsFiltered_3($argv)
 
 /****************************************
-* @return true => 'w1' of $wordObj_1 is<br>
-* 				contained in that of $wordObj_2
+ * Judge: $wordSet_1 is in the range of $wordSet_2
+****************************************/
+function 
+_is_InRange($wordSet_1, $wordSet_2) {
+	
+	// log
+	$msg = "\$wordSet_1 => ";	
+	show_Message($msg, __LINE__);
+	print_r($wordSet_1);
+	
+	write_Log($msg.serialize($wordSet_1), __LINE__);
+	
+	$msg = "\$wordSet_2 => ";	
+	show_Message($msg, __LINE__);
+	print_r($wordSet_2);
+	
+	write_Log($msg.serialize($wordSet_2), __LINE__);
+	
+	
+	$W1_Pos_Start = $wordSet_1[1];
+	$W2_Pos_Start = $wordSet_2[1];
+	
+	$W1_Pos_End = $W1_Pos_Start + strlen($wordSet_1[0]->w1);
+	$W2_Pos_End = $W2_Pos_Start + strlen($wordSet_2[0]->w1);
+	
+	// log
+	$msg = "\$W1_Pos_Start => $W1_Pos_Start"
+			."//"
+			."\$W2_Pos_Start => $W2_Pos_Start"
+	;
+	show_Message($msg, __LINE__);
+	write_Log($msg, __LINE__);
+	
+	$msg = "\$W1_Pos_End => $W1_Pos_End"
+			."//"
+			."\$W2_Pos_End => $W2_Pos_End"
+	;
+	show_Message($msg, __LINE__);
+	write_Log($msg, __LINE__);
+	
+	
+	return ($W2_Pos_Start <= $W1_Pos_Start
+			&& $W2_Pos_End >= $W1_Pos_End);
+	
+}
+
+/****************************************
+* @return true => 'w1' of $wordObj_2 is<br>
+* 				contained in that of $wordObj_1
 ****************************************/
 function _isContained_W1($wordObj_1, $wordObj_2) {
 
@@ -1038,6 +1540,19 @@ _isSame_WordObj_2($wordObject1, $wordObject2) {
 	
 	$s1 = serialize($wordObject1);
 	$s2 = serialize($wordObject2);
+	
+	return ($s1 == $s2) ? true : false;
+		
+}//_isSame_WordObj($W1, $W2)
+
+/****************************************
+* Use serialize() to judge the 2 objects
+****************************************/
+function
+_isSame_WordSet($wordSet1, $wordSet2) {
+	
+	$s1 = serialize($wordSet1);
+	$s2 = serialize($wordSet2);
 	
 	return ($s1 == $s2) ? true : false;
 		
