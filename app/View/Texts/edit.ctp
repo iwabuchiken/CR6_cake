@@ -6,6 +6,8 @@ echo $this->Form->create('Text');
 echo $this->Form->input('text');
 echo $this->Form->input('url');
 
+echo $this->Form->input('memo');
+
 echo $this->Form->input(
 						'lang_id',
 // 						'Lang id',
