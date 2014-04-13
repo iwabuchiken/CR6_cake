@@ -202,46 +202,50 @@ class TextsController extends AppController {
         ****************************************/
         $words_Filtered = $this->_view_GetWords($model_Text);
         
-        $msg = "\$words_Filtered => " . count($words_Filtered);
+        if ($words_Filtered != null) {
+        	
+	        $msg = "\$words_Filtered => " . count($words_Filtered);
+	        
+	        write_Log(
+		        	CONS::get_dPath_Log(),
+		        	$msg,
+		        	basename(__FILE__),
+		        	__LINE__);
+	        
+	//         debug($words_Filtered);
+	        
+	        /****************************************/
+	        /****************************************
+	        * Modify: Text
+	        ****************************************/
+	        /****************************************/
+	        
+	        /****************************************
+	        * Modify: Add links
+	        ****************************************/
+	        $text = $model_Text['Text']['text'];
+	        
+	        //test
+	//         $skimmed_WordsList = $this->_view_Test_Skimming(
+	//         		$text, array_slice($words_Filtered, 0, 40));
+	//         		$text, array_slice($words_Filtered, 0, 20));
+	//         $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
+	        $skimmed_WordsList = $this->_view_Test_Skimming(
+	        								$text, $words_Filtered);
+	        
+	//         debug($skimmed_WordsList);
+	        
+	        
+	        $text = Methods::addLink_4($text, $skimmed_WordsList);
+	//         $text = Methods::addLink_4($text, $words_Filtered);
+	        
+	// //         debug($text);
+	// 		debug($words_Filtered[0]);
+			
+	        $model_Text['Text']['text'] = $text;
         
-        write_Log(
-	        	CONS::get_dPath_Log(),
-	        	$msg,
-	        	basename(__FILE__),
-	        	__LINE__);
-        
-//         debug($words_Filtered);
-        
-        /****************************************/
-        /****************************************
-        * Modify: Text
-        ****************************************/
-        /****************************************/
-        
-        /****************************************
-        * Modify: Add links
-        ****************************************/
-        $text = $model_Text['Text']['text'];
-        
-        //test
-//         $skimmed_WordsList = $this->_view_Test_Skimming(
-//         		$text, array_slice($words_Filtered, 0, 40));
-//         		$text, array_slice($words_Filtered, 0, 20));
-//         $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
-        $skimmed_WordsList = $this->_view_Test_Skimming(
-        								$text, $words_Filtered);
-        
-//         debug($skimmed_WordsList);
-        
-        
-        $text = Methods::addLink_4($text, $skimmed_WordsList);
-//         $text = Methods::addLink_4($text, $words_Filtered);
-        
-// //         debug($text);
-// 		debug($words_Filtered[0]);
-		
-        $model_Text['Text']['text'] = $text;
-        
+        }//if ($words_Filtered != null)
+	        
         /****************************************
         * Modify: Puncs
         ****************************************/
@@ -285,6 +289,21 @@ class TextsController extends AppController {
     					)
     	);
     	
+    	if ($words == null || count($words) < 1) {
+    		
+    		// log
+    		$msg = "(\$words == null || count(\$words) < 1) => true";
+    		
+    		write_Log(
+    			CONS::get_dPath_Log(),
+    			$msg,
+    			__FILE__,
+    			__LINE__);
+    		
+    		
+    		return null;
+    		
+    	}
     	/****************************************
     	* Words: Those in the text
     	****************************************/
@@ -439,7 +458,9 @@ class TextsController extends AppController {
 					__FILE__,
 					__LINE__);
 				
-				
+				/****************************************
+				* Title
+				****************************************/
 				if (strlen($this->request->data['Text']['text'])
 							< $title_Length) {
 				
@@ -454,6 +475,17 @@ class TextsController extends AppController {
 									$title_Length);
 				
 				}//if (strlen($this->request->data['Text']['text'])
+				
+				// log
+				$msg = "\$this->request->data['Text']['title'] => "
+						.$this->request->data['Text']['title'];
+				
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__);
+				
 				
 			}
 		  
@@ -478,7 +510,7 @@ class TextsController extends AppController {
 			
 			// Save text
 			if ($this->Text->save($this->request->data)) {
-				$this->Session->setFlash(__('Your post has been saved.'));
+				$this->Session->setFlash(__('Your text has been saved.'));
 				
 				//debug
 				write_Log(
@@ -497,8 +529,35 @@ class TextsController extends AppController {
 			}
 			
 			$this->Session->setFlash(__('Unable to add your post.'));
-		}
-	}
+			
+		} else {//if ($this->request->is('post'))
+			
+			$this->loadModel('Lang');
+			
+			$langs = $this->Lang->find('all');
+			
+// 			debug($langs);
+			
+			$select_Langs = array();
+			
+			foreach ($langs as $lang) {
+				
+				$lang_Name = $lang['Lang']['name'];
+				$lang_Id = $lang['Lang']['id'];
+				
+				$select_Langs[$lang_Id] = $lang_Name;
+			
+			}
+			
+// 			debug($select_Langs);
+			
+			$this->set('select_Langs', $select_Langs);
+			
+// 			$this->set('langs', $langs);
+			
+		}////if ($this->request->is('post'))
+			
+	}//public function add()
 	
 	
 	public function get_Log() {

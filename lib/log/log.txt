@@ -1001,3 +1001,54 @@
 [04/12/2014 16:17:37 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
 [04/12/2014 16:18:40 : TextsController.php : 211] $words_Filtered => 127
 [04/12/2014 16:18:40 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/12/2014 16:29:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 16:29:33 : TextsController.php : 211] $words_Filtered => 11
+[04/12/2014 16:29:33 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/12/2014 17:24:17 : TextsController.php : 211] $words_Filtered => 134
+[04/12/2014 17:24:17 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/12/2014 17:25:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 440] length => 2474
+[04/12/2014 17:25:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 475] url => http://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%AE%BA#.E6.9A.B4.E8.A1.8C.E7.9C.9F.E7.9B.B8.E7.9A.84.E4.BC.A0.E6.92.AD
+[04/12/2014 17:25:24 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 488] text => 
+[04/12/2014 17:26:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 17:29:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 440] length => 1155
+[04/12/2014 17:29:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 475] url => 
+[04/12/2014 17:29:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 488] text => 
+[04/12/2014 17:29:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 17:29:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 17:29:29 : TextsController.php : 211] $words_Filtered => 0
+[04/12/2014 17:29:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/12/2014 17:33:37 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 301] ($words == null || count($words) < 1) => true
+[04/12/2014 22:58:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
+[04/12/2014 23:14:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 459] length => 2474
+[04/12/2014 23:14:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 494] url => http://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%AE%BA#.E6.9A.B4.E8.A1.8C.E7.9C.9F.E7.9B.B8.E7.9A.84.E4.BC.A0.E6.92.AD
+[04/12/2014 23:14:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 507] text => 
+[04/12/2014 23:14:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 23:15:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 459] length => 2474
+[04/12/2014 23:15:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 494] url => http://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%AE%BA#.E6.9A.B4.E8.A1.8C.E7.9C.9F.E7.9B.B8.E7.9A.84.E4.BC.A0.E6.92.AD
+[04/12/2014 23:15:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 507] text => 
+[04/12/2014 23:15:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 23:18:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 459] length => 596
+[04/12/2014 23:18:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 487] $this->request->data['Text']['text'] => 为了不使军队在战地的恶的一面让国民知道，在强化新闻管制的同时，对在战地的士兵的泄漏严密封锁。南京攻击战结束后，部分老兵返回国内时就曾被禁口。我也是昭和十五年（1938年）秋返回国内的，在离开所属部队之际，被告诫‘诸位回到国内，征召解除就成了地方百姓了，但作为军人的名誉是值得自豪的，而有污皇军体面的事绝对不许外传。’这是烦琐的说法，要而言之就是‘即使回到国内，离开军队，在战场幹的坏事也绝对不许说’。[52]
+[04/12/2014 23:18:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 507] url => http://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%AE%BA#.E6.9A.B4.E8.A1.8C.E7.9C.9F.E7.9B.B8.E7.9A.84.E4.BC.A0.E6.92.AD
+[04/12/2014 23:18:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 520] text => 
+[04/12/2014 23:18:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 23:19:06 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 459] length => 596
+[04/12/2014 23:19:06 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 487] $this->request->data['Text']['title'] => 为了不使军队在战地的恶的一面让国民知道，
+[04/12/2014 23:19:06 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 507] url => http://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%AE%BA#.E6.9A.B4.E8.A1.8C.E7.9C.9F.E7.9B.B8.E7.9A.84.E4.BC.A0.E6.92.AD
+[04/12/2014 23:19:06 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 520] text => 
+[04/12/2014 23:19:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/12/2014 23:19:40 : TextsController.php : 213] $words_Filtered => 7
+[04/12/2014 23:19:40 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 121] $current_Lot => 1
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 145] $move_Lot => ""
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 193] $current_Lot => 1
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=41/$cur_Lot=1
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/12/2014 23:21:46 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 161] $total=4032/$per_page=10/$target_Lot=403/$residue=2
+[04/12/2014 23:21:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=41/$cur_Lot=1
+[04/12/2014 23:21:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/12/2014 23:21:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 161] $total=4032/$per_page=10/$target_Lot=403/$residue=2
+[04/13/2014 09:18:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/13/2014 10:17:17 : TextsController.php : 213] $words_Filtered => 7
+[04/13/2014 10:17:17 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
