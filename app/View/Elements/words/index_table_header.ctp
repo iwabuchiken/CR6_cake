@@ -4,7 +4,31 @@
         
         <!-- <td colspan="5" style="bgcolor: blue;"> -->
         <td>
-            <?php echo "w1"; ?>
+        	<?php
+        		
+        		if ($query_String != null) {
+        		
+        			$query = $query_String."&"."sort=w1";
+        		
+        		} else {
+
+					$query = "sort=w1";
+        		
+        		}
+        		echo $this->Html->link('w1',
+						array(
+							'controller' => 'words',
+// 							'controller' => 'langs',
+							'action' => 'index',
+							'?' => $query));
+			?>
+			
+            <?php
+            
+// 				echo "w1";
+			
+            ?>
+            
         </td>
         
         <td>

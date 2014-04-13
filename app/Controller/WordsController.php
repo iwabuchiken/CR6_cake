@@ -65,10 +65,33 @@ class WordsController extends AppController {
 		/****************************************
 		* Get: words
 		****************************************/
+		$query_String = $this->_index__Get_QueryString();
+		
+		$this->set("query_String", $query_String);
+		
+// 		debug($query_String);
+		
 		//REF http://www.packtpub.com/article/working-with-simple-associations-using-cakephp
 		$this->Word->recursive = 1;
-		$words = $this->Word->find('all');
+// 		$words = $this->Word->find(
+// 					'all',
+// 					array('conditions' =>
+// 							array('Word.id <' => 10) // only ID 9 shown=> Wrong. up to ID=9 selected
+// 							array('Word.id' => '<10') // no entry 
+// 							array('Word.id<' => '10') // no such column: Word.id<
+// 							array('Word.id' => '<'.'10') 
+// 							));
 		
+		/****************************************
+		* Get: words
+		****************************************/
+		$words = $this->_index_GetWords();
+// 		$words = $this->Word->find('all');
+
+		
+		/****************************************
+		* Get: total
+		****************************************/
 		$total_Words = count($words);
 		$this->set("total_Words", $total_Words);
 		
@@ -296,12 +319,101 @@ class WordsController extends AppController {
 		
 	}//public function index()
 
+	public function _index_GetWords() {
+		
+		debug($this->request->query);
+		
+		@$sort = $this->request->query['sort'];
+		
+		if ($sort == null) {
+		
+			$words = $this->Word->find('all');
+// 			debug("null");
+		
+		} else if ($sort == "w1") {
+			
+			$words = $this->Word->find(
+						'all',
+						array(
+							'order' => array(
+								'Word.w1 ASC'
+								))
+					);
+			
+// 			debug("\"\"");
+			
+		} else {
+		
+			debug($sort);
+			
+		}
+
+// 		$words = $this->Word->find('all');
+		
+		return $words;
+		
+	}//public function _index_GetWords()
+	
+	public function
+	_index__Get_QueryString() {
+		
+		//test
+		$q = $this->request->query;
+
+		if ($q != null && count($q) > 0) {
+	
+			$keys = array_keys($q);
+	
+			$q_array = array();
+	
+			foreach ($keys as $item) {
+
+// 				$str .= $item."=".$q[$item];
+				array_push($q_array, $item."=".$q[$item]);
+	
+			}
+	
+			$str = implode("&", $q_array);
+	
+// 			debug($str);
+	
+		}
+		
+		return ($str != null) ? $str : null;
+		
+	}//_index__Get_QueryString()
+	
 	/****************************************
 	* @return null => page and/or per page values not obtained<br>
 	* 		returs => array(page, per_page)
 	****************************************/
 	public function
 	_index__Get_PaginationData() {
+		
+// 		debug($this->request->query);
+
+// 		//test
+// 		$q = $this->request->query;
+		
+// 		if ($q != null && count($q) > 0) {
+			
+// 			$keys = array_keys($q);
+			
+// 			$q_array = array();
+			
+// 			foreach ($keys as $item) {
+				
+// // 				$str .= $item."=".$q[$item];
+// 				array_push($q_array, $item."=".$q[$item]);
+			
+// 			}
+			
+// 			$str = implode("&", $q_array);
+			
+// 			debug($str);
+			
+// 		}
+		
 		
 		//REF http://book.cakephp.org/2.0/en/controllers/request-response.html
 		@$page = $this->request->query['page'];
