@@ -7,6 +7,13 @@
 	<br>
 	
 	<?php echo $this->Html->link(
+					'Add Word',
+					array('controller' => 'words', 'action' => 'add'));
+	?>
+	<br>
+	<br>
+	
+	<?php echo $this->Html->link(
 					'Build words from csv (1)',
 					array('controller' => 'words', 'action' => 'build_Words_1'));
 	?>	

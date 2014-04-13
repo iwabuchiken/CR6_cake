@@ -274,6 +274,7 @@ class WordsController extends AppController {
 		$this->set('words', $words);
 		
 		
+		
 
 		
 // 		//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
@@ -648,87 +649,68 @@ class WordsController extends AppController {
 	public function add() {
 	
 		if ($this->request->is('post')) {
-			$this->Text->create();
+			$this->Word->create();
 		  
 			//REF request http://book.cakephp.org/2.0/en/controllers/request-response.html#cakerequest
 			//REF http://cakephp.jp/modules/newbb/viewtopic.php?topic_id=2624&forum=7
-			$this->request->data['Text']['created_at'] = get_CurrentTime();
-			$this->request->data['Text']['updated_at'] = get_CurrentTime();
-			
-			// Title
-			$title_Length = $this->title_Length;
-// 			$title_Length = 15;
-			
-			if ($this->request->data['Text'] &&
-					$this->request->data['Text']['text']) {
-				
-				write_Log(
-					$this->path_Log,
-					"length => ".strval(
-							strlen($this->request->data['Text']['text'])),
-					__FILE__,
-					__LINE__);
-				
-				
-				if (strlen($this->request->data['Text']['text'])
-							< $title_Length) {
-				
-					$this->request->data['Text']['title'] =
-								$this->request->data['Text']['text'];
-				
-				} else {
-					
-					$this->request->data['Text']['title'] =
-							substr($this->request->data['Text']['text'],
-									0,
-									$title_Length);
-				
-				}//if (strlen($this->request->data['Text']['text'])
-				
-			}
-		  
-// 			//debug
-// // 			debug($this->request->data);
-// 			write_Log(
-// 				$this->path_Log,
-// 				"data => ".implode(",", $this->request->data),
-// 				__FILE__,
-// 				__LINE__);
-			
-			//debug
-			$msg = "url => ".$this->request->data['Text']['url'];
-			
-			write_Log(
-				$this->path_Log,
-				$msg,
-				__FILE__,
-				__LINE__);
-			
-			
+			$this->request->data['Word']['created_at'] = get_CurrentTime();
+			$this->request->data['Word']['updated_at'] = get_CurrentTime();
 			
 			// Save text
-			if ($this->Text->save($this->request->data)) {
-				$this->Session->setFlash(__('Your post has been saved.'));
+			if ($this->Word->save($this->request->data)) {
+				$this->Session->setFlash(__('Your word has been saved.'));
 				
-				//debug
-				write_Log(
-					$this->path_Log,
-					"text => ".$this->Text->text,
-					__FILE__,
-					__LINE__);
+				$per_Page = 10;
 				
+				$words = $this->Word->find('all');
+				
+				$page = floor(count($words) / $per_Page);
+				
+				$residue = count($words) % $per_Page;
+				
+				if ($residue > 0) {
+					
+					$page += 1;
+					
+				}
 				
 				return $this->redirect(
 								array(
-									'controller' => 'texts',
-									'action' => 'index'));
+									'controller' => 'words',
+									'action' => 'index',
+									'?' => "page=$page&per_Page=$per_Page"
+									));
 				//                return $this->redirect(array('action' => 'index'));
 				
 			}
 			
 			$this->Session->setFlash(__('Unable to add your post.'));
-		}
-	}
+		} else {//if ($this->request->is('post'))
+			
+			$this->loadModel('Lang');
+			
+			$langs = $this->Lang->find('all');
+			
+// 			debug($langs);
+			
+			$select_Langs = array();
+			
+			foreach ($langs as $lang) {
+				
+				$lang_Name = $lang['Lang']['name'];
+				$lang_Id = $lang['Lang']['id'];
+				
+				$select_Langs[$lang_Id] = $lang_Name;
+			
+			}
+			
+// 			debug($select_Langs);
+			
+			$this->set('select_Langs', $select_Langs);
+			
+		}//if ($this->request->is('post'))
+		
+	}//public function add()
 	
 	
 	public function get_Log() {

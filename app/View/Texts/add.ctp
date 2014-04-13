@@ -28,12 +28,12 @@ echo $this->Form->input(
 // echo $this->Form->input('lang_id');
 
 
-echo $this->Form->end('Save keyword');
+echo $this->Form->end('Save word');
 ?>
 
 <br>
 
 <?php echo $this->Html->link(
-    'List',
+    'Back to list',
     array('controller' => 'texts', 'action' => 'index')
 ); ?>

@@ -33,7 +33,8 @@
 				'Words',
 				array(
 					'controller' => 'words',
-					'action' => 'index')
+					'action' => 'index',
+					'?' => "page=1&per_Page=10")
 				);
 			
 	?>	

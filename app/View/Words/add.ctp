@@ -2,17 +2,29 @@
 
 <h1>Add Text</h1>
 <?php
-echo $this->Form->create('Text');
-echo $this->Form->input('text');
-echo $this->Form->input('url');
+echo $this->Form->create('Word');
+echo $this->Form->input('w1');
+echo $this->Form->input('w2');
+echo $this->Form->input('w3');
+
+echo $this->Form->input(
+		'lang_id',
+		// 						'Lang id',
+		array(
+				'type' => 'select',
+				'options' => $select_Langs
+		)
 
 
-echo $this->Form->end('Save keyword');
+);
+
+
+echo $this->Form->end('Save word');
 ?>
 
 <br>
 
 <?php echo $this->Html->link(
-    'List',
-    array('controller' => 'texts', 'action' => 'index')
+    'Back to list',
+    array('controller' => 'words', 'action' => 'index')
 ); ?>
