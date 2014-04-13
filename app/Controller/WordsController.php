@@ -1629,5 +1629,5 @@ class WordsController extends AppController {
 	
 		$this->set('word', $word);
 	}
-	
+
 }

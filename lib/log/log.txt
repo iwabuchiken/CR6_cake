@@ -228,3 +228,29 @@
 [04/13/2014 11:45:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
 [04/13/2014 11:45:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
 [04/13/2014 11:45:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 161] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/13/2014 13:17:00 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/13/2014 15:14:47 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:14:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:23:24 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:23:24 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:27:05 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:27:05 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:27:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/13/2014 15:28:12 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:28:12 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:35:32 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:35:32 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:36:06 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/13/2014 15:36:16 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:36:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:36:31 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:36:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:38:40 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:38:40 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:38:59 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:38:59 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:39:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/13/2014 15:42:27 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:42:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[04/13/2014 15:42:40 : TextsController.php : 213] $words_Filtered => 8
+[04/13/2014 15:42:40 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done

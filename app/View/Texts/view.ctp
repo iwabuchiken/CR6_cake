@@ -51,4 +51,16 @@
 	<br>
 	<br>
 	
+		<?php echo $this->Html->link(
+					'Update Text',
+					array(
+						'controller' => 'texts',
+						'action' => 'edit',
+						$text['Text']['id']));
+// 						'id' => $text['Text']['id']));
+	?>
+	<br>
+	<br>
+	
+	
 	<?php echo $this->element('texts/index_links_to_models')?>

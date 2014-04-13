@@ -10,6 +10,8 @@
 					'Add Text',
 					array('controller' => 'texts', 'action' => 'add'));
 	?>
+	
+	<br>
 	<br>
 	
 	<?php echo $this->Html->link(
