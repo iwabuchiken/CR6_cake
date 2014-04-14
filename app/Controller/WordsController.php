@@ -320,7 +320,8 @@ class WordsController extends AppController {
 			$words = $this->Word->find('all');
 // 			debug("null");
 		
-		} else if ($sort == "w1") {
+		} else  {
+// 		} else if ($sort == "w1") {
 			
 			$words = $this->Word->find(
 						'all',
@@ -331,13 +332,15 @@ class WordsController extends AppController {
 								))
 					);
 			
+		}//if ($sort == null)
+			
 // 			debug("\"\"");
 			
-		} else {
+// 		} else {
 		
-			debug($sort);
+// 			debug($sort);
 			
-		}
+// 		}
 
 // 		$words = $this->Word->find('all');
 		
