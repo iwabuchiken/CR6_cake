@@ -54,20 +54,40 @@
 	// Arrows: Top page
 	if ($cur_Lot != 1) {
 // 	if ($page != 1) {
-		;
+		$query_Param = array();
+		
+		if (isset($sort) && $sort == null) {
+		
+			$query_Param['page'] = 1;
+			$query_Param['per_Page'] = strval($per_page);
+		
+		} else if (isset($sort) && $sort != null) {
+		
+			$query_Param['page'] = 1;
+			$query_Param['per_Page'] = strval($per_page);
+			$query_Param['sort'] = $sort;
+		
+		} else {
+			
+			$query_Param['page'] = 1;
+			$query_Param['per_Page'] = strval($per_page);
+			
+		}
+		
 		echo $this->Html->link(
 				" < | ",
 				array(
 						'controller' => 'words',
 						'action'	=> 'index',
-						//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
-						'?' => array(
-								'page'		=> 1,
-	// 							'page'		=> strval($range[0] - $per_page),
-								'per_Page'	=> strval($per_page)
-	// 							'per_Page'	=> strval($per_page),
-	// 							'move_lot'	=> "prev"
-						)
+						'?' => $query_Param
+// 						REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+// 						'?' => array(
+// 								'page'		=> 1,
+// 	// 							'page'		=> strval($range[0] - $per_page),
+// 								'per_Page'	=> strval($per_page)
+// 	// 							'per_Page'	=> strval($per_page),
+// 	// 							'move_lot'	=> "prev"
+// 						)
 				));
 		
 	}//if ($page != 1)
@@ -78,36 +98,68 @@
 	// Arrows
 	if ($cur_Lot != 1) {
 // 	if ($current_Lot != 1) {
+		
+		$query_Param = array();
+		
+		$query_Param['page'] = strval($range[0] - 1);
+		$query_Param['per_Page'] = strval($per_page);
+		$query_Param['move_lot'] = "prev";
+		
+		if (isset($sort) && $sort == null) {
+		
+		} else if (isset($sort) && $sort != null) {
+		
+			$query_Param['sort'] = $sort;
+		
+		} else {
+				
+		}
+		
 		echo $this->Html->link(
 				" << | ",
 				array(
 						'controller' => 'words',
 						'action'	=> 'index',
-						//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
-						'?' => array(
-								'page'		=> strval($range[0] - 1),
-	// 							'page'		=> strval($range[0] - $per_page),
-								'per_Page'	=> strval($per_page),
-								'move_lot'	=> "prev"
-						)
+						'?' => $query_Param
+// 						//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+// 						'?' => array(
+// 								'page'		=> strval($range[0] - 1),
+// 	// 							'page'		=> strval($range[0] - $per_page),
+// 								'per_Page'	=> strval($per_page),
+// 								'move_lot'	=> "prev"
+// 						)
 				));
 		
 	}//if ($page != 1)
 	
-	// Page numbers
+	/****************************************
+	* Show: Page numbers
+	****************************************/
 	for ($i = $range[0]; $i <= $range[1]; $i++) {
 		
 		if ($i != $page) {
+			
+			$query_Param = array();
+			
+			$query_Param['page'] = strval($i);
+			$query_Param['per_Page'] = strval($per_page);
+			
+			if (isset($sort) && $sort != null) {
+			
+				$query_Param['sort'] = $sort;
+			
+			}
 		
 			echo $this->Html->link(
 					strval($i),
 					array(
 							'controller' => 'words',
 							'action'	=> 'index',
-							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
-							'?' => array(
-									'page'		=> strval($i),
-									'per_Page'		=> strval($per_page))
+							'?' => $query_Param
+// 							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+// 							'?' => array(
+// 									'page'		=> strval($i),
+// 									'per_Page'		=> strval($per_page))
 					));
 			
 			echo " | ";
@@ -127,17 +179,31 @@
 	****************************************/
 	// Arrows
 	if ($cur_Lot != $max_Lot) {
+		
+		$query_Param = array();
+			
+		$query_Param['page'] = strval($i);
+		$query_Param['per_Page'] = strval($per_page);
+		$query_Param['move_lot'] = "next";
+			
+		if (isset($sort) && $sort != null) {
+				
+			$query_Param['sort'] = $sort;
+				
+		}
+		
 		echo $this->Html->link(
 					" >> ",
 					array(
 							'controller' => 'words',
 							'action'	=> 'index',
-							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
-							'?' => array(
-									'page'		=> strval($i),
-									'per_Page'	=> strval($per_page),
-									'move_lot'	=> "next"
-									)
+							'?' => $query_Param
+// 							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+// 							'?' => array(
+// 									'page'		=> strval($i),
+// 									'per_Page'	=> strval($per_page),
+// 									'move_lot'	=> "next"
+// 									)
 			));
 	
 	}//if ($cur_Lot != $max_Lot)
@@ -179,6 +245,17 @@
 	if ($cur_Lot != $max_Lot) {
 // 	if ($target_Page != $page) {
 		
+		$query_Param = array();
+			
+		$query_Param['page'] = $target_Page;
+		$query_Param['per_Page'] = strval($per_page);
+		
+		if (isset($sort) && $sort != null) {
+		
+			$query_Param['sort'] = $sort;
+		
+		}
+		
 		echo " | ";
 	
 		echo $this->Html->link(
@@ -186,13 +263,14 @@
 					array(
 							'controller' => 'words',
 							'action'	=> 'index',
-							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
-							'?' => array(
-									'page'		=> $target_Page,
-									'per_Page'	=> strval($per_page)
-	// 								'per_Page'	=> strval($per_page),
-	// 								'move_lot'	=> "next"
-									)
+							'?' => $query_Param
+// 							//REF '?' http://www.dereuromark.de/2013/05/04/passed-named-or-query-string-params/
+// 							'?' => array(
+// 									'page'		=> $target_Page,
+// 									'per_Page'	=> strval($per_page)
+// 	// 								'per_Page'	=> strval($per_page),
+// 	// 								'move_lot'	=> "next"
+// 									)
 			));
 	
 	}//if ($target_Page != $page)

@@ -245,6 +245,17 @@ class WordsController extends AppController {
 			$this->set('page', $page);
 			$this->set('current_Lot', $current_Lot);
 			
+			/****************************************
+			* Set: sort data
+			****************************************/
+			@$sort = $this->request->query['sort'];
+			
+			if ($sort != null) {
+				
+				$this->set('sort', $sort);;
+				
+			}
+			
 // 			$per_Page = 50;
 			
 // 			$page = 3;
@@ -296,32 +307,11 @@ class WordsController extends AppController {
 		****************************************/
 		$this->set('words', $words);
 		
-		
-		
-
-		
-// 		//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
-// 		$this->Paginator->settings = $this->paginate;
-		
-// 		// similar to findAll(), but fetches paged results
-// 		$data = $this->Paginator->paginate('Text');
-// 		$this->set('texts', $data);
-		
-// 		debug($data[0]);
-		
-		
-		
-		
-		
-		//test
-// 		$this->_index_Experi_WriteLog();
-// 		$this->_index_Experi_getEncoding();
-		
 	}//public function index()
 
 	public function _index_GetWords() {
 		
-		debug($this->request->query);
+// 		debug($this->request->query);
 		
 		@$sort = $this->request->query['sort'];
 		
@@ -336,7 +326,8 @@ class WordsController extends AppController {
 						'all',
 						array(
 							'order' => array(
-								'Word.w1 ASC'
+								"Word.".$sort." ASC"
+// 								'Word.w1 ASC'
 								))
 					);
 			
@@ -1742,4 +1733,22 @@ class WordsController extends AppController {
 		$this->set('word', $word);
 	}
 
-}
+}//class WordsController extends AppController
+
+/****************************************
+* Variables passed to the pages
+****************************************/
+/****************************************
+* index
+* 
+* query_String
+* total_Words
+* range
+* per_page
+* total
+* page
+* current_Lot
+* sort
+* 
+* 
+****************************************/
