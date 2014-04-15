@@ -308,9 +308,65 @@ class WordsController extends AppController {
 		* Set: View data
 		****************************************/
 		$this->set('words', $words);
+
+		/****************************************
+		* Test
+		****************************************/
+// 		$this->_index_Experi_Swap_w2_w3();
 		
 	}//public function index()
 
+	public function
+	_index_Experi_Swap_w2_w3() {
+		
+		$words = $this->Word->find('all');
+		
+		$words_Swapped = array();
+		
+		foreach ($words as $word) {
+				
+			$pattern = "/[a-z]+\d/";
+				
+			$res = preg_match($pattern, $word['Word']['w3']);
+				
+			if ($res == 1) {
+		
+				array_push($words_Swapped, $word);
+		
+			}
+		
+		}
+		
+		// log
+		$msg = "count(\$words_Swapped) => ".count($words_Swapped);
+		
+		write_Log(
+				CONS::get_dPath_Log(),
+				$msg,
+				__FILE__,
+				__LINE__);
+		
+		
+		debug(count($words_Swapped));
+		
+		debug($words_Swapped[0]);
+		debug($words_Swapped[count($words_Swapped) - 1]);
+		
+// 		$flash = "Swap w2, w3 => done!";
+		
+// 		$this->Session->setFlash(__($flash));
+		
+// 		$query_String = $this->_index__Get_QueryString();
+		
+// 		return $this->redirect(
+// 				array(
+// 						'controller' => 'words',
+// 						'action' => 'index',
+// 						'?' => $query_String
+// 				));
+		
+	}//_index_Experi_Swap_w2_w3()
+	
 	public function _index_GetWords() {
 		
 // 		debug($this->request->query);
@@ -410,7 +466,11 @@ class WordsController extends AppController {
 	
 // 			debug($str);
 	
-		}
+		} else {//if ($q != null && count($q) > 0)
+			
+			$str = "";
+			
+		}//if ($q != null && count($q) > 0)
 		
 		return ($str != null) ? $str : null;
 		
@@ -1775,6 +1835,62 @@ class WordsController extends AppController {
 		$this->set('word', $word);
 	}
 
+	public function swap_w2_w3() {
+
+		$words = $this->Word->find('all');
+		
+		$words_Swapped = array();
+		
+		foreach ($words as $word) {
+			
+			$pattern = "/[a-z]+\d/";
+			
+			$res = preg_match($pattern, $word['Word']['w3']);
+			
+			if ($res == 1) {
+				/****************************************
+				* Swap values
+				****************************************/
+				$temp = $word['Word']['w3'];
+				$word['Word']['w3'] = $word['Word']['w2'];
+				$word['Word']['w2'] = $temp;
+				
+				$this->Word->save($word['Word'], true);
+				
+// 				array_push($words_Swapped, $word);
+				
+			}
+		
+		}
+		
+// 		// log
+// 		$msg = "count(\$words_Swapped) => ".count($words_Swapped);
+		
+// 		write_Log(
+// 			CONS::get_dPath_Log(),
+// 			$msg,
+// 			__FILE__,
+// 			__LINE__);
+		
+		
+// 		debug(count($words_Swapped));
+		
+		
+		$flash = "Swap w2, w3 => done!";
+		
+		$this->Session->setFlash(__($flash));		
+		
+		$query_String = $this->_index__Get_QueryString();
+		
+		return $this->redirect(
+				array(
+					'controller' => 'words',
+					'action' => 'index',
+					'?' => $query_String
+					));
+		
+	}//public function swap_w2_w3()
+	
 }//class WordsController extends AppController
 
 /****************************************
