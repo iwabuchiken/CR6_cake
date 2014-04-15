@@ -1863,14 +1863,14 @@ class WordsController extends AppController {
 		
 		}
 		
-// 		// log
-// 		$msg = "count(\$words_Swapped) => ".count($words_Swapped);
+		// log
+		$msg = "count(\$words_Swapped) => ".count($words_Swapped);
 		
-// 		write_Log(
-// 			CONS::get_dPath_Log(),
-// 			$msg,
-// 			__FILE__,
-// 			__LINE__);
+		write_Log(
+			CONS::get_dPath_Log(),
+			$msg,
+			__FILE__,
+			__LINE__);
 		
 		
 // 		debug(count($words_Swapped));
