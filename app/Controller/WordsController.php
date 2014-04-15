@@ -63,6 +63,9 @@ class WordsController extends AppController {
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
 
 // 		debug($this->request->query);
+// 		debug($this->request->filter);
+// 		debug($this->request->data);
+		
 		
 		/****************************************
 		* Get: words
@@ -374,16 +377,62 @@ class WordsController extends AppController {
 		@$sort = $this->request->query['sort'];
 		@$filter = $this->request->query['filter'];
 		
+// 		debug($filter);
+// 		debug(array_keys($filter));
+		
+// 		$keys = array_keys($filter);
+		
+// 		debug($keys);
+// 		debug($keys[0]);
+		
+// 		debug(get_class($keys));
+		
+// 		debug(array_keys($filter)[0]);
+		
 		/****************************************
 		* Condition: Sort
+		* 	sort	filter	find
+		* 1. N		N		all
+		* 2. N		Y
+		* 3. Y		N
+		* 4. Y		Y
 		****************************************/
-		if ($sort == null) {
+		if ($sort == null && $filter == null) {
 		
 			$words = $this->Word->find('all');
 // 			debug("null");
 		
-		} else  {
-// 		} else if ($sort == "w1") {
+		} else if ($sort == null && $filter != null) {
+			
+			//test
+			debug(array_keys($filter));
+			$words = $this->Word->find('all');
+			
+			$keys = array_keys($filter);
+			
+			$key = $keys[0];
+// 			$key = (array_keys($filter))[0]; // LOCAL: syntax error, unexpected '['
+// 			$key = array_keys($filter)[0]; // REMOTE: syntax error, unexpected '['
+				
+			// 			$target = $filter;
+			$target = $filter[$key];
+			
+			//REF http://stackoverflow.com/questions/3022569/how-to-use-like-or-operator-using-cakephp-mysql answered Jun 11 '10 at 12:57
+			$conditions = array("Word.".$key." LIKE" => $target);
+			
+			debug($conditions);
+			
+			$words = $this->Word->find(
+					'all',
+					array(
+							'conditions' => $conditions)
+// 							'conditions' => array(
+// 									"Word.".$sort." ASC"
+									// 								'Word.w1 ASC'
+// 							))
+			);
+			
+		} else if ($sort != null && $filter == null) {
 			
 			$words = $this->Word->find(
 						'all',
@@ -394,52 +443,91 @@ class WordsController extends AppController {
 								))
 					);
 			
+		} else if ($sort != null && $filter != null) {
+			
+			$words = $this->Word->find('all');
+			
+		} else  {
+			
+			$words = $this->Word->find('all');
+			
+// 		} else if ($sort == "w1") {
+			
 		}//if ($sort == null)
 			
-		/****************************************
-		* Condition: Filter
-		****************************************/
-		@$filter = $this->request->query['filter_w1'];
+// 		/****************************************
+// 		* Condition: Filter
+// 		****************************************/
+// // 		@$filter = $this->request->query['filter_w1'];
+// 		@$filter = $this->request->query['filter'];
 		
-// 		debug($this->request->query);
 		
-		$words_Filtered = array();
+// // 		debug($this->request->query);
 		
-		if ($filter != null) {
+// 		$words_Filtered = array();
 		
-// 			debug("\$filter != null");
+// 		if ($filter != null) {
+		
+// // 			debug("\$filter != null");
 			
-// 			$target = "/$filter/"; 
-			$target = $filter; 
+// // 			$target = "/$filter/";
+
+// 			$key = array_keys($filter)[0];
 			
-// 			debug($target);
+// // 			$target = $filter; 
+// 			$target = $filter[$key]; 
 			
-			foreach ($words as $word) {
+// 			// log
+// 			$msg = "\$key => $key/\$target => $target";
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+// // 			debug($target);
+			
+// 			foreach ($words as $word) {
 				
-				$res = fnmatch($target, $word['Word']['w1']);
+// 				$res = fnmatch($target, $word['Word'][$key]);
+// // 				$res = fnmatch($target, $word['Word']['w1']);
 				
-// 				debug($res);
-// 				debug($word['Word']['w1']);
+// // 				debug($res);
+// // 				debug($word['Word']['w1']);
 				
-				if ($res == true) {
+// 				if ($res == true) {
 					
-					array_push($words_Filtered, $word);
+// 					array_push($words_Filtered, $word);
 					
-				}
+// 				}
 			
-			}
+				
+				
+// 			}
 		
-		} else {
+// 		} else {
 			
-// 			debug("\$filter == null");
+// // 			debug("\$filter == null");
 			
-			$words_Filtered = $words;
+// 			// log
+// 			$msg = "\$filter == null";
+			
+// 			write_Log(
+// 				CONS::get_dPath_Log(),
+// 				$msg,
+// 				__FILE__,
+// 				__LINE__);
+			
+			
+// 			$words_Filtered = $words;
 		
-		}//if ($filter != null)
+// 		}//if ($filter != null)
 		
 		
-		return $words_Filtered;
-// 		return $words;
+// 		return $words_Filtered;
+		return $words;
 		
 	}//public function _index_GetWords()
 	
@@ -449,6 +537,8 @@ class WordsController extends AppController {
 		//test
 		$q = $this->request->query;
 
+// 		debug($q);
+		
 		if ($q != null && count($q) > 0) {
 	
 			$keys = array_keys($q);

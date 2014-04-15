@@ -80,8 +80,16 @@ input[type="submit"] {
 								array(
 									'style' => 'width: 100px;height: 50px;',
 									'label' => '',
-									'name' => 'filter_w1'
+									'name' => 'filter[w1]'
+// 									'name' => 'filter_w1'
 							));
+				
+// 				echo $this->Form->input('w1',
+// 								array(
+// 									'style' => 'width: 100px;height: 50px;',
+// 									'label' => 'ww',
+// 									'name' => 'filter[w1]'
+// 							));
 				
 				echo $this->Form->end('Search'
 // 						,
@@ -127,12 +135,20 @@ input[type="submit"] {
 			
 			<?php 
 			
-				echo $this->Form->create('Word');
+				echo $this->Form->create('Word',
+						array(
+									'type' => 'get',
+									'action' => 'index'
+// 									'?' => $query_String
+								)
+				);
+
 				echo $this->Form->input('w2',
 								array(
 									'style' => 'width: 100px;height: 50px;',
 									'label' => '',
-									'name' => 'filter_w2'
+// 									'name' => 'filter_w2'
+									'name' => 'filter[w2]'
 							));
 				
 				echo $this->Form->end('Search'
@@ -176,12 +192,18 @@ input[type="submit"] {
 			
 			<?php 
 			
-				echo $this->Form->create('Word');
+				echo $this->Form->create('Word',
+						array(
+							'type' => 'get',
+							'action' => 'index'
+						// 									'?' => $query_String
+				));
 				echo $this->Form->input('w3',
 								array(
 									'style' => 'width: 100px;height: 50px;',
 									'label' => '',
-									'name' => 'filter_w3'
+									'name' => 'filter[w3]'
+// 									'name' => 'filter_w3'
 							));
 				
 				echo $this->Form->end('Search'
