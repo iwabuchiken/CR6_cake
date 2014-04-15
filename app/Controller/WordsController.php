@@ -62,6 +62,8 @@ class WordsController extends AppController {
 		
 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
 
+// 		debug($this->request->query);
+		
 		/****************************************
 		* Get: words
 		****************************************/
@@ -314,7 +316,11 @@ class WordsController extends AppController {
 // 		debug($this->request->query);
 		
 		@$sort = $this->request->query['sort'];
+		@$filter = $this->request->query['filter'];
 		
+		/****************************************
+		* Condition: Sort
+		****************************************/
 		if ($sort == null) {
 		
 			$words = $this->Word->find('all');
@@ -334,17 +340,50 @@ class WordsController extends AppController {
 			
 		}//if ($sort == null)
 			
-// 			debug("\"\"");
-			
-// 		} else {
+		/****************************************
+		* Condition: Filter
+		****************************************/
+		@$filter = $this->request->query['filter_w1'];
 		
-// 			debug($sort);
-			
-// 		}
-
-// 		$words = $this->Word->find('all');
+// 		debug($this->request->query);
 		
-		return $words;
+		$words_Filtered = array();
+		
+		if ($filter != null) {
+		
+// 			debug("\$filter != null");
+			
+// 			$target = "/$filter/"; 
+			$target = $filter; 
+			
+// 			debug($target);
+			
+			foreach ($words as $word) {
+				
+				$res = fnmatch($target, $word['Word']['w1']);
+				
+// 				debug($res);
+// 				debug($word['Word']['w1']);
+				
+				if ($res == true) {
+					
+					array_push($words_Filtered, $word);
+					
+				}
+			
+			}
+		
+		} else {
+			
+// 			debug("\$filter == null");
+			
+			$words_Filtered = $words;
+		
+		}//if ($filter != null)
+		
+		
+		return $words_Filtered;
+// 		return $words;
 		
 	}//public function _index_GetWords()
 	

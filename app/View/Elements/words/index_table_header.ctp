@@ -1,4 +1,23 @@
-    <!-- <tr class="bb" style="border-bottom: 1px solid black !important;"> -->
+<style type="text/css">
+
+/* input[type:submit] { */
+/* input[type=submit] { */
+input[type="submit"] {
+	
+	color: red;
+
+}
+
+/* input[type="submit"] { */
+	
+/* 	color: red; */
+
+/* } */
+
+</style>
+
+
+<!-- <tr class="bb" style="border-bottom: 1px solid black !important;"> -->
     <tr style="border-bottom: 3px solid blue !important;">
         <td>
         	<?php
@@ -23,8 +42,8 @@
         	<?php 
 //         	echo "ID"; ?>
         </td>
-        
-        <!-- <td colspan="5" style="bgcolor: blue;"> -->
+
+        <!-- w1 ---------------------------------------->
         <td>
         	<?php
         		
@@ -45,6 +64,36 @@
 							'?' => $query));
 			?>
 			
+			<br>
+			
+			<?php 
+			
+				echo $this->Form->create('Word',
+								array(
+									'type' => 'get',
+									'action' => 'index'
+// 									'?' => $query_String
+								)
+						);
+				
+				echo $this->Form->input('w1',
+								array(
+									'style' => 'width: 100px;height: 50px;',
+									'label' => '',
+									'name' => 'filter_w1'
+							));
+				
+				echo $this->Form->end('Search'
+// 						,
+// 						array(
+// 							'label' => 'go',
+// 							'style' => 'color: red;'
+// 						)
+
+						);
+			
+			?>
+			
             <?php
             
 // 				echo "w1";
@@ -53,6 +102,7 @@
             
         </td>
         
+        <!-- w2 ---------------------------------------->
         <td>
         	<?php
 	        	if ($query_String != null) {
@@ -73,11 +123,35 @@
 	        	 
         	?>
         
+        	<br>
+			
+			<?php 
+			
+				echo $this->Form->create('Word');
+				echo $this->Form->input('w2',
+								array(
+									'style' => 'width: 100px;height: 50px;',
+									'label' => '',
+									'name' => 'filter_w2'
+							));
+				
+				echo $this->Form->end('Search'
+// 						,
+// 						array(
+// 							'label' => 'go',
+// 							'style' => 'color: red;'
+// 						)
+
+						);
+			
+			?>
+			
             <?php
 //             	echo "w2"; 
             ?>
         </td>
         
+        <!-- w3 ---------------------------------------->
         <td>
         	<?php
 	        	if ($query_String != null) {
@@ -97,6 +171,29 @@
 	        					'?' => $query));
 	        	 
         	?>
+        	
+        	<br>
+			
+			<?php 
+			
+				echo $this->Form->create('Word');
+				echo $this->Form->input('w3',
+								array(
+									'style' => 'width: 100px;height: 50px;',
+									'label' => '',
+									'name' => 'filter_w3'
+							));
+				
+				echo $this->Form->end('Search'
+// 						,
+// 						array(
+// 							'label' => 'go',
+// 							'style' => 'color: red;'
+// 						)
+
+						);
+			
+			?>
         	
             <?php
 //             echo "w3"; ?>

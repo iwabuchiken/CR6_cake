@@ -16,3 +16,546 @@
 [04/14/2014 20:05:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
 [04/14/2014 20:05:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
 [04/14/2014 20:05:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:22:30 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/15/2014 08:34:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:34:51 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:43 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:57 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:38:58 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:40:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:40:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:40:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:42:49 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:43:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:43:39 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:48:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:50:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:51:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:55:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 08:57:07 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:12 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php : 156] index() => starts
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:16 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:18 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:04:24 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:04:24 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:04:24 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 512] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 593] \current iter=1
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:04:25 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 538] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 619] \current iter=1
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:52:11 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:52:12 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:52:12 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:52:12 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 538] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 619] \current iter=1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:52:38 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:53:13 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 540] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 621] \current iter=1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:53:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 144] $current_Lot => 1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 168] $move_Lot => ""
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 216] $current_Lot => 1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 540] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 621] \current iter=1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 278] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:53:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 542] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 623] \current iter=1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:54:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:56:19 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 542] $total=5034/$per_Page=10/$page=1/$iterate=503/$residue=4/\current iter=1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 623] \current iter=1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 1,10($total=5034$per_Page=10$page=1)
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:56:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 542] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=1
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:58:03 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 542] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=1
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:58:23 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 546] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=1
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 09:59:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 547] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=1
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:00:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:00:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 549] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:00:31 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:01:20 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 549] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:01:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:02:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 550] $total=0/$per_Page=10/$page=1/$iterate=0/$residue=0/\current iter=
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 0,10($total=0$per_Page=10$page=1)
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:02:04 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=0/$per_page=10/$target_Lot=0/$residue=0
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 551] $total=1/$per_Page=10/$page=1/$iterate=0/$residue=1/\current iter=1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 613] \current iter=0
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 1,1($total=1$per_Page=10$page=1)
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=1/$per_page=10/$target_Lot=0/$residue=1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:02 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=1/$per_page=10/$target_Lot=0/$residue=1
+[04/15/2014 10:03:26 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5/$per_page=10/$target_Lot=0/$residue=5
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:27 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5/$per_page=10/$target_Lot=0/$residue=5
+[04/15/2014 10:03:41 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:03:42 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5/$per_page=10/$target_Lot=0/$residue=5
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:06:15 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5/$per_page=10/$target_Lot=0/$residue=5
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 551] $total=5034/$per_Page=10/$page=2/$iterate=503/$residue=4/\current iter=0
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 632] \current iter=2
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 11,10($total=5034$per_Page=10$page=2)
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:06:36 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 551] $total=5034/$per_Page=10/$page=2/$iterate=503/$residue=4/\current iter=2
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 632] \current iter=2
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 11,10($total=5034$per_Page=10$page=2)
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:07:56 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=6/$per_page=10/$target_Lot=0/$residue=6
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=1
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:08:14 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=6/$per_page=10/$target_Lot=0/$residue=6
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 551] $total=5034/$per_Page=10/$page=4/$iterate=503/$residue=4/\current iter=2
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 632] \current iter=4
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 280] $range => 31,10($total=5034$per_Page=10$page=4)
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:08:47 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5034/$per_page=10/$target_Lot=503/$residue=4
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:09 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:09:21 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:22 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:09:28 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:09:29 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:10:00 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 63] index() => starts
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 146] $current_Lot => 1
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 170] $move_Lot => ""
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php : 218] $current_Lot => 1
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=1/$cur_Lot=1
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[04/15/2014 10:10:01 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=10/$per_page=10/$target_Lot=1/$residue=0
