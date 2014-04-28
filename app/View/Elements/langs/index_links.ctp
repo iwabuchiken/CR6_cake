@@ -51,3 +51,9 @@
 	<br>
 	<br>
 	
+	<?php echo $this->Html->link(
+					'Add Lang',
+					array('controller' => 'langs', 'action' => 'add'));
+	?>
+	
+	

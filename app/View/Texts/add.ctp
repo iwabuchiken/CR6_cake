@@ -29,7 +29,7 @@ echo $this->Form->input(
 // echo $this->Form->input('lang_id');
 
 
-echo $this->Form->end('Save word');
+echo $this->Form->end('Save text');
 ?>
 
 <br>

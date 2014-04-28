@@ -267,5 +267,79 @@ class LangsController extends AppController {
 		// 		}
 	
 	}
+
+	public function add() {
+	
+		if ($this->request->is('post')) {
+			$this->Lang->create();
+	
+			//REF request http://book.cakephp.org/2.0/en/controllers/request-response.html#cakerequest
+			//REF http://cakephp.jp/modules/newbb/viewtopic.php?topic_id=2624&forum=7
+			$this->request->data['Lang']['created_at'] = get_CurrentTime();
+			$this->request->data['Lang']['updated_at'] = get_CurrentTime();
+				
+			// Save text
+			if ($this->Lang->save($this->request->data)) {
+				
+				$msg_Flash = "Your lang has been saved: "
+							.$this->request->data['Lang']['name'];
+				
+				$this->Session->setFlash(__($msg_Flash));
+// 				$this->Session->setFlash(__('Your lang has been saved.'));
+	
+				//debug
+				write_Log(
+					$this->path_Log,
+					"lang => ".$this->Lang->name,
+					__FILE__,
+					__LINE__);
+	
+	
+				return $this->redirect(
+						array(
+								'controller' => 'langs',
+								'action' => 'index'));
+				//                return $this->redirect(array('action' => 'index'));
+	
+			}
+				
+			$this->Session->setFlash(__('Unable to add your lang.'));
+				
+		} else {//if ($this->request->is('post'))
+				
+			$this->Session->setFlash(__('Add lang'));
+			
+// 			return $this->redirect(
+// 					array(
+// 							'controller' => 'langs',
+// 							'action' => 'add'));
+			
+// 			$this->loadModel('Lang');
+				
+// 			$langs = $this->Lang->find('all');
+				
+// 				// 			debug($langs);
+				
+// 			$select_Langs = array();
+				
+// 			foreach ($langs as $lang) {
+	
+// 				$lang_Name = $lang['Lang']['name'];
+// 				$lang_Id = $lang['Lang']['id'];
+	
+// 				$select_Langs[$lang_Id] = $lang_Name;
+					
+// 			}
+				
+// 			// 			debug($select_Langs);
+				
+// 			$this->set('select_Langs', $select_Langs);
+				
+			// 			$this->set('langs', $langs);
+				
+		}////if ($this->request->is('post'))
+			
+	}//public function add()
 	
 }
+
