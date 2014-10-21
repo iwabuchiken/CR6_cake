@@ -1710,3 +1710,79 @@ Request URL: /cake_apps/CR6_cake/iew/2F7Wxy%20http://www.QS3PE5ZGdxC9IoVKTAPT2DB
 Stack Trace:
 #0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-10-21 14:48:32 Error: Fatal Error (1): Call to private method TextsController::_Setup_Paths() from context 'AppController' in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\AppController.php, line 39]
+2014-10-21 14:48:32 Error: [FatalErrorException] Call to private method TextsController::_Setup_Paths() from context 'AppController'
+Request URL: /CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to private...', 'C:\\WORKS\\WS\\Ecl...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to private...', 'C:\\WORKS\\WS\\Ecl...', 39, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to private...', 'C:\\WORKS\\WS\\Ecl...', 39, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 14:56:20 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Model\User.php, line 31]
+2014-10-21 14:56:20 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /CR6_cake/users/fuatcMjEwC
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\\WORKS\\WS\\Ecl...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\\WORKS\\WS\\Ecl...', 31, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\\WORKS\\WS\\Ecl...', 31, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 14:58:51 Error: Fatal Error (1): Class 'AbstractPasswordHasher' not found in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Controller\Component\Auth\SimplePasswordHasher.php, line 26]
+2014-10-21 14:58:52 Error: [FatalErrorException] Class 'AbstractPasswordHasher' not found
+Request URL: /CR6_cake/users/fuatcMjEwC
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Abstract...', 'C:\\WORKS\\WS\\Ecl...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Abstract...', 'C:\\WORKS\\WS\\Ecl...', 26, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Abstract...', 'C:\\WORKS\\WS\\Ecl...', 26, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 15:01:49 Error: [PDOException] SQLSTATE[HY000]: General error: 1 ambiguous column name: id
+Request URL: /CR6_cake/texts/delete_all
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Model.php(2541): Model->find('all', Array)
+#6 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\TextsController.php(479): Model->deleteAll(Array)
+#7 [internal function]: TextsController->delete_all()
+#8 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-21 15:28:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Texts.id
+Request URL: /CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\TextsController.php(58): Model->find('all', Array)
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-10-21 15:29:04 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "order": syntax error
+Request URL: /CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\TextsController.php(58): Model->find('all', Array)
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

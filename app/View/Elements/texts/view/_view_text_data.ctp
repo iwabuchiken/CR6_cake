@@ -1,4 +1,4 @@
-<table>
+<table id="text_data">
 <!-- <table border="1"> -->
   <tr>
   
@@ -8,7 +8,26 @@
     		<a 
     			href="<?php echo $text['Text']['url']; ?>"
     			target="_blank">
-    			<?php echo $text['Text']['url']; ?>
+    			
+    			<?php 
+    				$url = $text['Text']['url'];
+    				
+    				$url_lem_max = 50;
+    				
+    				if ($url != null && strlen($url) < $url_lem_max) {
+    				
+    					
+    				} else {
+    				
+    					$url = substr($url, 0, $url_lem_max)."...";
+    				
+    				}
+    				
+    				echo $url; 
+//     					echo $text['Text']['url']; 
+    				
+    			?>
+    			
     		</a>
     		<?php //$this->Html->link(
 					//$text['Text']['url'],

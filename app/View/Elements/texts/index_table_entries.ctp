@@ -11,12 +11,38 @@
         <!-- <td colspan="5" width="800"> -->
             <?php
             	
-            	echo $this->Html->link($text['Text']['title'],
+	            $tmp_text = $text['Text']['memo'];
+	             
+	             
+	            
+	            if (strpos($tmp_text, '/*') !== false) {
+// 	            if (strpos($tmp_text, '/*') != false) {
+	            	//         	if (substr($tmp_text, strlen())) {
+	            	 
+	            	echo $this->Html->link($text['Text']['title'],
 						array(
-							'controller' => 'texts',
-							'action' => 'view',
-							$text['Text']['id'])); ?>
-        </td>
+								'controller' => 'texts',
+								'action' => 'view',
+								$text['Text']['id']),
+// 						array('style' => 'color: grey')
+						array('class' => 'text_td_grey_text')
+					);
+	            
+	            } else {
+	            	
+// 					echo "no /* (memo = $tmp_text)";
+// 					echo strpos($tmp_text, '/*');
+	            	echo $this->Html->link($text['Text']['title'],
+						array(
+								'controller' => 'texts',
+								'action' => 'view',
+								$text['Text']['id']));
+					            	 
+	            }
+	            
+             
+			?>
+		</td>
         <td colspan="3" width="5%">
         <!-- <td colspan="3" width="210"> -->
         	word ids

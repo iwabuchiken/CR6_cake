@@ -3,35 +3,35 @@
 class LangsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
 
-	public $path_Log;
+// 	public $path_Log;
 	
-	public $path_Utils;
+// 	public $path_Utils;
 	
-	public $path_BackupUrl_Text;
+// 	public $path_BackupUrl_Text;
 	
-	public $fpath_Log;
+// 	public $fpath_Log;
 	
-	public $path_Docs;
+// 	public $path_Docs;
 	
-	public $fname_Utils		= "utils.php";
+// 	public $fname_Utils		= "utils.php";
 	
-	public $title_Length	= 60;
+// 	public $title_Length	= 60;
 	
 	
-	public function beforeFilter() {
+// 	public function beforeFilter() {
 
-		$this->_Setup_Paths();
+// 		$this->_Setup_Paths();
 		
-		require_once $this->path_Utils.DS.$this->fname_Utils;
-// 		require $this->path_Utils.DS.$this->fname_Utils;
+// 		require_once $this->path_Utils.DS.$this->fname_Utils;
+// // 		require $this->path_Utils.DS.$this->fname_Utils;
 		
-		require_once $this->path_Utils.DS."CONS.php";
+// 		require_once $this->path_Utils.DS."CONS.php";
 		
-		require_once $this->path_Utils.DS."methods.php";
+// 		require_once $this->path_Utils.DS."methods.php";
 		
-		require_once $this->path_Utils.DS."db_util.php";
+// 		require_once $this->path_Utils.DS."db_util.php";
 		
-	}
+// 	}
 	
 	public function index() {
 

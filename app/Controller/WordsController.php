@@ -54,6 +54,8 @@ class WordsController extends AppController {
 		
 		require_once $this->path_Utils.DS."db_util.php";
 		
+		$this->Auth->allow('index', 'view');
+		
 	}
 	
 	public function index() {

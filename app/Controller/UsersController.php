@@ -6,8 +6,9 @@ class UsersController extends AppController {
 		parent::beforeFilter();
 // 		$this->Auth->allow('add');
 // 		$this->Auth->allow('add', 'logout');
-		$this->Auth->allow('add_user', 'logout');
+// 		$this->Auth->allow('add_user', 'logout');
 // 		$this->Auth->allow('add_user', 'logout', 'open_article');
+		$this->Auth->allow('fuatcMjEwC', 'logout');
 		
 	}
 
@@ -49,6 +50,45 @@ class UsersController extends AppController {
 	}
 
 	public function add_user() {
+		if ($this->request->is('post')) {
+			$this->User->create();
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash(
+						__("Welcome ".$this->request->data['User']['username']),
+						
+						//REF http://stackoverflow.com/questions/7990503/cakephp-customize-flash-message answered Nov 3 '11 at 7:54
+						'flash_views/ok'
+// 						'ok'	//=> Element Not Found
+				);
+// 								"Welcome ".$this->request->data['User']['username']));
+				
+// 				$this->Session->setFlash(__('The user has been saved'));
+				
+				return $this->redirect(array('action' => 'index'));
+// 				return $this->redirect(
+// 							array(
+// 								'controller'	=> 'articles',
+// 								'action' => 'index'
+// 							)
+// 				);
+				
+			}
+			$this->Session->setFlash(
+					__('The user could not be saved. Please, try again.')
+			);
+			
+		}
+		
+		$this->render("add");
+// 		$this->render("users/add");	//=> The view for UsersController::add_user() was not found.
+		
+// 		} else {
+			
+// 			return $this->redirect(array('action' => 'add'));
+// 		}
+	}
+
+	public function fuatcMjEwC() {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
