@@ -1,13 +1,30 @@
-pushd C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot
+pushd C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\webroot
 
 sqlite3 development.sqlite3
 .explain on
+.tables
 
 pragma table_info(texts)
+pragma table_info(users);
 
 .exit
 
 [sqlite3]======================================
+DROP TABLE users;
+
+CREATE TABLE users (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+    username VARCHAR(50),
+    password VARCHAR(255),
+    role VARCHAR(20)
+	
+);
+
+
+
 CREATE TABLE texts(
    id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
    
@@ -30,7 +47,22 @@ CREATE TABLE texts(
 );
 
 
+
 [mysql(lollipop)]======================================
+DROP TABLE users;
+
+CREATE TABLE users (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+    username VARCHAR(50),
+    password VARCHAR(255),
+    role VARCHAR(20)
+	
+);
+
+
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 
 CREATE TABLE texts (
