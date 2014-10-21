@@ -2043,3 +2043,4 @@
 [04/28/2014 13:48:48 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
 [04/28/2014 13:48:50 : TextsController.php : 213] $words_Filtered => 6
 [04/28/2014 13:48:50 : C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php : 1026] Skimming => done
+[10/21/2014 21:05:22 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\TextsController.php : 156] index() => starts

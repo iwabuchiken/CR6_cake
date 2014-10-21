@@ -1,0 +1,1712 @@
+2014-03-16 13:00:36 Error: [MissingControllerException] Controller class TextsController could not be found.
+Exception Attributes: array (
+  'class' => 'TextsController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-16 13:01:12 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 7]
+2014-03-16 13:01:12 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 7, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 7, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-16 13:01:36 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Texts\\index.ctp',
+)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-16 15:32:42 Error: Fatal Error (1): Call to undefined function _Setup_Paths() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 9]
+2014-03-16 15:32:42 Error: [FatalErrorException] Call to undefined function _Setup_Paths()
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 9, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 9, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-16 16:25:13 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR') in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 57]
+2014-03-16 16:25:13 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR')
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-16 16:25:54 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR') in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 57]
+2014-03-16 16:25:54 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR')
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 57, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 04:42:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/css/Lib/cake.generic.css
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-17 04:45:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/css/Lib/cake.generic.css
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-17 05:04:40 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(882): HelperCollection->load('Javascript', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-17 05:08:35 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Layouts\default.ctp, line 34]
+2014-03-17 05:08:35 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 05:08:53 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Layouts\default.ctp, line 34]
+2014-03-17 05:08:53 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 34, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 05:13:38 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Layouts\default.ctp, line 45]
+2014-03-17 05:13:38 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 05:14:00 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Layouts\default.ctp, line 45]
+2014-03-17 05:14:00 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 05:14:55 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Layouts\default.ctp, line 45]
+2014-03-17 05:14:55 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 45, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 05:17:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/js/jquery-1.4.2.min.js
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-17 11:31:06 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\get__log.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Texts\\get__log.ctp',
+)
+Request URL: /PHP_server/CR6_cake/texts/get_Log
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-17 11:31:28 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\get__log.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Texts\\get__log.ctp',
+)
+Request URL: /PHP_server/CR6_cake/texts/get_Log
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-17 13:07:52 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /PHP_server/CR6_cake/texts/index
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(882): HelperCollection->load('Javascript', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-17 13:52:53 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\utils.php' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR') in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 21]
+2014-03-17 13:52:53 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\utils.php' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR')
+Request URL: /PHP_server/CR6_cake/texts/index
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 21, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'C:\WORKS\WS\Cak...', 21, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-17 16:13:45 Error: [MissingActionException] Action TextsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'TextsController',
+  'action' => 'add',
+)
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-17 16:18:29 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Texts\\add.ctp',
+)
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-17 16:28:08 Error: [MissingActionException] Action TextsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'TextsController',
+  'action' => 'view',
+)
+Request URL: /PHP_server/CR6_cake/texts/view/2
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-18 13:13:16 Error: Fatal Error (1): Call to undefined function _build_texts__GetCsvLines() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 125]
+2014-03-18 13:13:16 Error: [FatalErrorException] Call to undefined function _build_texts__GetCsvLines()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 13:13:57 Error: Fatal Error (1): Call to undefined function _build_texts__GetCsvLines() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 125]
+2014-03-18 13:13:57 Error: [FatalErrorException] Call to undefined function _build_texts__GetCsvLines()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 125, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 13:14:41 Error: Fatal Error (1): Call to undefined function _build_texts__GetCsvLines() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 146]
+2014-03-18 13:14:41 Error: [FatalErrorException] Call to undefined function _build_texts__GetCsvLines()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 146, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 146, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:33:25 Error: Fatal Error (1): Call to undefined function http_post_fields() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 99]
+2014-03-18 14:33:25 Error: [FatalErrorException] Call to undefined function http_post_fields()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:35:31 Error: Fatal Error (1): Call to undefined function http_post_data() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 99]
+2014-03-18 14:35:31 Error: [FatalErrorException] Call to undefined function http_post_data()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 99, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:37:59 Error: Fatal Error (1): Class 'HttpSocket' not found in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 101]
+2014-03-18 14:37:59 Error: [FatalErrorException] Class 'HttpSocket' not found
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'HttpSock...', 'C:\WORKS\WS\Cak...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HttpSock...', 'C:\WORKS\WS\Cak...', 101, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'HttpSock...', 'C:\WORKS\WS\Cak...', 101, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-19 11:28:33 Error: Fatal Error (1): Call to a member function set() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 126]
+2014-03-19 11:28:33 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 126, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 126, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-19 11:30:22 Error: Fatal Error (1): Call to undefined function _index__Experiments() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 124]
+2014-03-19 11:30:22 Error: [FatalErrorException] Call to undefined function _index__Experiments()
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 124, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 124, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-19 20:35:56 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(207): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 12:42:55 Error: Fatal Error (1): Call to undefined function _build_texts__SaveData() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 313]
+2014-03-20 12:42:55 Error: [FatalErrorException] Call to undefined function _build_texts__SaveData()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 20:43:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(217): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 21:33:13 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 21:33:15 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 13:38:58 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 10]
+2014-03-20 13:38:58 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 10, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 10, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 21:44:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 13:45:39 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 8]
+2014-03-20 13:45:39 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 8, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 8, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 13:52:39 Error: Fatal Error (4): syntax error, unexpected '(', expecting ',' or ';' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 44]
+2014-03-20 13:52:39 Error: [FatalErrorException] syntax error, unexpected '(', expecting ',' or ';'
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 44, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 44, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 21:56:46 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 21:59:15 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 22:00:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 22:02:27 Error: Fatal Error (1): Call to undefined function save_TextsFromCSVLines() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 392]
+2014-03-20 22:02:27 Error: [FatalErrorException] Call to undefined function save_TextsFromCSVLines()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 392)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 392, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 392, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 22:03:53 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 15]
+2014-03-20 22:03:53 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 15, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 15, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 22:04:09 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 14:04:31 Error: Fatal Error (4): syntax error, unexpected '!' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 23]
+2014-03-20 14:04:31 Error: [FatalErrorException] syntax error, unexpected '!'
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 23, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 23, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 22:06:45 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 30]
+2014-03-20 22:06:45 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 30, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 30, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-20 22:07:18 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-20 22:07:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Array
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('INSERT INTO "ma...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO "ma...')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(1745): DboSource->create(Object(Text), Array, Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(220): Model->save(Array)
+#5 [internal function]: TextsController->add()
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-03-23 12:55:54 Error: Fatal Error (1): Call to undefined function _build_texts__SaveData() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 313]
+2014-03-23 12:55:54 Error: [FatalErrorException] Call to undefined function _build_texts__SaveData()
+Request URL: /PHP_server/CR6_cake/texts/build_texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 313, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-23 21:03:39 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_links.ctp, line 40]
+2014-03-23 21:03:39 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 40, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 40, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-23 13:18:25 Error: Fatal Error (64): Cannot declare property CONS::$dbName_Local final, the final modifier is allowed only for methods and classes in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 63]
+2014-03-23 13:18:25 Error: [FatalErrorException] Cannot declare property CONS::$dbName_Local final, the final modifier is allowed only for methods and classes
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot declare ...', 'C:\WORKS\WS\Cak...', 63)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot declare ...', 'C:\WORKS\WS\Cak...', 63, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot declare ...', 'C:\WORKS\WS\Cak...', 63, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-24 16:45:09 Error: Fatal Error (1): Call to a member function fetchArray() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 112]
+2014-03-24 16:45:09 Error: [FatalErrorException] Call to a member function fetchArray() on a non-object
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-24 20:50:01 Error: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: そのようなホストは不明です。 
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(496): PDO->__construct('mysql:dbname=LA...', 'LAA0278957', '47yhl44j6u')
+#1 [internal function]: TextsController->exec_Sql()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-25 21:15:17 Error: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: そのようなホストは不明です。 
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php(174): PDO->__construct('mysql:dbname=LA...', 'LAA0278957', '47yhl44j6u')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php(34): DBUtil->tableExists_remote('langs')
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(485): DBUtil->createTable_Langs()
+#3 [internal function]: TextsController->exec_Sql()
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-03-25 21:15:51 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 200]
+2014-03-25 21:15:51 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 200)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 200, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 200, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-25 21:16:19 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 207]
+2014-03-25 21:16:19 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 207)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 207, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 207, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-25 21:18:23 Error: [PDOException] could not find driver
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php(324): PDO->__construct('C:\WORKS\WS\Cak...')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(487): DBUtil->get_TableList()
+#2 [internal function]: TextsController->exec_Sql()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-25 21:27:35 Error: Fatal Error (1): Call to a member function fetchArray() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php, line 351]
+2014-03-25 21:27:35 Error: [FatalErrorException] Call to a member function fetchArray() on a non-object
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 351)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 351, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 351, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-25 21:28:11 Error: Fatal Error (1): Call to a member function fetchArray() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php, line 353]
+2014-03-25 21:28:11 Error: [FatalErrorException] Call to a member function fetchArray() on a non-object
+Request URL: /PHP_server/CR6_cake/texts/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 353)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 353, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 353, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 07:39:12 Error: [MissingTableException] Table texts for model Text was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'texts',
+  'class' => 'Text',
+  'ds' => 'default',
+)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(3247): Model->setSource('texts')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): Model->getDataSource()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(110): Model->find('all')
+#3 [internal function]: TextsController->index()
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-03-26 07:46:53 Error: [MissingTableException] Table texts for model Text was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'texts',
+  'class' => 'Text',
+  'ds' => 'default',
+)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(3247): Model->setSource('texts')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): Model->getDataSource()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(110): Model->find('all')
+#3 [internal function]: TextsController->index()
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-03-26 07:47:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: main.texts
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(110): Model->find('all')
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-26 07:50:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Text.dbId
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(110): Model->find('all')
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-27 13:18:42 Error: [MissingControllerException] Controller class LangsController could not be found.
+Exception Attributes: array (
+  'class' => 'LangsController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/langs
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 13:19:00 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR') in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\LangsController.php, line 8]
+2014-03-27 13:19:00 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\' (include_path='C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib;.;C:\WORKS\PROGRAMS\xampp\php\PEAR')
+Request URL: /PHP_server/CR6_cake/langs
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\WORKS\WS\Cak...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\WORKS\WS\Cak...', 8, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\WORKS\WS\Cak...', 8, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 22:01:26 Error: [MissingHelperException] Helper class LangHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LangHelper',
+  'plugin' => false,
+)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Lang')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(833): HelperCollection->__isset('Lang')
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_table_entries.ctp(100): View->__get('Lang')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(945): include('C:\WORKS\WS\Cak...')
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(907): View->_evaluate('C:\WORKS\WS\Cak...', Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(1208): View->_render('C:\WORKS\WS\Cak...', Array)
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(414): View->_renderElement('C:\WORKS\WS\Cak...', Array, Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\index.ctp(27): View->element('texts/index_tab...')
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(945): include('C:\WORKS\WS\Cak...')
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(907): View->_evaluate('C:\WORKS\WS\Cak...', Array)
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(471): View->_render('C:\WORKS\WS\Cak...')
+#11 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#12 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#13 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-03-27 22:04:35 Error: [MissingHelperException] Helper class LangHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LangHelper',
+  'plugin' => false,
+)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Lang')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(833): HelperCollection->__isset('Lang')
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_table_entries.ctp(100): View->__get('Lang')
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(945): include('C:\WORKS\WS\Cak...')
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(907): View->_evaluate('C:\WORKS\WS\Cak...', Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(1208): View->_render('C:\WORKS\WS\Cak...', Array)
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(414): View->_renderElement('C:\WORKS\WS\Cak...', Array, Array)
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\index.ctp(27): View->element('texts/index_tab...')
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(945): include('C:\WORKS\WS\Cak...')
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(907): View->_evaluate('C:\WORKS\WS\Cak...', Array)
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(471): View->_render('C:\WORKS\WS\Cak...')
+#11 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#12 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#13 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-03-27 22:07:57 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 922846 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-27 22:07:57 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 922846 bytes)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 22:08:28 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 922859 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-27 22:08:28 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 922859 bytes)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 11:21:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Lang.text_id
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(38): Model->find('all')
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 11:23:30 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Lang.text_id
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(38): Model->find('all')
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 11:26:02 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Lang.text_id
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Text"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Text"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Text"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Text"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Text), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php(38): Model->find('all')
+#6 [internal function]: TextsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 19:27:41 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019420 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-28 19:27:41 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019420 bytes)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 19:28:10 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019063 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-28 19:28:10 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019063 bytes)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 19:28:42 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 1018983 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-28 19:28:43 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 1018983 bytes)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 19:32:28 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019419 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-03-28 19:32:28 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 1019419 bytes)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 19:33:38 Error: Fatal Error (1): Call to a member function get_Msg() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_table_entries.ctp, line 112]
+2014-03-28 19:33:38 Error: [FatalErrorException] Call to a member function get_Msg() on a non-object
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 112, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 20:42:19 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Text\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Text\\index.ctp',
+)
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-28 12:59:58 Error: Fatal Error (1): Call to undefined function _index__Experi() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 51]
+2014-03-28 12:59:58 Error: [FatalErrorException] Call to undefined function _index__Experi()
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 51, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 51, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 13:01:10 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 176]
+2014-03-28 13:01:10 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 176)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 176, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 176, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 13:10:18 Error: Fatal Error (1): Call to a member function saveField() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 174]
+2014-03-28 13:10:18 Error: [FatalErrorException] Call to a member function saveField() on a non-object
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 13:10:35 Error: Fatal Error (1): Call to a member function saveField() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 174]
+2014-03-28 13:10:35 Error: [FatalErrorException] Call to a member function saveField() on a non-object
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 174, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 16:28:02 Error: Fatal Error (64): Cannot redeclare Lang::$hasMany in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Model\Lang.php, line 10]
+2014-03-29 16:28:03 Error: [FatalErrorException] Cannot redeclare Lang::$hasMany
+Request URL: /PHP_server/CR6_cake/langs
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\WORKS\WS\Cak...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\WORKS\WS\Cak...', 10, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\WORKS\WS\Cak...', 10, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 09:31:32 Error: Fatal Error (1): Call to undefined method WordsController::_build_texts__SaveData() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 224]
+2014-03-29 09:31:32 Error: [FatalErrorException] Call to undefined method WordsController::_build_texts__SaveData()
+Request URL: /PHP_server/CR6_cake/words/build_Words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 224)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 224, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 224, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 17:32:27 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-03-29 17:32:27 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/words/build_Words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-29 09:33:53 Error: [PDOException] SQLSTATE[HY000]: General error: 1 ambiguous column name: id
+Request URL: /PHP_server/CR6_cake/words/delete_all
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Word"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Word"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Word"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Word"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Word), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2541): Model->find('all', Array)
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php(163): Model->deleteAll(Array)
+#7 [internal function]: WordsController->delete_all()
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-31 11:07:46 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php, line 304]
+2014-03-31 11:07:46 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/words/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 304)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 304, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 304, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 11:11:39 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php, line 390]
+2014-03-31 11:11:39 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/words/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 390)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 390, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 390, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 11:12:30 Error: [PDOException] SQLSTATE[HY000]: General error: 1 table words already exists
+Request URL: /PHP_server/CR6_cake/words/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php(406): PDO->exec('CREATE TABLE wo...')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php(815): DBUtil::createTable_Words(false)
+#2 [internal function]: WordsController->exec_Sql()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-03-31 11:17:09 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\db_util.php, line 1183]
+2014-03-31 11:17:09 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /PHP_server/CR6_cake/words/exec_Sql
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 1183)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 1183, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\WORKS\WS\Cak...', 1183, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 06:20:59 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 06:20:59 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes)
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 06:21:13 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 06:21:13 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes)
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 06:21:27 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 06:21:27 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 438197 bytes)
+Request URL: /PHP_server/CR6_cake/texts
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 06:22:49 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 438362 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 06:22:49 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 438362 bytes)
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 06:24:12 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 438362 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 06:24:12 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 438362 bytes)
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 13:35:16 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 954244 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 46]
+2014-03-31 13:35:16 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 954244 bytes)
+Request URL: /PHP_server/CR6_cake/words/build_Words_1
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 46, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-31 07:01:02 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 9103 bytes) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 48]
+2014-03-31 07:01:02 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 9103 bytes)
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 48, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\WORKS\WS\Cak...', 48, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 10:33:25 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_links.ctp, line 62]
+2014-04-01 10:33:25 Error: [FatalErrorException] syntax error, unexpected '?>'
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 62, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 62, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 10:33:47 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\index_links.ctp, line 55]
+2014-04-01 10:33:47 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 55, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 55, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 03:40:04 Error: [MissingActionException] Action TextsController::exec_Tasks() could not be found.
+Exception Attributes: array (
+  'controller' => 'TextsController',
+  'action' => 'exec_Tasks',
+)
+Request URL: /PHP_server/CR6_cake/texts/exec_Tasks
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-01 10:41:00 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-04-01 10:41:00 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/exec_Tasks
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 03:45:03 Error: Fatal Error (1): Call to undefined function _index__Experiments__D_5_v_4_2() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 154]
+2014-04-01 03:45:03 Error: [FatalErrorException] Call to undefined function _index__Experiments__D_5_v_4_2()
+Request URL: /PHP_server/CR6_cake/
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 154)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 154, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 154, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 10:54:09 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php, line 460]
+2014-04-01 10:54:09 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/exec_Tasks
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 460, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-01 04:15:52 Error: [MissingModelException] Text
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php(67): PaginatorComponent->paginate('Text')
+#1 [internal function]: WordsController->index()
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-04-01 04:34:55 Error: Fatal Error (64): Cannot use [] for reading in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 97]
+2014-04-01 04:34:55 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /PHP_server/CR6_cake/words
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\WORKS\WS\Cak...', 97)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\WORKS\WS\Cak...', 97, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\WORKS\WS\Cak...', 97, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-03 08:15:49 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Words\you_tube.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Words\\you_tube.ctp',
+)
+Request URL: /PHP_server/CR6_cake/words/youTube
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-03 08:16:54 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Words\youtube.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Words\\youtube.ctp',
+)
+Request URL: /PHP_server/CR6_cake/words/youtube
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-07 06:12:15 Error: [MissingActionException] Action TextsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'TextsController',
+  'action' => 'view',
+)
+Request URL: /PHP_server/CR6_cake/texts/view/1
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-07 06:14:20 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Texts\\view.ctp',
+)
+Request URL: /PHP_server/CR6_cake/texts/view/1
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-07 06:19:36 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Texts\view.ctp, line 14]
+2014-04-07 06:19:36 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PHP_server/CR6_cake/texts/view/4
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 14, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 14, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-07 07:37:03 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Elements\texts\view\_view_text_data.ctp, line 10]
+2014-04-07 07:37:03 Error: [FatalErrorException] Call to a member function url() on a non-object
+Request URL: /PHP_server/CR6_cake/texts/view/1
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 10, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 10, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 04:46:50 Error: Fatal Error (1): Call to undefined function _view_ModifyText() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\TextsController.php, line 199]
+2014-04-08 04:46:50 Error: [FatalErrorException] Call to undefined function _view_ModifyText()
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 199)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 199, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 199, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 04:55:18 Error: [MissingActionException] Action LangsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'LangsController',
+  'action' => 'view',
+)
+Request URL: /PHP_server/CR6_cake/langs/view
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(LangsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-08 04:58:43 Error: Fatal Error (1): Call to undefined method WordsController::_view_ModifyText() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 1418]
+2014-04-08 04:58:43 Error: [FatalErrorException] Call to undefined method WordsController::_view_ModifyText()
+Request URL: /PHP_server/CR6_cake/words/view/11
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1418)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1418, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1418, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-08 04:58:53 Error: [MissingViewException] View file "C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\View\Words\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Cake\\PHP_server\\CR6_cake\\app\\View\\Words\\view.ctp',
+)
+Request URL: /PHP_server/CR6_cake/words/view/11
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-08 12:05:27 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 1183]
+2014-04-08 12:05:27 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /PHP_server/CR6_cake/words/update_RailsID
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 1183)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 1183, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 1183, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-09 08:05:52 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 237]
+2014-04-09 08:05:52 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 237)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 237, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 237, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-09 08:06:34 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\String.php, line 243]
+2014-04-09 08:06:34 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 243, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 243, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-09 08:07:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Utility\Debugger.php, line 396]
+2014-04-09 08:07:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 396)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 396, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 396, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-09 13:30:24 Error: [NotFoundException] Invalid text
+Request URL: /PHP_server/CR6_cake/texts/view/onclick(alert(%22%E8%82%A2%E4%BD%93/zhi1-//%22))
+Stack Trace:
+#0 [internal function]: TextsController->view('onclick(alert("...', 'zhi1-', '"))')
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-12 13:39:44 Error: Fatal Error (1): Call to undefined function _isContained_W1() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 827]
+2014-04-12 13:39:44 Error: [FatalErrorException] Call to undefined function _isContained_W1()
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 827)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 827, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 827, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 13:40:29 Error: Fatal Error (1): Call to undefined function show_Message() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 709]
+2014-04-12 13:40:29 Error: [FatalErrorException] Call to undefined function show_Message()
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 709)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 709, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 709, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 13:41:41 Error: Fatal Error (1): Call to undefined function _isIn_SkimmedList_2() in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 1116]
+2014-04-12 13:41:41 Error: [FatalErrorException] Call to undefined function _isIn_SkimmedList_2()
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1116, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\WORKS\WS\Cak...', 1116, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 13:43:11 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 48]
+2014-04-12 13:43:11 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 48, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 48, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 13:49:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 1069]
+2014-04-12 13:49:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 1069)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 1069, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 1069, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 13:52:23 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\utils.php, line 141]
+2014-04-12 13:52:23 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 141)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 141, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 141, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 09:10:43 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Lib\utils\methods.php, line 898]
+2014-04-12 09:10:43 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /PHP_server/CR6_cake/texts/view/281
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 898)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 898, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 898, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 15:54:51 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\Helper\FormHelper.php, line 2606]
+2014-04-12 15:54:51 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 15:57:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\Helper\FormHelper.php, line 2606]
+2014-04-12 15:57:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\WORKS\WS\Cak...', 2606, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 16:07:12 Error: Fatal Error (1): Unsupported operand types in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2014-04-12 16:07:12 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 16:07:42 Error: Fatal Error (1): Unsupported operand types in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2014-04-12 16:07:42 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-12 16:08:07 Error: Fatal Error (1): Unsupported operand types in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\View\Helper\FormHelper.php, line 1973]
+2014-04-12 16:08:07 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PHP_server/CR6_cake/texts/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\WORKS\WS\Cak...', 1973, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-13 04:28:22 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 651]
+2014-04-13 04:28:22 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /PHP_server/CR6_cake/words/add
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 651)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 651, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\WORKS\WS\Cak...', 651, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-13 04:28:57 Error: [MissingControllerException] Controller class WordController could not be found.
+Exception Attributes: array (
+  'class' => 'WordController',
+  'plugin' => NULL,
+)
+Request URL: /PHP_server/CR6_cake/word
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-13 08:23:27 Error: [NotFoundException] Invalid text
+Request URL: /PHP_server/CR6_cake/texts/edit
+Stack Trace:
+#0 [internal function]: TextsController->edit()
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 08:36:21 Error: [NotFoundException] Invalid text
+Request URL: /PHP_server/CR6_cake/texts/edit
+Stack Trace:
+#0 [internal function]: TextsController->edit()
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-13 16:28:49 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Word.id<
+Request URL: /PHP_server/CR6_cake/words?page=2&per_Page=10
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('SELECT "Word"."...', Array)
+#1 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT "Word"."...', Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT "Word"."...', Array, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT "Word"."...', false)
+#4 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Model\Model.php(2700): DboSource->read(Object(Word), Array)
+#5 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php(79): Model->find('all', Array)
+#6 [internal function]: WordsController->index()
+#7 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#8 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-04-13 09:31:33 Error: Fatal Error (4): syntax error, unexpected '$total_Words' (T_VARIABLE), expecting ')' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 89]
+2014-04-13 09:31:33 Error: [FatalErrorException] syntax error, unexpected '$total_Words' (T_VARIABLE), expecting ')'
+Request URL: /PHP_server/CR6_cake/words?page=1&per_Page=10
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 89)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 89, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 89, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-15 04:36:55 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\WORKS\WS\Cake\PHP_server\CR6_cake\app\Controller\WordsController.php, line 410]
+2014-04-15 04:36:55 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PHP_server/CR6_cake/words?page=2&per_Page=10
+Stack Trace:
+#0 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 410)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 410, Array)
+#2 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\WORKS\WS\Cak...', 410, Array)
+#3 C:\WORKS\WS\Cake\PHP_server\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-15 11:52:04 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/Controller/WordsController.php, line 395]
+2014-04-15 11:52:04 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /cake_apps/CR6_cake/words?page=360&per_Page=10
+Stack Trace:
+#0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError()
+#1 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Core/App.php(931): ErrorHandler::handleError()
+#2 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2014-05-08 20:10:40 Error: [PDOException] SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+Request URL: /cake_apps/CR6_cake/words/add
+Stack Trace:
+#0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Datasource/Database/Mysql.php(313): DboSource->_execute('SHOW FULL COLUM...')
+#2 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Model.php(1321): Mysql->describe(Object(Lang))
+#3 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Datasource/DboSource.php(2290): Model->schema()
+#4 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Datasource/DboSource.php(1522): DboSource->fields(Object(Lang), 'Lang', '')
+#5 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Datasource/DboSource.php(1068): DboSource->generateAssociationQuery(Object(Word), Object(Lang), 'belongsTo', 'Lang', Array, Array, false, NULL)
+#6 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Model/Model.php(2700): DboSource->read(Object(Word), Array)
+#7 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/Controller/WordsController.php(960): Model->find('all')
+#8 [internal function]: WordsController->add()
+#9 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#10 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#12 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-26 04:34:36 Error: [MissingActionException] Action LangsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'LangsController',
+  'action' => 'view',
+)
+Request URL: /cake_apps/CR6_cake/langs/view/11
+Stack Trace:
+#0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LangsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-14 07:57:03 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\View\Elements\words\index_links.ctp, line 62]
+2014-06-14 07:57:03 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /CR6_cake_2/words/view/1
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 62, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 62, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-16 02:59:50 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /CR6_cake_2/words/delete/5041
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Scaffold.php(400): Scaffold->_scaffoldDelete(Object(CakeRequest))
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(WordsController), Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-06-16 03:06:49 Error: [NotFoundException] Invalid word
+Request URL: /CR6_cake_2/words/view/10000
+Stack Trace:
+#0 [internal function]: WordsController->view('10000')
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-16 03:07:34 Error: [NotFoundException] Can't find the word. id = 10000
+Request URL: /CR6_cake_2/words/delete/10000
+Stack Trace:
+#0 [internal function]: WordsController->delete('10000')
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-16 03:27:09 Error: Fatal Error (1): Call to undefined function _get_Page_from_Id() in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\Controller\WordsController.php, line 1077]
+2014-06-16 03:27:09 Error: [FatalErrorException] Call to undefined function _get_Page_from_Id()
+Request URL: /CR6_cake_2/words/delete/5041
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 1077)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 1077, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 1077, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-16 03:27:36 Error: [NotFoundException] Invalid word
+Request URL: /CR6_cake_2/words/view/5041
+Stack Trace:
+#0 [internal function]: WordsController->view('5041')
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-16 03:45:14 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "update": syntax error
+Request URL: /CR6_cake_2/words/edit/5000
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('update', Array)
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('update', Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('update', Array, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('update', Array, Array)
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Model.php(799): DboSource->query('update', Array, Object(Word))
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\Controller\WordsController.php(2083): Model->__call('update', Array)
+#6 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\Controller\WordsController.php(2083): Word->update(Array)
+#7 [internal function]: WordsController->edit('5000')
+#8 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-06-16 03:52:22 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 50031947 bytes) in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Utility\Debugger.php, line 613]
+2014-06-16 03:52:22 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 50031947 bytes)
+Request URL: /CR6_cake_2/words/edit/5000
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS\\WS\\Ecl...', 613)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS\\WS\\Ecl...', 613, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS\\WS\\Ecl...', 613, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-16 03:53:54 Error: [NotFoundException] Invalid word
+Request URL: /CR6_cake_2/words/edit/
+Stack Trace:
+#0 [internal function]: WordsController->edit()
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-16 03:59:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "update": syntax error
+Request URL: /CR6_cake_2/words/edit/4
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(458): PDO->prepare('update', Array)
+#1 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('update', Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('update', Array, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('update', Array, Array)
+#4 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Model\Model.php(799): DboSource->query('update', Array, Object(Word))
+#5 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\Controller\WordsController.php(2091): Model->__call('update', Array)
+#6 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\Controller\WordsController.php(2091): Word->update(Array)
+#7 [internal function]: WordsController->edit('4')
+#8 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(WordsController), Array)
+#9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(WordsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\WORKS\WS\Eclipse_Kepler\CR6_cake_2\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-17 10:13:47 Error: [MissingActionException] Action LangsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'LangsController',
+  'action' => 'view',
+)
+Request URL: /cake_apps/CR6_cake/langs/view/11
+Stack Trace:
+#0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LangsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-09 19:43:44 Error: [MissingControllerException] Controller class IewController could not be found.
+Exception Attributes: array (
+  'class' => 'IewController',
+  'plugin' => NULL,
+)
+Request URL: /cake_apps/CR6_cake/iew/2F7Wxy%20http://www.QS3PE5ZGdxC9IoVKTAPT2DBYpPkMKqfz.com
+Stack Trace:
+#0 /home/users/2/chips.jp-benfranklin/web/cake_apps/CR6_cake/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
