@@ -3,20 +3,6 @@
 class TextsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
 
-	//REF global variable http://stackoverflow.com/questions/12638962/global-variable-in-controller-cakephp-2
-// 	public $path_Log;
-	
-// 	public $path_Utils;
-	
-// 	public $path_BackupUrl_Text;
-	
-// 	public $fpath_Log;
-	
-// 	public $path_Docs;
-	
-// 	public $fname_Utils		= "utils.php";
-	
-// 	public $title_Length	= 60;
 
 	/****************************************
 	 * Associations
@@ -26,37 +12,44 @@ class TextsController extends AppController {
 	// 	var $name = 'Text';
 	
 	var $scaffold;
-	
-	
-// 	public function beforeFilter() {
-		
-// 		$this->_Setup_Paths();
-		
-// 		require_once $this->path_Utils.DS.$this->fname_Utils;
-// // 		require $this->path_Utils.DS.$this->fname_Utils;
-		
-// 		require_once $this->path_Utils.DS."CONS.php";
-		
-// 		require_once $this->path_Utils.DS."methods.php";
-		
-// 		require_once $this->path_Utils.DS."db_util.php";
-		
-// 	}
+
+	public $components = array('Paginator');
 	
 	public function index() {
 
-		$option = 
-				array(
-					'order' => array('Text.id' => "desc"));
+// 		$option = 
+// 				array(
+// 					'order' => array('Text.id' => "desc"));
 		
-		$this->set('texts', $this->Text->find('all', $option));
+		/**********************************
+		 * paginate
+		**********************************/
+		$page_limit = 10;
 		
-// 		$this->_index__Experiments();
+		$opt_order = array('Text.id' => 'desc');
 		
-// 		$text = "index() => starts";
+		$opt_conditions = '';
 		
-// 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+		$this->paginate = array(
+				// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+				// 				'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+				'limit' => $page_limit,
+				'order' => $opt_order,
+				'conditions'	=> $opt_conditions
+				// 				'order' => array(
+				// 						'id' => 'asc'
+				// 				)
+		);
 		
+		$this->set('texts', $this->paginate('Text'));
+		
+// 		$this->set('texts', $this->Text->find('all', $option));
+		
+		$num_of_texts = count($this->Text->find('all'));
+		
+		$this->set('num_of_texts', $num_of_texts);
+		
+		$this->set('num_of_pages', (int) ceil($num_of_texts / $page_limit));
 		
 	}//public function index()
 

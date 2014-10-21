@@ -9,7 +9,14 @@
     }
 </style>
   
-<h1>Texts(total=<?php echo count($texts); ?>)</h1>
+<h1>
+	Texts
+	
+	(total = <?php echo $num_of_texts; ?>, pages = <?php echo $num_of_pages; ?>)
+	
+</h1>
+
+<?php echo $this->element('texts/_index_pagination')?>
 
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
