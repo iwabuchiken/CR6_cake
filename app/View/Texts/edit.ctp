@@ -1,6 +1,6 @@
 <!-- File: /app/View/Posts/add.ctp -->
 
-<h1>Add Text</h1>
+<h1>Edit Text</h1>
 <?php
 echo $this->Form->create('Text');
 echo $this->Form->input('text');

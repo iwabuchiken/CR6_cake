@@ -5,71 +5,75 @@
 	</a>
 	
 	<br>
+	<br>
 	
 	<?php echo $this->Html->link(
-					'Add Text',
-					array('controller' => 'texts', 'action' => 'add'));
+// 					"<font color='blue'>Add Text!</font>",
+					"Add Text!",
+					array(
+							'controller' => 'texts', 
+							'action' => 'add',
+// 							'style'		=> 'color: blue'
+// 							'style'		=> array('color: blue')
+							),
+					//REF http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1289550192
+					array(
+							'style'	=> 'color: blue')
+				);
 	?>
-	
-	<br>
-	<br>
-	
-	<?php echo $this->Html->link(
-					'Build texts from csv',
-					array('controller' => 'texts', 'action' => 'build_texts'));
-	?>	
-
-	<br>
-	
-	<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
-	<?php echo $this->Html->link(
-					'Delete all texts',
-					array(
-						'controller' => 'texts',
-						'action' => 'delete_all'),
-					array(),
-					"Delete all?");
-	?>	
 
 	<br>
 	<br>
 	
-	<?php 
-// 		$cons = new CONS();
-		
-// 		$host_name = $cons->get_HostName();
-	
-// 		if ($host_name != null && $host_name == $cons->local_HostName) {
-		
-			echo $this->Html->link(
-					'Exec sql',
-					array(
-						'controller' => 'texts',
-						'action' => 'exec_Sql')
-					);
+	<div class="hidden_elements">
+		<button id="bt_texts_special_ops" class="generic_bt_1">
+			Special ops
+		</button>
+		<div id="texts_special_ops" style="display: none">
+			<div>
+				<?php echo $this->Html->link(
+								'Build texts from csv',
+								array('controller' => 'texts', 'action' => 'build_texts'));
+				?>	
+			</div>
+			<!-- REF confirm http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html -->
+			<?php echo $this->Html->link(
+							'Delete all texts',
+							array(
+								'controller' => 'texts',
+								'action' => 'delete_all'),
+							array(),
+							"Delete all?");
+			?>	
+			<br>
+			<br>
 			
-			echo " | ";
-			
-			echo $this->Html->link(
-					'Exec tasks',
-					array(
-							'controller' => 'texts',
-							'action' => 'exec_Tasks'));
-		
-			echo " | ";
-			
-			echo $this->Html->link(
-					'Update lang_id values',
-					array(
-							'controller' => 'texts',
-							'action' => 'update_RailsID'));
-		
-// 		} else {
-		
-// 			echo "NOT A LOCALHOST";
-
-// 		}
-	?>	
+			<?php 
+					echo $this->Html->link(
+							'Exec sql',
+							array(
+								'controller' => 'texts',
+								'action' => 'exec_Sql')
+							);
+					
+					echo " | ";
+					
+					echo $this->Html->link(
+							'Exec tasks',
+							array(
+									'controller' => 'texts',
+									'action' => 'exec_Tasks'));
+				
+					echo " | ";
+					
+					echo $this->Html->link(
+							'Update lang_id values',
+							array(
+									'controller' => 'texts',
+									'action' => 'update_RailsID'));
+			?>	
+		</div><!-- <div style="display: none"> -->
+	</div><!-- <div class="hidden_elements"> -->
 
 	<br>
-	<br>
+	

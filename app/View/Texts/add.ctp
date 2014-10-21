@@ -2,10 +2,10 @@
 
 <h1>Add Text</h1>
 <?php
-echo $this->Form->create('Text');
-echo $this->Form->input('text');
-echo $this->Form->input('url');
-echo $this->Form->input('memo');
+echo $this->Form->create('Text', array('onmouseover' => "this.select();"));
+echo $this->Form->input('text', array('onmouseover' => "this.select();"));
+echo $this->Form->input('url', array('onmouseover' => "this.select();"));
+echo $this->Form->input('memo', array('onmouseover' => "this.select();"));
 
 echo $this->Form->input(
 						'lang_id',

@@ -4,19 +4,19 @@ class TextsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
 
 	//REF global variable http://stackoverflow.com/questions/12638962/global-variable-in-controller-cakephp-2
-	public $path_Log;
+// 	public $path_Log;
 	
-	public $path_Utils;
+// 	public $path_Utils;
 	
-	public $path_BackupUrl_Text;
+// 	public $path_BackupUrl_Text;
 	
-	public $fpath_Log;
+// 	public $fpath_Log;
 	
-	public $path_Docs;
+// 	public $path_Docs;
 	
-	public $fname_Utils		= "utils.php";
+// 	public $fname_Utils		= "utils.php";
 	
-	public $title_Length	= 60;
+// 	public $title_Length	= 60;
 
 	/****************************************
 	 * Associations
@@ -28,134 +28,35 @@ class TextsController extends AppController {
 	var $scaffold;
 	
 	
-	public function beforeFilter() {
-		
-		$this->_Setup_Paths();
-		
-		require_once $this->path_Utils.DS.$this->fname_Utils;
-// 		require $this->path_Utils.DS.$this->fname_Utils;
-		
-		require_once $this->path_Utils.DS."CONS.php";
-		
-		require_once $this->path_Utils.DS."methods.php";
-		
-		require_once $this->path_Utils.DS."db_util.php";
-		
-	}
-	
-	public function index() {
-
-// 		write_Log(
-// 			$this->path_Log,
-// 			"\$abc => $abc",
-// 			__FILE__,
-// 			__LINE__);
-		
-		
-// 		//debug
-// 		if ($this->request->is('post')) {
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				"is post",
-// 				__FILE__,
-// 				__LINE__);
-			
-// 		} else {
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				"is not post",
-// 				__FILE__,
-// 				__LINE__);
-			
-// 		}
-		
-		//debug
-// 		$this->set('data', $this->params['url']['abc']);
-// 		$this->set('data', $this->request->data);
-// 		$this->set('data', $this->request->data['Text']);
-		
-// 		write_Log(
-// 			$this->path_Log,
-// 			implode(",", array_keys($this->request->data)),
-// 			__FILE__,
-// 			__LINE__);
-		
-// 		write_Log(
-// 			$this->path_Log,
-// 			implode(",", array_keys($this->request->xxx)),
-// 			__FILE__,
-// 			__LINE__);
-		
-		
-// 		debug($this->request->data);
-		
-// 		debug($this->request->data);
-// 		debug($this->params['url']['abc']);
-// 		$this->set('data', $this->request->data['Text']);
-// 		$this->set('params', $this->request->params);
-// 		if ($this->request->params) {
-// // 		if ($this->request->params['abc']) {
-		
-// 			write_Log(
-// 				$this->path_Log,
-// 				"params => ".implode(",", $this->request->params),
-// // 				"params => ".$this->request->params['abc'],
-// 				__FILE__,
-// 				__LINE__);
-			
-		
-// 		} else {
-			
-// 			write_Log(
-// 				$this->path_Log,
-// 				"params => no",
-// 				__FILE__,
-// 				__LINE__);
-			
-		
-// 		}
-		
-		$this->set('texts', $this->Text->find('all'));
-		
-		$this->_index__Experiments();
-
-		
-// 		//debug
-// 		$texts = $this->Text->find('all');
-		
-// 		debug($texts[0]);
-		
-// 		write_Log(
-// 			$this->path_Log,
-// 			"class => ".$texts[0]['Text']['text'],
-// // 			"class => ".get_class($texts[0]),
-// // 			"class => ".get_class($texts),
-// // 			"class => ".get_class($this->Text->find('all')[0]),	// get_class() expects parameter 1 to be object, array given
-// // 			"class => ".get_class($this->Text->find('all')),	// get_class() expects parameter 1 to be object, array given
-// // 			"class => ".get_class($this->Text->find('all')),
-// // 			"class => ".get_class(($this->Text->find('all')[0])),
-// 			__FILE__,
-// 			__LINE__);
-		
-// 		$this->Text->create();
-		
-// 		$text = $this->Text->create();
-		
-// 		$text->set('text', "bbbbbbb");
+// 	public function beforeFilter() {
 		
 // 		$this->_Setup_Paths();
 		
-// 		$text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".
-// 				"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".
-// 				"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+// 		require_once $this->path_Utils.DS.$this->fname_Utils;
+// // 		require $this->path_Utils.DS.$this->fname_Utils;
 		
-		$text = "index() => starts";
+// 		require_once $this->path_Utils.DS."CONS.php";
 		
-		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+// 		require_once $this->path_Utils.DS."methods.php";
 		
-// 		$this->_Setup_LogFile();
+// 		require_once $this->path_Utils.DS."db_util.php";
+		
+// 	}
+	
+	public function index() {
+
+		$option = 
+				array(
+					'order' => array('Text.id' => "desc"));
+		
+		$this->set('texts', $this->Text->find('all', $option));
+		
+// 		$this->_index__Experiments();
+		
+// 		$text = "index() => starts";
+		
+// 		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+		
 		
 	}//public function index()
 
@@ -579,9 +480,13 @@ class TextsController extends AppController {
 	public function delete_all() {
 	
 		//REF http://book.cakephp.org/2.0/ja/core-libraries/helpers/html.html
-		if ($this->Text->deleteAll(array('id >=' => 1))) {
+		if ($this->Text->deleteAll(array('Text.id >=' => 1))) {
+// 		if ($this->Text->deleteAll(array('id >=' => 1))) {
+			
 			$this->Session->setFlash(__('Texts all deleted'));
+			
 			return $this->redirect(array('action' => 'index'));
+			
 		} else {
 		  
 			$this->Session->setFlash(__('Texts not deleted'));
@@ -728,59 +633,59 @@ class TextsController extends AppController {
 		
 	}
 	
-	private function _Setup_Paths() {
-		/****************************************
-		* Build: Paths
-		****************************************/
-		$this->path_Log = join(DS, array(ROOT, "lib", "log"));
-// 		$this->path_Log = join(DS, array(ROOT, APP_DIR, "Lib", "log"));
+// 	private function _Setup_Paths() {
+// 		/****************************************
+// 		* Build: Paths
+// 		****************************************/
+// 		$this->path_Log = join(DS, array(ROOT, "lib", "log"));
+// // 		$this->path_Log = join(DS, array(ROOT, APP_DIR, "Lib", "log"));
 
-		$this->fpath_Log = join(DS, array(ROOT, "lib", "log", "log.txt"));
+// 		$this->fpath_Log = join(DS, array(ROOT, "lib", "log", "log.txt"));
 		
-		$this->path_Utils = join(DS, array(ROOT, APP_DIR, "Lib", "utils"));
+// 		$this->path_Utils = join(DS, array(ROOT, APP_DIR, "Lib", "utils"));
 		
-		$this->path_Docs = join(DS, array(ROOT, APP_DIR, "Lib", "docs"));
+// 		$this->path_Docs = join(DS, array(ROOT, APP_DIR, "Lib", "docs"));
 		
-		$this->path_BackupUrl_Text =
-						"http://localhost/PHP_server/CR6_cake/texts/add";
-// 						"http://localhost/PHP_server/CR6_cake/texts/index";
+// 		$this->path_BackupUrl_Text =
+// 						"http://localhost/PHP_server/CR6_cake/texts/add";
+// // 						"http://localhost/PHP_server/CR6_cake/texts/index";
 		
-		/****************************************
-		 * Create dir: log
-		 ****************************************/
-		//REF recursive http://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
-// 		$res = mkdir($path_Log.DS."loglog", $mode=0777, $recursive=false);
+// 		/****************************************
+// 		 * Create dir: log
+// 		 ****************************************/
+// 		//REF recursive http://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
+// // 		$res = mkdir($path_Log.DS."loglog", $mode=0777, $recursive=false);
 		
-		$res = false;
+// 		$res = false;
 		
-		if (!file_exists($this->path_Log)) {
+// 		if (!file_exists($this->path_Log)) {
 		
-			$res = @mkdir($this->path_Log, $mode=0777, $recursive=true);
+// 			$res = @mkdir($this->path_Log, $mode=0777, $recursive=true);
 		
-		}
+// 		}
 		
-		/****************************************
-		 * Create dir: utils
-		 ****************************************/
-		$res2 = false;
+// 		/****************************************
+// 		 * Create dir: utils
+// 		 ****************************************/
+// 		$res2 = false;
 		
-		if (!file_exists($this->path_Utils)) {
+// 		if (!file_exists($this->path_Utils)) {
 		
-			$res = @mkdir($this->path_Utils, $mode=0777, $recursive=true);
+// 			$res = @mkdir($this->path_Utils, $mode=0777, $recursive=true);
 		
-		}
+// 		}
 
-		/****************************************
-		 * Create dir: utils
-		 ****************************************/
-		if (!file_exists($this->path_Docs)) {
+// 		/****************************************
+// 		 * Create dir: utils
+// 		 ****************************************/
+// 		if (!file_exists($this->path_Docs)) {
 		
-			$res = @mkdir($this->path_Docs, $mode=0777, $recursive=true);
+// 			$res = @mkdir($this->path_Docs, $mode=0777, $recursive=true);
 		
-		}
+// 		}
 
 		
-	}//public function _Setup_Paths()
+// 	}//public function _Setup_Paths()
 
 	private function _Setup_LogFile() {
 		
