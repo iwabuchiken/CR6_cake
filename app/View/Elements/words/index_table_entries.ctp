@@ -57,5 +57,5 @@
     </tr>
     
     <?php endforeach; ?>
-    <?php unset($text); ?>
+    <?php unset($word); ?>
     

@@ -22,15 +22,16 @@ input[type="submit"] {
         <td>
         	<?php
         		
-        		if ($query_String != null) {
+//         		if ($query_String != null) {
         		
-        			$query = $query_String."&"."sort=id";
+//         			$query = $query_String."&"."sort=id";
         		
-        		} else {
+//         		} else {
 
 					$query = "sort=id";
         		
-        		}
+//         		}
+
         		echo $this->Html->link('id',
 						array(
 							'controller' => 'words',
@@ -47,15 +48,16 @@ input[type="submit"] {
         <td>
         	<?php
         		
-        		if ($query_String != null) {
+//         		if ($query_String != null) {
         		
-        			$query = $query_String."&"."sort=w1";
+//         			$query = $query_String."&"."sort=w1";
         		
-        		} else {
+//         		} else {
 
 					$query = "sort=w1";
         		
-        		}
+//         		}
+
         		echo $this->Html->link('w1',
 						array(
 							'controller' => 'words',
@@ -113,15 +115,16 @@ input[type="submit"] {
         <!-- w2 ---------------------------------------->
         <td>
         	<?php
-	        	if ($query_String != null) {
+// 	        	if ($query_String != null) {
 	        	
-	        		$query = $query_String."&"."sort=w2";
+// 	        		$query = $query_String."&"."sort=w2";
 	        	
-	        	} else {
+// 	        	} else {
 	        	
 	        		$query = "sort=w2";
 	        	
-	        	}
+// 	        	}
+
 	        	echo $this->Html->link('w2',
 	        			array(
 	        					'controller' => 'words',
@@ -170,15 +173,16 @@ input[type="submit"] {
         <!-- w3 ---------------------------------------->
         <td>
         	<?php
-	        	if ($query_String != null) {
+// 	        	if ($query_String != null) {
 	        	
-	        		$query = $query_String."&"."sort=w3";
+// 	        		$query = $query_String."&"."sort=w3";
 	        	
-	        	} else {
+// 	        	} else {
 	        	
 	        		$query = "sort=w3";
 	        	
-	        	}
+// 	        	}
+
 	        	echo $this->Html->link('w3',
 	        			array(
 	        					'controller' => 'words',
@@ -228,15 +232,16 @@ input[type="submit"] {
         <td>
         	<?php
         		
-        		if ($query_String != null) {
+//         		if ($query_String != null) {
         		
-        			$query = $query_String."&"."sort=lang_id";
+//         			$query = $query_String."&"."sort=lang_id";
         		
-        		} else {
+//         		} else {
 
 					$query = "sort=lang_id";
         		
-        		}
+//         		}
+
         		echo $this->Html->link('lang_id',
 						array(
 							'controller' => 'words',

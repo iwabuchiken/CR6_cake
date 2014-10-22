@@ -2096,3 +2096,69 @@
 [10/21/2014 22:14:39 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=11/range[1]=20
 [10/21/2014 22:14:39 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
 [10/21/2014 22:16:10 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 142] $current_Lot => 1
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 166] $move_Lot => ""
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 214] $current_Lot => 1
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 694] $total=5040/$per_Page=10/$page=1/$iterate=504/$residue=0/\current iter=
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 775] \current iter=1
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 276] $range => 1,10($total=5040$per_Page=10$page=1)
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[10/22/2014 09:05:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 142] $current_Lot => 1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 166] $move_Lot => ""
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 214] $current_Lot => 1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 694] $total=5040/$per_Page=10/$page=1/$iterate=504/$residue=0/\current iter=1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 775] \current iter=1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php : 276] $range => 1,10($total=5040$per_Page=10$page=1)
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=51/$cur_Lot=1
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=1/range[1]=10
+[10/22/2014 09:06:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=5040/$per_page=10/$target_Lot=504/$residue=0
+[10/22/2014 09:10:42 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:10:42 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:10:42 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:11:09 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:11:09 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:11:09 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:19:33 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:19:33 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:19:33 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:20:49 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:20:49 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:20:49 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:21:43 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:21:43 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:21:43 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:22:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:22:24 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:22:25 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:30:19 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:30:19 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:30:19 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:31:08 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:31:08 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:31:08 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:34:14 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:34:14 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:34:14 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:34:46 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:34:46 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:34:46 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:35:29 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:35:29 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:35:30 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:35:47 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:35:47 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:35:47 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:35:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:35:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:35:54 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
+[10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
+[10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=

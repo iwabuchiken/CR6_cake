@@ -9,14 +9,26 @@
     }
 </style>
   
-<h1>Words(total=<?php echo $total_Words?>/current=<?php echo count($words); ?>)</h1>
+<h1>
+
+	Words
+	
+	(total = <?php echo $num_of_words; ?>, pages = <?php echo $num_of_pages; ?>)
+	
+</h1>
 
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
 <a href="#bottom">Bottom</a>
 <br>
 
-<?php echo $this->element('words/index_pagination_2')?>
+<?php echo $this->element('texts/_index_pagination')?>
+
+<?php 
+
+// 	echo $this->element('words/index_pagination_2')
+	
+?>
 
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
@@ -32,7 +44,7 @@
 
 <?php // echo $this->element('words/index_pagination')?>
 
-<?php echo $this->element('words/index_pagination_2')?>
+<?php //echo $this->element('words/index_pagination_2')?>
 
 <a id="bottom"></a>
 <a href="#top">Top</a>

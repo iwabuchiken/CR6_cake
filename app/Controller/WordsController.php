@@ -3,20 +3,20 @@
 class WordsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
 
-	//REF global variable http://stackoverflow.com/questions/12638962/global-variable-in-controller-cakephp-2
-	public $path_Log;
+// 	//REF global variable http://stackoverflow.com/questions/12638962/global-variable-in-controller-cakephp-2
+// 	public $path_Log;
 	
-	public $path_Utils;
+// 	public $path_Utils;
 	
-	public $path_BackupUrl_Text;
+// 	public $path_BackupUrl_Text;
 	
-	public $fpath_Log;
+// 	public $fpath_Log;
 	
-	public $path_Docs;
+// 	public $path_Docs;
 	
-	public $fname_Utils		= "utils.php";
+// 	public $fname_Utils		= "utils.php";
 	
-	public $title_Length	= 60;
+// 	public $title_Length	= 60;
 
 	/****************************************
 	* Pagination
@@ -24,12 +24,12 @@ class WordsController extends AppController {
 	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
 	public $components = array('Paginator');
 	
-	public $paginate = array(
-			'limit' => 25,
-			'order' => array(
-					'Word.id' => 'asc'
-			)
-	);
+// 	public $paginate = array(
+// 			'limit' => 25,
+// 			'order' => array(
+// 					'Word.id' => 'asc'
+// 			)
+// 	);
 	
 	/****************************************
 	* Associations
@@ -39,36 +39,73 @@ class WordsController extends AppController {
 
 	var $scaffold;
 	
-	public function beforeFilter() {
+// 	public function beforeFilter() {
 		
-		setlocale(LC_ALL, 'ja_JP.UTF-8');
+// 		setlocale(LC_ALL, 'ja_JP.UTF-8');
 		
-		$this->_Setup_Paths();
+// 		$this->_Setup_Paths();
 		
-		require_once $this->path_Utils.DS.$this->fname_Utils;
-// 		require $this->path_Utils.DS.$this->fname_Utils;
+// 		require_once $this->path_Utils.DS.$this->fname_Utils;
+// // 		require $this->path_Utils.DS.$this->fname_Utils;
 		
-		require_once $this->path_Utils.DS."CONS.php";
+// 		require_once $this->path_Utils.DS."CONS.php";
 		
-		require_once $this->path_Utils.DS."methods.php";
+// 		require_once $this->path_Utils.DS."methods.php";
 		
-		require_once $this->path_Utils.DS."db_util.php";
+// 		require_once $this->path_Utils.DS."db_util.php";
 		
-		$this->Auth->allow('index', 'view');
+// 		$this->Auth->allow('index', 'view');
 		
-	}
+// 	}
 	
 	public function index() {
 
-		$text = "index() => starts";
+		/**********************************
+		* query values
+		**********************************/
+		@$sort = $this->request->query['sort'];
+		@$filter = $this->request->query['filter'];
 		
-		write_Log($this->path_Log, $text, __FILE__, __LINE__);
+		/**********************************
+		* query string
+		**********************************/
+		$query_String = $this->_index__Get_QueryString();
+		
+		$this->set("query_String", $query_String);
+		
+		/**********************************
+		 * paginate
+		**********************************/
+		$page_limit = 10;
+		
+		$opt_order = array('Word.id' => 'desc');
+		
+		$opt_conditions = '';
+		
+		$this->paginate = array(
+				// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+				// 				'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+				'limit' => $page_limit,
+				'order' => $opt_order,
+				'conditions'	=> $opt_conditions
+				// 				'order' => array(
+				// 						'id' => 'asc'
+				// 				)
+		);
+		
+		$this->set('words', $this->paginate('Word'));
+		
+		$num_of_words = count($this->Word->find('all'));
+		
+		$this->set('num_of_words', $num_of_words);
+		
+		$this->set('num_of_pages', (int) ceil($num_of_words / $page_limit));
+		
+		
+	}//public function index()
 
-// 		debug($this->request->query);
-// 		debug($this->request->filter);
-// 		debug($this->request->data);
-		
-		
+	public function index_deprecated() {
+
 		/****************************************
 		* Get: words
 		****************************************/
@@ -539,16 +576,62 @@ class WordsController extends AppController {
 		//test
 		$q = $this->request->query;
 
-// 		debug($q);
+		debug($q);
+		
+		if ($q != null && count($q) > 0) {
+	
+// 			$keys = array_keys($q);
+
+// 			debug($keys);
+			
+// 			$q_array = array();
+	
+// 			foreach ($keys as $item) {
+
+// 				debug($item);
+				
+// // 				$str .= $item."=".$q[$item];
+// 				array_push($q_array, $item."=".$q[$item]);
+	
+// 			}
+	
+// 			$str = implode("&", $q_array);
+	
+// 			debug($str);
+	
+		} else {//if ($q != null && count($q) > 0)
+			
+// 			$str = "";
+			
+		}//if ($q != null && count($q) > 0)
+
+			
+		$str = "";
+		
+		return ($str != null) ? $str : null;
+		
+	}//_index__Get_QueryString()
+	
+	public function
+	_index__Get_QueryString__deprecated() {
+		
+		//test
+		$q = $this->request->query;
+
+		debug($q);
 		
 		if ($q != null && count($q) > 0) {
 	
 			$keys = array_keys($q);
-	
+
+			debug($keys);
+			
 			$q_array = array();
 	
 			foreach ($keys as $item) {
 
+				debug($item);
+				
 // 				$str .= $item."=".$q[$item];
 				array_push($q_array, $item."=".$q[$item]);
 	

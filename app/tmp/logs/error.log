@@ -1786,3 +1786,23 @@ Stack Trace:
 #9 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest), Object(CakeResponse))
 #10 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2014-10-22 02:10:19 Error: Fatal Error (64): Cannot redeclare WordsController::$components in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php, line 61]
+2014-10-22 02:10:19 Error: [FatalErrorException] Cannot redeclare WordsController::$components
+Request URL: /CR6_cake/words?page=1&per_Page=10
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 61)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 61, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 61, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 02:21:30 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\WordsController.php, line 68]
+2014-10-22 02:21:30 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /CR6_cake/words?filter%5Bw1%5D=%E9%81%97%E4%BD%93
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 68)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 68, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 68, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\CR6_cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
