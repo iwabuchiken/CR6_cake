@@ -2162,3 +2162,5 @@
 [10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 41] $max_Lot=0/$cur_Lot=0
 [10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 49] range[0]=/range[1]=
 [10/22/2014 09:38:15 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\View\Elements\words\index_pagination_2.ctp : 227] $total=/$per_page=/$target_Lot=0/$residue=
+[10/22/2014 20:03:32 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\TextsController.php : 195] ($words == null || count($words) < 1) => true
+[10/22/2014 20:21:55 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts

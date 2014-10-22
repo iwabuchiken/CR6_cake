@@ -14,7 +14,7 @@
 	        		'rows' => '1',
 	        
 	        		// 	        		'class'	=> 'add_name'
-	        		// 			'cols'	=> '10'
+// 	        					'cols'	=> '5'
 	        		// 			'width'	=> '100px'
 	        		// 			'columns'	=> '5'
 	        
