@@ -13,6 +13,12 @@ table#text_data {
 	
 }
 
+table.view {
+	
+	width: 50%;
+	
+}
+
 a.text_td_grey_text {
 	
 	color:	grey;
@@ -22,6 +28,15 @@ td {
 	
 	/*REF http://www.w3schools.com/css/css_table.asp*/
 	border: 1px solid black;
+	
+}
+
+td.col_label {
+	
+	/*REF http://www.w3schools.com/css/css_table.asp*/
+	border: 1px solid blue;
+	
+	width:	100px;
 	
 }
 

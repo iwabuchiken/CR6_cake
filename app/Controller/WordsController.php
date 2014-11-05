@@ -576,7 +576,7 @@ class WordsController extends AppController {
 		//test
 		$q = $this->request->query;
 
-		debug($q);
+// 		debug($q);
 		
 		if ($q != null && count($q) > 0) {
 	
@@ -1986,27 +1986,6 @@ class WordsController extends AppController {
 			throw new NotFoundException(__('Invalid word'));
 		}
 	
-// 		$word = $this->_view_ModifyText($word);
-	
-		//         $temp = $text['Text']['text'];
-	
-		//         $pattern = '/(。)/';
-	
-		//         $replace = '$1<br> -- ';
-		// //         $replace = '。<br> -- ';
-		// //         $replace = '。<br> == ';
-		// //         $replace = '。<br> === ';
-		// //         $replace = "。<br> === ";
-	
-		//         $temp = preg_replace($pattern, $replace, $temp);
-	
-		//         //REF http://www.php.net/manual/en/function.mb-convert-encoding.php
-		// //         $temp = mb_convert_encoding($temp, "UTF-8", "SJIS");
-	
-		// //         debug($temp);
-	
-		//         $text['Text']['text'] = $temp;
-	
 		$this->set('word', $word);
 	}
 
@@ -2065,6 +2044,60 @@ class WordsController extends AppController {
 					));
 		
 	}//public function swap_w2_w3()
+
+	public function delete($id) {
+		/******************************
+	
+		validate
+	
+		******************************/
+		if (!$id) {
+			throw new NotFoundException(__('Invalid word id'));
+		}
+	
+		$word = $this->Word->findById($id);
+	
+		if (!$word) {
+			throw new NotFoundException(__("Can't find the word. id = %d", $id));
+		}
+	
+		/******************************
+	
+		delete
+	
+		******************************/
+		if ($this->Word->delete($id)) {
+			// 		if ($this->Word->save($this->request->data)) {
+	
+			$this->Session->setFlash(__(
+					"Word deleted => %s",
+					$word['Word']['w1']));
+	
+			return $this->redirect(
+					array(
+							'controller' => 'words',
+							'action' => 'index'
+	
+					));
+	
+		} else {
+	
+			$this->Session->setFlash(
+					__("Word can't be deleted => %s",
+							$word['Word']['w1']));
+	
+			// 			$page_num = _get_Page_from_Id($id - 1);
+	
+			return $this->redirect(
+					array(
+							'controller' => 'words',
+							'action' => 'view',
+							$id
+					));
+	
+		}
+	
+	}//public function delete($id)
 	
 }//class WordsController extends AppController
 
