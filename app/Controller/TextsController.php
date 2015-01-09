@@ -96,7 +96,42 @@ class TextsController extends AppController {
         ****************************************/
         $words_Filtered = $this->_view_GetWords($model_Text);
         
-        if ($words_Filtered != null) {
+//         debug("words_Filtered is ...");
+//         debug(count($words_Filtered));
+//         debug($words_Filtered[0]);
+		//         array(
+		//         		(int) 0 => array(
+		//         				'id' => '5041',
+		//         				'created_at' => '01/09/2015 19:21:38',
+		//         				'updated_at' => '01/09/2015 19:21:38',
+		//         				'w1' => 'лебедь',
+		//         				'w2' => 'swan',
+		//         				'w3' => '',
+		//         				'text_ids' => null,
+		//         				'text_id' => null,
+		//         				'lang_id' => '30',
+		//         				'r_id' => null,
+		//         				'r_created_at' => null,
+		//         				'r_updated_at' => null
+		//         		),
+		//         		(int) 1 => (int) 15
+		//         )
+//         debug($words_Filtered[0]['Word']['w1']);
+        
+//         debug($model_Text);
+        
+        /**********************************
+        * russian texts
+        **********************************/
+        if ($words_Filtered != null
+				&& $model_Text['Lang']['name'] == 'Russian') {
+        	
+			debug("lang => Russian");
+			
+        }
+        
+        else if ($words_Filtered != null) {
+//         if ($words_Filtered != null) {
         	
 	        $msg = "\$words_Filtered => " . count($words_Filtered);
 	        
@@ -127,6 +162,9 @@ class TextsController extends AppController {
 	        $skimmed_WordsList = $this->_view_Test_Skimming(
 	        								$text, $words_Filtered);
 	        
+// 	        debug("skimmed_WordsList is ...");
+// 	        debug(count($skimmed_WordsList));
+	        
 	//         debug($skimmed_WordsList);
 	        
 	        
@@ -151,6 +189,9 @@ class TextsController extends AppController {
 
     public function
     _view_Test_Skimming($text, $words_Filtered) {
+    	
+//     	debug("words_Filtered is ...");
+//     	debug(count($words_Filtered));
     	
     	return Methods::do_job__Skim_WordsFiltered_4($text, $words_Filtered);
     	
@@ -198,6 +239,10 @@ class TextsController extends AppController {
     		return null;
     		
     	}
+    	
+//     	debug("words => ...");
+//     	debug(count($words));
+    	
     	/****************************************
     	* Words: Those in the text
     	****************************************/
