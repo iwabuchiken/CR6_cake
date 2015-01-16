@@ -2227,3 +2227,5 @@
 [01/16/2015 16:10:55 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
 [01/16/2015 16:11:33 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
 >>>>>>> D-21_numbering_texts#view
+[01/16/2015 16:30:38 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
+[01/16/2015 16:30:59 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts

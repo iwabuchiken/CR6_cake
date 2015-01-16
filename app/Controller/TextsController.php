@@ -28,7 +28,8 @@ class TextsController extends AppController {
 		
 		$opt_order = array('Text.id' => 'desc');
 		
-		$opt_conditions = '';
+// 		$opt_conditions = '';
+		$opt_conditions = $this->_index__Options();
 		
 		$this->paginate = array(
 				// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
@@ -53,6 +54,73 @@ class TextsController extends AppController {
 		
 	}//public function index()
 
+	public function
+	_index__Options() {
+	
+		$filter_lang = "filter_lang";
+	
+		$opt_conditions = array();
+	
+		/**********************************
+		 * param: filter: lang_id
+		**********************************/
+		@$query_Filter_Lang = $this->request->query[$filter_lang];
+	
+		if ($query_Filter_Lang == "__@") {
+				
+			$this->Session->write($filter_lang, null);
+				
+			$this->set("filter", '');
+				
+		} else if ($query_Filter_Lang == null) {
+	
+			@$session_Filter = $this->Session->read($filter_lang);
+	
+			if ($session_Filter != null) {
+	
+				$opt_conditions['Text.lang_id'] = $session_Filter;
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter", $session_Filter);
+	
+			} else {
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter", null);
+	
+			}
+	
+		} else {
+	
+			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Lang%";
+	
+			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+			$opt_conditions['Text.lang_id'] = $query_Filter_Lang;
+				
+			$session_Filter = $this->Session->write($filter_lang, $query_Filter_Lang);
+	
+			//			debug("session_Filter => written");
+	
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter", $query_Filter_Lang);
+	
+		}
+	
+		// 		/**********************************
+		// 		 * set: var
+		// 		**********************************/
+		// 		$this->set("filter", $query_Filter_Lang);
+	
+		return $opt_conditions;
+	
+	}//_index__Options
+	
 	public function _index__Experiments() {
 		
 // 		$this->_index__Experiments__D_5_v_4_2();
