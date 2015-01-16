@@ -81,9 +81,17 @@ class TextsController extends AppController {
 			
 			$chosen_Lang = "No filter";
 			
-		}
+			$this->set("filter_lang", $chosen_Lang);
+			
+			$this->set("chosen_lang_id", null);
+			
+		} else {
 		
-		$this->set("filter_lang", $chosen_Lang);
+			$this->set("filter_lang", $chosen_Lang);
+			
+			$this->set("chosen_lang_id", $opt_conditions['Text.lang_id']);
+		
+		}
 		
 	}//public function index()
 
@@ -103,7 +111,7 @@ class TextsController extends AppController {
 				
 			$this->Session->write($filter_lang, null);
 				
-			$this->set("filter", '');
+			$this->set("filter_lang", '');
 				
 		} else if ($query_Filter_Lang == null) {
 	
@@ -116,14 +124,14 @@ class TextsController extends AppController {
 				/**********************************
 				 * set: var
 				**********************************/
-				$this->set("filter", $session_Filter);
+				$this->set("filter_lang", $session_Filter);
 	
 			} else {
 	
 				/**********************************
 				 * set: var
 				**********************************/
-				$this->set("filter", null);
+				$this->set("filter_lang", null);
 	
 			}
 	
@@ -141,7 +149,7 @@ class TextsController extends AppController {
 			/**********************************
 			 * set: var
 			**********************************/
-			$this->set("filter", $query_Filter_Lang);
+			$this->set("filter_lang", $query_Filter_Lang);
 	
 		}
 	
@@ -149,7 +157,75 @@ class TextsController extends AppController {
 		// 		 * set: var
 		// 		**********************************/
 		// 		$this->set("filter", $query_Filter_Lang);
-	
+
+		/**********************************
+		 * param: filter: text
+		**********************************/
+		$filter_text = "filter_text";
+		
+// 		$opt_conditions = array();
+		
+		@$query_Filter_Text = $this->request->query[$filter_text];
+		
+		if ($query_Filter_Text == "__@") {
+		
+			$this->Session->write($filter_text, null);
+		
+			$this->set("filter_text", '');
+		
+		} else if ($query_Filter_Text == null) {
+		
+			@$session_Filter = $this->Session->read($filter_text);
+		
+			if ($session_Filter != null) {
+		
+				$opt_conditions['OR'] = array(
+						'Text.text LIKE' => "%$session_Filter%",
+						'Text.title LIKE' => "%$session_Filter%"
+				);
+				
+// 				$opt_conditions['Text.lang_id'] = $session_Filter;
+		
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_text", $session_Filter);
+		
+			} else {
+		
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_text", null);
+		
+			}
+		
+		} else {
+		
+			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Lang%";
+		
+			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+// 			$opt_conditions['Text.lang_id'] = $query_Filter_Text;
+
+			$opt_conditions['OR'] = array(
+					'Text.text LIKE' => "%$query_Filter_Text%",
+					'Text.title LIKE' => "%$query_Filter_Text%"
+			);
+		
+			$session_Filter = $this->Session->write($filter_text, $query_Filter_Text);
+		
+			//			debug("session_Filter => written");
+		
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_text", $query_Filter_Text);
+		
+		}
+
+		/**********************************
+		* return
+		**********************************/
 		return $opt_conditions;
 	
 	}//_index__Options

@@ -2229,3 +2229,5 @@
 >>>>>>> D-21_numbering_texts#view
 [01/16/2015 16:30:38 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
 [01/16/2015 16:30:59 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
+[01/17/2015 08:18:38 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[01/17/2015 08:19:06 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done

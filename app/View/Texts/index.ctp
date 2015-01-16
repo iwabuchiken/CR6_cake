@@ -21,7 +21,7 @@
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
 <a href="#bottom">Bottom</a>
-	(lang = <?php echo $filter_lang; ?>)
+	(filter_lang = <?php echo $filter_lang; ?> / filter_text = <?php echo $filter_text?>)
 <br>
 <br>
 
