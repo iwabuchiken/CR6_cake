@@ -23,7 +23,41 @@
             		
     </tr>
     <tr>
-    	<td>Lang id</td>
+    	<td>
+    		Lang id
+    		<?php 
+    		
+	    		$opt_create = array(
+	    		
+	    				'div'	=> false,
+	    				//REF http://wiltonsoftware.com/posts/view/customizing-your-form-labels-in-cakephp-1-2
+	    				'label'	=> false,
+	    				'url'	=> array(
+	    						'controller'	=> 'texts',
+	    						'action'	=> 'index'),
+	    				'type'	=> 'get'
+	    		
+				
+	    		);
+    		
+	    		echo $this->Form->create('', $opt_create);
+	    		
+	    		echo $this->Form->input(
+	    				'filter_lang',
+	    				// 						'Lang id',
+	    				array(
+	    						'type' => 'select',
+	    						'options' => $select_Langs
+	    				)
+	    					
+	    					
+	    		);
+	    		
+	    		echo $this->Form->end('Filter');
+	    		
+    		?>
+    	</td>
+    	
     	<td>Genre id</td>
         <td>Created at</td>
         

@@ -17,10 +17,6 @@ class TextsController extends AppController {
 	
 	public function index() {
 
-// 		$option = 
-// 				array(
-// 					'order' => array('Text.id' => "desc"));
-		
 		/**********************************
 		 * paginate
 		**********************************/
@@ -44,29 +40,66 @@ class TextsController extends AppController {
 		
 		$this->set('texts', $this->paginate('Text'));
 		
-// 		$this->set('texts', $this->Text->find('all', $option));
-		
 		$num_of_texts = count($this->Text->find('all'));
 		
 		$this->set('num_of_texts', $num_of_texts);
 		
 		$this->set('num_of_pages', (int) ceil($num_of_texts / $page_limit));
+
+		/**********************************
+		* lang
+		**********************************/
+		$this->loadModel('Lang');
+			
+		$langs = $this->Lang->find('all');
+			
+		$select_Langs = array();
+			
+		foreach ($langs as $lang) {
+		
+			$lang_Name = $lang['Lang']['name'];
+			$lang_Id = $lang['Lang']['id'];
+		
+			$select_Langs[$lang_Id] = $lang_Name;
+				
+		}
+
+		// all langs
+		$select_Langs['-1'] = "All";
+		
+		asort($select_Langs);
+		
+		$this->set('select_Langs', $select_Langs);
+		
+		/**********************************
+		* labels: options, sorts
+		**********************************/
+		@$chosen_Lang = $select_Langs[$opt_conditions['Text.lang_id']];
+// 		@$chosen_Lang = $opt_conditions['Text.lang_id'];
+		
+		if ($chosen_Lang == null) {
+			
+			$chosen_Lang = "No filter";
+			
+		}
+		
+		$this->set("filter_lang", $chosen_Lang);
 		
 	}//public function index()
 
 	public function
 	_index__Options() {
-	
+
+		/**********************************
+		 * param: filter: lang_id
+		**********************************/
 		$filter_lang = "filter_lang";
 	
 		$opt_conditions = array();
 	
-		/**********************************
-		 * param: filter: lang_id
-		**********************************/
 		@$query_Filter_Lang = $this->request->query[$filter_lang];
 	
-		if ($query_Filter_Lang == "__@") {
+		if ($query_Filter_Lang == "-1") {
 				
 			$this->Session->write($filter_lang, null);
 				
@@ -506,55 +539,16 @@ class TextsController extends AppController {
 				
 				}//if (strlen($this->request->data['Text']['text'])
 				
-				// log
-				$msg = "\$this->request->data['Text']['title'] => "
-						.$this->request->data['Text']['title'];
-				
-				write_Log(
-					CONS::get_dPath_Log(),
-					$msg,
-					__FILE__,
-					__LINE__);
-				
-				
 			}
 		  
-// 			//debug
-// // 			debug($this->request->data);
-// 			write_Log(
-// 				$this->path_Log,
-// 				"data => ".implode(",", $this->request->data),
-// 				__FILE__,
-// 				__LINE__);
-			
-			//debug
-			$msg = "url => ".$this->request->data['Text']['url'];
-			
-			write_Log(
-				$this->path_Log,
-				$msg,
-				__FILE__,
-				__LINE__);
-			
-			
-			
 			// Save text
 			if ($this->Text->save($this->request->data)) {
 				$this->Session->setFlash(__('Your text has been saved.'));
-				
-				//debug
-				write_Log(
-					$this->path_Log,
-					"text => ".$this->Text->text,
-					__FILE__,
-					__LINE__);
-				
 				
 				return $this->redirect(
 								array(
 									'controller' => 'texts',
 									'action' => 'index'));
-				//                return $this->redirect(array('action' => 'index'));
 				
 			}
 			
@@ -565,8 +559,6 @@ class TextsController extends AppController {
 			$this->loadModel('Lang');
 			
 			$langs = $this->Lang->find('all');
-			
-// 			debug($langs);
 			
 			$select_Langs = array();
 			
@@ -579,11 +571,7 @@ class TextsController extends AppController {
 			
 			}
 			
-// 			debug($select_Langs);
-			
 			$this->set('select_Langs', $select_Langs);
-			
-// 			$this->set('langs', $langs);
 			
 		}////if ($this->request->is('post'))
 			

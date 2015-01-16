@@ -21,8 +21,11 @@
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
 <a href="#bottom">Bottom</a>
+	(lang = <?php echo $filter_lang; ?>)
 <br>
 <br>
+
+
 
 <!-- REF border http://www.newcredge.com/IT/www/html/tag/table/table-border-tr-td.html -->
 <table border="1">
