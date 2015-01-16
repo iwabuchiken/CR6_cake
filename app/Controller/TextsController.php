@@ -133,13 +133,13 @@ class TextsController extends AppController {
         else if ($words_Filtered != null) {
 //         if ($words_Filtered != null) {
         	
-	        $msg = "\$words_Filtered => " . count($words_Filtered);
+// 	        $msg = "\$words_Filtered => " . count($words_Filtered);
 	        
-	        write_Log(
-		        	CONS::get_dPath_Log(),
-		        	$msg,
-		        	basename(__FILE__),
-		        	__LINE__);
+// 	        write_Log(
+// 		        	CONS::get_dPath_Log(),
+// 		        	$msg,
+// 		        	basename(__FILE__),
+// 		        	__LINE__);
 	        
 	//         debug($words_Filtered);
 	        
@@ -334,6 +334,9 @@ class TextsController extends AppController {
     _view_ModifyText_Puncs($text) {
 //     _view_ModifyText($text) {
 
+    	/**********************************
+    	* replace: "。" with "<br>..."
+    	**********************************/
     	$temp = $text['Text']['text'];
 
     	$lang_Name = $text['Lang']['name'];
@@ -362,6 +365,26 @@ class TextsController extends AppController {
     	
     	$temp = preg_replace($pattern, $replace, $temp);
     	
+
+    	/**********************************
+    	* replace: " -- " with " X) " (numbering)
+    	**********************************/
+	    $tokens = explode(" -- ", $temp);
+    	
+// 	    debug("tokens are...");
+// 	    debug(count($tokens));
+	    
+	    for ($i = 0; $i < count($tokens); $i++) {
+	    	
+	    	$tokens[$i] = ($i + 1).") -- ".$tokens[$i];
+	    	
+	    }
+	    
+	    $temp = implode("", $tokens);
+	    
+    	/**********************************
+    	* update: text
+    	**********************************/
     	$text['Text']['text'] = $temp;
     	
     	return $text;

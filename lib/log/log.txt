@@ -2218,3 +2218,12 @@
 [01/09/2015 21:18:23 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
 [01/09/2015 21:18:43 : TextsController.php : 142] $words_Filtered => 5
 [01/09/2015 21:18:43 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+<<<<<<< HEAD
+=======
+[01/16/2015 16:01:04 : TextsController.php : 142] $words_Filtered => 76
+[01/16/2015 16:01:04 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[01/16/2015 16:08:52 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[01/16/2015 16:10:43 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[01/16/2015 16:10:55 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[01/16/2015 16:11:33 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+>>>>>>> D-21_numbering_texts#view
