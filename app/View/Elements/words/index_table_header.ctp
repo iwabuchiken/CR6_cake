@@ -70,6 +70,19 @@ input[type="submit"] {
 			
 			<?php 
 			
+				$option_input = array(
+					'style' => 'width: 100px;height: 50px;',
+					'label' => '',
+					'name' => 'filter[w1]'
+
+				);
+
+				if (isset($filter_w1)) {
+					
+					$option_input['default'] = $filter_w1;
+					
+				}
+			
 				echo $this->Form->create('Word',
 								array(
 									'type' => 'get',
@@ -79,12 +92,13 @@ input[type="submit"] {
 						);
 				
 				echo $this->Form->input('w1',
-								array(
-									'style' => 'width: 100px;height: 50px;',
-									'label' => '',
-									'name' => 'filter[w1]'
-// 									'name' => 'filter_w1'
-							));
+									$option_input);
+// 								array(
+// 									'style' => 'width: 100px;height: 50px;',
+// 									'label' => '',
+// 									'name' => 'filter[w1]'
+// // 									'name' => 'filter_w1'
+// 							));
 				
 // 				echo $this->Form->input('w1',
 // 								array(

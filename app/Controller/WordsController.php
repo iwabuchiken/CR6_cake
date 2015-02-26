@@ -64,7 +64,7 @@ class WordsController extends AppController {
 		* query values
 		**********************************/
 		@$sort = $this->request->query['sort'];
-		@$filter = $this->request->query['filter'];
+// 		@$filter = $this->request->query['filter'];
 		
 		/**********************************
 		* query string
@@ -72,6 +72,14 @@ class WordsController extends AppController {
 		$query_String = $this->_index__Get_QueryString();
 		
 		$this->set("query_String", $query_String);
+
+		/*******************************
+			filter:
+		*******************************/
+		$opt_conditions = $this->_index__Opt_Conditions();
+		
+		debug("\$opt_conditions");
+		debug($opt_conditions);
 		
 		/**********************************
 		 * paginate
@@ -79,8 +87,6 @@ class WordsController extends AppController {
 		$page_limit = 10;
 		
 		$opt_order = array('Word.id' => 'desc');
-		
-		$opt_conditions = '';
 		
 		$this->paginate = array(
 				// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
@@ -104,7 +110,53 @@ class WordsController extends AppController {
 		
 	}//public function index()
 
-	public function index_deprecated() {
+	public function 
+	_index__Opt_Conditions() {
+
+		/*******************************
+			declare: array
+		*******************************/
+		$opt_conditions = array();
+		
+		/*******************************
+			get: query value
+		*******************************/
+		@$filter = $this->request->query['filter'];
+
+		/*******************************
+			set: array
+		*******************************/
+		if ($filter != null) {
+				
+			debug($filter);
+			
+			$keys = array_keys($filter);
+			
+			debug($keys);
+			debug($keys[0]);
+			
+// 			$key = array_keys($filter)[0];
+				
+			$key = $keys[0];
+			
+			$opt_conditions["Word.$key LIKE"] = "%$filter[$key]%";
+
+			/*******************************
+				set: filter value
+			*******************************/
+			$this->set("filter_w1", $filter[$key]);
+			
+		}
+
+		/*******************************
+			return
+		*******************************/
+		return $opt_conditions;
+		
+	}//_index__Opt_Conditions
+	
+	public function 
+	index_deprecated() {
 
 		/****************************************
 		* Get: words
