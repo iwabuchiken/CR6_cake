@@ -2231,3 +2231,12 @@
 [01/16/2015 16:30:59 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Controller\LangsController.php : 41] index() => starts
 [01/17/2015 08:18:38 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
 [01/17/2015 08:19:06 : C:\WORKS\WS\Eclipse_Kepler\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:40:42 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:41:54 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:42:49 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:43:21 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:43:48 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:45:28 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:48:05 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:48:36 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done
+[02/28/2015 08:49:49 : C:\WORKS\WS\Eclipse_Luna\CR6_cake\app\Lib\utils\methods.php : 935] Skimming => done

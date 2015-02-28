@@ -303,27 +303,47 @@ class TextsController extends AppController {
         if ($words_Filtered != null
 				&& $model_Text['Lang']['name'] == 'Russian') {
         	
-			debug("lang => Russian");
+			//debug("lang => Russian");
 			
-        }
-        
-        else if ($words_Filtered != null) {
-//         if ($words_Filtered != null) {
+			//debug("count(\$words_Filtered)");
+			//debug(count($words_Filtered));
+			//debug($words_Filtered);
+			
+			/****************************************
+			 * Modify: Add links
+			****************************************/
+			$text = $model_Text['Text']['text'];
+			
+// 			debug($text);
+			
+			//test
+			//         $skimmed_WordsList = $this->_view_Test_Skimming(
+			//         		$text, array_slice($words_Filtered, 0, 40));
+			//         		$text, array_slice($words_Filtered, 0, 20));
+			//         $this->_view_Test_Skimming($text, array_slice($words_Filtered, 0, 50));
+			$skimmed_WordsList = $this->_view_Test_Skimming(
+					$text, $words_Filtered);
+			
+	        //debug("skimmed_WordsList is ...");
+	        //debug(count($skimmed_WordsList));
+ 
+	        //debug($skimmed_WordsList);
+			 
+			 
+			$text = Methods::addLink_4($text, $skimmed_WordsList);
+			//         $text = Methods::addLink_4($text, $words_Filtered);
+			 
+			// //         debug($text);
+			// 		debug($words_Filtered[0]);
+				
+			$model_Text['Text']['text'] = $text;
+				
+        } else if ($words_Filtered != null) {
         	
-// 	        $msg = "\$words_Filtered => " . count($words_Filtered);
-	        
-// 	        write_Log(
-// 		        	CONS::get_dPath_Log(),
-// 		        	$msg,
-// 		        	basename(__FILE__),
-// 		        	__LINE__);
-	        
-	//         debug($words_Filtered);
-	        
-	        /****************************************/
-	        /****************************************
-	        * Modify: Text
-	        ****************************************/
+//         	debug("count(\$words_Filtered)");
+//         	debug(count($words_Filtered));
+//         	debug($words_Filtered);
+        	
 	        /****************************************/
 	        
 	        /****************************************
@@ -339,10 +359,10 @@ class TextsController extends AppController {
 	        $skimmed_WordsList = $this->_view_Test_Skimming(
 	        								$text, $words_Filtered);
 	        
-// 	        debug("skimmed_WordsList is ...");
-// 	        debug(count($skimmed_WordsList));
+	        //debug("skimmed_WordsList is ...");
+	        //debug(count($skimmed_WordsList));
 	        
-	//         debug($skimmed_WordsList);
+	        //debug($skimmed_WordsList);
 	        
 	        
 	        $text = Methods::addLink_4($text, $skimmed_WordsList);

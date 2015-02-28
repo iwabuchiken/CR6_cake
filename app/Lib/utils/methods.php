@@ -789,6 +789,12 @@
 		
 		}//_isSame_WordObj($W1, $W2)
 
+		/*******************************
+			skimm words<br>
+			e.g. => 「人民<u>共和</u>国」 and 「<u>共和</u>」 in the list<br>
+				==> then, 「共和」 gets removed from the list<br>
+				in favor of 「人民共和国」
+		*******************************/
 		static function
 		do_job__Skim_WordsFiltered_4($text, $words_WithPos) {
 		
@@ -810,12 +816,6 @@
 				$Wi = $words_WithPos[$i][0];
 				$Wi_pos = $words_WithPos[$i][1];
 		
-// 				debug("Wi is...");
-// 				debug($Wi);
-				
-// 				debug("Wi_pos is...");
-// 				debug($Wi_pos);
-				
 				// Flag: $Wi is contained in $Wj ?
 				$flag_IsIn = true;
 		
@@ -829,27 +829,23 @@
 					$Wj = $words_WithPos_2[$j][0];
 					$Wj_pos = $words_WithPos_2[$j][1];
 		
-// 					debug("Wset_j is...");
-// 					debug($Wset_j);
-					
-// 					debug("Wj is...");
-// 					debug($Wj);
-					
-// 					debug("Wj_pos is...");
-// 					debug($Wj_pos);
-					
 					/****************************************
 					 * Judge: 1 => Contained?
 					****************************************/
 					$res = Methods::_isContained_W1($Wi, $Wj);
-					// 			$res = _isContained_W1($Wi->w1, $Wj->w1);
-						
-// 					debug("_isContained_W1 ...");
+					
+//					debug("\$Wi");
+//					debug($Wi);
+//					debug("\$Wj");
+//					debug($Wj);
+					
+//					debug("\$res: _isContained_W1");
+//					debug($res === false);
 // 					debug($res);
 					
 					if ($res === false) {
-						// 				if ($res == false) {
-							
+
+						// flag: Wj is in Wi
 						$flag_IsIn = false;
 							
 					} else {
@@ -862,6 +858,10 @@
 								$words_WithPos_2[$j]
 						);
 		
+//						debug("\$res: _is_InRange");
+//						debug($res === true);
+					
+						// contained, is in range
 						if ($res == true) {
 								
 							/****************************************
@@ -872,14 +872,34 @@
 									$words_WithPos[$i],
 									$words_WithPos_2[$j]);
 		
+							// contained, is in range, is same wordset
 							if ($res == true) {
+								
+								$res = Methods::_isIn_SkimmedList_2(
+										$skimmed_WordsList, $Wi);
+								
+								// contained, is in range, is same wordset, is in the skimmed list
+								if ($res == true) {
+								
+									continue;
+								
+								// contained, is in range, is same wordset, is not in the skimmed list
+								} else {
+								
+									// flag: Wj is in Wi
+									$flag_IsIn = false;
 									
-								// Next j
-								continue;
+									// End for-loop with j
+									break;
+								
+								}
+								
+// 								// Next j
+// 								continue;
 		
 							} else {// _isSame_WordSet
 									
-								// flag
+								// flag: Wj is in Wi
 								$flag_IsIn = true;
 		
 								// End for-loop with j
@@ -889,7 +909,7 @@
 								
 						} else {// _is_InRange
 								
-							// flag
+							// flag: Wj is in Wi
 							$flag_IsIn = false;
 								
 						}//_is_InRange
@@ -902,6 +922,9 @@
 				/****************************************
 				* Flag => true/false
 				****************************************/
+//				debug("\$flag_IsIn");
+//				debug($flag_IsIn);
+				
 				if ($flag_IsIn == false) {
 									
 					$res = Methods::_isIn_SkimmedList_2(
@@ -921,19 +944,10 @@
 				}//if ($flag_IsIn == false)
 		
 			}//for ($i = 0; $i < count($words_WithPos); $i++)
-		
-			/****************************************
-					* Show: Result
-					****************************************/
-			// log
-			$msg = "Skimming => done";
-			
-			write_Log(
-				CONS::get_dPath_Log(),
-				$msg,
-				__FILE__,
-				__LINE__);
-			
+
+			/*******************************
+				return
+			*******************************/
 			return $skimmed_WordsList;
 			
 		}//do_job__Skim_WordsFiltered_4($argv)
