@@ -1,10 +1,46 @@
+<?php 
+
+// 	$link_Options = array('controller' => 'tokens', 
+	$link_Options = array('controller' => 'Texts', 
+										'action' => 'index');
+
+?>
+
+    
+    
     <!-- <tr class="bb" style="border-bottom: 1px solid black !important;"> -->
     <tr style="border-bottom: 3px solid blue !important;">
-        <td><?php echo "ID"; ?></td>
+        <td>
+        
+        	<?php 
+			
+				$link_Options['?'] = 'sort=id';
+			
+				echo $this->Html->link(
+								'ID',
+								$link_Options
+
+				);
+			?>
+        	
+        	<?php //echo "ID"; ?>
+        	
+        </td>
         
         <!-- <td colspan="5" style="bgcolor: blue;"> -->
         <td colspan="5"">
-            <?php echo "Title"; ?>
+            <?php //echo "Title"; ?>
+            <?php 
+			
+				$link_Options['?'] = 'sort=title';
+			
+				echo $this->Html->link(
+								'Title',
+								$link_Options
+
+				);
+			?>
+            
         </td>
         
         <td colspan="3">
@@ -90,7 +126,19 @@
     </tr>
     <tr>
     	<td>
-    		Lang id
+    	
+    	    <?php 
+			
+				$link_Options['?'] = 'sort=lang_id';
+			
+				echo $this->Html->link(
+								'Lang ID',
+								$link_Options
+
+				);
+			?>
+    	
+<!--     		Lang id -->
     		<?php 
     		
 	    		$opt_create = array(
@@ -140,11 +188,42 @@
     	</td>
     	
     	<td>Genre id</td>
-        <td>Created at</td>
+    	
+        <td>
+            <?php 
+			
+				$link_Options['?'] = 'sort=created_at';
+			
+				echo $this->Html->link(
+								'Created at',
+								$link_Options
+
+				);
+			?>
+        
+<!--         	Created at -->
+        	
+        </td>
         
     </tr>
     <tr>
     	<td class="bb">Rails id</td>
     	<td class="bb">Subgenre id</td>
-    	<td class="bb">Updated at</td>
+    	
+    	<td class="bb">
+    	
+    		<?php 
+			
+				$link_Options['?'] = 'sort=updated_at';
+			
+				echo $this->Html->link(
+								'Updated at',
+								$link_Options
+
+				);
+			?>
+    		
+<!--     			Updated at -->
+    	</td>
+    	
     </tr>

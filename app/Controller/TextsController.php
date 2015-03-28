@@ -22,7 +22,8 @@ class TextsController extends AppController {
 		**********************************/
 		$page_limit = 10;
 		
-		$opt_order = array('Text.id' => 'desc');
+// 		$opt_order = array('Text.id' => 'desc');
+		$opt_order = $this->_index__Orders();		
 		
 // 		$opt_conditions = '';
 		$opt_conditions = $this->_index__Options();
@@ -229,6 +230,70 @@ class TextsController extends AppController {
 		return $opt_conditions;
 	
 	}//_index__Options
+
+	public function
+	_index__Orders() {
+	
+		/**********************************
+		 * param: sort
+		**********************************/
+		$opt_order = array();
+	
+		$sort = "sort";
+	
+		@$query_Sort = $this->request->query[$sort];
+	
+		if ($query_Sort == null) {
+	
+			@$session_Sort = $this->Session->read($sort);
+	
+			//			debug("session_Sort is ...");
+			//			debug($this->Session->read($sort));
+	
+			if ($session_Sort != null) {
+	
+				$opt_order["Text.$session_Sort"] = "desc";
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("sort", $session_Sort);
+	
+			} else {
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("sort", null);
+	
+			}
+	
+		} else if ($query_Sort == -1) {
+			
+			$this->Session->write($sort, null);
+			
+			$this->set("sort", null);
+			
+		} else {
+	
+			// 			$opt_order['History.line LIKE'] = "%$query_Sort%";
+	
+			$opt_order["Text.$query_Sort"] = "desc";
+	
+			$session_Sort = $this->Session->write($sort, $query_Sort);
+	
+			//			debug("session_Sort => written: ".$query_Sort);
+	
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("sort", $query_Sort);
+	
+		}
+	
+		return $opt_order;
+	
+	}//_index__Orders
 	
 	public function _index__Experiments() {
 		
@@ -600,8 +665,13 @@ class TextsController extends AppController {
 		  
 			//REF request http://book.cakephp.org/2.0/en/controllers/request-response.html#cakerequest
 			//REF http://cakephp.jp/modules/newbb/viewtopic.php?topic_id=2624&forum=7
-			$this->request->data['Text']['created_at'] = get_CurrentTime();
-			$this->request->data['Text']['updated_at'] = get_CurrentTime();
+			$this->request->data['Text']['created_at'] = 
+								Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			$this->request->data['Text']['updated_at'] = 
+								Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+// 			$this->request->data['Text']['created_at'] = get_CurrentTime();
+// 			$this->request->data['Text']['updated_at'] = get_CurrentTime();
 			
 			// Title
 			$title_Length = $this->title_Length;
@@ -1432,9 +1502,9 @@ class TextsController extends AppController {
 	
 // 		debug($this->request);
 		
-		debug($this->request->data);
+// 		debug($this->request->data);
 		
-		debug(count($this->request->data));
+// 		debug(count($this->request->data));
 		
 // 		debug($this->request);
 		

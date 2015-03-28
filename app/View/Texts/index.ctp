@@ -20,8 +20,66 @@
 
 <!-- REF id http://stackoverflow.com/questions/484719/html-anchors-with-name-or-id -->
 <a id="top"></a>
+<br>
 <a href="#bottom">Bottom</a>
-	(filter_lang = <?php echo $filter_lang; ?> / filter_text = <?php echo $filter_text?>)
+	(
+	
+	filter_lang = 
+			<?php 
+// 			echo $filter_lang; 
+			?> /
+
+			<?php 
+	 		
+		 		if (isset($filter_lang)) {
+		 		
+		 			//REF http://stackoverflow.com/questions/9014289/span-in-link-with-class answered Apr 17 '14 at 16:11
+		 			echo $this->Html->tag('span', $filter_lang, array('class' => 'color_blue'));
+		 				
+		 		} else {
+		 				
+		 			echo "NO DATA";
+		 				
+		 		}
+		 		
+// 	 			echo $filter_lang
+ 			?> /
+			
+	 filter_text = 
+	 		<?php 
+	 		
+		 		if (isset($filter_text)) {
+		 		
+		 			//REF http://stackoverflow.com/questions/9014289/span-in-link-with-class answered Apr 17 '14 at 16:11
+		 			echo $this->Html->tag('span', $filter_text, array('class' => 'color_blue'));
+		 				
+		 		} else {
+		 				
+		 			echo "NO DATA";
+		 				
+		 		}
+		 		
+// 	 			echo $filter_text
+ 			?> /
+	 
+	 sort = <?php 
+	 	
+	 			if (isset($sort)) {
+
+					//REF http://stackoverflow.com/questions/9014289/span-in-link-with-class answered Apr 17 '14 at 16:11
+					echo $this->Html->tag('span', $sort, array('class' => 'color_blue'));
+					
+	 			} else {
+	 			
+	 				echo "NO DATA";
+	 			
+	 			}
+	 			
+// 	 			echo (isset($sort) ? $filter_text : ""); 
+	 			
+ 			?>
+	 			
+	 )
 <br>
 <br>
 
@@ -39,6 +97,9 @@
 	
 </table>
 
+<?php echo $this->element('texts/_index_pagination')?>
+
+<br>
 <a id="bottom"></a>
 <a href="#top">Top</a>
 <br><br>

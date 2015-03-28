@@ -24,6 +24,21 @@ a.text_td_grey_text {
 	color:	grey;
 }
 
+a.add_texts {
+	
+	color:	white;
+	background:	blue;
+/*	font:	arial;*/
+
+	/* REF http://www.html.am/html-codes/text/font-code.cfm*/
+	font:italic 18px/24px Arial;
+	/*font:italic small-caps bold 18px/24px Arial, Georgia, Times, Serif;*/
+	/* small-caps => capitalize */
+	
+	padding:	3px;
+}
+
+
 td {
 	
 	/*REF http://www.w3schools.com/css/css_table.asp*/
@@ -133,6 +148,7 @@ span.Pg_prev a {
 	
 }
 
+
 span.Pg_next {
 	
 	color: purple;
@@ -142,5 +158,16 @@ span.Pg_next {
 span.Pg_next a {
 	
 	color: blue;
+	
+}
+
+span.color_blue {
+	
+	color:		blue;
+	/* REF http://www.html-color-names.com/maroon.php */
+	background: #FEBFBF;	
+	
+	padding:	2px;
+/*	margin:		2px;*/
 	
 }
