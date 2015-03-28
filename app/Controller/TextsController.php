@@ -1567,6 +1567,150 @@ class TextsController extends AppController {
 	
 	}//public function edit($id = null)
 	
+	public function
+	modify_UpdatedAt_deprecated() {
+
+		$texts = $this->Text->find('all');
+		
+// 		$texts_New = array();
+		
+		
+		/*******************************
+			update: texts
+		*******************************/
+		$count = 0;
+		
+		for ($i = 0; $i < count($texts); $i++) {
+			
+			$t = $texts[$i];
+			
+			$t['Text']['updated_at'] = $t['Text']['created_at'];
+			
+			$this->Text->id = $t['Text']['id'];
+			
+			if ($this->Text->save($t)) {
+
+				$count ++;
+				
+			}
+			
+		}
+		
+		debug("count => ".$count);
+		
+// 		$this->Text->id = $id;		
+		
+// 		$this->Text->set("updated_at",
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+
+		/*******************************
+			view
+		*******************************/
+		$this->render("/Texts/modify/modify_UpdatedAt");
+
+		
+	}
+	
+	public function
+	modify_UpdatedAt() {
+
+		$texts = $this->Text->find('all');
+		
+		$texts_New = array();
+		
+// 		$p = '/^\d\d\d\d\//';
+		$p = '/^\d\d\//';
+		
+		$tmp_i;
+		
+		for ($i = 0; $i < count($texts); $i++) {
+			
+			$t = $texts[$i];
+			
+			$tmp_i = preg_match($p, $t['Text']['updated_at']);
+			
+			if ($tmp_i == 1) {
+				
+// 				debug($t);
+				
+				array_push($texts_New, $t);
+				
+// 				debug("pushed");
+				
+			}
+			
+		}
+		
+		debug(count($texts));
+		debug(count($texts_New));
+// 		debug($texts_New[1]);
+// 		debug($texts_New);
+
+		/*******************************
+			modify: updated_at
+		*******************************/
+// 		$tmp_s = $texts_New[1]['Text']['updated_at'];
+// 		$tmp_s = Utils::reverse_DateLabel($texts_New[1]['Text']['updated_at']);
+
+// 		debug($texts_New[1]['Text']['updated_at']);
+// 		debug($tmp_s);
+		
+// 		$ary1 = explode(" ", $tmp_s);
+		
+// 		debug($ary1);
+		
+// 		$date = $ary1[0];
+		
+// 		$ary2 = explode("/", $date);
+		
+// 		debug($ary2);
+		
+// 		$ary2_rev = array_reverse($ary2);
+		
+// 		debug($ary2_rev);
+		
+// 		$date_New = implode("/", $ary2_rev);
+		
+// 		debug($date_New);
+		
+		/*******************************
+			update: texts
+		*******************************/
+		$count = 0;
+		
+		for ($i = 0; $i < count($texts_New); $i++) {
+			
+			$t = $texts_New[$i];
+			
+			$t['Text']['updated_at'] = 
+					Utils::reverse_DateLabel_V3($t['Text']['updated_at']);
+// 					Utils::reverse_DateLabel_V2($t['Text']['updated_at']);
+			
+			$this->Text->id = $t['Text']['id'];
+			
+			if ($this->Text->save($t)) {
+
+				$count ++;
+				
+			}
+			
+		}
+		
+		debug("count => ".$count);
+		
+// 		$this->Text->id = $id;		
+		
+// 		$this->Text->set("updated_at",
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+
+		/*******************************
+			view
+		*******************************/
+		$this->render("/Texts/modify/modify_UpdatedAt");
+
+		
+	}
+	
 }//class TextsController extends AppController
 
 class Token {

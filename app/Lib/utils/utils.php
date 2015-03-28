@@ -208,6 +208,110 @@
 			
 		}//public function get_HostName()
 		
+		/*******************************
+		 * reverse order: 0, 1, 2	=> 2, 1, 0
+		27/02/2015 11:29:19 => 2015/02/27 11:29:19
+		*******************************/
+		public static function
+		reverse_DateLabel($date_Label) {
+			
+			/*******************************
+				date
+			*******************************/
+// 			$tmp_s = $date_Label;
+			
+			$ary1 = explode(" ", $date_Label);
+			
+// 			debug($ary1);
+			
+// 			$date = $ary1[0];
+			
+			$ary2 = explode("/", $ary1[0]);
+// 			$ary2 = explode("/", $date);
+			
+// 			debug($ary2);
+			
+			$ary2_rev = array_reverse($ary2);
+			
+			$date_New = implode("/", array_reverse($ary2));
+			
+// 			debug($ary2_rev);
+			
+			/*******************************
+				re-build
+			*******************************/
+			return implode(" ", array($date_New, $ary1[1]));
+// 			return implode("/", array_reverse($ary2));
+			
+// 			$date_New = implode("/", array_reverse($ary2));
+// 			$date_New = implode("/", $ary2_rev);
+			
+		}//reverse_DateLabel($date_Label)
+		
+		/*******************************
+		 * replace => month and day
+			2015/27/02 11:29:19 => 2015/02/27 11:29:19
+		*******************************/
+		public static function
+		reverse_DateLabel_V2($date_Label) {
+			
+			/*******************************
+				date
+			*******************************/
+			$ary1 = explode(" ", $date_Label);
+			
+			// date
+			$ary2 = explode("/", $ary1[0]);
+			
+			$ary2_rev = array($ary2[0], $ary2[2], $ary2[1]);
+			
+			$date_New = implode("/", $ary2_rev);
+			
+// 			debug($ary2_rev);
+			
+			/*******************************
+				re-build
+			*******************************/
+			return implode(" ", array($date_New, $ary1[1]));
+// 			return implode("/", array_reverse($ary2));
+			
+// 			$date_New = implode("/", array_reverse($ary2));
+// 			$date_New = implode("/", $ary2_rev);
+			
+		}//reverse_DateLabel($date_Label)
+		
+		/*******************************
+		 * replace => month[0]/day[1]/year[2] --> year[2]/month[0]/day[1]
+			02/27/2015 11:29:19 => 2015/02/27 11:29:19
+		*******************************/
+		public static function
+		reverse_DateLabel_V3($date_Label) {
+			
+			/*******************************
+				date
+			*******************************/
+			$ary1 = explode(" ", $date_Label);
+			
+			// date
+			$ary2 = explode("/", $ary1[0]);
+			
+			$ary2_rev = array($ary2[2], $ary2[0], $ary2[1]);
+			
+			$date_New = implode("/", $ary2_rev);
+			
+// 			debug($ary2_rev);
+			
+			/*******************************
+				re-build
+			*******************************/
+			return implode(" ", array($date_New, $ary1[1]));
+// 			return implode("/", array_reverse($ary2));
+			
+// 			$date_New = implode("/", array_reverse($ary2));
+// 			$date_New = implode("/", $ary2_rev);
+			
+		}//reverse_DateLabel($date_Label)
+		
 		public static function
 		get_CurrentTime2($labelType) {
 			//REF http://stackoverflow.com/questions/470617/get-current-date-and-time-in-php
@@ -236,6 +340,7 @@
 			// 		return date('m/d/Y H:i:s', time());
 		
 		}//function get_CurrentTime2($labelType)
+
 		
 	}//class Utils
 	
