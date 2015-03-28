@@ -2,11 +2,17 @@
 
 <h1>Edit Text</h1>
 <?php
-echo $this->Form->create('Text');
+echo $this->Form->create('Text', array('type' => 'post'));
 echo $this->Form->input('text');
 echo $this->Form->input('url');
 
 echo $this->Form->input('memo');
+
+// REF http://stackoverflow.com/questions/19213165/cakephp-hidden-input-field answered Oct 6 '13 at 19:51
+// echo $this->Form->input('updated_at', array(
+// 							'type' => 'hidden',
+// 							'value'	=> Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"])
+// ));
 
 echo $this->Form->input(
 						'lang_id',

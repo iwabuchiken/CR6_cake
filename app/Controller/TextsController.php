@@ -1432,13 +1432,43 @@ class TextsController extends AppController {
 	
 // 		debug($this->request);
 		
+		debug($this->request->data);
+		
+		debug(count($this->request->data));
+		
+// 		debug($this->request);
+		
 // 		if ($this->request->is(array('text', 'put'))) {
-			
+		if ($this->request->is('post')) {	
+// 			$this->Text->create();
+		
 			$this->Text->id = $id;
+			
+			if (count($this->request->data) > 0) {
+				
+// 				$this->Text->create();
+				
+				$this->request->data['Text']['updated_at'] = 
+							Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+// 				$this->Text->set("updated_at",
+// 					Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+// 				unset($this->Text->updated_at);		//=> n/c
+				
+// 				debug($this->request->data);
+				
+			}
+			
+// 			debug($this->Text);
+// 			$this->Text->set("updated_at",
+// 					Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
 			
 			if ($this->Text->save($this->request->data)) {
 				
-				$this->Session->setFlash(__('Your text has been updated.'));
+				$this->Session->setFlash(__(
+									"Your text has been updated => id="
+									.$id."/"."updated_at=".$this->request->data['Text']['updated_at']));
+// 									.$this->request->data['Text']['id']));
+// 				$this->Session->setFlash(__('Your text has been updated.'));
 				return $this->redirect(
 							array(
 									'action' => 'view',
@@ -1455,6 +1485,12 @@ class TextsController extends AppController {
 	
 // 		}//if ($this->request->is(array('text', 'put')))
 	
+		} else {//if ($this->request->is('post'))
+			
+			$this->Session->setFlash(__('Not POST method'));
+			
+		}//if ($this->request->is('post'))
+		
 		if (!$this->request->data) {
 			$this->request->data = $text;;
 		}
