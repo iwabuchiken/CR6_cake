@@ -78,8 +78,8 @@ class WordsController extends AppController {
 		*******************************/
 		$opt_conditions = $this->_index__Opt_Conditions();
 		
-		debug("\$opt_conditions");
-		debug($opt_conditions);
+// 		debug("\$opt_conditions");
+// 		debug($opt_conditions);
 		
 		/**********************************
 		 * paginate
@@ -128,12 +128,12 @@ class WordsController extends AppController {
 		*******************************/
 		if ($filter != null) {
 				
-			debug($filter);
+// 			debug($filter);
 			
 			$keys = array_keys($filter);
 			
-			debug($keys);
-			debug($keys[0]);
+// 			debug($keys);
+// 			debug($keys[0]);
 			
 // 			$key = array_keys($filter)[0];
 				
