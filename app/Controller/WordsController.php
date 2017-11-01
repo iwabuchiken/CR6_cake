@@ -1,5 +1,17 @@
 <?php
 
+/*
+local
+http://localhost/Eclipse_Luna/CR6_cake/
+C:\WORKS_2\WS\Eclipse_Luna\CR6_cake\app\Controller
+C:\WORKS_2\WS\Eclipse_Luna\CR6_cake\
+
+remote
+http://benfranklin.chips.jp/cake_apps/CR6_cake/
+/cake_apps/CR6_cake/
+
+ */
+
 class WordsController extends AppController {
 	public $helpers = array('Html', 'Form', 'Js');
 

@@ -105,4 +105,44 @@ CREATE TABLE words (
 	r_updated_at TEXT
 );
  
+INSERT INTO words 
+		(
+		
+		created_at,
+		updated_at,
+
+	w1 TEXT,
+	w2 TEXT,
+	w3 TEXT,
+	
+	text_ids TEXT,
+	
+	text_id INT,
+	lang_id INT,
+	
+	r_id INT,
+	r_created_at TEXT,
+	r_updated_at TEXT
+					
+		) 
+	SELECT
+
+		created_at,
+		updated_at,
+
+	w1 TEXT,
+	w2 TEXT,
+	w3 TEXT,
+	
+	text_ids TEXT,
+	
+	text_id INT,
+	lang_id INT,
+	
+	r_id INT,
+	r_created_at TEXT,
+	r_updated_at TEXT
+
+	FROM words_old;
+
 	
